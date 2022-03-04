@@ -1,0 +1,38 @@
+<div class="contacts-block">
+  <div class="contacts-block__label _section-label">Contacts</div>
+  <div class="contacts-block__body">
+    <h5 class="contacts-block__text _text-align-right">
+        Either by phone for the more adventurous, or e-mail for the bashful, we
+        should talk
+      </h5>
+    <div
+      class="contacts-block__square contacts-block__square--follow contacts-square"
+    >
+      <div class="contacts-square__title">Follow us</div>
+      <div class="contacts-square__content">
+        <div class="contacts-square__links">
+            <a href="#" class="contacts-square__link contacts-square__link--face"></a>
+            <a href="#" class="contacts-square__link contacts-square__link--lnkdin"></a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="contacts-block__square contacts-block__square--become contacts-square"
+    >
+      <div class="contacts-square__title">Become a Client</div>
+      <div class="contacts-square__content">
+        <p>+1 312-239-0843</p>
+        <p>order@perspective.net.ua</p>
+      </div>
+    </div>
+    <div
+      class="contacts-block__square contacts-block__square--find contacts-square"
+    >
+      <div class="contacts-square__title">Find us</div>
+      <div class="contacts-square__content">
+        <p>Kyiv, 28 Mezhyhirska str, office 19</p>
+        <p>perspective.net.ua</p>
+      </div>
+    </div>
+  </div>
+</div>
