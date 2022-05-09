@@ -2,46 +2,13 @@
     <div class="contact-page__container _container">
         <div class="contact-page__top">
             <div class="contact-page__title">
-                <p>we are <span class="contact-page__title contact-page__title--orange">open <br> for your</span> ideas, questions and needs</p>
+                <p>we are <span class="contact-page__title contact-page__title--orange">open <br>for your</span> ideas, questions and needs</p>
             </div>
             <h4 class="contact-page__sub-title">
                 <p>Some of the world’s most impactful products, solutions and campaigns start with a conversation. Tell us about what you’re making and we’ll see how we can help</p>
             </h4>
         </div>
-        <div class="contact-page__main">
-            <div class="contact-page__get-started get-started">
-                <div class="get-started__row">
-                    <div class="get-started__label _section-label">Hire us</div>
-                    <div class="get-started__col">
-                        <h3 class="get-started__title">Get Started</h3>
-                        <h5 class="get-started__sub-title _text-align-right">
-                            We're here to help. Tell us a little about your project and we'll be in touch
-                        </h5>
-                    </div>
-                    <div class="get-started__col">
-
-
-                        <form class="get-started__form form-contact" data-mage-init='{"validation":{}}'>
-                            <div class="form-contact__body">
-                                <input type="text" name="first_name" class="form-contact__input " placeholder="Name" required />
-                                <input type="tel" name="phone" class="form-contact__input validate-phoneStrict" placeholder='Phone' required />
-                                <input type="email" name="email" class="form-contact__input validate-email" placeholder="E-mail" required />
-                                <input type="text" name="details" class="form-contact__input " placeholder="Project details" required />
-                                <div class="form-contact__attache">
-                                    <label for="attache">
-                                        Attache
-                                    </label>
-                                    <input type="file" name="Attache" id="attache" />
-                                </div>                                    
-                                </button><button class="form-contact__submit _button">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p>{{widget type="Perspective\Forms\Block\Decorators\HireUs" left_text="Hire Us" title="GET STARTED" description="We're here to help. Tell us a little about your project and we'll be in touch" name_placeholder="Name" phone_placeholder="Phone" email_placeholder="E-mail" detail_placeholder="Project details" submit_url="perspective_forms/index/submit" template="Perspective_Forms::decorator/action_hire_us.phtml"}}</p>
         {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="4"}}
     </div>
 </main>
