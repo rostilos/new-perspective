@@ -11,8 +11,8 @@
       <div class="contacts-square__title">Follow us</div>
       <div class="contacts-square__content">
         <div class="contacts-square__links">
-            <a href="#" class="contacts-square__link contacts-square__link--face"></a>
-            <a href="#" class="contacts-square__link contacts-square__link--lnkdin"></a>
+            <a target="_blank" href="https://www.facebook.com/perspective.magento.team/" class="contacts-square__link contacts-square__link--face"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/perspective-magento-team" class="contacts-square__link contacts-square__link--lnkdin"></a>
         </div>
       </div>
     </div>
