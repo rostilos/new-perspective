@@ -8,7 +8,7 @@
           find the right solution for building a business, just like the
           developer can find the tools to expand the standard Magento feature.
         </h4>
-        <br/>
+        <br />
         <h4 class="article__text--intro">
           Perspective Studio team has the experience of developing and
           publishing a module on the Magento Marketplace platform and wants to
@@ -21,10 +21,10 @@
   </section>
   <div class="article__image">
     <img
-              loading="lazy"
-              src="{{view url='Mirasvit_Blog::images/article/module-placement/image-main.svg'}}"
-              alt="image-1"
-            />
+      loading="lazy"
+      src="{{view url='Mirasvit_Blog::images/article/module-placement/image-main.svg'}}"
+      alt="image-1"
+    />
   </div>
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
@@ -91,7 +91,10 @@
         </li>
       </ol>
 
-      <p class="article__text">We will tell you about each stage in detail.</p>
+      <p class="article__text">
+        We will tell you about each stage in detail (for convenience all the
+        screens to the text are hidden).
+      </p>
 
       <ol class="article__list article__list--num _list-numbered">
         <li>
@@ -101,9 +104,13 @@
           <p>
             The publication on the Marketplace implies the passing a Technical
             review. Magento Coding standards and
-            <span class="article__text article__text--orange"
-              >Technical Review Guidelines</span
+            <a
+              class="article__text article__text--orange"
+              href="https://devdocs.magento.com/marketplace/sellers/technical-review-guidelines.html#quality-assurance-pass-manual-qa"
+              target="_blank"
             >
+              Technical Review Guidelines
+            </a>
             should be followed during the development of the module. These
             guidelines are mandatory for extensions published on the Marketplace
             since code style will be automatically checked through Code Sniffer.
@@ -132,13 +139,14 @@
               does not declare dependence on:
 
               <ul class="_list-lettered">
-                <li class="font-regular">magento/magento-composer-instроaller</li>
+                <li class="font-regular">
+                  magento/magento-composer-instроaller
+                </li>
                 <li class="font-regular">magento/magento2-base</li>
                 <li class="font-regular">magento/product-community-edition</li>
                 <li class="font-regular">magento/magento2-ee-base</li>
                 <li class="font-regular">magento/product-enterprise-edition</li>
               </ul>
-            
             </li>
 
             <li class="font-regular">does not use * as a dependency version</li>
@@ -149,21 +157,24 @@
             We also recommend you validate composer.json by installing your
             extension on your local project. Simply install an additional
             repository with path to the repository directory of the
-            <span class="article__text article__text--orange"
-              >Repositories - Composer</span
-            >
+            <a
+              href="https://getcomposer.org/doc/05-repositories.md#path"
+              target="_blank"
+              class="article__text article__text--orange"
+              >Repositories - Composer
+            </a>
             module.
           </p>
 
           <p>Unit Tests</p>
 
           <p>
-            If you decide to publish your extension to the Magento
-            Marketplace, it is time to start writing the unit tests. Despite
-            the fact that there are no direct requirements for the number of
-            tests, it is recommended to cover with unit tests from 60% to 80%
-            of your code. You can usually write tests after the main code, but
-            this is a good time to try.
+            If you decide to publish your extension to the Magento Marketplace,
+            it is time to start writing the unit tests. Despite the fact that
+            there are no direct requirements for the number of tests, it is
+            recommended to cover with unit tests from 60% to 80% of your code.
+            You can usually write tests after the main code, but this is a good
+            time to try.
           </p>
 
           <div class="article__text article__text--border-left">
@@ -172,13 +183,12 @@
               During module development, it is crucial to find vulnerable
               places. Malware Scan checks the extension, all media files and
               documents for malicious code or links. All code and marketing
-              content submitted to the Magento Marketplace is also checked to
-              be unique and not duplicated code from an already known
-              extension. The module must be installed without errors on the
-              specified versions of Magento and run without errors in
-              production mode with the Varnish Cache enabled. Autotests check
-              if store pages get into the cache and come back from the Varnish
-              Cache.
+              content submitted to the Magento Marketplace is also checked to be
+              unique and not duplicated code from an already known extension.
+              The module must be installed without errors on the specified
+              versions of Magento and run without errors in production mode with
+              the Varnish Cache enabled. Autotests check if store pages get into
+              the cache and come back from the Varnish Cache.
             </p>
           </div>
         </li>
@@ -190,7 +200,12 @@
           <p>
             To publish on the Magento Marketplace, you need to present your
             module professionally.
-            <span class="article__text article__text--orange">DevDocs</span>
+            <a
+              href="https://developer.adobe.com/commerce/marketplace/guides/sellers/submit-for-marketing-review/"
+              target="_blank"
+              class="article__text article__text--orange"
+              >DevDocs</a
+            >
             describes how to prepare a marketing review. You need to make the
             following marketing materials:
           </p>
@@ -222,8 +237,11 @@
             To publish a module, you need to have a Magento/Adobe commerce
             account. If you already have it, use it. But it needs to be further
             configured. Register for
-            <span class="article__text article__text--orange"
-              >Adobe Commerce Marketplace - Developer Portal.</span
+            <a
+              href="https://developer.magento.com/"
+              target="_blank"
+              class="article__text article__text--orange"
+              >Adobe Commerce Marketplace - Developer Portal.</a
             >
             You need to fill in Account, Marketplace, and Tax Form Information
             for the module to be published.
@@ -279,8 +297,11 @@
 
           <p>
             By clicking
-            <span class="article__text article__text--orange"
-              >Adobe Commerce Marketplace - Developer Portal</span
+            <a
+              href="https://developer.magento.com/extensions/"
+              target="_blank"
+              class="article__text article__text--orange"
+              >Adobe Commerce Marketplace - Developer Portal</a
             >
             you can view existing extensions and add a new one. I will write in
             detail about our experience of publication:
@@ -300,8 +321,8 @@
             <div class="article__image article__image--narrow">
               <img
                 loading="lazy"
-                src="{{view url='Mirasvit_Blog::images/article/module-placement/module-placement-4.png'}}"
-                alt="image-1"
+                src="https://perspective.net.ua/media/wysiwyg/Blog/module-publication/create_extension.png"
+                alt="create-ext"
               />
             </div>
 
@@ -331,16 +352,29 @@
             <li class="font-regular">
               adding a new version:
               <ul class="_list-lettered">
-                <li class="font-regular">the version number must match the version in composer.json</li>
-                <li class="font-regular">the time when the extension will be launched: after a successful validation or a specific date</li>
+                <li class="font-regular">
+                  the version number must match the version in composer.json
+                </li>
+                <li class="font-regular">
+                  the time when the extension will be launched: after a
+                  successful validation or a specific date
+                </li>
               </ul>
             </li>
             <li class="font-regular">
               the extension version page contains:
               <ul class="_list-lettered">
-                <li class="font-regular">the first block - general information, name, generated id</li>
-                <li class="font-regular">the second block is the status of technical and marketing review</li>
-                <li class="font-regular">the third block is technical and marketing information about the module</li>
+                <li class="font-regular">
+                  the first block - general information, name, generated id
+                </li>
+                <li class="font-regular">
+                  the second block is the status of technical and marketing
+                  review
+                </li>
+                <li class="font-regular">
+                  the third block is technical and marketing information about
+                  the module
+                </li>
               </ul>
             </li>
           </ul>
@@ -365,22 +399,60 @@
             />
           </div>
 
-          <p>However, there are might be mistakes that lead to failure. </p>
-          <p>Be sure to prepare the User Guide as it is required for Manual QA. </p>
-          <p>Pay enough attention to the long Description form of your module. Explain what the module can do for a merchant and how it works. List key features. Describe what changes can be made in the interface or UX of the site, or can be made to the settings. You can give examples of cases when merchant can use the module. Leave a clear understanding of how its website will look and function if it buys your extension.</p>
-          <p>Also, note that to change the date of module publication, it is necessary to remove it from the marketing review, change the type/date of publication and re-submit to the marketing review.</p>
+          <p>However, there are might be mistakes that lead to failure.</p>
+          <p>
+            Be sure to prepare the User Guide as it is required for Manual QA.
+          </p>
+          <p>
+            Pay enough attention to the long Description form of your module.
+            Explain what the module can do for a merchant and how it works. List
+            key features. Describe what changes can be made in the interface or
+            UX of the site, or can be made to the settings. You can give
+            examples of cases when merchant can use the module. Leave a clear
+            understanding of how its website will look and function if it buys
+            your extension.
+          </p>
+          <p>
+            Also, note that to change the date of module publication, it is
+            necessary to remove it from the marketing review, change the
+            type/date of publication and re-submit to the marketing review.
+          </p>
         </li>
       </ol>
 
-      <div class="article__title font-semibold _h4" style="text-transform: none;" >
+      <div
+        class="article__title font-semibold _h4"
+        style="text-transform: none"
+      >
         Module publication: What's next?
       </div>
 
-      <p>The module has been published on the Magento Marketplace today. Both the merchant and the developer can download and apply for extensions in the online shop. However, publication at the Magento Marketplace does not mean that the work is completed. What's next? </p>
-      <p>During the operation of the module, additional nuances may arise related to the peculiarities of a particular store and environment. </p>
-      <p>We also recommend checking the installation and initial setup process. In this case, after checking on our test environment, the customer has passed the process of installation of the module in its environment. </p>
-      <p>Modifications are possible with the release of a new version of Magento. The module must be checked for compatibility with the new version. Despite the fact that we used best practices and technical guidelines. </p>
-      <p>The referral system module must support not only new versions but also older versions of Magento. After all, there are online shops that are not updated. The more complex the function of the module, the more problems with the previous versions and updates will arise.</p>
+      <p class="article__text">
+        The module was published on the Magento Marketplace. Both the
+        merchant and the developer can download and apply for extensions in the
+        online shop. However, publication at the Magento Marketplace does not
+        mean that the work is completed. What's next?
+      </p>
+      <p class="article__text">
+        During the operation of the module, additional nuances may arise related
+        to the peculiarities of a particular store and environment.
+      </p>
+      <p class="article__text">
+        We also recommend checking the installation and initial setup process.
+        In this case, after checking on our test environment, the customer has
+        passed the process of installation of the module in its environment.
+      </p>
+      <p class="article__text">
+        Modifications are possible with the release of a new version of Magento.
+        The module must be checked for compatibility with the new version.
+        Despite the fact that we used best practices and technical guidelines.
+      </p>
+      <p class="article__text">
+        The referral system module must support not only new versions but also
+        older versions of Magento. After all, there are online shops that are
+        not updated. The more complex the function of the module, the more
+        problems with the previous versions and updates will arise.
+      </p>
     </div>
     <div class="grid-col"></div>
   </section>
