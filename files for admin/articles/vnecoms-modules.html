@@ -1,0 +1,275 @@
+<div class="article">
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col _text-align-right">
+      <div class="article__intro">
+        <h4 class="article__text--intro">
+          Perspective Studio team has been working on a fashion marketplace on the VnEcoms modules for a long time. The
+          project covers all stages of development, from UI/UX design to QA and testing. Today it is already in
+          pre-deployment condition. So we have a lot to talk about and are happy to share.
+        </h4>
+        <div class="article__author">by Bogdan Gryvnak</div>
+      </div>
+    </div>
+    <div class="grid-col"></div>
+  </section>
+  <div class="article__image">
+    <div class="article__image article__image--narrow">
+      <img loading="eager" src="{{media url='wysiwyg/articles/vnecoms/1.svg'}}" alt="image-1" />
+    </div>
+  </div>
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h4 class="article__title">What does the fashion marketplace based on Magento 2 look like?</h4>
+      <p class="article__text">
+        Often, the Magento platform is associated with the development of online stores. Nevertheless it allows
+        businesses to scale up to the multi vendor marketplace. The following components of the marketplace system are
+        Merchant Administration System, Product Information Management, Order Management System, Billings,
+        Reporting&Analytics.
+      </p>
+
+      <div class="article__image article__image--narrow article__image--desktop">
+        <img src="{{media url='wysiwyg/articles/vnecoms/2.svg'}}" alt="create-ext" />
+      </div>
+      <div class="article__image article__image--narrow article__image--mobile">
+        <img src="{{media url='wysiwyg/articles/vnecoms/2-mob.svg'}}" alt="create-ext" />
+      </div>
+      <p class="article__text">
+        During the development of fashion marketplace, we applied a group of modules from VnEcoms. However, the modules
+        do not cover all customer needs, which is a normal practice. After all, every business has its peculiarities.
+        The customization has been subject to many processes and we would like to tell more about them.
+      </p>
+
+      <h4 class="article__title">What has been processed and why?</h4>
+      <ol class="article__list article__list--num _list-numbered">
+        <!-- 1 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            Firstly, we have simplified the process of seller registration. The following logic was laid, there is a
+            form filled in by the seller on the page of the marketplace:
+          </p>
+          <div class="article__image article__image--narrow">
+            <img loading="lazy" src="{{media url='wysiwyg/articles/vnecoms/3.png'}}" alt="image-1" />
+          </div>
+          <p class="article__text">
+            The data from the form gets into the administrative panel. The main admin receives notifications to the
+            e-mail address as well as on the admin panel about a new request and confirm it.
+          </p>
+        </li>
+
+        <!-- 2 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            Registration of the order was automatized. How it looks: the seller presses the eccept button when receiving
+            the order and automatically creates an invoice, shipment, and the delivery of waybills. Also added an
+            opportunity to edit the order.
+          </p>
+        </li>
+        <!-- 3 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            The management of orders was modified. Below you can see the view of the personal account before and after
+            modification. Orders are distributed according to the status: new, processing, combined, cancelled. For a
+            seller, it is way more convenient to track the order.
+          </p>
+          
+          <div class="article__image article__image--narrow">
+            <img loading="lazy" src="{{media url='wysiwyg/articles/vnecoms/4.png'}}" alt="image-1" />
+          </div>
+          <div class="article__image article__image--narrow">
+            <img loading="lazy" src="{{media url='wysiwyg/articles/vnecoms/5.png'}}" alt="image-1" />
+          </div>
+        </li>
+
+        <!-- 4 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            The Vendor RMA from VnEcoms was modified to meet the needs of the client. Previously, his function allowed
+            making a return from only one seller at a time. We have created a logic so that when returning, you can
+            choose products of any seller. It became easier for the buyer to manage the process of registration and
+            returning goods.
+          </p>
+        </li>
+        <!-- 5 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            Another case is the development of the delivery function. It's a separate story. Since it was international
+            multi vendor marketplace, the owner has chosen DHL as the logistics operator for order delivery.
+          </p>
+          <p class="_list-numbered__text">
+            In the Magento platform there is a module for the DHL delivery method, but not for the marketplace, VnEcoms
+            also has it, however it is designed to work for one seller, so that is one DHL account. Both options did not
+            solve the technical task. As a result, we have redesigned the module provided by VnEcoms to work with one
+            account.
+          </p>
+          <p class="_list-numbered__text">
+            During the process, there was a problem with the correctness of ratings (UK presence). As it turned out, at
+            that time DHL API did not take into account the Brexit fee. After that, we finalized the functionality.
+            Also, a function for reservation of the address ban of shipments was developed.
+          </p>
+          <p class="_list-numbered__text">
+            Now it looks like this. The seller gets a new order and clicks accept, then automatically creates an
+            invoice, shipment with the generation of packages and receiving shipping labels, and a tracking number from
+            DHL. The order status changes to processing. Once the invoice is created, the DHL Address Ban button is
+            available.
+          </p>
+          <div class="article__image article__image--narrow">
+            <img loading="lazy" src="{{media url='wysiwyg/articles/vnecoms/6.png'}}" alt="image-1" />
+          </div>
+          <div class="article__image article__image--narrow">
+            <img loading="lazy" src="{{media url='wysiwyg/articles/vnecoms/7.png'}}" alt="image-1" />
+          </div>
+          <p class="article__text">
+            Additionally, a feature has been developed that sends requests to the DHL API twice a day on cron and checks
+            the post statuses. If it's delivered, then the order is considered final and only after that, the seller can
+            make a return. The buyer can also monitor the status of the order through the tracking number in his
+            personal account. This mechanism has been used to ensure that the tracking number is automatically displayed
+            on the DHL page.
+          </p>
+        </li>
+        <!-- 6 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            In this case we had to realize a very difficult logic of pricing. We have developed a price-setting module
+            specifically for the client's technical task. It was important not to break the basic function of Magento.
+          </p>
+          <p class="_list-numbered__text">
+            The first thing that complicated the mechanism of pricing is the geography of marketplace. It has different
+            stores depending on the buyer's region: UK, USA, EU, GLOBAL. Accordingly, for different buyers, there are
+            different taxes, different costs of delivery and so on. In general, the cost is calculated taking into
+            account six indicators. That is why the same goods in different stores can be fundamentally different in
+            meaning of price.
+          </p>
+          <p class="_list-numbered__text">
+            We have created the function in such a way that the seller in his office displays the cost of the goods, and
+            the final cost takes into account all the indicators and is calculated automatically for each store
+            individually. On the site, the buyer sees the final cost of the product, which is formed according to the
+            logic of pricing.
+          </p>
+          <p class="_list-numbered__text">
+            The seller has retained all basic marketing logic (special price, group price and tier price) at the level
+            of the page, and the store owner can manage catalogue price.
+          </p>
+        </li>
+        <!-- 7 -->
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            For transactions on the site used the payment service Stripe, it is customized accordingly to business
+            needs. When creating or supporting regular online stores, it was not necessary to meet such a function as
+            the division of payment between several participants. In this case, we met a task that says the whole
+            payment does not fall on the account of the owner of the market, but only the commission.
+          </p>
+          <p class="_list-numbered__text">
+            VnEcoms has a module for Stripe, but it did not cover our needs. Thanks to the modification, the module
+            removes funds from the bank card and assigns the accounts to the owner of the business and the seller of
+            goods. The owner of the market is given a сommission and the spent parts as well as the cost of delivery.
+            The seller receives at the expense of the product sum, which was made at its creation, with the deduction of
+            the basic commission.
+          </p>
+        </li>
+      </ol>
+
+      <h4 class="article__title">Modules from other vendors</h4>
+      <p class="article__text">
+        In addition to VnEcoms modules, more than a dozen other vendor modules were used to cover the customer's needs.
+        Some of them we've installed without changes, and other are customised:
+      </p>
+
+      <ol class="article__list article__list--border-y article__list--num _list-numbered">
+        <!-- 1 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">
+            Amasty_Magento 2 layered Navigation - for filtering products.
+          </p>
+          <div>
+            <p class="article__text">Additionally, we have extended the functionality of the module as follows:</p>
+            <ul class="article__list">
+              <li class="font-regular article__text">if you get on the category page, all filters are available</li>
+              <li class="font-regular article__text">
+                in the process of filtering, filters that were previously “disappeared” are now visible, although they
+                are inactive.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 2 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">BSSCommerce_Magento Multiple Store View Pricing.</p>
+          <div>
+            <p class="article__text">A group of modules was used to install price points at the page level.</p>
+          </div>
+        </li>
+
+        <!-- 3 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">
+            FME_Magento 2 Product Image Zoom. Photo Gallery & Product Image Gallery.
+          </p>
+          <div>
+            <p class="article__text">The modules are installed for the product image zoom and gallery in general.</p>
+          </div>
+        </li>
+
+        <!-- 4 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Age Array_Form Builder</p>
+          <div>
+            <p class="article__text">
+              The module allowed the client to create forms conveniently and place them on the site pages.
+            </p>
+          </div>
+        </li>
+
+        <!-- 5 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Mageplaza_Blog</p>
+          <div>
+            <p class="article__text">They used extensions to create a blog for sellers.</p>
+          </div>
+        </li>
+
+        <!-- 6 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Mageplaza_StoreSwitcher</p>
+          <div>
+            <p class="article__text">
+              Enabled us to redirect our clients from different countries to the right side and switch to the right
+              currency.
+            </p>
+          </div>
+        </li>
+
+        <!-- 7 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Mageplaza_SocialLogin</p>
+          <div>
+            <p class="article__text">The module provides client login through social networks.</p>
+          </div>
+        </li>
+        <!-- 8 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Ebizmarts_MailChimp</p>
+          <div>
+            <p class="article__text">The module that manages mail.</p>
+          </div>
+        </li>
+        <!-- 9 -->
+        <li>
+          <p class="_list-numbered__legend font-medium">Modules from Mirasvit</p>
+          <div>
+            <p class="article__text">
+              Magento 2 Improved Asynchronous Re-indexing Mirasvit, Magento 2 Full Page Cache Warmer Extension for
+              warming the cache and re-indexing from the admin,
+              <a href="#" target="_blank" class="article__text article__text--orange">Knowledge Base Extension</a>
+              for creating a seller and customer knowledge base.
+            </p>
+          </div>
+        </li>
+      </ol>
+      <!--  -->
+    </div>
+    <div class="grid-col"></div>
+  </section>
+</div>
