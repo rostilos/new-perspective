@@ -107,14 +107,16 @@
             <div class="careers-section__content">
                 <h3 class="careers-section__title">We are <br /> looking for</h3>
 
-                <div class="careers-section__collapsible careers-collapsible" data-mage-init='{"accordion":{
-                        "animate":{ "duration" :400, "easing":"easeOutCubic"},
-                        "active": [],
-                        "collapsible": true,
-                        "openedState": "active",
-                        "multipleCollapsible": true}}'>
-                    <div data-role="collapsible" class="careers-collapsible__item">
-                        <div data-role="trigger" class="careers-collapsible__trigger">
+                <div class="careers-section__collapsible careers-collapsible" x-data="{selected:null}">
+                    <!-- 1 -->
+                    <div data-role="collapsible" 
+                         class="careers-collapsible__item"
+                         :class="{'active': selected == 1}"
+                    >
+                        <div data-role="trigger" 
+                             class="careers-collapsible__trigger"
+                             @click="selected !== 1 ? selected = 1 : selected = null"
+                        >
                             <div class="careers-collapsible__header">
                                 <h4 class="careers-collapsible__title">Business Development Manager</h4>
                                 <p class="careers-collapsible__locate">Kyiv</p>
@@ -123,7 +125,11 @@
                         </div>
 
                     </div>
-                    <div data-role="content">
+                    <div data-role="content"
+                         style="" 
+                         x-ref="container1" 
+                         x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
+                    >
                         <div class="careers-collapsible__content">
                             <div class="careers-collapsible__col">
                                 <h5 class="careers-collapsible__text">Looking for a high-performing and self-motivated individual, to help us meet our customer acquisition and revenue growth targets. Will be responsible for maximizing our sales team potential, crafting sales plans. Our perfect candidate will try to understand all the business challenges of his potential client and he knows that he is not selling technical specialists, but offers comprehensive solutions for his partners.</h5>
@@ -170,9 +176,15 @@
                         </div>
                     </div>
 
-
-                    <div data-role="collapsible" class="careers-collapsible__item">
-                        <div data-role="trigger" class="careers-collapsible__trigger">
+                    <!-- 2 -->
+                    <div data-role="collapsible" 
+                         class="careers-collapsible__item"
+                         :class="{'active': selected == 2}"
+                    >
+                        <div data-role="trigger" 
+                             class="careers-collapsible__trigger"
+                             @click="selected !== 2 ? selected = 2 : selected = null"
+                        >
                             <div class="careers-collapsible__header">
                                 <h4 class="careers-collapsible__title">Business Analyst</h4>
                                 <p class="careers-collapsible__locate">Kyiv</p>
@@ -181,7 +193,11 @@
                         </div>
 
                     </div>
-                    <div data-role="content">
+                    <div data-role="content"
+                         style="" 
+                         x-ref="container2" 
+                         x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+                    >
                         <div class="careers-collapsible__content">
                             <div class="careers-collapsible__col">
                                 <h5 class="careers-collapsible__text">
@@ -238,9 +254,15 @@
                         </div>
                     </div>
 
-
-                    <div data-role="collapsible" class="careers-collapsible__item">
-                        <div data-role="trigger" class="careers-collapsible__trigger">
+                    <!-- 3 -->
+                    <div data-role="collapsible" 
+                         class="careers-collapsible__item"
+                         :class="{'active': selected == 3}"
+                    >
+                        <div data-role="trigger" 
+                             class="careers-collapsible__trigger"
+                             @click="selected !== 3 ? selected = 3 : selected = null"
+                        >
                             <div class="careers-collapsible__header">
                                 <h4 class="careers-collapsible__title">Project Manager</h4>
                                 <p class="careers-collapsible__locate">Kyiv</p>
@@ -249,7 +271,11 @@
                         </div>
 
                     </div>
-                    <div data-role="content">
+                    <div data-role="content"
+                         style="" 
+                         x-ref="container3" 
+                         x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
+                    >
                         <div class="careers-collapsible__content">
                             <div class="careers-collapsible__col">
                                 <h5 class="careers-collapsible__text">
@@ -308,9 +334,15 @@
                         </div>
                     </div>
 
-
-                    <div data-role="collapsible" class="careers-collapsible__item">
-                        <div data-role="trigger" class="careers-collapsible__trigger">
+                    <!-- 4 -->
+                    <div data-role="collapsible" 
+                         class="careers-collapsible__item"
+                         :class="{'active': selected == 4}"
+                         >
+                        <div data-role="trigger" 
+                             class="careers-collapsible__trigger"
+                             @click="selected !== 4 ? selected = 4 : selected = null"
+                        >
                             <div class="careers-collapsible__header">
                                 <h4 class="careers-collapsible__title">Magento BackEnd Developer</h4>
                                 <p class="careers-collapsible__locate">Uzhhorod, Shostka, Kryvyi Rih, Cherkasy</p>
@@ -319,7 +351,11 @@
                         </div>
 
                     </div>
-                    <div data-role="content">
+                    <div data-role="content"
+                         style="" 
+                         x-ref="container4" 
+                         x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''"
+                    >
                         <div class="careers-collapsible__content">
                             <div class="careers-collapsible__col">
                                 <h5 class="careers-collapsible__text">

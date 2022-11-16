@@ -320,11 +320,16 @@
         traffic with AI
       </p>
       <!-- ======================= -->
-      <div class="article__dropdowns-block">
-        <div class="article__dropdowns-block__item">
+      <div class="article__dropdowns-block" x-data="{selected:null}">
+        <div class="article__dropdowns-block__item"
+             :class="{'_active' : selected == 1 }" 
+             @click="selected !== 1 ? selected = 1 : selected = null"
+        >
           <p>Smart insights to improve your marketing</p>
         </div>
-        <div class="article__dropdowns-block__content">
+        <div class="article__dropdowns-block__content" 
+             x-ref="container1"
+             x-show="selected == 1" >
           <p>
             Spending a fortune on advertising, but have no idea what's converting? The new Google Analytics will give
             you the necessary insights you need to be ready for what’s next. By applying Google’s advanced machine
@@ -333,20 +338,28 @@
             to use what you learn to improve the ROI of your marketing and analyzed your site like never before.
           </p>
         </div>
-        <div class="article__dropdowns-block__item">
+        <div class="article__dropdowns-block__item"
+             :class="{'_active' : selected == 2 }" 
+             @click="selected !== 2 ? selected = 2 : selected = null">
           <p>Better tracking your customers journey</p>
         </div>
-        <div class="article__dropdowns-block__content">
+        <div class="article__dropdowns-block__content"
+             x-ref="container2"
+             x-show="selected == 2" >
           <p>
             Instead of fragmented information based on individual devices and platforms, Google Analytics 4 provides
             customer-centric measurement. Now You can learn more about your customers at every stage of their lifetime,
             from acquisition to conversion to mobile app usage, regardless of how they interact with your brand.
           </p>
         </div>
-        <div class="article__dropdowns-block__item">
+        <div class="article__dropdowns-block__item"
+             :class="{'_active' : selected == 3 }" 
+             @click="selected !== 3 ? selected = 3 : selected = null">
           <p>Redefinding time-based events</p>
         </div>
-        <div class="article__dropdowns-block__content">
+        <div class="article__dropdowns-block__content"
+             x-ref="container3"
+             x-show="selected == 3" >
           <p>
             Despite providing great insight into time spent on pages and sessions, Universal Analytics often fails to
             provide a deeper understanding of more specific actions you want your users to take on your site, such as
@@ -355,10 +368,14 @@
             takes for a user to watch your video, read the Category Page, then complete the Checkout Process.
           </p>
         </div>
-        <div class="article__dropdowns-block__item">
+        <div class="article__dropdowns-block__item"
+             :class="{'_active' : selected == 4 }" 
+             @click="selected !== 4 ? selected = 4 : selected = null">
           <p>Next-level retargeting</p>
         </div>
-        <div class="article__dropdowns-block__content">
+        <div class="article__dropdowns-block__content"
+             x-ref="container4" 
+             x-show="selected == 4">
           <p>
             Retargeting before GA4 was still extremely efficient, but lacked the dynamism of excluding certain users
             (temporarily or permanently) from being retargeted. With GA4, you can more efficiently use retargeting to,
@@ -366,10 +383,14 @@
             eligible for a new set of ads.
           </p>
         </div>
-        <div class="article__dropdowns-block__item">
+        <div class="article__dropdowns-block__item"
+             :class="{'_active' : selected == 5 }" 
+             @click="selected !== 5 ? selected = 5 : selected = null" w>
           <p>User acquisition report</p>
         </div>
-        <div class="article__dropdowns-block__content">
+        <div class="article__dropdowns-block__content"
+             x-ref="container5"
+             x-show="selected == 5" >
           <p>
             Understanding which channels are driving new customers, as well as engagement and retention reports, will
             help you better understand what these customers do after they have purchased from you.
@@ -409,7 +430,7 @@
           <span class="_button__overlay _button__overlay--hover"></span>
           <span class="_button__overlay _button__overlay--active"></span>
         </button>
-        <form id="contact-us_ga4-2" 
+        <form id="form_contact-us_ga4-2" 
               class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
               :class="{'show' : openForm}"
               @submit="submitForm($event)"
