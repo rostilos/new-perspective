@@ -1,21 +1,21 @@
 <div class="single-work-page">
     <div class="single-work-page__container _container">
-        <h2 class="single-work-page__title _page-title">
+        <h2 class="h2 single-work-page__title _page-title">
             <span class="_page-title--orange">Vodafone</span> online store
         </h2>
 
         <section class="single-work-page__top single-work-top">
             <div class="single-work-top__body _grid-2-col">
                 <div class="single-work-top__label _section-label ">
-                    <h5>Development</h5>
-                    <h5>Integrations</h5>
-                    <h5>Support</h5>
+                    <h5 class="h5">Development</h5>
+                    <h5 class="h5">Integrations</h5>
+                    <h5 class="h5">Support</h5>
                     <a href="" class="single-work-top__link single-work-top__link--desktop"></a>
                 </div>
 
                 <div class="single-work-top__content">
-                    <h5 class="single-work-top__text">Vodafone online store is an online platform of the leading mobile operator Vodafone Ukraine, which serves more than 19 million subscribers.</h5>
-                    <h5 class="single-work-top__text">The company is committed to providing customers with an equal opportunity to access technology and the latest mobile services. For this, along with the development of high-quality 3G and 4G coverage, the company provides affordable conditions for the acquisition of modern gadgets in Vodafone stores</h5>
+                    <h5 class="h5 single-work-top__text">Vodafone online store is an online platform of the leading mobile operator Vodafone Ukraine, which serves more than 19 million subscribers.</h5>
+                    <h5 class="h5 single-work-top__text">The company is committed to providing customers with an equal opportunity to access technology and the latest mobile services. For this, along with the development of high-quality 3G and 4G coverage, the company provides affordable conditions for the acquisition of modern gadgets in Vodafone stores</h5>
                 </div>
 
                 <a href="" class="single-work-top__link single-work-top__link--mobile"></a>
@@ -30,7 +30,7 @@
             <div class="single-work-goals__body _grid-3-col">
                 <div class="single-work-goals__label _section-label">Goals</div>
                 <div class="single-work-goals__col">
-                    <h3 class="single-work-goals__title">The main task</h3>
+                    <h3 class="h3 single-work-goals__title">The main task</h3>
                     <ul class="single-work-goals__list _list">
                         <li>To develop an online store for the leading mobile operator Vodafone Ukraine</li>
                         <li>Make a convenient filter by technical parameters and characteristics;</li>
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="single-work-goals__col">
-                    <h3 class="single-work-goals__title">Result</h3>
+                    <h3 class="h3 single-work-goals__title">Result</h3>
                     <div class="single-work-goals__text">
                         <p>The following pages have been developed: checkout, catalog, menu (4 levels for 130 + thousand products) also a header and a footer, product card with all states.</p>
                         <p>We collected user experience across all pages, as well as customer feedback, and made changes promptly.</p>
@@ -57,7 +57,7 @@
                 <div class="single-work-homepage__label _section-label">Homepage</div>
 
                 <div class="single-work-homepage__content single-work-homepage__content--wide">
-                    <h3 class="single-work-homepage__title">Homepage is the <br /> soul of a brand</h3>
+                    <h3 class="h3 single-work-homepage__title">Homepage is the <br /> soul of a brand</h3>
                     <p class="single-work-homepage__text">Home page is an important navigation element. Thanks to the home page, users can go to the required section and in which case always return to the "starting point". And this is especially felt when visiting a store from a mobile device, when the menu is not so clear and it is the main one that is used to go to the desired section.</p>
 
                     <ul class="single-work-homepage__list single-work-homepage__list--cols _list">
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="single-work-homepage__content single-work-homepage__content--second">
-                    <h3 class="single-work-homepage__title">Elasticsearch</h3>
+                    <h3 class="h3 single-work-homepage__title">Elasticsearch</h3>
                     <p class="single-work-homepage__text">Convert searches to sales with Elastic Search. Instantly show customers the most relevant search results, helping them find what they're looking for faster.</p>
                     <ul class="single-work-homepage__list _list">
                         <li>
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="single-work-homepage__content single-work-homepage__content--third">
-                    <h3 class="single-work-homepage__title">Mega menu</h3>
+                    <h3 class="h3 single-work-homepage__title">Mega menu</h3>
                     <p class="single-work-homepage__text">We have improved the quality of customer service by providing fast and flexible access to all pages of the online store. Expand the possibilities of your store by creating an attractive and dynamic navigation menu.</p>
                     <ul class="single-work-homepage__list _list">
                         <li>
@@ -146,7 +146,7 @@
                 <div class="single-work-catalog__label _section-label">Catalog</div>
 
                 <div class="single-work-catalog__content">
-                    <h3 class="single-work-catalog__title">Catalog Page</h3>
+                    <h3 class="h3 single-work-catalog__title">Catalog Page</h3>
                     <ul class="single-work-catalog__list single-work-list _list">
                         <li>
                             <div class=" _list__legend">Catalog filtering</div>
@@ -187,7 +187,7 @@
             <div class="single-work-product__body _grid-2-col">
                 <div class="single-work-product__label _section-label">Product page</div>
                 <div class="single-work-product__content">
-                    <h3 class="single-work-product__title">product pages that motivate shoppers to buy</h3>
+                    <h3 class="h3 single-work-product__title">product pages that motivate shoppers to buy</h3>
 
                     <div class="single-work-product__text">
                         <p>When designing an online store, a lot of focus goes into the homepage—after all, it’s the first thing visitors see when they arrive. But the real goal of any ecommerce website is sales, and there’s no way you’ll achieve that without stellar product pages</p>
@@ -219,14 +219,14 @@
             <div class="single-work-more__body _grid-3-col">
                 <div class="single-work-more__label _section-label">More pages</div>
                 <div class="single-work-more__col">
-                    <h3 class="single-work-more__title">Portal page </h3>
+                    <h3 class="h3 single-work-more__title">Portal page </h3>
                     <p class="single-work-more__text">Ability to create a page with a page builder.</p>
                     <div class="single-work-page__image single-work-more__image ">
                         <img loading="lazy" src='<?php echo $this->getViewFileUrl('images/test/vod-more-1.png'); ?>' alt=”Demo” />
                     </div>
                 </div>
                 <div class="single-work-more__col">
-                    <h3 class="single-work-more__title">All promotions</h3>
+                    <h3 class="h3 single-work-more__title">All promotions</h3>
                     <p class="single-work-more__text">The ability to filter, view products and conditions of the promotion.</p>
                     <div class="single-work-page__image single-work-more__image ">
                         <img loading="lazy" src='<?php echo $this->getViewFileUrl('images/test/vod-more-2.png'); ?>' alt=”Demo” />
@@ -239,7 +239,7 @@
             <div class="single-work-bag__body _grid-2-col">
                 <div class="single-work-bag__label _section-label">Shopping bag</div>
                 <div class="single-work-bag__content">
-                    <h3 class="single-work-bag__title">Why shopping carts <br /> are important</h3>
+                    <h3 class="h3 single-work-bag__title">Why shopping carts <br /> are important</h3>
                     <p>Shopping carts bridge the gap between shopping and buying, so having the best shopping cart software is extremely important on your website.</p>
                     <p>For the Vodafon project, we have developed a full-fledged cart page for cross-selling.</p>
                     <p>The main items of the shopping cart:</p>
@@ -287,7 +287,7 @@
 
                 <div class="single-work-checkout__content">
                     <div class="single-work-checkout__cell">
-                        <h3 class="single-work-checkout__title">Effective Checkout Page</h3>
+                        <h3 class="h3 single-work-checkout__title">Effective Checkout Page</h3>
                         <p class="single-work-checkout__text">The checkout developed by us for Vodafon has an attractive design, easy to use, simple, clear, functional and safe.</p>
                         <ul class="single-work-checkout__list _list">
                             <li>
@@ -338,7 +338,7 @@
                 <div class="single-work-dashboard__label _section-label">Dashboard</div>
 
                 <div class="single-work-dashboard__content single-work-dashboard__content--wide">
-                    <h3 class="single-work-dashboard__title">Customer Accounts</h3>
+                    <h3 class="h3 single-work-dashboard__title">Customer Accounts</h3>
                     <p class="single-work-dashboard__text">A convenient personal account helps to build relationships with regular customers, increases loyalty, stimulates sales and will relieve the support service. To implement the functionality of the account, you need to register as quickly as possible and draw up a number of nuances, which we will consider below.</p>
                 </div>
 
@@ -391,7 +391,7 @@
             <div class="single-work-functionality__body _grid-3-col">
                 <div class="single-work-functionality__label _section-label">Functional</div>
                 <div class="single-work-functionality__col">
-                    <h3 class="single-work-functionality__title">Not visual functional</h3>
+                    <h3 class="h3 single-work-functionality__title">Not visual functional</h3>
                     <p>Online booking of a workplace in coworking with calculation of cost for each hour. Interactive map with the choice of the necessary place in the hall.</p>
                 </div>
                 <div class="single-work-functionality__col">
@@ -421,7 +421,7 @@
         <section class="single-work-page__adaptive single-work-adaptive">
             <div class="single-work-adaptive__body _grid-3-col">
                 <div class="single-work-adaptive__label _section-label">Adaptive</div>
-                <h3 class="single-work-adaptive__title">Ecommerce Goes Mobile</h3>
+                <h3 class="h3 single-work-adaptive__title">Ecommerce Goes Mobile</h3>
                 <p>Of recent years, mobile devices have also become a popular medium for online shopping — and that’s where mobile commerce steps in. Mobile shopping is now possible through mobile optimized websites</p>
 
                 <ul class="single-work-adaptive__list _list">
