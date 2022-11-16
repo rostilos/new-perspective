@@ -1,8 +1,8 @@
 <div class="single-work-page">
     <div class="single-work-page__container _container">
-        <h2 class="h2 single-work-page__title _page-title">
+        <h1 class="h2 single-work-page__title _page-title">
             <span class="_page-title--orange">Vodafone</span> online store
-        </h2>
+        </h1>
 
         <section class="single-work-page__top single-work-top">
             <div class="single-work-top__body _grid-2-col">
