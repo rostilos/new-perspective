@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @font-face {
+        font-family: Gilroy;
+        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Light.woff2")
+          format("woff2");
+        font-weight: 300;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Gilroy;
+        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Regular.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Gilroy;
+        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Medium.woff2")
+          format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: Gilroy;
+        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-SemiBold.woff2")
+          format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: block;
+      }
+      a {
+        text-decoration: none;
+        transition: 0.4s all ease-in-out;
+        color: inherit;
+      }
+      a:hover {
+        color: #d85026;
+      }
+      a.read-more {
+        display: flex;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        align-items: center;
+      }
+      a.read-more:after {
+        content: "";
+        display: block;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.7782 6.01653C12.846 6.08428 12.884 6.17616 12.884 6.27197C12.884 6.36778 12.846 6.45967 12.7782 6.52742L9.7129 9.59274C9.64516 9.66049 9.55327 9.69855 9.45746 9.69855C9.36165 9.69855 9.26977 9.66049 9.20202 9.59274C9.13427 9.52499 9.09621 9.43311 9.09621 9.3373C9.09621 9.24149 9.13427 9.1496 9.20202 9.08185L11.6507 6.63317L1.28326 6.63368C1.23576 6.63368 1.18873 6.62433 1.14484 6.60615C1.10096 6.58797 1.06108 6.56133 1.02749 6.52774C0.993907 6.49415 0.967264 6.45428 0.949086 6.41039C0.930909 6.36651 0.921553 6.31947 0.921553 6.27197C0.921553 6.22447 0.930909 6.17744 0.949086 6.13355C0.967264 6.08967 0.993907 6.04979 1.02749 6.01621C1.06108 5.98262 1.10096 5.95598 1.14484 5.9378C1.18873 5.91962 1.23576 5.91026 1.28326 5.91026L11.6507 5.91077L9.20202 3.46209C9.13427 3.39434 9.09621 3.30246 9.09621 3.20665C9.09621 3.11084 9.13427 3.01895 9.20202 2.9512C9.26977 2.88346 9.36165 2.8454 9.45746 2.8454C9.55327 2.8454 9.64516 2.88346 9.7129 2.9512L12.7782 6.01653Z' fill='url(%23paint0_linear_3462_16444)' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_3462_16444' x1='9.04211' y1='2.7632' x2='3.17692' y2='8.67873' gradientUnits='userSpaceOnUse' %3E%3Cstop stop-color='%23E17139' /%3E%3Cstop offset='1' stop-color='%23CD4B3A' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      hr {
+        margin: 0;
+        padding: 0;
+        background-color: #949494;
+        color: #949494;
+      }
+      body {
+        background-color: #fff;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        color: #303030;
+      }
+      .text-xs {
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .text-sm {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .text-base {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .text-lg {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .items-end {
+        align-items: end;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .relative {
+        position: relative;
+      }
+      .orange-button {
+        display: block;
+        text-align: center;
+        background: linear-gradient(269.76deg, #e17139 4.09%, #cd4b3a 99.75%);
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 24px;
+        border-radius: 30px;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+        overflow: hidden;
+        width: fit-content;
+      }
+      .orange-button::after {
+        content: attr(text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-color: #3d3c3c;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        color: #fff;
+        transition: 0.3s all ease-in-out;
+        border-radius: 30px;
+      }
+      .orange-button:hover {
+        color: #fff;
+        border-color: #3d3c3c;
+      }
+      .orange-button:hover:after {
+        transform: translateX(0);
+      }
+      .updates-square {
+        box-sizing: border-box;
+        padding: 62px 8px 12px 18px;
+        flex: 0 0 33.3333%;
+        border: 1px solid #949494;
+        border-top: none;
+      }
+      .updates-square__icon {
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin-left: 8px;
+      }
+      .updates-square__number {
+        color: #e17139;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1em;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      @media screen and (max-width: 480px) {
+        h1 {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="page-wrapper relative"
+      style="box-sizing: border-box; max-width: 600px; margin: 0 auto; background: #fff"
+    >
+      <table style="width: 100%">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td
+              align="left"
+              style="
+                background-image: url('https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-1.png?raw=true');
+                background-position: right;
+                background-repeat: no-repeat;
+                padding: 30px 40px;
+              "
+            >
+              <div class="header__logo">
+                <a href="https://perspectiveteam.com">
+                  <img
+                    src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/logo.png?raw=true"
+                    alt="logotype"
+                  />
+                </a>
+              </div>
+              <div style="max-width: 445px">
+                <h1
+                  style="
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 34px;
+                    line-height: 40px;
+                    max-width: 270.5px;
+                  "
+                >
+                  How to Run eCommerce from Your Perspective?
+                </h1>
+                <p class="text-lg" style="font-weight: 400">
+                  We're happy to introduce our first newsletter <br />
+                  digest with our latest Magento stories
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              align="right"
+              style="
+                background-image: url('https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-2.png?raw=true');
+                background-position: 50px left;
+                background-repeat: no-repeat;
+                padding: 30px 40px;
+              "
+            >
+              <div style="max-width: 250px; margin-top: 110px; text-align: left">
+                <h2 style="font-weight: 500; font-size: 22px; line-height: 32px; text-transform: uppercase">
+                  E-Commerce Berlin
+                </h2>
+                <p class="text-base">
+                  Perspective Team will attend <br />
+                  the Europe's largest eCommerce event of 2022
+                </p>
+
+                <a class="orange-button" href="" text="Schedule a meeting" style="margin-top: 24px">
+                  Schedule a meeting
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div>
+                <h3
+                  style="
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin-top: 130px;
+                    margin-bottom: 32px;
+                  "
+                >
+                  Stories you may have missed
+                </h3>
+
+                <hr />
+
+                <div class="flex" style="margin: 32px 0">
+                  <img
+                    src="https://perspectiveteam.com/static/frontend/Perspective/default/en_US/Mirasvit_Blog/images/article/image%20118.png"
+                    alt="article-img"
+                    width="104"
+                    height="80"
+                    style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                  />
+                  <div>
+                    <p class="text-xs" style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px">
+                      December 23, 2022
+                    </p>
+                    <a
+                      href="https://perspectiveteam.com/blog/headless-commerce:-what-happened-to-its-head-and-why-it-is-better-without-it"
+                      class="text-base"
+                      style="line-height: 28px; font-weight: 500; color: inherit"
+                    >
+                      What happened to its head and why it is better without it?
+                    </a>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="flex" style="margin: 32px 0">
+                  <img
+                    src="https://perspectiveteam.com/static/frontend/Perspective/default/en_US/Mirasvit_Blog/images/article/gtm/banner.jpg"
+                    alt="article-img"
+                    width="104"
+                    height="80"
+                    style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                  />
+                  <div>
+                    <p class="text-xs" style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px">
+                      December 23, 2022
+                    </p>
+                    <a
+                      href="https://perspectiveteam.com/services/implementation-google-analytics-4-on-magento-2-with-gtm"
+                      class="text-base"
+                      style="line-height: 28px; font-weight: 500; color: inherit"
+                    >
+                      Implementation Google Analytics 4 on Magento 2 with GTM
+                    </a>
+                  </div>
+                </div>
+
+                <hr />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <div>
+                <h3
+                  style="
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin-top: 130px;
+                    margin-bottom: 32px;
+                  "
+                >
+                  Magento and E-Commerce Updates
+                </h3>
+
+                <hr />
+
+                <div style="margin: 16px 0; text-align: left">
+                  <h4 style="font-weight: 500; font-size: 16px; line-height: 22px">
+                    Adobe courts SMBs with the help of Etsy, Meta, Mastercard
+                  </h4>
+                  <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                    Adobe on Monday shared with ZDNET its aggressive new efforts to reach small and medium-sized
+                    businesses on...
+                  </p>
+                  <a class="read-more" href="">Read more</a>
+                </div>
+
+                <hr />
+                <div style="margin: 16px 0; text-align: left">
+                  <h4 style="font-weight: 500; font-size: 16px; line-height: 22px">
+                    Adobe patches critical Magento XSS that puts sites at takeover risk
+                  </h4>
+                  <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                    E-commerce platform admins should update ASAP
+                  </p>
+                  <a class="read-more" href="">Read more</a>
+                </div>
+
+                <hr />
+                <div style="margin: 16px 0; text-align: left">
+                  <h4 style="font-weight: 500; font-size: 16px; line-height: 22px">
+                    E-Commerce Technology Market Size to Grow by USD 10.57 Bn, North America to be Largest Contributor
+                    to Market Growth - Technavio
+                  </h4>
+                  <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                    North America to be Largest Contributor to Market Growth - Technavio
+                  </p>
+                  <a class="read-more" href="">Read more</a>
+                </div>
+
+                <hr />
+                <div style="margin: 16px 0; text-align: left">
+                  <h4 style="font-weight: 500; font-size: 16px; line-height: 22px">
+                    A Beginner's Guide To Content Management Systems For E-Commerce
+                  </h4>
+                  <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                    President & CEO of Corberry Digital Marketing Agency, a full-service digital marketing agency
+                    offering web design, SEO, PPC...
+                  </p>
+                  <a class="read-more" href="">Read more</a>
+                </div>
+
+                <hr />
+                <div style="margin: 16px 0; text-align: left">
+                  <h4 style="font-weight: 500; font-size: 16px; line-height: 22px">
+                    TikTok to launch live shopping in US using outsourced technology
+                  </h4>
+                  <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                    Partnership with TalkShopLive comes after in-house experiments with ecommerce in UK struggled to
+                    take off
+                  </p>
+                  <a class="read-more" href="">Read more</a>
+                </div>
+                <hr />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <div class="flex justify-center flex-col">
+                <h3
+                  style="
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin-top: 54px;
+                    margin-bottom: 32px;
+                  "
+                >
+                  Corporate Updates
+                </h3>
+
+                <div style="text-align: left">
+                  <div
+                    class="flex relative items-center"
+                    style="
+                      color: #fff;
+                      min-height: 176px;
+                      background: linear-gradient(269.76deg, #e17139 4.09%, #cd4b3a 99.75%);
+                    "
+                  >
+                    <p style="max-width: 262px; padding: 24px" class="text-base">
+                      Perspective's website is now on the new domain, in order to strengthen its international coverage
+                    </p>
+                    <img
+                      style="position: absolute; bottom: 0; right: 0"
+                      src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/3926908.png?raw=true"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="flex">
+                    <div class="updates-square" style="border-right: 0">
+                      <div class="updates-square__number">
+                        4
+                        <svg
+                          class="updates-square__icon"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 25 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.2382 15.644C11.2382 16.2847 11.1093 16.894 10.8514 17.4722C10.5936 18.0503 10.2225 18.5581 9.73816 18.9956V24.3628L6.73816 22.8628L3.73816 24.3628V18.9956C3.2616 18.5659 2.89441 18.062 2.6366 17.4839C2.37878 16.9058 2.24597 16.2925 2.23816 15.644C2.23816 15.0269 2.35535 14.4448 2.58972 13.8979C2.8241 13.3511 3.14441 12.8745 3.55066 12.4683C3.95691 12.062 4.43347 11.7378 4.98035 11.4956C5.52722 11.2534 6.11316 11.1362 6.73816 11.144C7.35535 11.144 7.93738 11.2612 8.48425 11.4956C9.03113 11.73 9.50769 12.0542 9.91394 12.4683C10.3202 12.8823 10.6405 13.3589 10.8749 13.8979C11.1093 14.437 11.2303 15.019 11.2382 15.644ZM6.73816 18.644C7.15222 18.644 7.53894 18.5659 7.89832 18.4097C8.25769 18.2534 8.578 18.0386 8.85925 17.7651C9.1405 17.4917 9.35535 17.1753 9.50378 16.8159C9.65222 16.4565 9.73035 16.0659 9.73816 15.644C9.73816 15.23 9.66003 14.8433 9.50378 14.4839C9.34753 14.1245 9.13269 13.8042 8.85925 13.5229C8.58582 13.2417 8.26941 13.0269 7.91003 12.8784C7.55066 12.73 7.16003 12.6519 6.73816 12.644C6.3241 12.644 5.93738 12.7222 5.578 12.8784C5.21863 13.0347 4.89832 13.2495 4.61707 13.5229C4.33582 13.7964 4.12097 14.1128 3.97253 14.4722C3.8241 14.8315 3.74597 15.2222 3.73816 15.644C3.73816 16.0581 3.81628 16.4448 3.97253 16.8042C4.12878 17.1636 4.34363 17.4839 4.61707 17.7651C4.8905 18.0464 5.20691 18.2612 5.56628 18.4097C5.92566 18.5581 6.31628 18.6362 6.73816 18.644ZM8.23816 19.8862C7.7616 20.0581 7.28113 20.144 6.79675 20.144C6.24988 20.144 5.73035 20.0581 5.23816 19.8862V21.9253L6.73816 21.1753L8.23816 21.9253V19.8862ZM23.2382 7.07764V24.644H11.2382V23.144H21.7382V8.14404H15.7382V2.14404H5.23816V9.45654C4.98035 9.51904 4.72644 9.59717 4.47644 9.69092C4.22644 9.78467 3.98035 9.89404 3.73816 10.019V0.644043H16.8046L23.2382 7.07764ZM20.6718 6.64404L17.2382 3.21045V6.64404H20.6718Z"
+                            fill="url(#paint0_linear_3462_16569)"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_3462_16569"
+                              x1="22.4113"
+                              y1="9.96383"
+                              x2="2.23539"
+                              y2="10.0393"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#E17139" />
+                              <stop offset="1" stop-color="#CD4B3A" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+
+                      <p class="text-base" style="margin-top: 16px">Added X new certificates</p>
+                    </div>
+                    <div class="updates-square" style="border-right: 0">
+                      <div class="updates-square__number">
+                        3
+                        <svg
+                          class="updates-square__icon"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 25 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.80318 21.9534C1.80318 21.3571 2.25062 21.1704 2.4295 21.0876L9.01637 17.9792C9.4885 17.7624 9.81437 17.3154 9.87775 16.7998C9.9415 16.2842 9.73337 15.7723 9.328 15.4472C7.76987 14.1962 7.04387 11.4467 7.04387 9.98192V6.23417C7.04387 4.66705 9.772 2.48755 12.2969 2.48755C14.8439 2.48755 17.545 4.63292 17.545 6.23417V9.9823C17.545 11.4249 16.945 14.1849 15.3359 15.4517C15.1341 15.6105 14.9764 15.8185 14.8781 16.0557C14.7797 16.293 14.7439 16.5515 14.7741 16.8065C14.8356 17.3259 15.163 17.7748 15.6377 17.993L17.8859 19.0595L18.2564 17.5625L16.264 16.6303C18.3419 14.9949 19.045 11.7826 19.045 9.98228V6.23413C19.045 3.75163 15.6085 0.987549 12.2969 0.987549C8.98487 0.987549 5.54382 3.75167 5.54382 6.23413V9.98225C5.54382 11.6199 6.2912 14.9334 8.38897 16.6171L1.8021 19.7255C1.8021 19.7255 0.303223 20.3934 0.303223 21.2248V23.4755C0.303223 24.3039 0.974473 24.9748 1.80205 24.9748H18.3002V23.4748L1.8032 23.4755V21.9534H1.80318ZM23.5502 20.4812H21.3002V18.2312C21.3002 17.8168 20.9642 17.4812 20.5502 17.4812C20.1362 17.4812 19.8002 17.8168 19.8002 18.2312V20.4812H17.5502C17.1362 20.4812 16.8002 20.8168 16.8002 21.2312C16.8002 21.6452 17.1362 21.9812 17.5502 21.9812H19.8002V24.2312C19.8002 24.6452 20.1362 24.9812 20.5502 24.9812C20.9642 24.9812 21.3002 24.6452 21.3002 24.2312V21.9812H23.5502C23.9642 21.9812 24.3002 21.6452 24.3002 21.2312C24.3002 20.8168 23.9646 20.4812 23.5502 20.4812Z"
+                            fill="url(#paint0_linear_3462_16574)"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_3462_16574"
+                              x1="23.3554"
+                              y1="10.3049"
+                              x2="0.300159"
+                              y2="10.4034"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#E17139" />
+                              <stop offset="1" stop-color="#CD4B3A" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+
+                      <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
+                    </div>
+                    <div class="updates-square">
+                      <div class="updates-square__number">
+                        5
+                        <svg
+                          class="updates-square__icon"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 25 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.39356 7.04944H15.9324V8.00332H6.39356V7.04944ZM6.39356 11.8189H11.2142V12.7727H6.39356V11.8189ZM15.5616 9.43414H6.39356V10.388H14.6083L15.5616 9.43414ZM9.25103 19.4928C9.41139 19.6767 9.61492 19.8179 9.84333 19.9036C10.0718 19.9894 10.3179 20.017 10.5596 19.9841H15.2116C15.3223 19.9841 15.4284 19.9401 15.5067 19.8619C15.585 19.7836 15.6289 19.6774 15.6289 19.5668C15.6289 19.4561 15.585 19.3499 15.5067 19.2717C15.4284 19.1934 15.3223 19.1494 15.2116 19.1494H10.5596C10.0165 19.1399 10.1131 18.6683 10.1894 18.5223C10.2889 18.3508 10.3664 18.1676 10.4201 17.9768C10.4558 17.8232 10.439 17.6622 10.3724 17.5194C10.3059 17.3765 10.1934 17.2601 10.0529 17.1886C9.82721 17.0869 9.57442 17.062 9.33323 17.1177C9.09205 17.1734 8.87575 17.3065 8.71745 17.4968C8.51237 17.7085 8.2274 18.0322 7.95435 18.347C8.12307 17.6858 8.34186 16.8375 8.55649 16.01C8.61799 15.8214 8.60575 15.6166 8.52222 15.4367C8.4387 15.2568 8.2901 15.1153 8.10637 15.0406C7.90291 14.9708 7.68053 14.9807 7.48413 15.0685C7.28773 15.1562 7.13192 15.3152 7.04816 15.5134C6.79061 16.0088 4.75169 19.4255 4.73142 19.46C4.70331 19.5071 4.68475 19.5592 4.67679 19.6135C4.66883 19.6677 4.67163 19.7229 4.68502 19.7761C4.69842 19.8292 4.72215 19.8792 4.75487 19.9232C4.78759 19.9672 4.82864 20.0043 4.87569 20.0324C4.97072 20.0891 5.08441 20.1058 5.19174 20.0788C5.29907 20.0517 5.39126 19.9831 5.44802 19.8881C5.52433 19.7599 7.1519 17.0336 7.6652 16.1232C7.27888 17.6137 6.85321 19.2722 6.82817 19.4213C6.79999 19.5309 6.80845 19.6467 6.85226 19.751C6.89608 19.8553 6.97284 19.9424 7.07082 19.999C7.17995 20.0531 7.30399 20.0694 7.42338 20.0452C7.54277 20.021 7.65071 19.9578 7.73019 19.8654C7.8053 19.7975 7.946 19.6359 8.30073 19.224C8.63123 18.8353 8.96973 18.4534 9.31602 18.0787C9.44598 17.9416 9.52468 18.0024 9.44837 18.1371C9.2991 18.3258 9.20229 18.5505 9.16774 18.7885C9.1332 19.0266 9.16213 19.2696 9.25163 19.4928H9.25103Z"
+                            fill="url(#paint0_linear_3462_16579)"
+                          />
+                          <path
+                            d="M19.4449 13.2468V21.6473H3.44491V2.98064H19.4449V6.30931L20.3316 5.42264C20.4681 5.28802 20.6177 5.16742 20.7782 5.06264V2.31397C20.7782 2.13716 20.708 1.96759 20.583 1.84257C20.458 1.71755 20.2884 1.64731 20.1116 1.64731H2.77824C2.60143 1.64731 2.43186 1.71755 2.30683 1.84257C2.18181 1.96759 2.11157 2.13716 2.11157 2.31397V22.314C2.11157 22.4908 2.18181 22.6604 2.30683 22.7854C2.43186 22.9104 2.60143 22.9806 2.77824 22.9806H20.1116C20.2884 22.9806 20.458 22.9104 20.583 22.7854C20.708 22.6604 20.7782 22.4908 20.7782 22.314V12.1091C20.3316 12.5703 19.8918 12.9701 19.4449 13.2468Z"
+                            fill="url(#paint1_linear_3462_16579)"
+                          />
+                          <path
+                            d="M22.3743 7.93799C22.5094 7.76602 22.5375 7.5002 22.4903 7.32816C22.4431 7.15613 22.2542 6.8963 22.0464 6.80359C21.9052 6.67585 21.663 6.61528 21.3874 6.72292C21.0756 6.79786 20.6675 7.16909 20.4878 7.36271L13.8388 13.8321L13.5767 15.1734C13.5719 15.1912 13.5744 15.2088 13.5839 15.2241C13.5935 15.2394 13.6097 15.2518 13.6308 15.2601C13.6519 15.2683 13.677 15.2721 13.7034 15.2708C13.7299 15.2696 13.7565 15.2635 13.7805 15.2531L15.0957 14.873L21.8298 8.49649C21.8148 8.48101 21.8535 8.50586 21.8298 8.49649L22.3743 7.93799Z"
+                            fill="url(#paint2_linear_3462_16579)"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_3462_16579"
+                              x1="15.489"
+                              y1="12.114"
+                              x2="4.67088"
+                              y2="12.1539"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#E17139" />
+                              <stop offset="1" stop-color="#CD4B3A" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_3462_16579"
+                              x1="20.0433"
+                              y1="9.93156"
+                              x2="2.10911"
+                              y2="9.99862"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#E17139" />
+                              <stop offset="1" stop-color="#CD4B3A" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint2_linear_3462_16579"
+                              x1="22.4581"
+                              y1="9.22238"
+                              x2="12.7774"
+                              y2="11.2273"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#E17139" />
+                              <stop offset="1" stop-color="#CD4B3A" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div>
+                <h4
+                  style="
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-top: 58px;
+                    margin-bottom: 24px;
+                  "
+                >
+                  Ready to make next step?
+                </h4>
+
+                <a class="orange-button" href="" text="Get in touch now" style="margin: 0 auto 54px">
+                  <span class="text-base">Get in touch now</span>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <td>test</td>
+        </tfoot>
+      </table>
+
+    </div>
+
+    <footer></footer>
+  </body>
+</html>
