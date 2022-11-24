@@ -40,6 +40,12 @@
         font-style: normal;
         font-display: block;
       }
+      table,
+      tr,
+      td,
+      th {
+        border-spacing: 0;
+      }
       a {
         text-decoration: none;
         transition: 0.4s all ease-in-out;
@@ -136,6 +142,7 @@
         box-sizing: border-box;
         padding: 62px 8px 12px 18px;
         flex: 0 0 33.3333%;
+        width: 33%;
         border: 1px solid #949494;
         border-top: none;
       }
@@ -225,11 +232,23 @@
         min-height: 176px;
         background: linear-gradient(269.76deg, #e17139 4.09%, #cd4b3a 99.75%);
       }
-      .footer a{
+      .footer a {
         color: #fff;
+        transition: all 0.4s ease-in-out;
+        margin-right: 32px;
       }
-      .footer a:hover{
+      .footer a:hover {
         color: rgb(192, 192, 192);
+      }
+      .footer_body {
+        padding: 32px 0 !important;
+      }
+      .copyright {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .copyright span {
+        font-size: 12px;
       }
       @media screen and (max-width: 600px) {
         .header__logo img {
@@ -327,6 +346,18 @@
         }
         .section-corporate-upd__table-bottom {
           display: block;
+        }
+        .footer_body {
+          padding: 24px 0 !important;
+        }
+        .footer a {
+          color: #fff;
+          transition: all 0.4s ease-in-out;
+          margin-right: 12px;
+          font-size: 12px;
+        }
+        .follow-us-text {
+          font-size: 12px !important;
         }
       }
       @media screen and (max-width: 600px) {
@@ -480,7 +511,7 @@
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block"
+                      style="margin-left: 8px; display: block; height: 22px"
                       width="12"
                       height="12"
                     />
@@ -503,7 +534,7 @@
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block"
+                      style="margin-left: 8px; display: block; height: 22px"
                       width="12"
                       height="12"
                     />
@@ -527,7 +558,7 @@
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block"
+                      style="margin-left: 8px; display: block; height: 22px"
                       width="12"
                       height="12"
                     />
@@ -551,7 +582,7 @@
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block"
+                      style="margin-left: 8px; display: block; height: 22px"
                       width="12"
                       height="12"
                     />
@@ -575,7 +606,7 @@
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block"
+                      style="margin-left: 8px; display: block; height: 22px"
                       width="12"
                       height="12"
                     />
@@ -674,14 +705,59 @@
             </td>
           </tr>
         </tbody>
-        <tfoot style="background: #3d3c3c" align="center">
-          <tr>
+        <tfoot>
+          <tr style="background: #3d3c3c" align="center">
             <td class="footer">
-              <a href="">About us</a>
-              <a href="">About us</a>
-              <a href="">Services</a>
-              <a href="">Blog</a>
-              <a href="">Contacns</a>
+              <div class="footer_body">
+                <div>
+                  <a href="https://perspectiveteam.com/company">About us</a>
+                  <a href="https://perspectiveteam.com/work">Work</a>
+                  <a href="https://perspectiveteam.com/services">Services</a>
+                  <a href="https://perspectiveteam.com/blog/">Blog</a>
+                  <a href="https://perspectiveteam.com/contacts">Contacns</a>
+                </div>
+                <div style="margin-top: 30px; height: 24px">
+                  <div
+                    class="follow-us-text"
+                    style="
+                      margin-right: 12px;
+                      color: #fff;
+                      line-height: 24px;
+                      display: inline-table;
+                      vertical-align: top;
+                    "
+                  >
+                    Follow us:
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/company/perspective-magento-team"
+                    style="margin-right: 10px; display: inline-block; height: 24px"
+                  >
+                    <img
+                      src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/linkedin-white.png?raw=true"
+                      alt="linkerIn-icon"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/perspective.magento.team/"
+                    style="display: inline-block; height: 24px"
+                  >
+                    <img
+                      src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/fb-white.png?raw=true"
+                      alt="facebook-icon"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr style="background: #303030" align="center">
+            <td class="copyright">
+              <span style="color: #8d8d8d"> © All rights reserved </span>
             </td>
           </tr>
         </tfoot>
