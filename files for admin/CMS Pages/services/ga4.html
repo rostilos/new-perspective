@@ -623,4 +623,75 @@
        <!-- ======================= -->
     </div>
   </section>
+
+  <div x-data="{showPopup : false,
+                ...initForm({'formUniqueId' : 'contact-us_ga4-popup',
+                             'url' : '/perspective_forms/index/gasubmit', 
+                             'gtmEventName' : 'sent_hire_us_form'
+                            }),
+                ...hyva.formValidation(document.getElementById('form_contact-us_ga4-popup')),
+                openForm : false
+              }"
+       x-init="init()" 
+       x-intersect.once="showPopup = true;"
+  >
+    <div class="popup" x-show="showPopup" x-transition>
+      <div class="popup__body" @click.away="showPopup = false; ">
+          <div class="popup__content" >
+              <div x-show="showForm">
+                <h4 class="font-medium popup__title _h4 ">Not sure whether your site <br /> is ready for Google UA sunset?</h4>
+                <h5 class="popup__subtitle h4 font-regular">
+                    Provide us your site and email and our team will guide you through all the rest steps for free
+                </h5>
+                <form class="popup__form" 
+                      id="form_contact-us_ga4-popup" 
+                      @submit="submitForm($event)"
+                >
+                    <label for="popup-ga4-form-email" class="_text-caption">Email</label>
+                    <input class="_input popup__input" 
+                           id="popup-ga4-form-email" 
+                           name="email"
+                           type="email" 
+                           placeholder="Email" 
+                           required 
+                    />
+    
+                    <label for="popup-ga4-form-website" class="_text-caption">Website URL</label>
+                    <input class="_input popup__input" 
+                           id="popup-ga4-form-website" 
+                           name="url"
+                           type="text" 
+                           placeholder="Website URL" 
+                           required 
+                    />
+                    <button type="submit" class="_button _button--orange-bg popup__submit">
+                        <span class="_button__text">Send</span>
+                        <span class="_button__text-overlay">Send</span>
+                        <span class="_button__overlay _button__overlay--hover"></span>
+                        <span class="_button__overlay _button__overlay--active"></span>
+                    </button>
+                </form>
+              </div> 
+
+              <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+                <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" alt="rocket" />
+                <h5 class="h5">Thank you!</h5>
+                <h6 class="h6">We will contact you shortly.</h6>
+                <button class="_button form-contact__submit ga-success-form" @click="toggleSuccessMessage()">
+                    <span class="_button__text">Send another message</span>
+                    <span class="_button__text-overlay">Send another message</span>
+                    <span class="_button__overlay _button__overlay--hover"></span>
+                    <span class="_button__overlay _button__overlay--active"></span>
+                </button>
+              </div>
+          </div>
+
+          <button @click="showPopup = false;" type="button" class="popup__close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1796 3.51471L11.9999 10.6944L4.82023 3.51471C4.64713 3.3416 4.41234 3.24435 4.16753 3.24435C3.92272 3.24435 3.68794 3.3416 3.51483 3.51471C3.34173 3.68781 3.24448 3.9226 3.24448 4.16741C3.24448 4.41222 3.34173 4.647 3.51483 4.82011L10.6945 11.9998L3.51483 19.1795C3.34173 19.3526 3.24448 19.5874 3.24448 19.8322C3.24448 20.077 3.34173 20.3118 3.51483 20.4849C3.59644 20.573 3.69597 20.6425 3.80672 20.6888C3.91748 20.7352 4.03687 20.7572 4.15687 20.7535C4.27686 20.7498 4.39466 20.7204 4.50234 20.6673C4.61002 20.6142 4.70506 20.5387 4.78107 20.4458L11.9608 13.2661L19.1796 20.4849C19.3528 20.658 19.5875 20.7553 19.8323 20.7553C20.0772 20.7553 20.3119 20.658 20.4851 20.4849C20.6582 20.3118 20.7554 20.077 20.7554 19.8322C20.7554 19.5874 20.6582 19.3526 20.4851 19.1795L13.3053 11.9998L20.4851 4.82011C20.6582 4.647 20.7554 4.41222 20.7554 4.16741C20.7554 3.9226 20.6582 3.68781 20.4851 3.51471C20.3119 3.3416 20.0772 3.24435 19.8324 3.24435C19.5875 3.24435 19.3528 3.3416 19.1796 3.51471Z" fill="#949494" />
+            </svg>
+          </button>
+      </div>
+    </div> 
+  </div>
 </div>
