@@ -1,4 +1,5 @@
-<div class="article article-gtm">
+<div class="article article-gtm" 
+     x-data x-init="localStorage.setItem('isAnyFormTouched', false)">
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
     <div class="grid-col">
@@ -115,7 +116,7 @@
         <h4 class="h4">If you want to be ready for Google UA sunset we can assist you</h4>
         <h6 class="h6">We offer Google Analytics 4 implementation for ecommerce companies</h6>
         <button class="form-contact__submit footer__button _button _button--white ga-open-form" 
-                @click="openForm=true"
+                @click="openForm=true; localStorage.setItem('isAnyFormTouched', true)"
                 x-show="!openForm"
         >
           <span class="_button__text">Contact us</span>
@@ -241,7 +242,7 @@
           <div class="article__grey-form-container">
             <h4 class="h4">Get Google Analytics 4 today to see why Magento webstores should upgrade to it</h4>
             <button class="_button form-contact__submit ga-open-form"
-                    @click="openForm=true"
+                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
                     x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
@@ -422,7 +423,7 @@
         </h6>
         <h4 class="h4">We know how to do it right</h4>
         <button class="form-contact__submit footer__button _button _button--white ga-open-form"
-                @click="openForm=true"
+                @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
                 x-show="!openForm"
         >
           <span class="_button__text">I want to order a service</span>
@@ -546,7 +547,7 @@
             <h4 class="h4">Take advantage of the next generation of Google Analytics tracking today</h4>
             <p>UA will stop processing new hits on July one 2023. Be prepared!</p>
             <button class="_button form-contact__submit ga-open-form"
-                    @click="openForm=true"
+                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
                     x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
@@ -624,18 +625,19 @@
     </div>
   </section>
 
+  <!-- Popup -->
   <div x-data="{showPopup : false,
                 ...initForm({'formUniqueId' : 'contact-us_ga4-popup',
                              'url' : '/perspective_forms/index/gasubmit', 
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
                 ...hyva.formValidation(document.getElementById('form_contact-us_ga4-popup')),
-                openForm : false
+                openForm : false,
               }"
-       x-init="init()" 
-       x-intersect.once="showPopup = true;"
+       x-init="init();" 
+       x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
   >
-    <div class="popup" x-show="showPopup" x-transition>
+    <div class="popup" x-show="showPopup" x-transition style="display: none;">
       <div class="popup__body" @click.away="showPopup = false; ">
           <div class="popup__content" >
               <div x-show="showForm">
@@ -694,4 +696,5 @@
       </div>
     </div> 
   </div>
+  <!-- ========================= -->
 </div>
