@@ -1,0 +1,106 @@
+<div class="footer-links-content" x-data="{selected:null}">
+  <!-- Main navigation links -->
+  <div class="footer-links-content__col">
+    <div class="h4 footer-links-content__link">
+      <a href="">Work</a>
+    </div>
+    <div class="h4 footer-links-content__link">
+      <a href="">Blog</a>
+    </div>
+    <div class="h4 footer-links-content__link">
+      <a href="">Partners</a>
+    </div>
+    <div class="h4 footer-links-content__link">
+      <a href="">Privacy Policy</a>
+    </div>
+    <div class="h4 footer-links-content__link">
+      <a href="">Terms of Use</a>
+    </div>
+  </div>
+  <!-- Company -->
+  <div
+    class="footer-links-content__col has-sublinks"
+    data-role="collapsible"
+    :class="{'active': selected == 'company'}"
+  >
+    <div class="h4 footer-links-content__link has-sublinks">
+      <a href="">Company</a>
+      <div data-role="trigger" @click="selected !== 'company' ? selected = 'company' : selected = null"></div>
+    </div>
+    <div
+      class="footer-links-content__sublinks"
+      style=""
+      x-ref="company"
+      x-bind:style="selected == 'company' ? 'max-height: ' + $refs.company.scrollHeight + 'px' : ''"
+    >
+      <div class="footer-links-content__sublink">
+        <a href="">About the team</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Events</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Careers</a>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <div
+    class="footer-links-content__col has-sublinks"
+    data-role="collapsible"
+    :class="{'active': selected == 'services'}"
+  >
+    <div class="h4 footer-links-content__link has-sublinks">
+      <a href="">Services</a>
+      <div data-role="trigger" @click="selected !== 'services' ? selected = 'services' : selected = null"></div>
+    </div>
+    <div
+      class="footer-links-content__sublinks"
+      style=""
+      x-ref="services"
+      x-bind:style="selected == 'services' ? 'max-height: ' + $refs.services.scrollHeight + 'px' : ''"
+    >
+      <div class="footer-links-content__sublink">
+        <a href="">Web Design</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Magento Development</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Magento 2 Migration</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Magento PWA</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Magento Security Audit</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Magento Support</a>
+      </div>
+      <div class="footer-links-content__sublink">
+        <a href="">Server & Magento Optimization</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div
+    class="footer-links-content__col has-sublinks"
+    data-role="collapsible"
+    :class="{'active': selected == 'contacts'}"
+  >
+    <div class="h4 footer-links-content__link has-sublinks">
+      <a href="">Contacts</a>
+      <div data-role="trigger" @click="selected !== 'contacts' ? selected = 'contacts' : selected = null"></div>
+    </div>
+    <div
+      class="footer-links-content__sublinks"
+      style=""
+      x-ref="contacts"
+      x-bind:style="selected == 'contacts' ? 'max-height: ' + $refs.contacts.scrollHeight + 'px' : ''"
+    >
+      <!-- <?= $block->getChildHtml('footer_info') ?> -->
+    </div>
+  </div>
+</div>
