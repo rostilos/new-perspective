@@ -106,10 +106,10 @@
                           'url' : '/perspective_forms/index/gasubmit', 
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
-             ...hyva.formValidation(document.getElementById('form_contact-us_ga4')),
+             ...formValidation.global(document.getElementById('form_contact-us_ga4')),
              openForm : false
             }"
-    x-init="init()"
+    
   >
     <div class="article-form-wide__row" x-show="showForm">
       <div class="article-form-wide__content" >
@@ -233,10 +233,10 @@
                           'url' : '/perspective_forms/index/gasubmit', 
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
-                    ...hyva.formValidation(document.getElementById('form_order-service_ga4')),
+                    ...formValidation.global(document.getElementById('form_order-service_ga4')),
                     openForm : false
                    }"
-            x-init="init()"
+            
         >
         <div x-show="showForm">
           <div class="article__grey-form-container">
@@ -407,10 +407,10 @@
                              'url' : '/perspective_forms/index/gasubmit', 
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
-                ...hyva.formValidation(document.getElementById('form_contact-us_ga4-2')),
+                ...formValidation.global(document.getElementById('form_contact-us_ga4-2')),
                 openForm : false
                 }"
-        x-init="init()"
+        
     >
     <div class="article-form-wide__row" x-show="showForm"> 
       <div class="article-form-wide__image">
@@ -537,10 +537,10 @@
                           'url' : '/perspective_forms/index/gasubmit', 
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
-                    ...hyva.formValidation(document.getElementById('form_order-service_ga4-2')),
+                    ...formValidation.global(document.getElementById('form_order-service_ga4-2')),
                     openForm : false
                    }"
-            x-init="init()"
+            
         >
         <div x-show="showForm">
           <div class="article__grey-form-container">
@@ -631,10 +631,9 @@
                              'url' : '/perspective_forms/index/gasubmit', 
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
-                ...hyva.formValidation(document.getElementById('form_contact-us_ga4-popup')),
+                ...formValidation.global(document.getElementById('form_contact-us_ga4-popup')),
                 openForm : false,
               }"
-       x-init="init();" 
        x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
   >
     <div class="popup" x-show="showPopup" x-transition style="display: none;">

@@ -2,10 +2,10 @@
   <!-- Main navigation links -->
   <div class="footer-links-content__col">
     <div class="h4 footer-links-content__link">
-      <a href="">Work</a>
+      <a href="{{store url='work'}}">Work</a>
     </div>
     <div class="h4 footer-links-content__link">
-      <a href="">Blog</a>
+      <a href="{{store url='blog'}}">Blog</a>
     </div>
     <div class="h4 footer-links-content__link">
       <a href="">Partners</a>
@@ -24,7 +24,7 @@
     :class="{'active': selected == 'company'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
-      <a href="">Company</a>
+      <a href="{{store url='company'}}">Company</a>
       <div data-role="trigger" @click="selected !== 'company' ? selected = 'company' : selected = null"></div>
     </div>
     <div
@@ -34,13 +34,13 @@
       x-bind:style="selected == 'company' ? 'max-height: ' + $refs.company.scrollHeight + 'px' : ''"
     >
       <div class="footer-links-content__sublink">
-        <a href="">About the team</a>
+        <a href="{{store url='company'}}">About the team</a>
       </div>
       <div class="footer-links-content__sublink">
         <a href="">Events</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Careers</a>
+        <a href="{{store url='careers'}}">Careers</a>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
     :class="{'active': selected == 'services'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
-      <a href="">Services</a>
+      <a href="{{store url='services'}}">Services</a>
       <div data-role="trigger" @click="selected !== 'services' ? selected = 'services' : selected = null"></div>
     </div>
     <div
@@ -61,25 +61,25 @@
       x-bind:style="selected == 'services' ? 'max-height: ' + $refs.services.scrollHeight + 'px' : ''"
     >
       <div class="footer-links-content__sublink">
-        <a href="">Web Design</a>
+        <a href="{{store url='services#services-design-section'}}">Web Design</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Magento Development</a>
+        <a href="{{store url='services#services-development-section'}}">Magento Development</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Magento 2 Migration</a>
+        <a href="{{store url='services#services-migration-section'}}">Magento 2 Migration</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Magento PWA</a>
+        <a href="{{store url='services#services-pwa-section'}}">Magento PWA</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Magento Security Audit</a>
+        <a href="{{store url='services#services-security-section'}}">Magento Security Audit</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Magento Support</a>
+        <a href="{{store url='services#services-support-section'}}">Magento Support</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="">Server & Magento Optimization</a>
+        <a href="{{store url='services#services-optimization-section'}}">Server & Magento Optimization</a>
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@
     :class="{'active': selected == 'contacts'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
-      <a href="">Contacts</a>
+      <a href="{{store url='contacts'}}">Contacts</a>
       <div data-role="trigger" @click="selected !== 'contacts' ? selected = 'contacts' : selected = null"></div>
     </div>
     <div
@@ -100,7 +100,7 @@
       x-ref="contacts"
       x-bind:style="selected == 'contacts' ? 'max-height: ' + $refs.contacts.scrollHeight + 'px' : ''"
     >
-      <!-- <?= $block->getChildHtml('footer_info') ?> -->
+        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="6"}}
     </div>
   </div>
 </div>
