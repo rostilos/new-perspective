@@ -87,12 +87,19 @@
       }
       table {
         color: #303030;
+        table-layout: fixed;
       }
       table,
       tr,
       td,
       th {
         border-spacing: 0;
+      }
+      table tr td {
+        padding: 0 40px;
+      }
+      table tr td table tr td {
+        padding: 0 !important;
       }
       a {
         text-decoration: none;
@@ -103,11 +110,9 @@
         color: #d85026 !important;
       }
       a.read-more {
-        display: flex;
         font-weight: 500;
         font-size: 12px;
         line-height: 22px;
-        align-items: center;
       }
       p {
         margin: 0;
@@ -146,12 +151,6 @@
         font-size: 18px;
         line-height: 26px;
       }
-      .flex {
-        display: flex;
-      }
-      .flex-col {
-        flex-direction: column;
-      }
       .justify-center {
         justify-content: center;
       }
@@ -188,28 +187,20 @@
       .updates-square {
         box-sizing: border-box;
         padding: 62px 8px 12px 18px;
-        flex: 0 0 33.3333%;
-        width: 33%;
-        border: 1px solid #949494;
         border-top: none;
       }
       .updates-square__icon {
         width: 24px;
         height: 24px;
         display: block;
-        margin-left: 8px;
       }
       .updates-square__number {
         color: #e17139;
         font-size: 50px;
         font-weight: 300;
         line-height: 1em;
-        display: flex;
-        align-items: flex-start;
       }
-      table tr td {
-        padding: 0 40px;
-      }
+
       .section-intro {
         padding-top: 30px;
         background-image: url("https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-1.png?raw=true");
@@ -251,7 +242,9 @@
         line-height: 28px;
       }
       .section-stories__item {
-        margin: 32px 0;
+        display: block;
+        width: 100%;
+        padding: 32px 0;
       }
       .section-updates__title {
         text-align: center;
@@ -293,116 +286,126 @@
       .copyright span {
         font-size: 12px;
       }
+
+      .section-corporate-upd__table-bottom--dt td {
+        width: 33%;
+      }
+      .section-corporate-upd__table--mob {
+        display: none !important;
+      }
       @media screen and (max-width: 600px) {
         .header__logo img {
-          width: 110px;
+          width: 110px !important;
         }
       }
       @media screen and (max-width: 600px) {
         table tr td {
-          padding: 0 16px;
+          padding: 0 16px !important;
+        }
+        table tr td table tr td {
+          padding: 0 !important;
         }
       }
       @media screen and (max-width: 600px) {
         table tr td.section-intro {
-          padding: 0;
+          padding: 0 !important;
         }
       }
       @media screen and (max-width: 600px) {
         .header__logo,
         .section-intro__subtitle span {
-          display: inline-block;
-          padding: 16px 16px 0;
+          display: inline-block !important;
+          padding: 16px 16px 0 !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro {
-          padding-top: 16px;
+          padding-top: 16px !important;
           background-image: none !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro__title {
-          font-size: 22px;
-          line-height: 30px;
-          max-width: none;
-          padding: 0 16px;
+          font-size: 22px !important;
+          line-height: 30px !important;
+          max-width: none !important;
+          padding: 0 16px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro__subtitle {
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 16px !important;
+          line-height: 24px !important;
           background-image: url("https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-1.png?raw=true"),
-            url("https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-2-1.png?raw=true");
-          min-height: 600px;
-          background-position: right 90px, left 80%;
-          background-size: 256px 309px;
-          background-repeat: no-repeat;
-          overflow: visible;
-          margin-left: auto;
+            url("https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/IMAGE-2-1.png?raw=true") !important;
+          min-height: 600px !important;
+          background-position: right 90px, left 80% !important;
+          background-size: 256px 309px !important;
+          background-repeat: no-repeat !important;
+          overflow: visible !important;
+          margin-left: auto !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro__body {
-          max-width: none;
+          max-width: none !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro-2 {
-          background-image: none;
+          background-image: none !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro-2__title {
-          max-width: none;
-          margin-top: 20px;
-          text-align: left;
+          max-width: none !important;
+          margin-top: 20px !important;
+          text-align: left !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro-2__title br {
-          display: none;
+          display: none !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-intro-2__button {
-          width: 100%;
-          box-sizing: border-box;
+          width: 100% !important;
+          box-sizing: border-box !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-stories__title {
-          font-size: 20px;
-          line-height: 28px;
-          margin-top: 45px;
-          margin-bottom: 24px;
+          font-size: 20px !important;
+          line-height: 28px !important;
+          margin-top: 45px !important;
+          margin-bottom: 24px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-stories__text {
-          font-size: 14px;
-          line-height: 20px;
+          font-size: 14px !important;
+          line-height: 20px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-stories__item {
-          margin: 20px 0;
+          padding: 20px 0 !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-updates__title {
-          font-size: 20px;
-          line-height: 28px;
-          margin-top: 40px;
-          margin-bottom: 24px;
+          font-size: 20px !important;
+          line-height: 28px !important;
+          margin-top: 40px !important;
+          margin-bottom: 24px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-corporate-upd__image {
           position: static !important;
-          display: block;
-          margin-left: auto;
+          display: block !important;
+          margin-left: auto !important;
         }
       }
       @media screen and (max-width: 600px) {
@@ -417,19 +420,22 @@
       }
       @media screen and (max-width: 600px) {
         .section-next-step__title {
-          text-transform: none;
-          font-size: 20px;
-          line-height: 28px;
+          text-transform: none !important;
+          font-size: 20px !important;
+          line-height: 28px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .section-corporate-upd__table {
-          display: block;
+          display: block !important;
         }
       }
       @media screen and (max-width: 600px) {
-        .section-corporate-upd__table-bottom {
-          display: block;
+        .section-corporate-upd__table-bottom--mobile > div {
+          display: block !important ;
+        }
+        .section-corporate-upd__table > div {
+          display: none !important;
         }
       }
       @media screen and (max-width: 600px) {
@@ -439,10 +445,10 @@
       }
       @media screen and (max-width: 600px) {
         .footer a {
-          color: #fff;
-          transition: all 0.4s ease-in-out;
-          margin-right: 12px;
-          font-size: 12px;
+          color: #fff !important;
+          transition: all 0.4s ease-in-out !important;
+          margin-right: 12px !important;
+          font-size: 12px !important;
         }
       }
       @media screen and (max-width: 600px) {
@@ -452,21 +458,20 @@
       }
       @media screen and (max-width: 600px) {
         .updates-square {
-          width: 100%;
-          display: flex;
+          width: 100% !important;
           border-right: 1px solid #949494 !important;
-          padding: 33px 43px 7px 16px;
+          padding: 33px 43px 7px 16px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .updates-square__number {
-          margin-right: 24px;
+          margin-right: 24px !important;
         }
       }
       @media screen and (max-width: 600px) {
         .updates-square__number + p {
           margin-top: 0 !important;
-          max-width: 132px;
+          max-width: 132px !important;
         }
       }
       @media only screen and (max-width: 480px) {
@@ -478,6 +483,25 @@
         table#canspamBar td a {
           display: block !important;
           margin-top: 10px !important;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .updates-square--mobile {
+          display: block !important;
+        }
+        .updates-square {
+          display: none !important;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .section-corporate-upd__table--dt {
+          display: none !important;
+        }
+        .section-corporate-upd__table--mob {
+          display: block !important;
+        }
+        .updates-square.updates-square--mobile{
+          display: block !important;
         }
       }
     </style>
@@ -574,78 +598,92 @@
                 <h3 class="section-stories__title">Stories you may have missed</h3>
 
                 <hr />
-
-                <div class="flex section-stories__item">
-                  <img
-                    src="https://perspectiveteam.com/static/frontend/Perspective/default/en_US/Mirasvit_Blog/images/article/image%20118.png"
-                    alt="article-img"
-                    width="104"
-                    height="80"
-                    style="object-fit: cover; object-position: 80%; margin-right: 16px"
-                  />
-                  <div>
-                    <p class="text-xs" style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px">
-                      October 19,2022
-                    </p>
-                    <a
-                      href="https://perspectiveteam.com/blog/headless-commerce:-what-happened-to-its-head-and-why-it-is-better-without-it"
-                      class="text-base section-stories__text"
-                      style="font-weight: 500; color: inherit"
-                    >
-                      What happened to its head and why it is better without it?
-                    </a>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="flex section-stories__item">
-                  <img
-                    src="https://perspectiveteam.com/media/blog/resized.png"
-                    alt="article-img"
-                    width="104"
-                    height="80"
-                    style="object-fit: cover; object-position: 80%; margin-right: 16px"
-                  />
-                  <div>
-                    <p class="text-xs" style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px">
-                      October 12,2022
-                    </p>
-                    <a
-                      href="https://perspectiveteam.com/blog/how-to-start-a-successful-ecommerce-business-in-just-6-days"
-                      class="text-base section-stories__text"
-                      style="font-weight: 500; color: inherit"
-                    >
-                      How to Build a Successful E-Commerce Store in Just 5 Days?
-                    </a>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="flex section-stories__item">
-                  <img
-                    src="https://perspectiveteam.com/media/blog/Mask_Group_1_.png"
-                    alt="article-img"
-                    width="104"
-                    height="80"
-                    style="object-fit: cover; object-position: 80%; margin-right: 16px"
-                  />
-                  <div>
-                    <p class="text-xs" style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px">
-                      October 4,2022
-                    </p>
-                    <a
-                      href="https://perspectiveteam.com/blog/magento-2-migration"
-                      class="text-base section-stories__text"
-                      style="font-weight: 500; color: inherit"
-                    >
-                      Why Would Business Migrate from Magento 1 to Magento 2?
-                    </a>
-                  </div>
-                </div>
-
-                <hr />
+                <table>
+                  <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
+                    <td colspan="1" style="padding: 0">
+                      <img
+                        src="https://perspectiveteam.com/static/frontend/Perspective/default/en_US/Mirasvit_Blog/images/article/image%20118.png"
+                        alt="article-img"
+                        width="104"
+                        height="80"
+                        style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                      />
+                    </td>
+                    <td colspan="6" style="padding: 0">
+                      <div>
+                        <p
+                          class="text-xs"
+                          style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
+                        >
+                          October 19,2022
+                        </p>
+                        <a
+                          href="https://perspectiveteam.com/blog/headless-commerce:-what-happened-to-its-head-and-why-it-is-better-without-it"
+                          class="text-base section-stories__text"
+                          style="font-weight: 500; color: inherit"
+                        >
+                          What happened to its head and why it is better without it?
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
+                    <td colspan="1" style="padding: 0">
+                      <img
+                        src="https://perspectiveteam.com/media/blog/resized.png"
+                        alt="article-img"
+                        width="104"
+                        height="80"
+                        style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                      />
+                    </td>
+                    <td colspan="6" style="padding: 0">
+                      <div>
+                        <p
+                          class="text-xs"
+                          style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
+                        >
+                          October 12,2022
+                        </p>
+                        <a
+                          href="https://perspectiveteam.com/blog/how-to-start-a-successful-ecommerce-business-in-just-6-days"
+                          class="text-base section-stories__text"
+                          style="font-weight: 500; color: inherit"
+                        >
+                          How to Build a Successful E-Commerce Store in Just 5 Days?
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
+                    <td colspan="1" style="padding: 0">
+                      <img
+                        src="https://perspectiveteam.com/media/blog/Mask_Group_1_.png"
+                        alt="article-img"
+                        width="104"
+                        height="80"
+                        style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                      />
+                    </td>
+                    <td colspan="6" style="padding: 0">
+                      <div>
+                        <p
+                          class="text-xs"
+                          style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
+                        >
+                          October 4,2022
+                        </p>
+                        <a
+                          href="https://perspectiveteam.com/blog/magento-2-migration"
+                          class="text-base section-stories__text"
+                          style="font-weight: 500; color: inherit"
+                        >
+                          Why Would Business Migrate from Magento 1 to Magento 2?
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </td>
           </tr>
@@ -672,11 +710,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://www.prnewswire.com/news-releases/bolt-announces-quick-checkout-for-adobe-commerce-and-magento-open-source-users-301678648.html"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -700,11 +746,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://cybernews.com/security/magecart-attacks-trends/"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -728,11 +782,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/becoming-indispensable-moving-past-e-commerce-to-next-commerce"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -756,11 +818,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://www.zdnet.com/article/adobe-courts-smbs-with-the-help-of-etsy-meta-mastercard/"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -784,11 +854,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://portswigger.net/daily-swig/adobe-patches-critical-magento-xss-that-puts-sites-at-takeover-risk"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -812,11 +890,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://www.prnewswire.com/news-releases/e-commerce-technology-market-size-to-grow-by-usd-10-57-bn-north-america-to-be-largest-contributor-to-market-growth---technavio-301637615.html"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -840,11 +926,19 @@
                     class="read-more"
                     style="color: inherit"
                     href="https://www.forbes.com/sites/forbesagencycouncil/2022/10/21/a-beginners-guide-to-content-management-systems-for-e-commerce/"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -868,11 +962,19 @@
                     class="read-more"
                     href="https://www.ft.com/content/479cd8da-c416-456d-a2a2-533af8a5b7bb"
                     style="color: inherit"
-                    >Read more
+                  >
+                    <span>Read more</span>
                     <img
                       src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
                       alt="icon-arrow"
-                      style="margin-left: 8px; display: block; height: 22px; color: inherit"
+                      style="
+                        margin-left: 5px;
+                        display: inline-block;
+                        height: 14px;
+                        line-height: 14px;
+                        padding-top: 7px;
+                        color: inherit;
+                      "
                       width="12"
                       height="12"
                     />
@@ -900,7 +1002,25 @@
                 </h3>
 
                 <div style="text-align: left">
-                  <div class="flex relative items-center section-corporate-upd__table">
+                  <table style="width: 100%" class="section-corporate-upd__table section-corporate-upd__table--dt">
+                    <tr>
+                      <td>
+                        <p style="max-width: 262px; padding: 24px" class="text-base section-corporate-upd__text">
+                          Perspective's website is now on the new domain, in order to strengthen its international
+                          coverage
+                        </p>
+                      </td>
+                      <td align="right">
+                        <img
+                          class="section-corporate-upd__image"
+                          style="bottom: 0; right: 0"
+                          src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/3926908.png?raw=true"
+                          alt="img"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="relative items-center section-corporate-upd__table section-corporate-upd__table--mob">
                     <p style="max-width: 262px; padding: 24px" class="text-base section-corporate-upd__text">
                       Perspective's website is now on the new domain, in order to strengthen its international coverage
                     </p>
@@ -911,49 +1031,122 @@
                       alt="img"
                     />
                   </div>
-                  <div class="flex section-corporate-upd__table-bottom">
-                    <div class="updates-square" style="border-right: 0">
-                      <div class="updates-square__number">
-                        4
-                        <img
-                          src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/fluent-mdl2_certificate.png?raw=true"
-                          alt="icon"
-                          width="24"
-                          height="24"
-                          class="updates-square__icon"
-                        />
-                      </div>
 
-                      <p class="text-base" style="margin-top: 16px">Added X new certificates</p>
-                    </div>
-                    <div class="updates-square" style="border-right: 0">
-                      <div class="updates-square__number">
-                        3
-                        <img
-                          src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/simple-line-icons_user-follow.png?raw=true"
-                          alt="icon"
-                          width="24"
-                          height="24"
-                          class="updates-square__icon"
-                        />
-                      </div>
+                  <table
+                    class="section-corporate-upd__table-bottom section-corporate-upd__table-bottom--dt"
+                    style="table-layout: fixed; width: 100%"
+                  >
+                    <tr>
+                      <td>
+                        <div class="updates-square" style="border: 1px solid #949494; border-right: 0">
+                          <div class="updates-square__number">
+                            <span>4</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/fluent-mdl2_certificate.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
 
-                      <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
-                    </div>
-                    <div class="updates-square">
-                      <div class="updates-square__number">
-                        5
-                        <img
-                          src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/clarity_contract-line.png?raw=true"
-                          alt="icon"
-                          width="24"
-                          height="24"
-                          class="updates-square__icon"
-                        />
-                      </div>
-                      <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
-                    </div>
-                  </div>
+                          <p class="text-base" style="margin-top: 16px">Added 4 new certificates</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="updates-square" style="border: 1px solid #949494; border-right: 0">
+                          <div class="updates-square__number">
+                            <span>3</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/simple-line-icons_user-follow.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
+
+                          <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="updates-square" style="border: 1px solid #949494">
+                          <div class="updates-square__number">
+                            <span>5</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/clarity_contract-line.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
+                          <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="section-corporate-upd__table-bottom--mobile" style="table-layout: fixed; width: 100%">
+                    <tr>
+                      <td style="width: 100%">
+                        <div
+                          class="updates-square updates-square--mobile"
+                          style="display: none; border: 1px solid #949494"
+                        >
+                          <div class="updates-square__number">
+                            <span>4</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/fluent-mdl2_certificate.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
+                          <p class="text-base" style="margin-top: 16px">Added 4 new certificates</p>
+                        </div>
+                        <div
+                          class="updates-square updates-square--mobile"
+                          style="display: none; border: 1px solid #949494"
+                        >
+                          <div class="updates-square__number">
+                            <span>3</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/simple-line-icons_user-follow.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
+                          <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
+                        </div>
+                        <div
+                          class="updates-square updates-square--mobile"
+                          style="display: none; border: 1px solid #949494"
+                        >
+                          <div class="updates-square__number">
+                            <span>5</span>
+                            <img
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/clarity_contract-line.png?raw=true"
+                              alt="icon"
+                              width="24"
+                              height="24"
+                              class="updates-square__icon"
+                              style="display: inline-block; height: 56px; object-fit: contain"
+                            />
+                          </div>
+                          <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </td>
@@ -981,11 +1174,11 @@
             <td class="footer">
               <div class="footer_body">
                 <div>
-                  <a href="https://perspectiveteam.com/company">About us</a>
-                  <a href="https://perspectiveteam.com/work">Work</a>
-                  <a href="https://perspectiveteam.com/services">Services</a>
-                  <a href="https://perspectiveteam.com/blog/">Blog</a>
-                  <a href="https://perspectiveteam.com/contacts">Contacns</a>
+                  <a style="margin-top: 10px" href="https://perspectiveteam.com/company">About us</a>
+                  <a style="margin-top: 10px" href="https://perspectiveteam.com/work">Work</a>
+                  <a style="margin-top: 10px" href="https://perspectiveteam.com/services">Services</a>
+                  <a style="margin-top: 10px" href="https://perspectiveteam.com/blog/">Blog</a>
+                  <a style="margin-top: 10px" href="https://perspectiveteam.com/contacts">Contacts</a>
                 </div>
                 <div style="margin-top: 30px; height: 24px">
                   <div
