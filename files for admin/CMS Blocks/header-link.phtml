@@ -1,7 +1,32 @@
-<p>
-    <a class="header__links--item" href="{{store url='company'}}">Company</a> 
-    <a class="header__links--item" href="{{store url='work'}}">Work</a> 
-    <a class="header__links--item" href="{{store url='services'}}">Services</a> 
-    <a class="header__links--item" href="{{store url='blog'}}">Blog</a> 
-    <a class="header__links--item" href="{{store url='contacts'}}">Contacts</a>
+<p x-data="{}">
+  <a
+    class="header__links--item"
+    href="{{store url='company'}}"
+    :class="window.location.pathname.indexOf('company') >= 0 ? '_text-orange' : ''"
+    >Company</a
+  >
+  <a
+    class="header__links--item"
+    href="{{store url='work'}}"
+    :class="window.location.pathname.indexOf('work') >= 0 ? '_text-orange' : ''"
+    >Work</a
+  >
+  <a
+    class="header__links--item"
+    href="{{store url='services'}}"
+    :class="window.location.pathname.indexOf('services') >= 0 ? '_text-orange' : ''"
+    >Services</a
+  >
+  <a
+    class="header__links--item"
+    href="{{store url='blog'}}"
+    :class="window.location.pathname.indexOf('blog') >= 0 ? '_text-orange' : ''"
+    >Blog</a
+  >
+  <a
+    class="header__links--item"
+    href="{{store url='contacts'}}"
+    :class="window.location.pathname.indexOf('contacts') >= 0 ? '_text-orange' : ''"
+    >Contacts</a
+  >
 </p>
