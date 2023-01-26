@@ -1,21 +1,21 @@
-<div class="container main-page">
+<div class="container main-page" itemscope itemtype="https://schema.org/Organization">
     <!-- BG image (SVG) add to page using CSS pseudo-element :after-->
     <div class="main-page__bg-image"></div>
 
-    <h1 class="_hidden">We are your best Magento Team</h1>
+    <h1 class="_hidden" itemprop="slogan">We are your best Magento Team</h1>
 
     <div class="main-intro">
         <div class="main-intro__body _container">
             <div class="main-intro__title intro-title">
                 <div class="intro-title__top">
-                    <div class="intro-title__left _sliding-text">
+                    <div class="intro-title__left _sliding-text" >
                         <p class="intro-title__big-letters _sliding-text__line">
                             We are<span class="intro-title__whitespace">&nbsp;</span>
                         </p>
                         <p class="intro-title__big-letters _sliding-text__line">your best</p>
                     </div>
                     <div class="intro-title__right">
-                        <p class="intro-title__sub-title">
+                        <p class="intro-title__sub-title" itemprop="keywords">
                             web design <br />project development
                             <br />integration with external systems
                             <br />support and scale
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="digits-intro__item">
-                    <div class="digits-intro__number">67</div>
+                    <div class="digits-intro__number" itemprop="numberOfEmployees">67</div>
                     <div class="digits-intro__text">
                         employees <br />in the team
                     </div>
@@ -64,11 +64,11 @@
                     <span class="_sliding-text__line">Your roadmap</span>
                     <br /><span class="_sliding-text__line">to success</span>
                 </h3>
-                <div class="vector-absolute-images">
+                <div class="vector-absolute-images" itemprop="knowsAbout">
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-1 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img loading="lazy" class="lineV-1 line" src="{{media url='wysiwyg/Main/LineV.png'}}" alt="line" />
-                        <div class="success__describe--item">
-                            <span class="text">01. Research </span><span class="text">&amp; analysis</span>
+                        <div class="success__describe--item" >
+                            <span class="text" >01. Research </span><span class="text">&amp; analysis</span>
                         </div>
                     </div>
                     <div class="images-card-element">
@@ -130,16 +130,16 @@
                 </div>
 
                 <div class="digital-block__bot">
-                    <div class="digital-block__squares digital-squares digital-squares--desk">
-                        <div class="digital-squares__row">
-                            <div class="digital-squares__item">
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog" class="digital-block__squares digital-squares digital-squares--desk">
+                        <div class="digital-squares__row" >
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Web Design</h4>
+                                    <h4 class="h4" itemprop="name">Web Design</h4>
                                 </div>
                             </div>
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Magento Development</h4>
+                                    <h4 class="h4" itemprop="name">Magento Development</h4>
                                 </div>
                             </div>
                             <div class="digital-squares__empty"></div>
@@ -148,33 +148,33 @@
 
                         <div class="digital-squares__row">
                             <div class="digital-squares__empty"></div>
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Magento 2 Migration</h4>
+                                    <h4 class="h4" itemprop="name">Magento 2 Migration</h4>
                                 </div>
                             </div>
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Magento <br /> PWA</h4>
+                                    <h4 class="h4" itemprop="name">Magento <br /> PWA</h4>
                                 </div>
                             </div>
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Magento <br /> Support</h4>
+                                    <h4 class="h4" itemprop="name">Magento <br /> Support</h4>
                                 </div>
                             </div>
                         </div>
 
                         <div class="digital-squares__row">
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Server & Magento <br /> Optimization</h4>
+                                    <h4 class="h4" itemprop="name">Server & Magento <br /> Optimization</h4>
                                 </div>
                             </div>
                             <div class="digital-squares__empty"></div>
-                            <div class="digital-squares__item">
+                            <div class="digital-squares__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
                                 <div class="digital-squares__content">
-                                    <h4 class="h4">Magento <br /> Security Audit</h4>
+                                    <h4 class="h4" itemprop="name">Magento <br /> Security Audit</h4>
                                 </div>
                             </div>
                             <div class="digital-squares__item digital-squares__item--no-border--centered">
@@ -548,7 +548,7 @@
                         </div>
                     </div>
                     <h5 class="h5 company__text _text-align-right">
-                        We are the Magento‑focused web‑development company named Perspective Studio, with HQ in Kyiv, Ukraine, with more than 60 employees.
+                        We are the Magento‑focused web‑development company named <span itemprop="legalName">Perspective Studio</span>, with HQ in Kyiv, Ukraine, with more than 60 employees.
                         <br />
                         Most are strong middle and senior developers with 5+ years of experience in Magento.
                     </h5>
@@ -627,29 +627,29 @@
                                         brags, but it sure loves to speak for
                                         itself.
                                     </div>
-                                    <div class="gallery__slide gallery-slide">
+                                    <div class="gallery__slide gallery-slide" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                                         <div class="gallery-slide__image">
-                                            <img loading="lazy" src="{{media url='wysiwyg/Main/tefal.png'}}" alt="tefal" />
+                                            <img itemprop="logo" loading="lazy" src="{{media url='wysiwyg/Main/tefal.png'}}" alt="tefal" />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title">
+                                            <span class="gallery-slide__title" itemprop="name">
                                                 Tefal
                                             </span>
-                                            <p class="gallery-slide__text">
+                                            <p class="gallery-slide__text" itemprop="potentialAction">
                                                 Design, development,
                                                 integrations,support
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="gallery__slide gallery-slide">
+                                    <div class="gallery__slide gallery-slide" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/berg.png'}}" alt="berg " />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title">
+                                            <span class="gallery-slide__title" itemprop="name">
                                                 Dr.Berg
                                             </span>
-                                            <p class="gallery-slide__text">
+                                            <p class="gallery-slide__text" itemprop="potentialAction">
                                                 Development, integrations,
                                                 support
                                             </p>
@@ -660,29 +660,29 @@
                                     <a class="gallery__show-more _link-arrow" href="{{store url='work'}}">
                                         See all work
                                     </a>
-                                    <div class="gallery__slide gallery-slide">
+                                    <div class="gallery__slide gallery-slide" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/ortlieb.png'}}" alt="ortrieb " />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title">
+                                            <span class="gallery-slide__title" itemprop="name">
                                                 Ortrieb
                                             </span>
-                                            <p class="gallery-slide__text">
+                                            <p class="gallery-slide__text" itemprop="potentialAction">
                                                 Development, integrations,
                                                 support
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="gallery__slide gallery-slide">
+                                    <div class="gallery__slide gallery-slide" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/vodofon.png'}}" alt="vodofon " />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title">
+                                            <span class="gallery-slide__title" itemprop="name">
                                                 Vodafon
                                             </span>
-                                            <p class="gallery-slide__text">
+                                            <p class="gallery-slide__text" itemprop="potentialAction">
                                                 Development, integrations,
                                                 support
                                             </p>
@@ -813,17 +813,17 @@
                     </h5>
                 </div>
 
-                <div class="comments__content">
+                <div class="comments__content" >
                     <ul class="comments__list">
                         <!-- Vodafone -->
-                        <div class="comments__item comment">
+                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
                             <div class="comment__header">
                                 <div class="comment__icon">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
                                 </div>
                                 <div class="comment__rate">
-                                    <div class="comment__rate-number">
-                                        <span>5.0</span>
+                                    <div class="comment__rate-number" itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                                        <span  itemprop="ratingValue">5.0</span>
                                     </div>
                                     <div class="comment__stars">
                                         <span class="stars-icons">
@@ -839,8 +839,8 @@
                             </div>
 
                             <div class="comment__body">
-                                <div class="comment__author comment-author">
-                                    <div class="comment-author__name">
+                                <div class="comment__author comment-author" itemprop="author">
+                                    <div class="comment-author__name" >
                                         Vitaly Zadorin
                                     </div>
                                     <div class="comment-author__post">
@@ -848,7 +848,7 @@
                                     </div>
                                 </div>
 
-                                <div class="comment__text">
+                                <div class="comment__text" itemprop="reviewBody">
                                     <p>
                                         The project launched just in time for a big shopping event and the company saw firsthand how well it worked under high traffic. The team used a variety of tools for development and communication with the company.
                                     </p>
@@ -856,14 +856,14 @@
                             </div>
                         </div>
                         <!-- E-Shop -->
-                        <div class="comments__item comment">
+                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
                             <div class="comment__header">
                                 <div class="comment__icon">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
                                 </div>
                                 <div class="comment__rate">
-                                    <div class="comment__rate-number">
-                                        <span>5.0</span>
+                                    <div class="comment__rate-number" itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                                        <span itemprop="ratingValue">5.0</span>
                                     </div>
                                     <div class="comment__stars">
                                         <span class="stars-icons">
@@ -879,7 +879,7 @@
                             </div>
 
                             <div class="comment__body">
-                                <div class="comment__author comment-author">
+                                <div class="comment__author comment-author" itemprop="author">
                                     <div class="comment-author__name">
                                         Kluka Anna
                                     </div>
@@ -888,7 +888,7 @@
                                     </div>
                                 </div>
 
-                                <div class="comment__text">
+                                <div class="comment__text" itemprop="reviewBody">
                                     <p>
                                         Perspective delivered the final output exactly how the client requested, which eventually led to the achievement of the company's goals. The team also thoroughly followed the given timeline.
                                     </p>
@@ -896,14 +896,14 @@
                             </div>
                         </div>
                         <!-- Aphid -->
-                        <div class="comments__item comment">
+                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
                             <div class="comment__header">
                                 <div class="comment__icon">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
                                 </div>
                                 <div class="comment__rate">
-                                    <div class="comment__rate-number">
-                                        <span>5.0</span>
+                                    <div class="comment__rate-number" itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                                        <span itemprop="ratingValue">5.0</span>
                                     </div>
                                     <div class="comment__stars">
                                         <span class="stars-icons">
@@ -919,7 +919,7 @@
                             </div>
 
                             <div class="comment__body">
-                                <div class="comment__author comment-author">
+                                <div class="comment__author comment-author" itemprop="author">
                                     <div class="comment-author__name">
                                         Shane Doerksen
                                     </div>
@@ -928,22 +928,23 @@
                                     </div>
                                 </div>
 
-                                <div class="comment__text">
+                                <div class="comment__text" itemprop="reviewBody" >
                                     <p>
-                                        Perspective Studio has delivered an exceptional project on time and within the budget. The team is reliable, responsive, friendly, professional, and fluent in English.
+                                        Perspective Studio has delivered an exceptional project on time and within the budget. The team is reliable, responsive, friendly, professional, and fluent in English
+                                        </span>.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!-- Book -->
-                        <div class="comments__item comment">
+                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
                             <div class="comment__header">
                                 <div class="comment__icon">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
                                 </div>
                                 <div class="comment__rate">
-                                    <div class="comment__rate-number">
-                                        <span>5.0</span>
+                                    <div class="comment__rate-number" itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope >
+                                        <span itemprop="ratingValue">5.0</span>
                                     </div>
                                     <div class="comment__stars">
                                         <span class="stars-icons">
@@ -959,7 +960,7 @@
                             </div>
 
                             <div class="comment__body">
-                                <div class="comment__author comment-author">
+                                <div class="comment__author comment-author" itemprop="author">
                                     <div class="comment-author__name">
                                         Stuart Hutchinson
                                     </div>
@@ -968,7 +969,7 @@
                                     </div>
                                 </div>
 
-                                <div class="comment__text">
+                                <div class="comment__text" itemprop="reviewBody">
                                     <p>
                                         Perspective successfully finished the client's platform, and they were able to accomplish all of their tasks. They had exceptional Magento skills, and they were able to solve all of the project's issues. The team was also commended for their organized and meticulous approach.
                                     </p>
