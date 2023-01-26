@@ -1,5 +1,10 @@
-<div class="article article-gtm" 
-     x-data x-init="localStorage.setItem('isAnyFormTouched', false)">
+<div
+  class="article article-gtm"
+  x-data
+  x-init="localStorage.setItem('isAnyFormTouched', false)"
+  itemscope
+  itemtype="https://schema.org/FAQPage"
+>
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
     <div class="grid-col">
@@ -10,7 +15,8 @@
           Universal Analytics will stop processing new data, so there is no better time to migrate to GA4 than now.
         </p>
         <p class="article__text article__text--intro">
-          And if, for example, you can transfer goals to a new GA4 resource in a few clicks, adding Google Analytics 4
+          And if, for example, you can transfer goals to a new GA4 resource in a few clicks, adding
+          <span>Google Analytics 4</span>
           functionality to your Magento store is a challenging task.
         </p>
         <p class="article__text article__text--intro">
@@ -27,18 +33,20 @@
   </div>
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
-    <div class="grid-col">
-      <h4 class="h4 article__title">Why should You upgrade to Google Analytics 4</h4>
-      <p class="article__text">
-        Google Analytics 4 is the 4th generation of Google Analytics used by merchants, agencies, and store owners to
-        get detailed metrics and reports on how customers are interacting with their various products and services.
-      </p>
-      <p class="article__text">
-        If you are Magento merchants selling products online and strive to attract new customers or improve your
-        conversion rates, you definitely need Google Analytics 4. It is the instrument to gather as much information as
-        possible about your customers behavior from your website since it is the only layer between your customers and
-        your products.
-      </p>
+    <div class="grid-col" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h4 class="h4 article__title" itemprop="name">Why should You upgrade to Google Analytics 4</h4>
+      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p class="article__text" itemprop="text">
+          Google Analytics 4 is the 4th generation of Google Analytics used by merchants, agencies, and store owners to
+          get detailed metrics and reports on how customers are interacting with their various products and services.
+        </p>
+        <p class="article__text" itemprop="text">
+          If you are Magento merchants selling products online and strive to attract new customers or improve your
+          conversion rates, you definitely need Google Analytics 4. It is the instrument to gather as much information
+          as possible about your customers behavior from your website since it is the only layer between your customers
+          and your products.
+        </p>
+      </div>
       <div class="article__row article-gtm__section-background">
         <div class="article__flex-content">
           <p class="article__text">
@@ -77,25 +85,29 @@
         Users of Google Analytics can analyze and improve their conversion rate by using in-depth reports, metrics, and
         tools designed to help analyze and monitor their site's performance.
       </p>
-      <h4 class="h4 article__title">How to implement Google Analytics 4 with Magento</h4>
-      <p class="article__text">
-        Although GA4 supports the Enhanced Ecommerce data schema, we recommend using the new data model instead of the
-        old one as there is no information on how long the last one will be supported.
-      </p>
-      <div class="article__text article__text--border-left _text-article--border-left">
-        <h4 class="h4 article__title-bold">
-          GA4 is not your typical software upgrade. It’s a completely different platform, and setting up GA4 on
-          ecommerce sites is not as easy as flipping a toggle switch anymore.
-        </h4>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h4 class="h4 article__title" itemprop="name">How to implement Google Analytics 4 with Magento</h4>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="article__text" itemprop="text">
+            Although GA4 supports the Enhanced Ecommerce data schema, we recommend using the new data model instead of
+            the old one as there is no information on how long the last one will be supported.
+          </p>
+          <div class="article__text article__text--border-left _text-article--border-left" itemprop="text">
+            <h4 class="h4 article__title-bold">
+              GA4 is not your typical software upgrade. It’s a completely different platform, and setting up GA4 on
+              ecommerce sites is not as easy as flipping a toggle switch anymore.
+            </h4>
+          </div>
+          <p class="article__text" itemprop="text">
+            The GTM container alone is not enough for ecommerce shops. To get started you will need to add a data layer
+            - pieces of code, which provides products and purchases data transfer directly to Google Analytics.
+          </p>
+          <p class="article__text" itemprop="text">
+            That is why the shift to GA4 can be stressful and you need a developer assistance to carry out the data
+            layer adding . Also Installation steps are far different from what we were used to with Universal Analytics.
+          </p>
+        </div>
       </div>
-      <p class="article__text">
-        The GTM container alone is not enough for ecommerce shops. To get started you will need to add a data layer -
-        pieces of code, which provides products and purchases data transfer directly to Google Analytics.
-      </p>
-      <p class="article__text">
-        That is why the shift to GA4 can be stressful and you need a developer assistance to carry out the data layer
-        adding . Also Installation steps are far different from what we were used to with Universal Analytics.
-      </p>
     </div>
   </section>
 
@@ -109,52 +121,53 @@
              ...formValidation.global(document.getElementById('form_contact-us_ga4')),
              openForm : false
             }"
-    
   >
     <div class="article-form-wide__row" x-show="showForm">
-      <div class="article-form-wide__content" >
+      <div class="article-form-wide__content">
         <h4 class="h4">If you want to be ready for Google UA sunset we can assist you</h4>
         <h6 class="h6">We offer Google Analytics 4 implementation for ecommerce companies</h6>
-        <button class="form-contact__submit footer__button _button _button--white ga-open-form" 
-                @click="openForm=true; localStorage.setItem('isAnyFormTouched', true)"
-                x-show="!openForm"
+        <button
+          class="form-contact__submit footer__button _button _button--white ga-open-form"
+          @click="openForm=true; localStorage.setItem('isAnyFormTouched', true)"
+          x-show="!openForm"
         >
           <span class="_button__text">Contact us</span>
           <span class="_button__text-overlay">Contact us</span>
           <span class="_button__overlay _button__overlay--hover"></span>
           <span class="_button__overlay _button__overlay--active"></span>
         </button>
-        <form id="form_contact-us_ga4" 
-              class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
-              :class="{'show' : openForm}"
-              @submit="submitForm($event)"
+        <form
+          id="form_contact-us_ga4"
+          class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
+          :class="{'show' : openForm}"
+          @submit="submitForm($event)"
         >
           <div class="form-contact__body">
-            <input type="text" 
-                   name="first_name" 
-                   class="form-contact__input" 
-                   placeholder="Name" 
-                   required 
-                   x-on:input="validate($el, false)"
+            <input
+              type="text"
+              name="first_name"
+              class="form-contact__input"
+              placeholder="Name"
+              required
+              x-on:input="validate($el, false)"
             />
-            <input type="email" 
-                   name="email" 
-                   class="form-contact__input validate-email" 
-                   placeholder="Email" 
-                   required 
-                   x-on:input="validate($el, false)"
+            <input
+              type="email"
+              name="email"
+              class="form-contact__input validate-email"
+              placeholder="Email"
+              required
+              x-on:input="validate($el, false)"
             />
-            <input type="text" 
-                   name="url" 
-                   class="form-contact__input" 
-                   placeholder="Website URL" 
-                   required 
-                   x-on:input="validate($el, false)"
+            <input
+              type="text"
+              name="url"
+              class="form-contact__input"
+              placeholder="Website URL"
+              required
+              x-on:input="validate($el, false)"
             />
-            <input type="hidden" 
-                    name="type" 
-                    value="Z2FfcmVxdWVzdA=="
-            />
+            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
             <textarea
               type="text"
               name="help"
@@ -164,18 +177,13 @@
             ></textarea>
           </div>
           <div class="form-actions">
-            <button type="submit" 
-                    class="form-contact__submit footer__button _button _button--white ga-contact-submit"
-            >
+            <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
               <span class="_button__text">Send</span>
               <span class="_button__text-overlay">Send</span>
               <span class="_button__overlay _button__overlay--hover"></span>
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
-            <button class="footer__button _button ga-close-form" 
-                    @click="openForm=false" 
-                    type="button"
-            >Cancel</button>
+            <button class="footer__button _button ga-close-form" @click="openForm=false" type="button">Cancel</button>
           </div>
         </form>
       </div>
@@ -183,20 +191,15 @@
         <img src="{{view url="Mirasvit_Blog::images/article/gtm/cart.png"}}" alt="cart">
       </div>
     </div>
-    <div class="success-message" 
-         x-show="showSuccess"
-         :class="{'show' : showSuccess}"
-    >
-      <img loading="lazy" 
-           src="{{view url="Mirasvit_Blog::images/article/gtm/rocket.gif"}}" 
-           alt="rocket"
-      >
+    <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+      <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket.gif"}}" alt="rocket" >
       <h5 class="h5">Thank you!</h5>
       <h6 class="h6">We will contact you shortly.</h6>
-      <button class="form-contact__submit footer__button _button _button--white ga-success-form" 
-              @click="toggleSuccessMessage()"
+      <button
+        class="form-contact__submit footer__button _button _button--white ga-success-form"
+        @click="toggleSuccessMessage()"
       >
-        <span class="_button__text" >Send another message</span>
+        <span class="_button__text">Send another message</span>
         <span class="_button__text-overlay">Send another message</span>
         <span class="_button__overlay _button__overlay--hover"></span>
         <span class="_button__overlay _button__overlay--active"></span>
@@ -231,64 +234,67 @@
         <li>Create Custom GA4 Events and reports if needed.</li>
       </ul>
       <!-- form_order-service_ga4 (2) -->
-      <div class="article__grey-form"
-           x-data="{...initForm({'formUniqueId' : 'order-service_ga4',
+      <div
+        class="article__grey-form"
+        x-data="{...initForm({'formUniqueId' : 'order-service_ga4',
                           'url' : '/perspective_forms/index/gasubmit', 
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
                     ...formValidation.global(document.getElementById('form_order-service_ga4')),
                     openForm : false
                    }"
-            
-        >
+      >
         <div x-show="showForm">
           <div class="article__grey-form-container">
             <h4 class="h4">Get Google Analytics 4 today to see why Magento webstores should upgrade to it</h4>
-            <button class="_button form-contact__submit ga-open-form"
-                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-                    x-show="!openForm"
+            <button
+              class="_button form-contact__submit ga-open-form"
+              @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+              x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
               <span class="_button__text-overlay">I want to order a service</span>
               <span class="_button__overlay _button__overlay--hover"></span>
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
-            <form id="form_order-service_ga4" 
-                  class="footer__form form-contact ga-contact-form"
-                  :class="{'show' : openForm}"
-                  @submit="submitForm($event)"
+            <form
+              id="form_order-service_ga4"
+              class="footer__form form-contact ga-contact-form"
+              :class="{'show' : openForm}"
+              @submit="submitForm($event)"
             >
               <div class="form-contact__body">
-                <input type="text" 
-                       name="first_name" 
-                       class="form-contact__input" 
-                       placeholder="Name" 
-                       required 
-                       x-on:input="validate($el, false)"
+                <input
+                  type="text"
+                  name="first_name"
+                  class="form-contact__input"
+                  placeholder="Name"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="email"
-                       name="email"
-                       class="form-contact__input validate-email"
-                       placeholder="Email"
-                       required
-                       x-on:input="validate($el, false)"
+                <input
+                  type="email"
+                  name="email"
+                  class="form-contact__input validate-email"
+                  placeholder="Email"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="text" 
-                       name="url" 
-                       class="form-contact__input" 
-                       placeholder="Website URL" 
-                       required 
-                       x-on:input="validate($el, false)"
+                <input
+                  type="text"
+                  name="url"
+                  class="form-contact__input"
+                  placeholder="Website URL"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="hidden" 
-                       name="type" 
-                       value="Z2FfcmVxdWVzdA=="
-                />
-                <textarea type="text"
-                          name="help"
-                          class="form-contact__input"
-                          placeholder="How can we help you?"
-                          required
+                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+                <textarea
+                  type="text"
+                  name="help"
+                  class="form-contact__input"
+                  placeholder="How can we help you?"
+                  required
                 ></textarea>
               </div>
               <div class="form-actions">
@@ -298,27 +304,22 @@
                   <span class="_button__overlay _button__overlay--hover"></span>
                   <span class="_button__overlay _button__overlay--active"></span>
                 </button>
-                <button class="form-contact__submit footer__button _button ga-close-form"
-                        @click="openForm=false" 
-                        type="button"
-                >Cancel</button>
+                <button
+                  class="form-contact__submit footer__button _button ga-close-form"
+                  @click="openForm=false"
+                  type="button"
+                >
+                  Cancel
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="success-message"
-             x-show="showSuccess"
-             :class="{'show' : showSuccess}"
-        >
-          <img loading="lazy" 
-               src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" 
-               alt="rocket"
-          />
+        <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+          <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" alt="rocket" />
           <h5 class="h5">Thank you!</h5>
           <h6 class="h6">We will contact you shortly.</h6>
-          <button class="form-contact__submit footer__button _button ga-success-form"
-                  @click="toggleSuccessMessage()"
-          >
+          <button class="form-contact__submit footer__button _button ga-success-form" @click="toggleSuccessMessage()">
             <span class="_button__text">Send another message</span>
             <span class="_button__text-overlay">Send another message</span>
             <span class="_button__overlay _button__overlay--hover"></span>
@@ -332,15 +333,14 @@
       </p>
       <!-- ======================= -->
       <div class="article__dropdowns-block" x-data="{selected:null}">
-        <div class="article__dropdowns-block__item"
-             :class="{'_active' : selected == 1 }" 
-             @click="selected !== 1 ? selected = 1 : selected = null"
+        <div
+          class="article__dropdowns-block__item"
+          :class="{'_active' : selected == 1 }"
+          @click="selected !== 1 ? selected = 1 : selected = null"
         >
           <p>Smart insights to improve your marketing</p>
         </div>
-        <div class="article__dropdowns-block__content" 
-             x-ref="container1"
-             x-show="selected == 1" >
+        <div class="article__dropdowns-block__content" x-ref="container1" x-show="selected == 1">
           <p>
             Spending a fortune on advertising, but have no idea what's converting? The new Google Analytics will give
             you the necessary insights you need to be ready for what’s next. By applying Google’s advanced machine
@@ -349,28 +349,28 @@
             to use what you learn to improve the ROI of your marketing and analyzed your site like never before.
           </p>
         </div>
-        <div class="article__dropdowns-block__item"
-             :class="{'_active' : selected == 2 }" 
-             @click="selected !== 2 ? selected = 2 : selected = null">
+        <div
+          class="article__dropdowns-block__item"
+          :class="{'_active' : selected == 2 }"
+          @click="selected !== 2 ? selected = 2 : selected = null"
+        >
           <p>Better tracking your customers journey</p>
         </div>
-        <div class="article__dropdowns-block__content"
-             x-ref="container2"
-             x-show="selected == 2" >
+        <div class="article__dropdowns-block__content" x-ref="container2" x-show="selected == 2">
           <p>
             Instead of fragmented information based on individual devices and platforms, Google Analytics 4 provides
             customer-centric measurement. Now You can learn more about your customers at every stage of their lifetime,
             from acquisition to conversion to mobile app usage, regardless of how they interact with your brand.
           </p>
         </div>
-        <div class="article__dropdowns-block__item"
-             :class="{'_active' : selected == 3 }" 
-             @click="selected !== 3 ? selected = 3 : selected = null">
+        <div
+          class="article__dropdowns-block__item"
+          :class="{'_active' : selected == 3 }"
+          @click="selected !== 3 ? selected = 3 : selected = null"
+        >
           <p>Redefinding time-based events</p>
         </div>
-        <div class="article__dropdowns-block__content"
-             x-ref="container3"
-             x-show="selected == 3" >
+        <div class="article__dropdowns-block__content" x-ref="container3" x-show="selected == 3">
           <p>
             Despite providing great insight into time spent on pages and sessions, Universal Analytics often fails to
             provide a deeper understanding of more specific actions you want your users to take on your site, such as
@@ -379,14 +379,14 @@
             takes for a user to watch your video, read the Category Page, then complete the Checkout Process.
           </p>
         </div>
-        <div class="article__dropdowns-block__item"
-             :class="{'_active' : selected == 4 }" 
-             @click="selected !== 4 ? selected = 4 : selected = null">
+        <div
+          class="article__dropdowns-block__item"
+          :class="{'_active' : selected == 4 }"
+          @click="selected !== 4 ? selected = 4 : selected = null"
+        >
           <p>Next-level retargeting</p>
         </div>
-        <div class="article__dropdowns-block__content"
-             x-ref="container4" 
-             x-show="selected == 4">
+        <div class="article__dropdowns-block__content" x-ref="container4" x-show="selected == 4">
           <p>
             Retargeting before GA4 was still extremely efficient, but lacked the dynamism of excluding certain users
             (temporarily or permanently) from being retargeted. With GA4, you can more efficiently use retargeting to,
@@ -394,14 +394,15 @@
             eligible for a new set of ads.
           </p>
         </div>
-        <div class="article__dropdowns-block__item"
-             :class="{'_active' : selected == 5 }" 
-             @click="selected !== 5 ? selected = 5 : selected = null" w>
+        <div
+          class="article__dropdowns-block__item"
+          :class="{'_active' : selected == 5 }"
+          @click="selected !== 5 ? selected = 5 : selected = null"
+          w
+        >
           <p>User acquisition report</p>
         </div>
-        <div class="article__dropdowns-block__content"
-             x-ref="container5"
-             x-show="selected == 5" >
+        <div class="article__dropdowns-block__content" x-ref="container5" x-show="selected == 5">
           <p>
             Understanding which channels are driving new customers, as well as engagement and retention reports, will
             help you better understand what these customers do after they have purchased from you.
@@ -411,18 +412,18 @@
     </div>
   </section>
 
-    <!-- contact-us_ga4-2 (3) -->
-  <div class="article-form-wide second"
-        x-data="{...initForm({'formUniqueId' : 'contact-us_ga4-2',
+  <!-- contact-us_ga4-2 (3) -->
+  <div
+    class="article-form-wide second"
+    x-data="{...initForm({'formUniqueId' : 'contact-us_ga4-2',
                              'url' : '/perspective_forms/index/gasubmit', 
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
                 ...formValidation.global(document.getElementById('form_contact-us_ga4-2')),
                 openForm : false
                 }"
-        
-    >
-    <div class="article-form-wide__row" x-show="showForm"> 
+  >
+    <div class="article-form-wide__row" x-show="showForm">
       <div class="article-form-wide__image">
         <img src="{{view url="Mirasvit_Blog::images/article/gtm/gears.png"}}" alt="gears">
       </div>
@@ -432,83 +433,75 @@
           is prone to errors, which may result in inaccurate web analytics. We know how to do it right
         </h6>
         <h4 class="h4">We know how to do it right</h4>
-        <button class="form-contact__submit footer__button _button _button--white ga-open-form"
-                @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-                x-show="!openForm"
+        <button
+          class="form-contact__submit footer__button _button _button--white ga-open-form"
+          @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+          x-show="!openForm"
         >
           <span class="_button__text">I want to order a service</span>
           <span class="_button__text-overlay">I want to order a service</span>
           <span class="_button__overlay _button__overlay--hover"></span>
           <span class="_button__overlay _button__overlay--active"></span>
         </button>
-        <form id="form_contact-us_ga4-2" 
-              class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
-              :class="{'show' : openForm}"
-              @submit="submitForm($event)"
+        <form
+          id="form_contact-us_ga4-2"
+          class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
+          :class="{'show' : openForm}"
+          @submit="submitForm($event)"
         >
-            <div class="form-contact__body">
-                <input type="text" 
-                   name="first_name" 
-                   class="form-contact__input" 
-                   placeholder="Name" 
-                   required 
-                   x-on:input="validate($el, false)"
-                />
-                <input type="email" 
-                   name="email" 
-                   class="form-contact__input validate-email" 
-                   placeholder="Email" 
-                   required 
-                   x-on:input="validate($el, false)"
-                />
-                <input type="text" 
-                   name="url" 
-                   class="form-contact__input" 
-                   placeholder="Website URL" 
-                   required 
-                   x-on:input="validate($el, false)"
-                />
-                <input type="hidden" 
-                    name="type" 
-                    value="Z2FfcmVxdWVzdA=="
-                />
-                <textarea
-                    type="text"
-                    name="help"
-                    class="form-contact__input"
-                    placeholder="How can we help you?"
-                    required
-                ></textarea>
+          <div class="form-contact__body">
+            <input
+              type="text"
+              name="first_name"
+              class="form-contact__input"
+              placeholder="Name"
+              required
+              x-on:input="validate($el, false)"
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-contact__input validate-email"
+              placeholder="Email"
+              required
+              x-on:input="validate($el, false)"
+            />
+            <input
+              type="text"
+              name="url"
+              class="form-contact__input"
+              placeholder="Website URL"
+              required
+              x-on:input="validate($el, false)"
+            />
+            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+            <textarea
+              type="text"
+              name="help"
+              class="form-contact__input"
+              placeholder="How can we help you?"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
-            <button type="submit" 
-                    class="form-contact__submit footer__button _button _button--white ga-contact-submit"
-            >
+            <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
               <span class="_button__text">Send</span>
               <span class="_button__text-overlay">Send</span>
               <span class="_button__overlay _button__overlay--hover"></span>
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
-            <button class="footer__button _button ga-close-form" 
-                    @click="openForm=false" 
-                    type="button"
-            >Cancel</button>
+            <button class="footer__button _button ga-close-form" @click="openForm=false" type="button">Cancel</button>
           </div>
         </form>
       </div>
     </div>
-    <div class="success-message"
-         x-show="showSuccess"
-         :class="{'show' : showSuccess}"
-    >
-      <img loading="lazy" 
-           src="{{view url="Mirasvit_Blog::images/article/gtm/rocket.gif"}}" 
-           alt="rocket"
-      >
+    <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+      <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket.gif"}}" alt="rocket" >
       <h5 class="h5">Thank you!</h5>
       <h6 class="h6">We will contact you shortly.</h6>
-      <button class="form-contact__submit footer__button _button _button--white ga-success-form"
-              @click="toggleSuccessMessage()"
+      <button
+        class="form-contact__submit footer__button _button _button--white ga-success-form"
+        @click="toggleSuccessMessage()"
       >
         <span class="_button__text">Send another message</span>
         <span class="_button__text-overlay">Send another message</span>
@@ -545,65 +538,68 @@
         </div>
       </div>
       <!-- form_order-service_ga4-2 (4) -->
-      <div class="article__grey-form"
-           x-data="{...initForm({'formUniqueId' : 'order-service_ga4-2',
+      <div
+        class="article__grey-form"
+        x-data="{...initForm({'formUniqueId' : 'order-service_ga4-2',
                           'url' : '/perspective_forms/index/gasubmit', 
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
                     ...formValidation.global(document.getElementById('form_order-service_ga4-2')),
                     openForm : false
                    }"
-            
-        >
+      >
         <div x-show="showForm">
           <div class="article__grey-form-container">
             <h4 class="h4">Take advantage of the next generation of Google Analytics tracking today</h4>
             <p>UA will stop processing new hits on July one 2023. Be prepared!</p>
-            <button class="_button form-contact__submit ga-open-form"
-                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-                    x-show="!openForm"
+            <button
+              class="_button form-contact__submit ga-open-form"
+              @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+              x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
               <span class="_button__text-overlay">I want to order a service</span>
               <span class="_button__overlay _button__overlay--hover"></span>
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
-            <form id="form_order-service_ga4-2" 
-                  class="footer__form form-contact ga-contact-form"
-                  :class="{'show' : openForm}"
-                  @submit="submitForm($event)"
+            <form
+              id="form_order-service_ga4-2"
+              class="footer__form form-contact ga-contact-form"
+              :class="{'show' : openForm}"
+              @submit="submitForm($event)"
             >
               <div class="form-contact__body">
-                <input type="text" 
-                       name="first_name" 
-                       class="form-contact__input" 
-                       placeholder="Name" 
-                       required 
-                       x-on:input="validate($el, false)"
+                <input
+                  type="text"
+                  name="first_name"
+                  class="form-contact__input"
+                  placeholder="Name"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="email"
-                       name="email"
-                       class="form-contact__input validate-email"
-                       placeholder="Email"
-                       required
-                       x-on:input="validate($el, false)"
+                <input
+                  type="email"
+                  name="email"
+                  class="form-contact__input validate-email"
+                  placeholder="Email"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="text" 
-                       name="url" 
-                       class="form-contact__input" 
-                       placeholder="Website URL" 
-                       required 
-                       x-on:input="validate($el, false)"
+                <input
+                  type="text"
+                  name="url"
+                  class="form-contact__input"
+                  placeholder="Website URL"
+                  required
+                  x-on:input="validate($el, false)"
                 />
-                <input type="hidden" 
-                       name="type" 
-                       value="Z2FfcmVxdWVzdA=="
-                />
-                <textarea type="text"
-                          name="help"
-                          class="form-contact__input"
-                          placeholder="How can we help you?"
-                          required
+                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+                <textarea
+                  type="text"
+                  name="help"
+                  class="form-contact__input"
+                  placeholder="How can we help you?"
+                  required
                 ></textarea>
               </div>
               <div class="form-actions">
@@ -613,27 +609,22 @@
                   <span class="_button__overlay _button__overlay--hover"></span>
                   <span class="_button__overlay _button__overlay--active"></span>
                 </button>
-                <button class="form-contact__submit footer__button _button ga-close-form"
-                        @click="openForm=false" 
-                        type="button"
-                >Cancel</button>
+                <button
+                  class="form-contact__submit footer__button _button ga-close-form"
+                  @click="openForm=false"
+                  type="button"
+                >
+                  Cancel
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="success-message"
-             x-show="showSuccess"
-             :class="{'show' : showSuccess}"
-        >
-          <img loading="lazy" 
-               src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" 
-               alt="rocket"
-          />
+        <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+          <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" alt="rocket" />
           <h5 class="h5">Thank you!</h5>
           <h6 class="h6">We will contact you shortly.</h6>
-          <button class="_button form-contact__submit ga-success-form"
-                  @click="toggleSuccessMessage()"
-          >
+          <button class="_button form-contact__submit ga-success-form" @click="toggleSuccessMessage()">
             <span class="_button__text">Send another message</span>
             <span class="_button__text-overlay">Send another message</span>
             <span class="_button__overlay _button__overlay--hover"></span>
@@ -641,12 +632,13 @@
           </button>
         </div>
       </div>
-       <!-- ======================= -->
+      <!-- ======================= -->
     </div>
   </section>
 
   <!-- Popup -->
-  <div x-data="{showPopup : false,
+  <div
+    x-data="{showPopup : false,
                 ...initForm({'formUniqueId' : 'contact-us_ga4-popup',
                              'url' : '/perspective_forms/index/gasubmit', 
                              'gtmEventName' : 'sent_hire_us_form'
@@ -654,80 +646,76 @@
                 ...formValidation.global(document.getElementById('form_contact-us_ga4-popup')),
                 openForm : false,
               }"
-       x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
+    x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
   >
-    <div class="popup" x-show="showPopup" x-transition style="display: none;">
+    <div class="popup" x-show="showPopup" x-transition style="display: none">
       <div class="popup__body" @click.away="showPopup = false; ">
-          <div class="popup__content" >
-              <div x-show="showForm">
-                <h4 class="font-medium popup__title _h4 ">Not sure whether your site <br /> is ready for Google UA sunset?</h4>
-                <h5 class="popup__subtitle h4 font-regular">
-                    Provide us your site and email and our team will guide you through all the rest steps for free
-                </h5>
-                <form class="popup__form" 
-                      id="form_contact-us_ga4-popup" 
-                      @submit="submitForm($event)"
-                >
-                    <input type="hidden" 
-                           name="type" 
-                           value="Z2FfcmVxdWVzdA=="
-                    />
+        <div class="popup__content">
+          <div x-show="showForm">
+            <h4 class="font-medium popup__title _h4">
+              Not sure whether your site <br />
+              is ready for Google UA sunset?
+            </h4>
+            <h5 class="popup__subtitle h4 font-regular">
+              Provide us your site and email and our team will guide you through all the rest steps for free
+            </h5>
+            <form class="popup__form" id="form_contact-us_ga4-popup" @submit="submitForm($event)">
+              <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
 
-                    <input type="hidden"
-                           name="first_name"
-                           value="Not used"
-                    />
-                    <input type="hidden"
-                           name="help"
-                           value="Not used"
-                    />
+              <input type="hidden" name="first_name" value="Not used" />
+              <input type="hidden" name="help" value="Not used" />
 
-                    <label for="popup-ga4-form-email" class="_text-caption">Email</label>
-                    <input class="_input popup__input" 
-                           id="popup-ga4-form-email" 
-                           name="email"
-                           type="email" 
-                           placeholder="Email" 
-                           required 
-                    />
-    
-                    <label for="popup-ga4-form-website" class="_text-caption">Website URL</label>
-                    <input class="_input popup__input" 
-                           id="popup-ga4-form-website" 
-                           name="url"
-                           type="text" 
-                           placeholder="Website URL" 
-                           required 
-                    />
-                    <button type="submit" class="_button _button--orange-bg popup__submit">
-                        <span class="_button__text">Send</span>
-                        <span class="_button__text-overlay">Send</span>
-                        <span class="_button__overlay _button__overlay--hover"></span>
-                        <span class="_button__overlay _button__overlay--active"></span>
-                    </button>
-                </form>
-              </div> 
+              <label for="popup-ga4-form-email" class="_text-caption">Email</label>
+              <input
+                class="_input popup__input"
+                id="popup-ga4-form-email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
 
-              <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
-                <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" alt="rocket" />
-                <h5 class="h5">Thank you!</h5>
-                <h6 class="h6">We will contact you shortly.</h6>
-                <button class="_button form-contact__submit ga-success-form" @click="toggleSuccessMessage()">
-                    <span class="_button__text">Send another message</span>
-                    <span class="_button__text-overlay">Send another message</span>
-                    <span class="_button__overlay _button__overlay--hover"></span>
-                    <span class="_button__overlay _button__overlay--active"></span>
-                </button>
-              </div>
+              <label for="popup-ga4-form-website" class="_text-caption">Website URL</label>
+              <input
+                class="_input popup__input"
+                id="popup-ga4-form-website"
+                name="url"
+                type="text"
+                placeholder="Website URL"
+                required
+              />
+              <button type="submit" class="_button _button--orange-bg popup__submit">
+                <span class="_button__text">Send</span>
+                <span class="_button__text-overlay">Send</span>
+                <span class="_button__overlay _button__overlay--hover"></span>
+                <span class="_button__overlay _button__overlay--active"></span>
+              </button>
+            </form>
           </div>
 
-          <button @click="showPopup = false;" type="button" class="popup__close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.1796 3.51471L11.9999 10.6944L4.82023 3.51471C4.64713 3.3416 4.41234 3.24435 4.16753 3.24435C3.92272 3.24435 3.68794 3.3416 3.51483 3.51471C3.34173 3.68781 3.24448 3.9226 3.24448 4.16741C3.24448 4.41222 3.34173 4.647 3.51483 4.82011L10.6945 11.9998L3.51483 19.1795C3.34173 19.3526 3.24448 19.5874 3.24448 19.8322C3.24448 20.077 3.34173 20.3118 3.51483 20.4849C3.59644 20.573 3.69597 20.6425 3.80672 20.6888C3.91748 20.7352 4.03687 20.7572 4.15687 20.7535C4.27686 20.7498 4.39466 20.7204 4.50234 20.6673C4.61002 20.6142 4.70506 20.5387 4.78107 20.4458L11.9608 13.2661L19.1796 20.4849C19.3528 20.658 19.5875 20.7553 19.8323 20.7553C20.0772 20.7553 20.3119 20.658 20.4851 20.4849C20.6582 20.3118 20.7554 20.077 20.7554 19.8322C20.7554 19.5874 20.6582 19.3526 20.4851 19.1795L13.3053 11.9998L20.4851 4.82011C20.6582 4.647 20.7554 4.41222 20.7554 4.16741C20.7554 3.9226 20.6582 3.68781 20.4851 3.51471C20.3119 3.3416 20.0772 3.24435 19.8324 3.24435C19.5875 3.24435 19.3528 3.3416 19.1796 3.51471Z" fill="#949494" />
-            </svg>
-          </button>
+          <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+            <img loading="lazy" src="{{view url="Mirasvit_Blog::images/article/gtm/rocket-black.gif"}}" alt="rocket" />
+            <h5 class="h5">Thank you!</h5>
+            <h6 class="h6">We will contact you shortly.</h6>
+            <button class="_button form-contact__submit ga-success-form" @click="toggleSuccessMessage()">
+              <span class="_button__text">Send another message</span>
+              <span class="_button__text-overlay">Send another message</span>
+              <span class="_button__overlay _button__overlay--hover"></span>
+              <span class="_button__overlay _button__overlay--active"></span>
+            </button>
+          </div>
+        </div>
+
+        <button @click="showPopup = false;" type="button" class="popup__close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.1796 3.51471L11.9999 10.6944L4.82023 3.51471C4.64713 3.3416 4.41234 3.24435 4.16753 3.24435C3.92272 3.24435 3.68794 3.3416 3.51483 3.51471C3.34173 3.68781 3.24448 3.9226 3.24448 4.16741C3.24448 4.41222 3.34173 4.647 3.51483 4.82011L10.6945 11.9998L3.51483 19.1795C3.34173 19.3526 3.24448 19.5874 3.24448 19.8322C3.24448 20.077 3.34173 20.3118 3.51483 20.4849C3.59644 20.573 3.69597 20.6425 3.80672 20.6888C3.91748 20.7352 4.03687 20.7572 4.15687 20.7535C4.27686 20.7498 4.39466 20.7204 4.50234 20.6673C4.61002 20.6142 4.70506 20.5387 4.78107 20.4458L11.9608 13.2661L19.1796 20.4849C19.3528 20.658 19.5875 20.7553 19.8323 20.7553C20.0772 20.7553 20.3119 20.658 20.4851 20.4849C20.6582 20.3118 20.7554 20.077 20.7554 19.8322C20.7554 19.5874 20.6582 19.3526 20.4851 19.1795L13.3053 11.9998L20.4851 4.82011C20.6582 4.647 20.7554 4.41222 20.7554 4.16741C20.7554 3.9226 20.6582 3.68781 20.4851 3.51471C20.3119 3.3416 20.0772 3.24435 19.8324 3.24435C19.5875 3.24435 19.3528 3.3416 19.1796 3.51471Z"
+              fill="#949494"
+            />
+          </svg>
+        </button>
       </div>
-    </div> 
+    </div>
   </div>
   <!-- ========================= -->
 </div>
