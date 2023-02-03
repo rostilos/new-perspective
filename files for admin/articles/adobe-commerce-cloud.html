@@ -15,14 +15,20 @@
     <div class="grid-col"></div>
   </section>
   <div class="article__image">
-    <img itemprop="image" loading="lazy" src="{{media url='wysiwyg/articles/adobe-commerce-cloud/1.svg'}}" alt="image-1" />
+    <img
+      itemprop="image"
+      loading="lazy"
+      src="{{media url='wysiwyg/articles/adobe-commerce-cloud/1.svg'}}"
+      alt="ADOBE COMMERCE CLOUD. OUR UPGRADING EXPERIENCE article
+      - main image"
+    />
   </div>
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
     <div class="grid-col">
       <h4 class="h4 article__title">What differs Adobe Commerce Cloud from Adobe Commerce?</h4>
       <ol class="article__list article__list--num _list-numbered">
-        <li class="font-regular ">
+        <li class="font-regular">
           <p class="_list-numbered__legend font-regular _text-article _text-article--sm">
             It is about cloud infrastructure. This Adobe product is a comprehensive business solution with built-in
             Amazon Web Services hosting. Experts predict that cloud hosting is the future of hosting web-companies. The
@@ -30,7 +36,7 @@
             contrast to local hosting. Amazon Web Services ranks second place in the world among other cloud services.
           </p>
         </li>
-        <li class="font-regular ">
+        <li class="font-regular">
           <p class="_list-numbered__legend font-regular _text-article _text-article--sm">
             Adobe Commerce Cloud includes a lot of utilities that will improve business performance: Redis cache for
             faster page loading, RabbitMQ, an application that loads the queue system. In other words, the operations
@@ -40,7 +46,7 @@
             data.
           </p>
         </li>
-        <li class="font-regular ">
+        <li class="font-regular">
           <p class="_list-numbered__legend font-regular _text-article _text-article--sm">
             Unlike Adobe Commerce, the Adobe Commerce Cloud platform provides round-the-clock real-time support from the
             Adobe team. This support is covered by a Service Level Agreement (SLA). Thus, if there is a problem with the
@@ -64,12 +70,13 @@
 
       <h4 class="h4 article__title">The upgrade process consists of several stages.</h4>
       <p class="_text-article _text-article--sm flex items-start">
-        <img itemprop="image"
-          style="margin-right: 20px;"
+        <img
+          itemprop="image"
+          style="margin-right: 20px"
           width="60"
           height="66"
           src="{{media url='wysiwyg/articles/adobe-commerce-cloud/steps-1.svg'}}"
-          alt="steps-1"
+          alt="Adobe Commerce Cloud upgrade process step 1 - install the project locally with all the latest changes to the production environment"
         />
         First, you have to install the project locally with all the latest changes to the production environment.
       </p>
@@ -81,35 +88,41 @@
       </p>
 
       <p class="_text-article _text-article--sm flex items-start">
-        <img itemprop="image"
-          style="margin-right: 20px;"
+        <img
+          itemprop="image"
+          style="margin-right: 20px"
           width="60"
           height="66"
           src="{{media url='wysiwyg/articles/adobe-commerce-cloud/steps-2.svg'}}"
-          alt="steps-2"
+          alt="Adobe Commerce Cloud upgrade process step 2 - determine which services should be updated to support the latest version of Magento"
         />
         The next step is to determine which services should be updated to support the latest version of Magento.
       </p>
 
       <div class="article__image article__image--narrow">
-        <img itemprop="image" src="{{media url='wysiwyg/articles/adobe-commerce-cloud/2.png'}}" alt="create-ext" />
+        <img
+          itemprop="image"
+          src="{{media url='wysiwyg/articles/adobe-commerce-cloud/2.png'}}"
+          alt="Versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases"
+        />
       </div>
 
       <p class="_text-article _text-article--sm">
         You need to update the magento/magento-cloud-metapackage. It is specified in the project root in the
         composer.json file. A good solution is to change the dependencies in composer.json according to the Magento
         version you planned upgrade to. You can find the versions that have been released on
-        <a href="https://github.com/" class="_text-article _text-article--sm _text-article--orange">GitHub.</a> Then, if you are using composer 2, you must run
-        the composer update command.
+        <a href="https://github.com/" class="_text-article _text-article--sm _text-article--orange">GitHub.</a> Then, if
+        you are using composer 2, you must run the composer update command.
       </p>
 
       <p class="_text-article _text-article--sm flex items-start">
-        <img itemprop="image"
-          style="margin-right: 20px;"
+        <img
+          itemprop="image"
+          style="margin-right: 20px"
           width="60"
           height="66"
           src="{{media url='wysiwyg/articles/adobe-commerce-cloud/steps-3.svg'}}"
-          alt="steps-3"
+          alt="Adobe Commerce Cloud upgrade process step 3 - edit custom modules that are in the app/code directory"
         />
         Next, we go to edit custom modules that are in the app/code directory. After the update, you should check
         whether frontend works or the custome modules "broke" the site. It includes:
@@ -120,9 +133,13 @@
         <li class="font-regular _text-article _text-article--sm">replace helper classes with ViewModel</li>
         <li class="font-regular _text-article _text-article--sm">search and possible replacement of all preference</li>
         <li class="font-regular _text-article _text-article--sm">searching and possible replacement of aroundplugin</li>
-        <li class="font-regular _text-article _text-article--sm">compatibility study with php8.1 (or version required for new Magento)</li>
+        <li class="font-regular _text-article _text-article--sm">
+          compatibility study with php8.1 (or version required for new Magento)
+        </li>
         <li class="font-regular _text-article _text-article--sm">possible replacement of business logic</li>
-        <li class="font-regular _text-article _text-article--sm">removing modules, which are no longer used or carry any value</li>
+        <li class="font-regular _text-article _text-article--sm">
+          removing modules, which are no longer used or carry any value
+        </li>
         <li class="font-regular _text-article _text-article--sm">
           and other standards described here Programming Best Practices | Adobe Commerce Developer Guide
         </li>
@@ -144,8 +161,12 @@
       </p>
       <ul class="article__list">
         <li class="font-regular _text-article _text-article--sm">minimizes risks with support from Magento</li>
-        <li class="font-regular _text-article _text-article--sm">minimizes the risk of supporting modules from other vendors</li>
-        <li class="font-regular _text-article _text-article--sm">minimizes the risks of hacking, cyberattacks or simply unstable website operation</li>
+        <li class="font-regular _text-article _text-article--sm">
+          minimizes the risk of supporting modules from other vendors
+        </li>
+        <li class="font-regular _text-article _text-article--sm">
+          minimizes the risks of hacking, cyberattacks or simply unstable website operation
+        </li>
         <li class="font-regular _text-article _text-article--sm">opens the possibility to update the page design</li>
       </ul>
     </div>
