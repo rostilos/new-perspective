@@ -88,9 +88,10 @@
         <a href="{{store url='services'}}#services-optimization-section">Server & Magento Optimization</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services/implementation-google-analytics-4-on-magento-2-with-gtm'}}">Implementation Google Analytics 4</a>
+        <a href="{{store url='services/implementation-google-analytics-4-on-magento-2-with-gtm'}}"
+          >Implementation Google Analytics 4</a
+        >
       </div>
-      
     </div>
   </div>
 
@@ -110,7 +111,8 @@
       x-ref="contacts"
       x-bind:style="selected == 'contacts' ? 'max-height: ' + $refs.contacts.scrollHeight + 'px' : ''"
     >
-        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="footer_info"}}
+      {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
+      block_id="footer_info"}}
     </div>
   </div>
 </div>
