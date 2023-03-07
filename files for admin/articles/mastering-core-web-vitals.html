@@ -1,0 +1,572 @@
+<div class="article">
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col _text-align-right">
+      <div class="article__intro">
+        <p class="h4 _text-article--intro">
+          As ecommerce continues to dominate the online marketplace, businesses must stay ahead of the game in terms of
+          website optimization. One key factor that has emerged in recent years is the concept of Core Web Vitals. In
+          2020, Google established specific metrics for these vital website elements, providing ecommerce businesses
+          with a more straightforward path to better website ranking.
+        </p>
+        <br />
+        <p class="h4 _text-article--intro">
+          But what exactly are Core Web Vitals, and how can businesses optimize them for maximum impact? In this
+          article, we'll take a closer look at Core Web Vitals and share essential tools for optimizing them, so your
+          e-commerce website can stay ahead of the competition.
+        </p>
+
+        <div class="article__author">by <span itemprop="author">Yaroslav Zinchuk</span></div>
+      </div>
+    </div>
+    <div class="grid-col"></div>
+  </section>
+  <div class="article__image">
+    <img
+      itemprop="image"
+      loading="lazy"
+      src="{{media url='wysiwyg/articles/mastering-core-web-vitals/1.svg'}}"
+      alt="Mastering Core Web Vitals: A Guide to Enhancing User Experience article - main image"
+    />
+  </div>
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">Why Core Web Vitals are so important</h2>
+      <ul class="article__list">
+        <li class="font-regular _text-article _text-article--sm">
+          Core Web Vitals impact your site's Google search rankings
+        </li>
+        <li class="font-regular _text-article _text-article--sm">
+          They are crucial for providing an excellent user experience
+        </li>
+        <li class="font-regular _text-article _text-article--sm">
+          Optimizing Core Web Vitals can increase your site's traffic and revenue
+        </li>
+      </ul>
+      <p class="_text-article _text-article--sm">
+        Optimizing Core Web Vitals is essential for online store owners and developers to provide an optimal user
+        experience, rank higher on Google search results, and ultimately increase their revenue. These three core
+        metrics - <strong class="font-bold">Largest Contentful Paint (LCP), First Input Delay (FID)</strong>, and
+        <strong class="font-bold">Cumulative Layout Shift (CLS)</strong> - are based on the speed of loading,
+        interactivity, and visual presentation of your website.
+      </p>
+      <div class="article__image article__image--narrow">
+        <img
+          itemprop="image"
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/2.svg'}}"
+          alt="Core Web Vitals are the three pillars that support a good user eхperience"
+        />
+      </div>
+      <p class="_text-article _text-article--sm">
+        By prioritizing these metrics, your website can provide customers with a smooth, responsive, and visually
+        appealing experience. Don't overlook Core Web Vitals while designing or optimizing your website, as they could
+        be the difference between a good and a great user experience and ultimately impact your revenue.
+      </p>
+
+      <h2 class="h4 article__title">What is Largest Contentful Paint (LCP)</h2>
+      <p class="_text-article _text-article--sm">
+        <strong class="font-bold">Largest Contentful Paint (LCP)</strong> is a crucial metric that measures the loading
+        time of a web page's most significant content element, such as an image or text box. It is one of the critical
+        components of Core Web Vitals, a set of metrics essential for providing a seamless user experience. Optimizing
+        your website's LCP can reduce page load times and improve the overall user experience, leading to increased
+        customer retention and acquisition.
+      </p>
+      <p class="_text-article _text-article--sm">
+        We at Perspective receive frequent requests to improve Core Web Vitals' LCP. You can see below one example of
+        optimization of the Largest Contentful Paint (LCP), which we did for one of our clients:
+      </p>
+      <figure style="margin-bottom: 20px">
+        <img
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/3.png'}}"
+          alt="Largest Contentful Paint before optimization"
+        />
+        <figcaption style="font-style: italic">
+          How does the logic of headless commerce look like in practice
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/4.png'}}"
+          alt="Largest Contentful Paint after optimization"
+        />
+        <figcaption style="font-style: italic">Largest Contentful Paint after optimization</figcaption>
+      </figure>
+
+      <h3 class="h4 article__title">What are the most common causes of low Largest Contentful Paint:</h3>
+      <ul class="article__list">
+        <li class="font-regular _text-article _text-article--sm">slow server response time</li>
+        <li class="font-regular _text-article _text-article--sm">non-optimized JS and CSS</li>
+        <li class="font-regular _text-article _text-article--sm">slow resource load</li>
+        <li class="font-regular _text-article _text-article--sm">slow rendering on the client side</li>
+      </ul>
+      <h3 class="h4 article__title">How to increase Largest Contentful Paint</h3>
+      <p class="_text-article _text-article--sm">
+        We have created a small list of optimization methods, which are constantly applied in our work, and therefore we
+        recommend the following:
+      </p>
+      <ol class="article__list article__list--num _list-numbered">
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            Delete the JS code that is not in use and minimize the files in production mode.
+          </p>
+        </li>
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            It is better to write CSS rules in modules (blocks) so that the stylization of some selectors does not stop
+            others. Also, we recommend avoiding making a long chain of selectors. All CSS files, or libraries to be
+            tested, should be stored locally, not downloaded via CDN.
+          </p>
+        </li>
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            Compress the images for faster loading and use new formats. For example, convert JPEG to WebP, which is
+            1/3-size without losing quality.
+          </p>
+        </li>
+        <li>
+          <div>
+            <div class="_list-numbered__legend font-regular">
+              <div>
+                <p class="_text-article _text-article--sm">
+                  We recommend using responsive images (link) to optimize images in terms of download speed and user
+                  experience. There is an important point here. The img tag has two critical attributes:
+                </p>
+
+                <ul class="article__list">
+                  <li class="font-regular _text-article _text-article--sm">
+                    <b class="font-bold">src</b> - to indicate the original image source. Images from the src attribute
+                    are scanned and considered in the ranking by search engines, so it is necessary to specify the
+                    best-quality image here.
+                  </li>
+                  <li class="font-regular _text-article _text-article--sm">
+                    <b class="font-bold">srcset</b> - allows you to specify a variety of versions of the image. From the
+                    images in the <b class="font-bold">srcset</b>
+                    attribute, the browser selects an image to load and display depending on the screen size of the
+                    desktop devices or mobile devices it runs on.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="_list-numbered__legend font-regular">
+            We do not recommend adding loading="lazy" in the &lt;img&gt; tag attribute.
+          </p>
+        </li>
+      </ol>
+      <figure>
+        <img
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/5.png'}}"
+          alt="Remove lazy attribute to increase Largest Contentful Paint"
+        />
+        <figcaption style="font-style: italic">Remove lazy attribute to increase Largest Contentful Paint</figcaption>
+      </figure>
+
+      <h2 class="h4 article__title">What is Cumulative Layout Shift (CLS)</h2>
+      <p class="_text-article _text-article--sm">
+        <strong class="font-bold">Cumulative Layout Shift (CLS)</strong> is a crucial visual stability metric that
+        quantifies the extent of unexpected layout shifts during page load. It is measured by the sum of all layout
+        shift scores that exceed a threshold of 0.1. Improving CLS has become a top priority for businesses as user
+        experience takes center stage in modern web development. Therefore, it is no surprise that clients frequently
+        request improvements to this key performance indicator.
+      </p>
+
+      <h3 class="h4 article__title">What are the most common causes of poor Cumulative Layout Shift (CLS)</h3>
+      <p class="_text-article _text-article--sm">
+        Visual stability indicators are critical for ensuring a smooth and seamless user experience. However, poor
+        visual stability can be caused by several technical factors. Some common culprits include the sizing of image
+        and multimedia files, GraphQL queries, and unoptimized carousels.
+      </p>
+
+      <h4 class="_text-article font-semibold">INCORRECT SIZING OF IMAGE AND MULTIMEDIA FILES</h4>
+      <p class="_text-article _text-article--sm">
+        When images or multimedia files do not have a specified size, the browser cannot allocate the appropriate amount
+        of space when the item is loaded. This can result in a page layout that is constantly shifting, causing a poor
+        user experience.
+      </p>
+
+      <h4 class="_text-article font-semibold">UNOPTIMIZED GRAPHQL QUERIES</h4>
+      <p class="_text-article _text-article--sm">
+        When loading images or GraphQL blocks on a Progressive Web App (PWA), failing to reserve space can cause the
+        page to "jump" after loading. This can lead to poor layout shifts and negatively impact performance metrics.
+      </p>
+
+      <h4 class="_text-article font-semibold">UNOPTIMIZED CAROUSELS</h4>
+      <p class="_text-article _text-article--sm">
+        An unoptimized carousel that uses non-smooth and non-combined animations can trigger a re-calculation of the
+        page layout, resulting in poor Cumulative Layout Shift (CLS) scores. While a slight shift may be barely
+        noticeable to the user, it can significantly impact the page's overall layout change and visual stability.
+      </p>
+
+      <h3 class="h4 article__title">How to improve visual stability indicator and Cumulative Layout Shift</h3>
+
+      <h4 class="_text-article font-semibold">USING PLACEHOLDERS</h4>
+      <p class="_text-article _text-article--sm">
+        Implementing placeholders is a widely adopted technique to improve the perceived performance of a website.
+        Placeholders serve as visual cues that indicate that the download is in progress and the site is functioning
+        correctly. The most effective approach for images is setting the height and width attributes.
+      </p>
+      <figure style="margin-bottom: 24px">
+        <img
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/6.png'}}"
+          alt="Using Placeholders to improve the performance score at Core Web Vitals"
+        />
+        <figcaption style="font-style: italic">
+          Using Placeholders to improve the performance score at Core Web Vitals
+        </figcaption>
+      </figure>
+      <p class="_text-article _text-article--sm">
+        This strategy lets the browser reserve the necessary space for images before fully loading, preventing
+        unexpected layout shifts. Here is an example of implementing this technique using the
+        <b class="font-bold">img</b> tag.
+      </p>
+      <div class="_code-string flex">
+        <div
+          class="_code-string_num flex _text-article _text-article--sm"
+          style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+          class="_code-string__content _text-article _text-article--sm"
+          style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          &lt;img data-src="image.webp" width="380" height="120" alt="image"&gt;
+        </div>
+      </div>
+      <p class="_text-article _text-article--sm">
+        By defining the height and width attributes, the browser can allocate space for the image and prevent the layout
+        from shifting when the image loads. As a result, users will experience a smoother and more visually stable
+        browsing experience.
+      </p>
+
+      <h4 class="_text-article font-semibold">FONT-DISPLAY: SWAP</h4>
+      <p class="_text-article _text-article--sm">
+        To achieve the optimal Cumulative Layout Shift (CLS) score, developers can utilize the
+        <b class="font-bold">font-display: swap</b>
+        property to display text in the system font before the custom font file has fully loaded. The font-face rule in
+        the required CSS font file should specify the font file paths and include the
+        <b class="font-bold">font-display: swap</b> property.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Here is an example of how to define the font-face rule with the font-display: swap property:
+      </p>
+      <div class="_code-string flex">
+        <div
+          class="_code-string_num flex _text-article _text-article--sm"
+          style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+          class="_code-string__content _text-article _text-article--sm"
+          style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          @font-face {Font-family: "Proxima Nova";src: url("../fonts/proximanova-regular.woff2")
+          format("woff2");font-display: swap;}
+        </div>
+      </div>
+      <p class="_text-article _text-article--sm">
+        Using the <b class="font-bold">font-display: swap</b> property, the browser will immediately display text in the
+        system font until the custom font file is fully loaded. This technique can prevent unexpected layout shifts and
+        improve the visual stability of the page, resulting in a better user experience.
+      </p>
+
+      <h4 class="_text-article font-semibold">CSS TRANSFORM</h4>
+      <p class="_text-article _text-article--sm">
+        The CSS transform feature is an influential tool developers can utilize to enhance their site's performance and
+        user experience. For example, using CSS transform can help to mitigate issues related to loading image
+        carousels, resulting in a faster and more user-friendly browsing experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        When optimizing the loading of CMS blocks (especially on PWA projects) via GraphQL HTML elements, setting CSS
+        properties with a fixed height is recommended. This approach can help to prevent unexpected layout shifts and
+        ensure a visually stable page after it loads.
+      </p>
+      <p class="_text-article _text-article--sm">
+        By implementing these techniques, businesses can improve the Core Web Vitals score and provide a smoother, more
+        enjoyable user experience. In one of our recent cases, we significantly improved the CLS score by adding the
+        font-display: swap property in the CSS file, setting a minimum height, and optimizing font loading (@font-face).
+      </p>
+
+      <h5 class="_text-article font-semibold">ONLINE STORE BEFORE CORE WEB VITALS OPTIMIZATION</h5>
+      <div class="article__image article__image--narrow">
+        <img
+          itemprop="image"
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/7.png'}}"
+          alt="Online store before Core Web Vitals optimization"
+          style="margin-bottom: 24px"
+        />
+      </div>
+      <h5 class="_text-article font-semibold">ONLINE STORE AFTER CORE WEB VITALS OPTIMIZATION</h5>
+      <div class="article__image article__image--narrow">
+        <img
+          itemprop="image"
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/8.png'}}"
+          alt="Online store before Core Web Vitals optimization"
+        />
+      </div>
+
+      <h2 class="h4 article__title">What is the First Input Delay (FID)?</h2>
+      <p class="_text-article _text-article--sm">
+        First Input Delay (FID) is a critical metric that measures a website's interactivity. First Input Delay measures
+        how long a site takes to respond to a user's first interaction with a page, such as clicking a button or typing
+        in a form field.
+      </p>
+      <h3 class="_text-article font-semibold">Using FID in Magento 2</h3>
+      <p class="_text-article _text-article--sm">
+        In Magento 2, many user interactions can affect the site's FID, such as clicking on a live chat button, adding a
+        product to the basket, or completing a purchase. If these interactions are not responsive and do not provide
+        immediate feedback to the user, it can result in a slow and frustrating user experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        To ensure optimal user experience, it is essential to achieve an FID score that is less than 100ms. This can be
+        achieved through various optimization techniques, such as minimizing JavaScript execution time, optimizing
+        third-party scripts, and optimizing server response time. By optimizing FID, businesses can provide a more
+        responsive and engaging website that keeps users engaged and satisfied.
+      </p>
+
+      <h3 class="h4 article__title">How to optimize First Input Delay</h3>
+      <h4 class="_text-article font-semibold">TASK DECOMPOSITION</h4>
+      <p class="_text-article _text-article--sm">
+        A recommended approach to enhance First Input Delay (FID) is partitioning lengthier tasks into smaller, more
+        manageable sub-tasks. Lengthy tasks can overburden the primary thread, obstructing the processing and execution
+        of user input. Any code segment that impedes the flow for more than 50 milliseconds qualifies as a lengthy task.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Ascertaining FID necessitates conducting measurements under real-world conditions, as genuine user interaction
+        with the web page is essential for obtaining precise measurements.
+      </p>
+
+      <h4 class="_text-article font-semibold">TEST IN REAL_LIFE CONDITIONS</h4>
+      <p class="_text-article _text-article--sm">
+        To accurately measure First Input Delay (FID), it is recommended to employ specialized tools that gauge
+        performance under real-world conditions. A few such tools include:
+      </p>
+      <ol class="article__list article__list--num _list-numbered">
+        <li>
+          <p class="_list-numbered__legend font-regular">PageSpeed Insights Test</p>
+        </li>
+        <li>
+          <p class="_list-numbered__legend font-regular">Search Console (Core Web Vitals report)</p>
+        </li>
+        <li>
+          <p class="_list-numbered__legend font-regular">Chrome User experience Report.</p>
+        </li>
+      </ol>
+      <p class="_text-article _text-article--sm">
+        Since FID necessitates user interaction, conducting tests in a laboratory setting is not feasible. In contrast,
+        field metrics capture real-world performance by analyzing user behavior. However, the Total Blocking Time (TBT),
+        a metric that assesses the period between the First Contentful Paint (FCP) and Time to Interactive (TTI), can be
+        measured in a laboratory setting and is well correlated with FID in field conditions. TBT is also adept at
+        identifying interactivity-related problems. Consequently, any optimization that enhances TBT in a laboratory
+        environment will also improve FID for users. Lighthouse is a tool that can measure TBT effectively.
+      </p>
+
+      <h4 class="_text-article font-semibold">ENABLE DOWNLOAD ON DEMAND</h4>
+      <p class="_text-article _text-article--sm">
+        You can use third-party code to enable download on demand for web pages. For example, you can enable download on
+        demand so that the banner at the bottom of the page or ad is displayed only when they scroll close to the view.
+        The main idea is to download Web elements that provide the most significant value to users, not those that can
+        be downloaded at the end of the line, as a priority.
+      </p>
+
+      <h4 class="_text-article font-semibold">OPTIMIZE JAVASCRIPT</h4>
+      <p class="_text-article _text-article--sm">
+        To enhance website performance, it is crucial to eliminate any unnecessary JavaScript files. One recommended
+        approach is to defer the download of JavaScript files until they are required. This technique initially enables
+        the browser to obtain critical web elements such as HTML and CSS. Following this, the scripts can be evaluated,
+        thus facilitating a faster loading time.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Adopting this strategy is especially useful for websites with substantial JavaScript extensions, such as the
+        Mega Menu extension utilized by many Magento stores. This technique allows website owners to streamline the
+        loading process and provide a more efficient user experience. Therefore, removing unused JavaScript is a
+        fundamental optimization technique that should be considered to boost website performance.
+      </p>
+
+      <h2 class="h4 article__title">More indicators to improve Core Web Vitals</h2>
+      <p class="_text-article _text-article--sm">
+        In addition to the three main core web vitals above, several supplemental metrics exist.
+      </p>
+
+      <h3 class="h4 article__title">First Contentful Paint (FCP)</h3>
+      <p class="_text-article _text-article--sm">
+        First Contentful Paint (FCP) is a valuable metric that helps measure the time taken for a page to display its
+        initial image or text block. This metric includes the processing time for DNS requests, server requests,
+        server-side operations, and DOM primary rendering.
+      </p>
+      <p class="_text-article _text-article--sm">
+        While factors like DNS and network speed are beyond our control, reducing the processing time for server-side
+        tasks and optimizing the loading of styles and scripts can significantly impact performance. Specifically,
+        Google recommends prioritizing the inclusion of only critical styles in the head section of the webpage and, if
+        possible, using style tags instead of link tags to minimize unnecessary server requests.
+      </p>
+      <p class="_text-article _text-article--sm">
+        To further enhance website performance, Google Analytics provides a wealth of information on user behavior and
+        engagement. For instance, by using the User Timings report, website owners can monitor the duration of specific
+        actions and events, including page loads, user interactions, and other custom events. This data can help
+        identify areas of the website that require optimization and track the effectiveness of any changes made.
+      </p>
+
+      <h3 class="h4 article__title">Speed Index Metric</h3>
+      <p class="_text-article _text-article--sm">
+        While FCP measures the time for the first element to display, the Speed Index (SI) metric captures the overall
+        loading speed of web pages by considering the time required for the page to become fully visible to the user. It
+        provides a comprehensive overview of the page load performance and considers the effects of network speed and
+        server processing time. By leveraging a combination of FCP and SI, site owners can obtain a comprehensive
+        overview of website performance and take appropriate steps to enhance user experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        SI considers various factors that impact webpage performance, including network speed, server processing time,
+        and the size of resources being loaded. The metric calculates the visual completeness of a webpage at regular
+        intervals during the loading process and assigns a score representing the page speed. The lower the SI score,
+        the faster the page loads and the better the user experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        To improve SI, web developers can use a variety of optimization techniques, including minimizing external
+        resources such as CSS and JavaScript, reducing image sizes, and leveraging browser caching to speed up the
+        loading of resources. By analyzing SI scores with tools like Google Analytics and WebPageTest, website owners
+        can identify areas that require optimization and make changes to improve website performance. Ultimately, by
+        improving website performance and enhancing user experience, website owners can improve engagement, increase
+        conversions, and grow their businesses.
+      </p>
+
+      <h3 class="h4 article__title">Interaction to Next Paint</h3>
+      <p class="_text-article _text-article--sm">
+        Interaction to Next Paint (INP) is a critical metric that measures the time between a user's interaction with
+        the webpage and the display of a visual response. This metric is particularly relevant for pages that require
+        frequent user interactions, such as social media platforms and e-commerce sites. INP provides valuable insights
+        into the responsiveness of a webpage and helps identify areas that require optimization to improve user
+        experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        INP is calculated by selecting the most recent user interaction during the current webpage visit and measuring
+        the time taken for the webpage to respond with a visual update. This update can include various changes, such as
+        the appearance of a new image or text block, an element's position or size adjustment, or the execution of a
+        complex animation. By measuring the time between user interaction and visual response, INP can provide valuable
+        insights into the perceived performance of a webpage and help identify areas that require optimization.
+      </p>
+      <p class="_text-article _text-article--sm">
+        To improve INP, web developers can implement a range of optimization techniques, such as minimizing the use of
+        JavaScript and reducing the size of images and videos. Additionally, utilizing modern web technologies such as
+        the Intersection Observer API and Web Workers can help improve performance by offloading resource-intensive
+        tasks and reducing the workload on the main thread.
+      </p>
+
+      <h3 class="h4 article__title">Time to First Bite (TTFB)</h3>
+      <p class="_text-article _text-article--sm">
+        Time to First Byte (TTFB) is a crucial metric for page performance. It represents the time the server takes to
+        receive the first byte of data after a request has been sent. The TTFB value is influenced by various factors,
+        such as network latency, server processing time, and the complexity of the website's code. A lower TTFB value is
+        desirable as it indicates faster loading times and a better user experience. The ideal response time for a
+        website is between 250 to 350 milliseconds, while anything above 500 is considered a long response time and can
+        negatively impact the website's performance.
+      </p>
+      <p class="_text-article _text-article--sm">
+        To improve TTFB values, website owners can use various tools and techniques. One such technique is query
+        caching, storing frequently accessed data in a cache, allowing faster access and retrieval. Tools like Varnish
+        can act as a caching layer between the server and the user, improving website speed and reducing server load.
+        For PWA projects, service workers can be used to cache HTML content, which can be updated when the content
+        changes, providing faster access to frequently accessed content.
+      </p>
+      <p class="_text-article _text-article--sm">
+        For Magento projects, full-page caching can also improve TTFB values. Full-page caching allows the entire page
+        to be cached, reducing the need for the server to run a lot of code and retrieve information from the database.
+        With full-page caching enabled, the browser can read the page directly from the cache, leading to faster loading
+        times and improved user experience.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Therefore, you should not make as many pages and blocks but reduce them as possible.
+      </p>
+
+      <h2 class="h4 article__title">Tools recommended for Core Web Vitals audit</h2>
+      <p class="_text-article _text-article--sm">
+        Lighthouse is a powerful web performance auditing tool that can help developers diagnose website speed and
+        interactivity issues. It combines modern web technologies and best practices to provide in-depth website
+        performance analysis and offers actionable optimization insights. By running Lighthouse audits, developers can
+        quickly identify opportunities to improve site speed, interactivity, and other key metrics.
+      </p>
+      <p class="_text-article _text-article--sm">The Lighthouse report has several sections:</p>
+      <ul class="article__list">
+        <li class="font-regular _text-article _text-article--sm">Site performance: analysis of site download speed</li>
+        <li class="font-regular _text-article _text-article--sm">
+          Features: describes how to speed up your site and improve performance.
+        </li>
+        <li class="font-regular _text-article _text-article--sm">
+          Diagnosis: indicates what needs to be paid attention to and corrected
+        </li>
+        <li class="font-regular _text-article _text-article--sm">Progressive web program: detailed audit</li>
+        <li class="font-regular _text-article _text-article--sm">Availability: section on how to improve UX design</li>
+        <li class="font-regular _text-article _text-article--sm">
+          Best practices: the best ways of reliable optimization of most sites
+        </li>
+      </ul>
+      <p class="_text-article _text-article--sm">
+        Before running an audit, you can use the Analyze page load button to adjust the audit level to suit your
+        interests (Performance, SEO, Accessibility, etc.).
+      </p>
+      <p class="_text-article _text-article--sm">
+        Your audit report will be displayed in the new window when the audit is started.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Is also available for measurement on the
+        <a href="https://pagespeed.web.dev/" class="_text-orange"> PageSpeed Insights website </a>
+      </p>
+      <div class="article__text article__text--border-left _text-article--border-left">
+        <p>don't forget, that the metrics of core web vitals will be taken over the last 28 days.</p>
+      </div>
+      <div class="article__image article__image--narrow">
+        <img
+          itemprop="image"
+          src="{{media url='wysiwyg/articles/mastering-core-web-vitals/9.png'}}"
+          alt="Google PageSpeed Insights"
+        />
+      </div>
+
+      <h2 class="h4 article__title">Conclusions.</h2>
+
+      <p class="_text-article _text-article--sm">
+        In conclusion, consider contacting our Core Web Vitals audit team to ensure a good user experience for your
+        online shop. Although Core Web Vitals metrics may seem abstract, they make your site more user-friendly.
+        Moreover, these metrics have a clear connection to the functionality of your site's code, making them relatively
+        easy to improve.
+      </p>
+      <p class="_text-article _text-article--sm">
+        Based on our experience, optimizing these metrics can lead to fast improvements in ranking and conversion rates.
+        By measuring Core Web Vitals, you can pinpoint areas for optimization and enhance the overall user experience of
+        your website. So, don't hesitate to reach out to the core Web Vitals audit team and see the positive impact it
+        can have on your online business!
+      </p>
+    </div>
+    <div class="grid-col"></div>
+  </section>
+</div>
