@@ -226,14 +226,15 @@
               required
               x-on:input="validate($el, false)"
             />
-            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
-            <textarea
+            <input
               type="text"
               name="help"
               class="form-contact__input"
               placeholder="How can we help you?"
               required
-            ></textarea>
+              x-on:input="validate($el, false)"
+            />
+            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
           </div>
           <div class="form-actions">
             <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
@@ -356,14 +357,15 @@
                   required
                   x-on:input="validate($el, false)"
                 />
-                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
-                <textarea
+                <input
                   type="text"
                   name="help"
                   class="form-contact__input"
                   placeholder="How can we help you?"
                   required
-                ></textarea>
+                  x-on:input="validate($el, false)"
+                />
+                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
               </div>
               <div class="form-actions">
                 <button type="submit" class="_button form-contact__submit ga-contact-submit">
@@ -406,16 +408,37 @@
         Google Analytics 4 to comprehensively view your online presence and drive growth.
       </p>
       <!-- ======================= -->
-      <div class="article__dropdowns-block" x-data="{selected:null}" style="display: grid; grid-auto-rows: 1fr">
+      <script>
+        function initTabs() {
+          return {
+            maxHeight: 0,
+            elHeightArr: [],
+            selected: null,
+            init() {
+              this.calcTabsHeight();
+            },
+            calcTabsHeight() {
+              this.maxHeight = null;
+              document.querySelectorAll(".article__dropdowns-block__item").forEach((el) => {
+                el.style = "";
+                this.elHeightArr.push(el.clientHeight);
+              });
+              this.maxHeight = this.elHeightArr.length && Math.max(...this.elHeightArr);
+            },
+          };
+        }
+      </script>
+
+      <div class="article__dropdowns-block" x-data="initTabs()" @resize.window.debounce="calcTabsHeight()">
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 1 }"
           @click="selected !== 1 ? selected = 1 : selected = null"
         >
           <h5>Utilize Magento 2 and GA4 for smart insights to improve your marketing strategy</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container1" x-show="selected == 1">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container1" x-show="selected == 1">
           <p>
             Are you tired of spending a fortune on advertising without any clear understanding of what's driving
             conversions? Google Analytics 4 offers a solution to this problem. Using advanced machine learning models,
@@ -433,13 +456,13 @@
         </div>
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 2 }"
           @click="selected !== 2 ? selected = 2 : selected = null"
         >
           <h5>Track your customer's journey and behavior with GA4 integration on Magento 2</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container2" x-show="selected == 2">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container2" x-show="selected == 2">
           <p>
             Effective tracking of a customer's journey is essential for store owners to gain valuable insights and make
             informed decisions. One way to achieve this is by utilizing the success page path feature in Google
@@ -457,7 +480,7 @@
         </div>
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 3 }"
           @click="selected !== 3 ? selected = 3 : selected = null"
         >
@@ -465,7 +488,7 @@
             Understand user behavior more deeply through time-based event tracking with GA4 integration on Magento 2
           </h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container3" x-show="selected == 3">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container3" x-show="selected == 3">
           <p>
             Using time-based events in website analytics is crucial for understanding user behavior and identifying
             areas for improvement. However, with Universal Analytics, tracking these events can be limited and may not
@@ -485,13 +508,13 @@
         </div>
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 4 }"
           @click="selected !== 4 ? selected = 4 : selected = null"
         >
           <h5>Take retargeting to the next level with GA4's advanced capabilities on Magento 2</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container4" x-show="selected == 4">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container4" x-show="selected == 4">
           <p>
             Retargeting is a powerful tool for reaching potential customers and encouraging them to return to your
             website to make a purchase. However, with the previous version of Google Analytics, retargeting efforts may
@@ -511,13 +534,13 @@
         </div>
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 5 }"
           @click="selected !== 5 ? selected = 5 : selected = null"
         >
           <h5>Monitor and analyze user acquisition with GA4 reports on Magento 2</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container5" x-show="selected == 5">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container5" x-show="selected == 5">
           <p>
             Understanding the sources of new customers is crucial for online store owners looking to optimize their
             marketing efforts and improve their bottom line. The User Acquisition Report in the new Google Analytics
@@ -537,13 +560,13 @@
 
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 6 }"
           @click="selected !== 6 ? selected = 6 : selected = null"
         >
           <h5>Seamlessly integrate GA4 with Magento 2 for enhanced e-commerce tracking</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container6" x-show="selected == 6">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container6" x-show="selected == 6">
           <p>
             Integrating Google Analytics 4 (GA4) with Magento 2 can significantly enhance the tracking and measurement
             capabilities of e-commerce stores. With this integration, website owners can access all the settings,
@@ -563,13 +586,13 @@
 
         <div
           class="article__dropdowns-block__item"
-          style="display: flex; align-items: center"
+          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
           :class="{'_active' : selected == 7 }"
           @click="selected !== 7 ? selected = 7 : selected = null"
         >
           <h5>Gain a deeper understanding of customer behavior and e-commerce performance with GA4 on Magento 2</h5>
         </div>
-        <div class="article__dropdowns-block__content" x-ref="container7" x-show="selected == 7">
+        <div class="article__dropdowns-block__content" x-cloak x-ref="container7" x-show="selected == 7">
           <p>
             By integrating Google Analytics 4 (GA4) with Magento 2, store owners can gain a deeper understanding of
             customer behavior and e-commerce performance. GA4 is the most advanced version of Google Analytics, and it
@@ -661,14 +684,15 @@
               required
               x-on:input="validate($el, false)"
             />
-            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
-            <textarea
+            <input
               type="text"
               name="help"
               class="form-contact__input"
               placeholder="How can we help you?"
               required
-            ></textarea>
+              x-on:input="validate($el, false)"
+            />
+            <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
           </div>
           <div class="form-actions">
             <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
@@ -790,14 +814,15 @@
                   required
                   x-on:input="validate($el, false)"
                 />
-                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
-                <textarea
+                <input
                   type="text"
                   name="help"
                   class="form-contact__input"
                   placeholder="How can we help you?"
                   required
-                ></textarea>
+                  x-on:input="validate($el, false)"
+                />
+                <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
               </div>
               <div class="form-actions">
                 <button type="submit" class="_button form-contact__submit ga-contact-submit">
