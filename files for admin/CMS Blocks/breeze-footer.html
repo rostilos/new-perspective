@@ -225,11 +225,20 @@
               'url' : '/perspective_forms/index/gasubmit',
               'gtmEventName' : 'sent_cv_form'
             }),
-            ...formValidation.global(document.getElementById('form_one_of_us'))
+            ...formValidation.global(document.getElementById('form_one_of_us')),
+getPathName () {
+	if(window.location.pathname=='/hyva-magento-theme') {
+		return  'Ask about Magento Hyvä Theme' }
+	else if (window.location.pathname=='/breeze-magento-theme') {
+		return 'Ask about Magento Breeze theme'
+	} else {
+		return ''
+	}
+}
           }"
         >
             <h2 class="h2 footer-alt__title">Ready to take your business to the next level?</h2>
-            <p>We are here to help you. Ask about Magento Breeze theme</p>
+            <p>We are here to help you. <span x-text="getPathName"></span></p>
             <form
                     id="form_one_of_us"
                     class="get-started__form form-contact"
