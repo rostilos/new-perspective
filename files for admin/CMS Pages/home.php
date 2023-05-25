@@ -57,10 +57,10 @@
                 <div class="vector-absolute-images" itemprop="knowsAbout">
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-1 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-1 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-1 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">01. Research </span><span class="text">&amp; analysis</span>
@@ -68,10 +68,10 @@
                     </div>
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-2 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-2 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-2 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">02. Planning </span><span class="text">&amp; estimation</span>
@@ -79,10 +79,10 @@
                     </div>
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-3 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-3 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-3 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">03. Designing </span><span class="text">user interfaces</span>
@@ -90,10 +90,10 @@
                     </div>
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-4 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-4 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-4 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">04. Development </span><span class="text">&amp; Coding</span>
@@ -101,10 +101,10 @@
                     </div>
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-5 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-5 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-5 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">05. Validate </span><span class="text">&amp; beta test</span>
@@ -112,10 +112,10 @@
                     </div>
                     <div class="images-card-element">
                         <img loading="lazy" class="Rocet-6 rocket" src="{{media url='wysiwyg/Main/Rocet.png'}}" alt="line" /><img
-                            loading="lazy"
-                            class="lineV-6 line"
-                            src="{{media url='wysiwyg/Main/LineV.png'}}"
-                            alt="line"
+                                loading="lazy"
+                                class="lineV-6 line"
+                                src="{{media url='wysiwyg/Main/LineV.png'}}"
+                                alt="line"
                         />
                         <div class="success__describe--item">
                             <span class="text">06. Deployment </span><span class="text">&amp; Maintenance</span>
@@ -151,27 +151,27 @@
 
                 <div class="digital-block__bot">
                     <div
-                        itemprop="hasOfferCatalog"
-                        itemscope
-                        itemtype="https://schema.org/OfferCatalog"
-                        class="digital-block__squares digital-squares digital-squares--desk"
+                            itemprop="hasOfferCatalog"
+                            itemscope
+                            itemtype="https://schema.org/OfferCatalog"
+                            class="digital-block__squares digital-squares digital-squares--desk"
                     >
                         <div class="digital-squares__row">
                             <div
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                                    class="digital-squares__item"
+                                    itemprop="itemListElement"
+                                    itemscope
+                                    itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Web Design</h4>
                                 </div>
                             </div>
                             <a href="services/magento-development"
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Magento Development</h4>
@@ -184,20 +184,20 @@
                         <div class="digital-squares__row">
                             <div class="digital-squares__empty"></div>
                             <div
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                                    class="digital-squares__item"
+                                    itemprop="itemListElement"
+                                    itemscope
+                                    itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Magento 2 Migration</h4>
                                 </div>
                             </div>
-                            <div
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                            <a href="/services/magento-pwa"
+                                    class="digital-squares__item"
+                                    itemprop="itemListElement"
+                                    itemscope
+                                    itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -205,12 +205,12 @@
                                         PWA
                                     </h4>
                                 </div>
-                            </div>
+                            </a>
                             <div
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                                    class="digital-squares__item"
+                                    itemprop="itemListElement"
+                                    itemscope
+                                    itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -223,10 +223,10 @@
 
                         <div class="digital-squares__row">
                             <a href="/services/server-optimization"
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -237,10 +237,10 @@
                             </a>
                             <div class="digital-squares__empty"></div>
                             <a href="/services/magento-security-audit"
-                                class="digital-squares__item"
-                                itemprop="itemListElement"
-                                itemscope
-                                itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -263,7 +263,7 @@
                                 </div>
                             </a>
 
-                            <div class="digital-squares__item">
+                            <a href="/services/magento-pwa" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento PWA</h4>
                                 </div>
@@ -317,10 +317,10 @@
                 <div class="integration__top">
                     <div class="integration__image">
                         <img
-                            loading="lazy"
-                            class="describe__image--item"
-                            src="{{media url='wysiwyg/Main/integration.svg'}}"
-                            alt="integration "
+                                loading="lazy"
+                                class="describe__image--item"
+                                src="{{media url='wysiwyg/Main/integration.svg'}}"
+                                alt="integration "
                         />
                         <h5 class="h5 integration__text integration__text--mobile _text-align-right">
                             Seamlessly integrate your Magento website with any backend system or external software to automate your
@@ -345,11 +345,11 @@
                         <!-- Headless CMS -->
                         <div class="integration-cards__item">
                             <input
-                                checked="true"
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_1"
-                                class="integration-cards__arrow"
+                                    checked="true"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_1"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_1">
                                 <h4 class="h4 integration-cards__title">
@@ -359,32 +359,32 @@
                             <div class="integration-cards__images integrations-logo">
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        height="27px"
-                                        width="113px"
-                                        src="{{media url='wysiwyg/Main/logos/headless/gatsby-inc-vector-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            height="27px"
+                                            width="113px"
+                                            src="{{media url='wysiwyg/Main/logos/headless/gatsby-inc-vector-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        height="34px"
-                                        width="59px"
-                                        src="{{media url='wysiwyg/Main/logos/headless/PWA_logo_3.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            height="34px"
+                                            width="59px"
+                                            src="{{media url='wysiwyg/Main/logos/headless/PWA_logo_3.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        height="41px"
-                                        width="104px"
-                                        src="{{media url='wysiwyg/Main/logos/headless/Logo.f339de60_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            height="41px"
+                                            width="104px"
+                                            src="{{media url='wysiwyg/Main/logos/headless/Logo.f339de60_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/headless/storyblok-logo.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/headless/storyblok-logo.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/headless/image_156.png'}}" alt="hover" />
                                 </div>
@@ -395,9 +395,9 @@
                                 <div class="integrations-logo__row">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/headless/angular_2.svg'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/headless/logo-falcon-platform-inverted.31aaadf3_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/headless/logo-falcon-platform-inverted.31aaadf3_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -405,10 +405,10 @@
                         <!-- Payments -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_2"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_2"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_2">
                                 <h4 class="h4 integration-cards__title">
@@ -419,76 +419,76 @@
                                 <div class="integrations-logo__row">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/payments/PayPal_logo.svg'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Google_Pay__GPay__Logo__2018-2020_.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Google_Pay__GPay__Logo__2018-2020_.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Apple_Pay_logo.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Apple_Pay_logo.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/skrillfuture-logo_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                </div>
-                                <div class="integrations-logo__row">
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Afterpay-Logo.wine_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/BlueSnap-logo_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Klarna_Logo_black_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/skrillfuture-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Alipay_logo__2020_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Afterpay-Logo.wine_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/BlueSnap-logo_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Klarna_Logo_black_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                </div>
+                                <div class="integrations-logo__row">
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Alipay_logo__2020_2.svg'}}"
+                                            alt="hover"
                                     />
 
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/payments/eway-logo-1_2.svg'}}" alt="hover" />
 
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Adyen_Corporate_Logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Adyen_Corporate_Logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Authorize.net_Logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Authorize.net_Logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/payments/image_166.png'}}" alt="hover" />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Amazon_Pay_logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Amazon_Pay_logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/mollie-vector-logo.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/mollie-vector-logo.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/payments/Stripe_Logo__revised_2016_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/payments/Stripe_Logo__revised_2016_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
@@ -501,10 +501,10 @@
                         <!-- Third-party services -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_3"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_3"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_3">
                                 <h4 class="h4 integration-cards__title">
@@ -515,19 +515,19 @@
                             <div class="integration-cards__images integrations-logo">
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/third-party/EBay_logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/third-party/EBay_logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/third-party/DPD_logo__2015_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/third-party/DPD_logo__2015_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/third-party/Etsy_logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/third-party/Etsy_logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
@@ -537,18 +537,18 @@
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/third-party/RabbitMQ_logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/third-party/RabbitMQ_logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/third-party/image_157.png'}}" alt="hover" />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/third-party/image_159.png'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/third-party/shq-logo-hz-3c-05959a274f3d19cc5524b2aa0d31ca6130905740c1ff0fc095289259bdbd2979_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/third-party/shq-logo-hz-3c-05959a274f3d19cc5524b2aa0d31ca6130905740c1ff0fc095289259bdbd2979_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -556,10 +556,10 @@
                         <!-- Search eng -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_4"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_4"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_4">
                                 <h4 class="h4 integration-cards__title">
@@ -571,24 +571,24 @@
                                 <div class="integrations-logo__row">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/search-eng/Logo_1.svg'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/search-eng/Elasticsearch_logo_1.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/search-eng/Elasticsearch_logo_1.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/search-eng/Algolia-logo_1.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/search-eng/Algolia-logo_1.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/search-eng/image_154.png'}}" alt="hover" />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/search-eng/Amazon_Web_Services_Logo_1.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/search-eng/Amazon_Web_Services_Logo_1.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -596,10 +596,10 @@
                         <!-- Cloud solutions -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_5"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_5"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_5">
                                 <h4 class="h4 integration-cards__title">
@@ -610,57 +610,57 @@
                             <div class="integration-cards__images integrations-logo">
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/image_166.png'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/image_166.png'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/Microsoft_Azure_Logo_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                </div>
-                                <div class="integrations-logo__row">
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/digitalocean-2_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/magento-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/Microsoft_Azure_Logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/image_167.png'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/digitalocean-2_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/nexcess-net-llc-logo-vector_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                </div>
-                                <div class="integrations-logo__row">
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/Element_1_2.svg'}}"
-                                        alt="hover"
-                                    />
-                                    <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/amazon-cloudfront-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/magento-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/cloud-solutions/Kubernetes_logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/image_167.png'}}"
+                                            alt="hover"
+                                    />
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/nexcess-net-llc-logo-vector_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                </div>
+                                <div class="integrations-logo__row">
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/Element_1_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/amazon-cloudfront-logo_2.svg'}}"
+                                            alt="hover"
+                                    />
+                                </div>
+                                <div class="integrations-logo__row">
+                                    <img
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/cloud-solutions/Kubernetes_logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/cloud-solutions/Group.svg'}}" alt="hover" />
                                 </div>
@@ -669,10 +669,10 @@
                         <!-- CRM, ERP, PIM -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_6"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_6"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_6">
                                 <h4 class="h4 integration-cards__title">
@@ -687,31 +687,31 @@
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/crm-erp-pim/akeneo-logo-vector_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/crm-erp-pim/akeneo-logo-vector_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/crm-erp-pim/image_167.png'}}" alt="hover" />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/crm-erp-pim/Pimcore-logo-5_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/crm-erp-pim/Pimcore-logo-5_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/crm-erp-pim/image_169.png'}}" alt="hover" />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/crm-erp-pim/zoho-seeklogo.com_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/crm-erp-pim/zoho-seeklogo.com_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/crm-erp-pim/image_168.png'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/crm-erp-pim/comarch-vector-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/crm-erp-pim/comarch-vector-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -719,10 +719,10 @@
                         <!-- Senders -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_7"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_7"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_7">
                                 <h4 class="h4 integration-cards__title">
@@ -733,27 +733,27 @@
                             <div class="integration-cards__images integrations-logo">
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/senders/klaviyo-vector-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/senders/klaviyo-vector-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/senders/mailchimp-vector-logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/senders/mailchimp-vector-logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                                 <div class="integrations-logo__row">
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/senders/sendgrid-ar21_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/senders/sendgrid-ar21_2.svg'}}"
+                                            alt="hover"
                                     />
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/senders/mailgun-ar21_2.svg'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/senders/Rakuten_Global_Brand_Logo_2.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/senders/Rakuten_Global_Brand_Logo_2.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -761,10 +761,10 @@
                         <!-- Reviews -->
                         <div class="integration-cards__item">
                             <input
-                                name="integration-cards"
-                                type="radio"
-                                id="integration-cards__arrow_8"
-                                class="integration-cards__arrow"
+                                    name="integration-cards"
+                                    type="radio"
+                                    id="integration-cards__arrow_8"
+                                    class="integration-cards__arrow"
                             />
                             <label for="integration-cards__arrow_8">
                                 <h4 class="h4 integration-cards__title">
@@ -776,14 +776,14 @@
                                 <div class="integrations-logo__row">
                                     <img loading="lazy" src="{{media url='wysiwyg/Main/logos/reviews/Yotpo-logo_1.svg'}}" alt="hover" />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/reviews/reviews-io-vector-logo_1.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/reviews/reviews-io-vector-logo_1.svg'}}"
+                                            alt="hover"
                                     />
                                     <img
-                                        loading="lazy"
-                                        src="{{media url='wysiwyg/Main/logos/reviews/feefo-vector-logo_1.svg'}}"
-                                        alt="hover"
+                                            loading="lazy"
+                                            src="{{media url='wysiwyg/Main/logos/reviews/feefo-vector-logo_1.svg'}}"
+                                            alt="hover"
                                     />
                                 </div>
                             </div>
@@ -895,10 +895,10 @@
                                         We develop, design and delivers websites that drive results. Our work never brags, but it sure loves to speak for itself.
                                     </div>
                                     <div
-                                        class="gallery__slide gallery-slide"
-                                        itemprop="brand"
-                                        itemscope
-                                        itemtype="https://schema.org/Brand"
+                                            class="gallery__slide gallery-slide"
+                                            itemprop="brand"
+                                            itemscope
+                                            itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
                                             <img itemprop="logo" loading="lazy" src="{{media url='wysiwyg/Main/tefal.png'}}" alt="tefal" />
@@ -911,10 +911,10 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="gallery__slide gallery-slide"
-                                        itemprop="brand"
-                                        itemscope
-                                        itemtype="https://schema.org/Brand"
+                                            class="gallery__slide gallery-slide"
+                                            itemprop="brand"
+                                            itemscope
+                                            itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/berg.png'}}" alt="berg " />
@@ -928,10 +928,10 @@
                                 <div class="gallery__col gallery__col--reverse">
                                     <a class="gallery__show-more _link-arrow" href="{{store url='work'}}"> See all work </a>
                                     <div
-                                        class="gallery__slide gallery-slide"
-                                        itemprop="brand"
-                                        itemscope
-                                        itemtype="https://schema.org/Brand"
+                                            class="gallery__slide gallery-slide"
+                                            itemprop="brand"
+                                            itemscope
+                                            itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/ortlieb.png'}}" alt="ortrieb " />
@@ -942,10 +942,10 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="gallery__slide gallery-slide"
-                                        itemprop="brand"
-                                        itemscope
-                                        itemtype="https://schema.org/Brand"
+                                            class="gallery__slide gallery-slide"
+                                            itemprop="brand"
+                                            itemscope
+                                            itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
                                             <img loading="lazy" src="{{media url='wysiwyg/Main/vodofon.png'}}" alt="vodofon " />
@@ -1084,10 +1084,10 @@
                                 </div>
                                 <div class="comment__rate">
                                     <div
-                                        class="comment__rate-number"
-                                        itemprop="reviewRating"
-                                        itemtype="https://schema.org/Rating"
-                                        itemscope
+                                            class="comment__rate-number"
+                                            itemprop="reviewRating"
+                                            itemtype="https://schema.org/Rating"
+                                            itemscope
                                     >
                                         <span itemprop="ratingValue">5.0</span>
                                     </div>
@@ -1127,10 +1127,10 @@
                                 </div>
                                 <div class="comment__rate">
                                     <div
-                                        class="comment__rate-number"
-                                        itemprop="reviewRating"
-                                        itemtype="https://schema.org/Rating"
-                                        itemscope
+                                            class="comment__rate-number"
+                                            itemprop="reviewRating"
+                                            itemtype="https://schema.org/Rating"
+                                            itemscope
                                     >
                                         <span itemprop="ratingValue">5.0</span>
                                     </div>
@@ -1169,10 +1169,10 @@
                                 </div>
                                 <div class="comment__rate">
                                     <div
-                                        class="comment__rate-number"
-                                        itemprop="reviewRating"
-                                        itemtype="https://schema.org/Rating"
-                                        itemscope
+                                            class="comment__rate-number"
+                                            itemprop="reviewRating"
+                                            itemtype="https://schema.org/Rating"
+                                            itemscope
                                     >
                                         <span itemprop="ratingValue">5.0</span>
                                     </div>
@@ -1211,10 +1211,10 @@
                                 </div>
                                 <div class="comment__rate">
                                     <div
-                                        class="comment__rate-number"
-                                        itemprop="reviewRating"
-                                        itemtype="https://schema.org/Rating"
-                                        itemscope
+                                            class="comment__rate-number"
+                                            itemprop="reviewRating"
+                                            itemtype="https://schema.org/Rating"
+                                            itemscope
                                     >
                                         <span itemprop="ratingValue">5.0</span>
                                     </div>
@@ -1283,9 +1283,9 @@
                         <li class="adobe-achievments__item">
                             <div class="adobe-achievments__image">
                                 <img
-                                    loading="lazy"
-                                    src="{{media url='wysiwyg/Main/Adobe_Certified_Professional_Experience_Cloud_products_Digital_Badge.png'}}"
-                                    alt="Adobe Certified Professional Experience"
+                                        loading="lazy"
+                                        src="{{media url='wysiwyg/Main/Adobe_Certified_Professional_Experience_Cloud_products_Digital_Badge.png'}}"
+                                        alt="Adobe Certified Professional Experience"
                                 />
                             </div>
                             <div class="adobe-achievments__body">
@@ -1311,9 +1311,9 @@
                         <li class="adobe-achievments__item">
                             <div class="adobe-achievments__image">
                                 <img
-                                    loading="lazy"
-                                    src="{{media url='wysiwyg/Main/Adobe_Certified_Master_Experience_Cloud_products_Digital_Badge.png'}}"
-                                    alt="Adobe Certified Master Experience"
+                                        loading="lazy"
+                                        src="{{media url='wysiwyg/Main/Adobe_Certified_Master_Experience_Cloud_products_Digital_Badge.png'}}"
+                                        alt="Adobe Certified Master Experience"
                                 />
                             </div>
                             <div class="adobe-achievments__body">
@@ -1348,44 +1348,44 @@
                     <div class="badges-list__item">
                         <a href="https://clutch.co/profile/perspective-1">
                             <img
-                                class="badges-list__image"
-                                width="166"
-                                height="180"
-                                src="{{media url='wysiwyg/Main/badges/clutch-new.png'}}"
-                                alt="clutch"
+                                    class="badges-list__image"
+                                    width="166"
+                                    height="180"
+                                    src="{{media url='wysiwyg/Main/badges/clutch-new.png'}}"
+                                    alt="clutch"
                             />
                         </a>
                     </div>
                     <div class="badges-list__item">
                         <a href="https://techreviewer.co/companies/perspective-team">
                             <img
-                                class="badges-list__image"
-                                width="137"
-                                height="180"
-                                src="{{media url='wysiwyg/Main/badges/TopeCom.svg'}}"
-                                alt="TopeCom"
+                                    class="badges-list__image"
+                                    width="137"
+                                    height="180"
+                                    src="{{media url='wysiwyg/Main/badges/TopeCom.svg'}}"
+                                    alt="TopeCom"
                             />
                         </a>
                     </div>
                     <div class="badges-list__item">
                         <a href="https://www.goodfirms.co/company/perspective-team">
                             <img
-                                class="badges-list__image"
-                                width="210"
-                                height="180"
-                                src="{{media url='wysiwyg/Main/badges/GoodFirms.svg'}}"
-                                alt="GoodFirms"
+                                    class="badges-list__image"
+                                    width="210"
+                                    height="180"
+                                    src="{{media url='wysiwyg/Main/badges/GoodFirms.svg'}}"
+                                    alt="GoodFirms"
                             />
                         </a>
                     </div>
                     <div class="badges-list__item">
                         <a href="https://www.designrush.com/agency/profile/perspective-team">
                             <img
-                                class="badges-list__image"
-                                width="128"
-                                height="180"
-                                src="{{media url='wysiwyg/Main/badges/designrush.png'}}"
-                                alt="Designrush"
+                                    class="badges-list__image"
+                                    width="128"
+                                    height="180"
+                                    src="{{media url='wysiwyg/Main/badges/designrush.png'}}"
+                                    alt="Designrush"
                             />
                         </a>
                     </div>
