@@ -167,7 +167,7 @@
                                     <h4 class="h4" itemprop="name">Web Design</h4>
                                 </div>
                             </div>
-                            <div
+                            <a href="services/magento-development"
                                 class="digital-squares__item"
                                 itemprop="itemListElement"
                                 itemscope
@@ -176,7 +176,7 @@
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Magento Development</h4>
                                 </div>
-                            </div>
+                            </a>
                             <div class="digital-squares__empty"></div>
                             <div class="digital-squares__empty"></div>
                         </div>
@@ -222,7 +222,7 @@
                         </div>
 
                         <div class="digital-squares__row">
-                            <div
+                            <a href="/services/server-optimization"
                                 class="digital-squares__item"
                                 itemprop="itemListElement"
                                 itemscope
@@ -234,9 +234,9 @@
                                         Optimization
                                     </h4>
                                 </div>
-                            </div>
+                            </a>
                             <div class="digital-squares__empty"></div>
-                            <div
+                            <a href="/services/magento-security-audit"
                                 class="digital-squares__item"
                                 itemprop="itemListElement"
                                 itemscope
@@ -248,7 +248,7 @@
                                         Security Audit
                                     </h4>
                                 </div>
-                            </div>
+                            </a>
                             <div class="digital-squares__item digital-squares__item--no-border--centered">
                                 <a href="{{store url='services'}}" class="digital-block__link _link-arrow">Discover more</a>
                             </div>
@@ -257,22 +257,22 @@
 
                     <div class="digital-block__squares digital-squares digital-squares--mob">
                         <div class="digital-squares__col">
-                            <div class="digital-squares__item">
+                            <a href="services/magento-development" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento Development</h4>
                                 </div>
-                            </div>
+                            </a>
 
                             <div class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento PWA</h4>
                                 </div>
-                            </div>
-                            <div class="digital-squares__item">
+                            </a>
+                            <a href="/services/server-optimization" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Server & Magento Optimization</h4>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="digital-squares__col">
                             <div class="digital-squares__item">
@@ -291,12 +291,12 @@
                                     <h4 class="h4">Magento Support</h4>
                                 </div>
                             </div>
-                            <div class="digital-squares__item">
+                            <a href="/services/magento-security-audit" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento Security Audit</h4>
                                     <!--  -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

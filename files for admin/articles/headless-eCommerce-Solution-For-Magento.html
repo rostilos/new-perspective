@@ -1,0 +1,697 @@
+<div class="article article--gpt">
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col _text-align-right">
+      <div class="article__intro">
+        <p class="h4 article__text--intro">
+          Headless architecture sparked a revolution in eCommerce in the mid-2010s.
+          This move allows companies to improve their IT solutions without compromising their existing systems.
+          Besides faster content publishing and scaling, it has numerous advantages, improved performance, increased flexibility, and more control.
+        </p>
+        <div class="article__author">by <span itemprop="author">Serhii Kushch</span></div>
+      </div>
+    </div>
+    <div class="grid-col"></div>
+  </section>
+
+  <div class="article__image">
+    <img
+            itemprop="image"
+            style="margin-left: 0; margin-bottom: 20px"
+            loading="eager"
+            src="{{media url='wysiwyg/articles/headless-eCommerce/1.svg'}}"
+            alt="Magento Contribution  Day 2022 - main image"
+    />
+  </div>
+
+  <section class="article__section _article-page-grid article__section--top-margin">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <p class="_text-article _text-article--sm">
+        The central concept of this approach is to separate the website's frontend and backend.
+        This means businesses can update or modify each part of the website without affecting the others.
+        The headless approach is future-proof, meaning businesses can adapt their website or application as new technologies emerge and consumer and customer expectations change.
+        This saves time and resources and ensures the website remains competitive and up-to-date.
+      </p>
+      <p class="_text-article _text-article--sm">
+        If you have already decided to use a headless ecommerce system, it is crucial to clearly understand the advantages and disadvantages of each option before making a decision. No single solution is universally beneficial, so evaluating the project's specific needs and requirements is necessary to make an informed choice. This article will discuss the solutions for the front end while developing on Magento 2 eCommerce platform and compare them to the specific business needs. We will consider cost-effective ones like Scandi and less cost-effective options like Venia and observe the importance of considering other vital criteria while choosing the right solution for your business.
+      </p>
+    </div>
+  </section>
+
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">Key features of headless software architecture</h2>
+      <div class="article__image article__image--narrow"></div>
+      <img src="{{media url='wysiwyg/articles/headless-eCommerce/2.svg'}}" alt="Key features of headless software architecture">
+
+      <p class="article__text _text-article--sm">
+        The approach is becoming popular among forward-thinking organizations as it offers outstanding benefits. Companies like Apple, Amazon, Nike, Walmart, Netflix, and many others have already jumped on board; more businesses realize their worth every day. So, why to chose a headless approach?
+      </p>
+      <h4 class="h4">API-driven communication</h4>
+      <p class="article__text _text-article--sm">
+        The frontend and backend layers exchange information via custom API solutions like REST or GraphQL, simplifying third-party service and system integrations.
+      </p>
+      <h4 class="h4">Frontend tools</h4>
+      <p class="article__text _text-article--sm">
+        Developers can utilize cutting-edge JavaScript frameworks like React, Angular, and Vue.js, resulting in superior performance and maintainability.
+      </p>
+      <h4 class="h article__title">Backend systems</h4>
+      <p class="article__text _text-article--sm">
+        It could be an eCommerce platform, a headless content management system, or a custom-built data storage, processing, and business logic solution.
+      </p>
+      <h4 class="h4">Server-side rendering (SSR) and static site generation (SSG)</h4>
+      <p class="article__text _text-article--sm">
+        These techniques enhance performance, loading times, and search engine indexing by generating HTML on the server or during the build process.
+      </p>
+      <h4 class="h4">Scalability and flexibility</h4>
+      <p class="article__text _text-article--sm">
+        The independent nature of frontend and backend components enables efficient scaling and easy updates, reducing the influence on other layers.
+      </p>
+    </div>
+  </section>
+
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">How are the tasks chosen?</h2>
+
+      <p class="article__text _text-article--sm">
+        A new column, "good first issue," appears on the GitHub "board" during Contribution Day. Practical tasks are
+        snapped up, but you can remove some from the High Priority issue column, just like we did. These high-priority
+        issues involved developing features we use almost daily at work. We understood that solving the chosen tasks
+        would provide a new perspective on M2 development.
+      </p>
+      <p class="article__text _text-article--sm">
+        When choosing a task, there may be a situation like this: pull request may be "empty." That is, somewhere, there
+        is a clone of the problem with almost the same description, and ANOTHER developer (because it can be added as a
+        person working with the company as a solo developer) described his decision to the letter (only "gaps" in
+        different places), and it coincided. The version control system automatically shows no differences.
+      </p>
+    </div>
+  </section>
+
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">How to check the code?</h2>
+      <div class="article__row">
+        <div class="article__image-container">
+          <img
+                  itemprop="image"
+                  style="margin-left: 0"
+                  loading="lazy"
+                  src="{{media url='wysiwyg/articles/contribution/2.svg'}}"
+                  alt="How to check the code?"
+          />
+          <p class="article__text article__text--mobile _text-article--sm" style="margin-bottom: 0">
+            After completing the task, we encountered high standards of code acceptance. The "quality" of the code is
+            checked in the first place by the machine with a set of rules. An interesting nuance is that the developer
+            should write an autotest if this area code is new or not covered with tests. It's essential to do code
+            reviews to have better code awareness. Writing autotests for new or untested code areas can also ensure
+            high-quality work. According to the standards, there were almost no problems because the quality of the code
+            was good.
+          </p>
+        </div>
+        <p class="article__text article__text article__text--dt _text-article--sm">
+          After completing the task, we encountered high standards of code acceptance. The "quality" of the code is
+          checked in the first place by the machine with a set of rules. An interesting nuance is that the developer
+          should write an autotest if this area code is new or not covered with tests. It's essential to do code reviews
+          to have better code awareness. Writing autotests for new or untested code areas can also ensure high-quality
+          work. According to the standards, there were almost no problems because the quality of the code was good.
+        </p>
+      </div>
+
+      <p class="article__text _text-article--sm">
+        There was a different situation with autotests; we thought we messed things up when we wrote, launched, and ran
+        them. That is just because the tests broke in random places; even in those, we did not change anything. As it
+        turned out, the collapse of some tests is typical for such an important mechanism as M2.
+      </p>
+
+      <p class="article__text _text-article--sm">
+        On the last Contribution day, we tended to take in the tasks on M2 fixation under the hood to avoid writing
+        functional tests (i.e., the visual part). By then, we wanted to avoid playing around with the settings and
+        WebDriver for Google Chrome. Besides that, we wanted to get away from Luma, the original M2 Theme. We understood
+        that it would be deprecated in the nearest future little by little, which happened! Adobe released PWA studio.
+        The Venia Theme and those more likely to choose the traditional approach decided to develop what is now called
+        Hyva.
+      </p>
+
+      <p class="article__text _text-article--sm">
+        Further verification of the task is done by the Magento development team from the Adobe/Magento side, and the QA
+        team plays the last, but not the least, role in this stage.
+      </p>
+    </div>
+  </section>
+
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">What tasks were solved during the last Contribution Day?</h2>
+
+      <p class="article__text _text-article--sm">
+        New Relic Module does not match CSP. We have taken a lot of work to allow Magento to communicate with the New
+        Relic profiler, which allows us to speed up site loading considerably. The fix has already been accepted.
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">1.&nbsp;</span>
+          <span>The browser has not allowed the loading of scripts with errors:</span>
+        </h3>
+      </div>
+
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          [Report Only] Refused to load the script 'https://js-agent.newrelic.com/nr-spa-1212.min.js' because it
+          violates the following Content Security Policy directive: "script-src [.....] 'self' 'unsafe-inline'
+          'unsafe-eval'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+        </div>
+      </div>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          2
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          [Report Only] Refused to load the script 'https://bam.nr-data.net/1/[..]etToken' because it violates the
+          following Content Security Policy directive: "script-src [..]'unsafe-inline' 'unsafe-eval'". Note that
+          'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+        </div>
+      </div>
+      <p class="article__text _text-article--sm">
+        The solution of code review: A rule has been added to the browser that allows the loading of 3rd-party scripts.
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">2.&nbsp;</span>
+          <span>The client's email address with the diagram is forbidden:</span>
+        </h3>
+      </div>
+
+      <div class="article__image article__image--narrow">
+        <img
+                loading="lazy"
+                alt="Example of tasks solved by Magento enthusiasts"
+                src="{{media url='wysiwyg/articles/contribution/3-1.png'}}"
+                style="margin-bottom: 16px"
+                class="zoom"
+        />
+      </div>
+      <p class="article__text _text-article--sm">
+        The pre-validation function is fixed so that some characters are read:
+      </p>
+
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin-bottom: 0;
+          "
+        >
+          {
+        </div>
+      </div>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+          "
+        >
+          2
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin-bottom: 0;
+          "
+        >
+          &nbsp;"message": "\"Email\" is not a valid email address."
+        </div>
+      </div>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          3
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          }
+        </div>
+      </div>
+      <p class="article__text _text-article--sm">The solution of Magento validation:</p>
+      <div class="article__image article__image--narrow">
+        <img
+                loading="lazy"
+                alt="Example of tasks solved at Magento Contribution Day"
+                src="{{media url='wysiwyg/articles/contribution/4-1.png'}}"
+                style="margin-bottom: 16px"
+                class="zoom"
+        />
+      </div>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">3.&nbsp;</span>
+          <span>The invoice does not display whether an email with an invoice has been sent. </span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        The site administrator can track the history of the order in the office. However, the invoice was incomplete in
+        terms of information. Our developer has added a function to the invoice page to correctly display the invoice
+        (because the invoice number may not match the order number).
+        <a href="https://github.com/magento/magento2/pull/36030" class="_text-orange"
+        >Fix for issue 27474 by topanok · Pull Request #36030 · magento/magento2</a
+        >
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">4.&nbsp;</span>
+          <span>The product availability email template should be received according to the store's settings. </span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        Letters were sent incorrectly because the wrong template was chosen. The problem was that when items in the
+        store collection were rearranged, the current user's store ID was constantly added to the email object. Our
+        developers have fixed this problem. Since the template selection logic is also included in Product Price Alerts,
+        both problems were solved at the same time.
+        <a href="https://github.com/magento/magento2/pull/35996" class="_text-orange"
+        >Issue-33519. Added logic for grouping alerts by store #35996 - magento/magento2</a
+        >
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">5.&nbsp;</span>
+          <span>The Excel handler creates invalid files for numbers preceded by gaps. </span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        When exporting data from Excel, Magento wrote invalid characters in a cell with numbers. As a result, the files
+        could not be opened. We fixed that, so any additional information is written correctly in an Excel file.
+      </p>
+      <p class="article__text _text-article--sm">The Magento code for Excel handler before fixing:</p>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          &lt;Data ss:Type="Number"&gt; 123&lt;/Data&gt;
+        </div>
+      </div>
+      <p class="article__text _text-article--sm">The Magento code for Excel handler after fixing:</p>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          &lt;Data ss:Type="String"&gt; 123&lt;/Data&gt;
+        </div>
+      </div>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">6.&nbsp;</span>
+          <span>Incorrect filtering of GraphQL queries (date ranges).</span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm" style="margin-bottom: 0">
+        At the entrance to the backend part, Magento requests the frontend part, but it did not extract any data between
+        the dates. The developer fixed the bug. The fix has already been accepted.
+      </p>
+      <p class="article__text _text-article--sm">
+        <a href="https://github.com/magento/magento2/pull/36036" class="_text-orange"
+        >magento/magento2#31537: Magento2.4 GraphQL CustomerOrders Query Logic by serbyynskyi · pull Request #36036 ·
+          magento/magento2</a
+        >
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">7.&nbsp;</span>
+          <span
+          >When Magento was switched to external storage mode, Logo Files did not work when printing PDF
+            invoices.</span
+          >
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        When Magento makes PDF invoices for the administrator, it works according to the mechanisms built into the PHP
+        programming language. And when this language was created, it did not count on the network data storage device
+        name, so it became an obstacle in creating PDF invoices.
+      </p>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin-bottom: 0;
+          "
+        >
+          Cannot create image resource. File not found."
+        </div>
+      </div>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          2
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          #1 Zend_Pdf_Image::imageWithPath() called at
+          [vendor\/magento\/module-sales\/Model\/Order\/Pdf\/AbstractPdf.php:282]
+        </div>
+      </div>
+      <p class="article__text _text-article--sm">Creating PDF invoices in Magento after fixing:</p>
+      <div class="article__image article__image--narrow">
+        <img
+                loading="lazy"
+                alt="Creating PDF invoices in Magento after fixes"
+                src="{{media url='wysiwyg/articles/contribution/5-1.png'}}"
+                style="margin-bottom: 16px"
+                class="zoom"
+        />
+      </div>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">8.&nbsp;</span>
+          <span>The GraphQL Routes Strip Request has a problem on the Category page.</span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        For some reason, the front part of Magento PWA crashed in search by URL. The code did not work correctly. The
+        developer corrected this.
+      </p>
+      <p class="article__text _text-article--sm">Magento PWA crash before fixing:</p>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          { "errors": [ { "debugMessage": "Notice: Undefined property:
+          GraphQL\\Language\\AST\\FragmentSpreadNode::$selectionSet in
+          /var/www/html/mage245/vendor/magento/module-catalog-graph-ql/Model/Category/DepthCalculator.php on line 83",
+          "message": "Internal server error", "extensions": { "category": "internal" }, "locations": [ { "line": 2,
+          "column": 5 } ], "path": [ "route" ] } ], "data": { "route": null } }
+        </div>
+      </div>
+      <p class="article__text _text-article--sm">Magento PWA crash after fixing:</p>
+      <div style="overflow-wrap: anywhere" class="_code-string flex">
+        <div
+                class="_code-string_num flex _text-article _text-article--sm"
+                style="
+            background: #ececec;
+            min-width: 32px;
+            border-radius: 5px 0px 0px 5px;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          1
+        </div>
+        <div
+                class="_code-string__content _text-article _text-article--sm"
+                style="
+            padding: 8px 16px;
+            background: #f9f9f9;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+          "
+        >
+          { "data": { "route": { "redirect_code": 0, "relative_url": "men.html", "type": "CATEGORY", "name": "Men",
+          "id": 11, "url_path": "men", "url_suffix": ".html", "breadcrumbs": null } } }
+        </div>
+      </div>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">9.&nbsp;</span>
+          <span>Administrator users cannot change the external logo in a single-store configuration</span>
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm" style="margin-bottom: 0">
+        A Single Store Mode was disabled in default configurations. If you're a multi-brand store and try to adjust
+        something, configurations remain the same when you switch from the Multi Store Page to the Single Store Page.
+        Our developer successfully made a pull request and fixed that incorrection.
+      </p>
+      <p class="article__text _text-article--sm">
+        <a href="https://github.com/magento/magento2/pull/36008" class="_text-orange"
+        >magento/magento2#35952 Admin Users unable to change frontend Logo in Design Config when in Single Store Mode
+          by monteshot · pull Request #36008 · magento/magento2</a
+        >
+      </p>
+
+      <div class="article__flex-content">
+        <h3 style="margin-bottom: 10px" class="h5 flex font-semibold">
+          <span class="_text-orange">10.&nbsp;</span>
+          <span
+          >Unlike the Product List In Catalog (shown below), the recently viewed widget did not include a price.</span
+          >
+        </h3>
+      </div>
+      <p class="article__text _text-article--sm">
+        We have listed taxes in the price display on the Recently Viewed widget.
+      </p>
+      <div class="article__image article__image--narrow">
+        <img
+                loading="lazy"
+                alt="Magento Recenty Viewed widget"
+                src="{{media url='wysiwyg/articles/contribution/6.png'}}"
+                style="margin-bottom: 16px"
+                class="zoom"
+        />
+      </div>
+      <p class="article__text _text-article--sm">
+        <a href="https://github.com/magento/magento2/pull/36041" class="_text-orange"
+        >magento/magento2#35881: Final Price for grouped products does not include tax in the Recently Viewed Widget
+          by shmVan · Pull Request #36041 · magento/magento2</a
+        >
+      </p>
+    </div>
+    <ul class="article__list">
+      <li class="font-regular _text-article">
+        <p class="_text-article _text-article--sm">
+          The approach is becoming popular among forward-thinking organizations as it offers outstanding benefits. Companies like Apple, Amazon, Nike, Walmart, Netflix, and many others have already jumped on board; more businesses realize their worth every day. So, why to chose a headless approach?
+        </p>
+      </li>
+      <li class="font-regular _text-article">
+        <p class="_text-article _text-article--sm">
+          We are improving the company's image within the community of the Magento development team. Earning a
+          contributor mark for a company on GitHub is incredible for the team. Contributing to an open-source project
+          goes from an active GitHub account desire. It helps improve the company's image within the community and
+          shows that the team is actively involved in open-source development.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="article__section _article-page-grid">
+    <div class="grid-col"></div>
+    <div class="grid-col">
+      <h2 class="h4 article__title">Expectations</h2>
+      <p class="_text-article--sm article__text">
+        The Magento core community engineering team did a lot of work, so our tasks hovered for 2 or 3 months with green
+        ticks. All that remained was to merge them into the main branch. After one of the task developers had a request
+        accepted, we ordered pizza to celebrate at our office location. Next, Magento Contribution Day was more dynamic
+        from the Adobe side. Already a week later, we had feedback from the Magento community engineering team, two of
+        our pool requests were merged, and we were also given a Partner label on Github=)), Partner label on GitHub is
+        not only adorable but can also be a valuable business asset as it demonstrates expertise in Magento core and
+        credibility in the industry.
+      </p>
+      <p class="_text-article--sm article__text">
+        The Magento Contribution Day is an excellent opportunity for developers to contribute to the Magento community
+        and a measure of success. The fact that the developers have a lot of work and find time to take pull requests
+        shows how dedicated they are to improving the platform. This level of commitment can only lead to better
+        business outcomes for both Adobe and its partners.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================== -->
+</div>
