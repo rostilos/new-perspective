@@ -206,7 +206,7 @@
                                     </h4>
                                 </div>
                             </a>
-                            <a href="services/magento-support
+                            <a href="services/magento-support"
                                     class="digital-squares__item"
                                     itemprop="itemListElement"
                                     itemscope
