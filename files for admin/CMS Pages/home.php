@@ -194,10 +194,10 @@
                                 </div>
                             </div>
                             <a href="/services/magento-pwa"
-                                    class="digital-squares__item"
-                                    itemprop="itemListElement"
-                                    itemscope
-                                    itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
