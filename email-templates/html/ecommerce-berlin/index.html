@@ -54,6 +54,9 @@
       a:hover {
         color: #d85026 !important;
       }
+      .news-item:hover {
+        color: #d85026 !important;
+      }
       a.read-more {
         font-weight: 500;
         font-size: 12px;
@@ -170,7 +173,7 @@
       .section-stories__item {
         display: block;
         width: 100%;
-        padding: 32px 0;
+        padding: 14px 0;
       }
       body {
         margin: 0;
@@ -487,6 +490,55 @@
           padding-bottom: 34px !important;
         }
       }
+      @media screen and (max-width: 599px) {
+        .stories-col-2nd{
+          border-top: 1px solid #949494;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .section-stories__item{
+          padding-bottom: 0 !important;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .stories-col-2nd .inner{
+          padding-top: 16px;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .updates-square-1,.updates-square-2,.updates-square-3{
+          width: 100%;
+        }
+        .updates-square-1 p{
+          max-width: 100px;
+        }
+        .updates-square-2 p{
+          max-width: 200px;
+        }
+        .updates-square-3 p{
+          max-width: 150px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-1,.updates-square-2,.updates-square-3{
+          width: 100%;
+          display: flex;
+        }
+        .updates-square-1 .text-base,.updates-square-2 .text-base,.updates-square-3 .text-base{
+          margin-left: 24px !important;
+        }
+        
+        .updates-square-1 p{
+          max-width: 100px;
+        }
+        .updates-square-2 p{
+          max-width: 200px;
+        }
+        .updates-square-3 p{
+          max-width: 150px;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -607,7 +659,7 @@
                       <table class="contents">
                         <tr>
                           <td class="text">
-                            <h1 class="section-intro__title">e-Commerce Insights: April 2023</h1>
+                            <h1 class="section-intro__title" style="font-weight: 600;">e-Commerce Insights: April 2023</h1>
                             <p
                               class="text-lg"
                               style="font-weight: 400; padding-bottom: 10px; font-size: 16px; line-height: 24px"
@@ -670,7 +722,7 @@
                       <table class="contents">
                         <tr>
                           <td class="text">
-                            <h2 style="font-weight: 500; font-size: 22px; line-height: 32px; text-transform: uppercase">
+                            <h2 style="font-weight: 600; font-size: 22px; line-height: 32px; text-transform: uppercase">
                               E-Commerce Expo 2023 Stockholm
                             </h2>
                             <p class="text-base" style="padding-bottom: 35px">
@@ -696,7 +748,7 @@
                             <img
                               src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/IMAGE-2-2.png"
                               alt="test"
-                              style="margin-top: 20px"
+                              style="margin-top: 20px; max-width: 290px;margin-left: auto;margin-right: auto;"
                             />
                           </td>
                         </tr>
@@ -721,27 +773,55 @@
               <![endif]-->
             </td>
           </tr>
+
           <!-- #3 section (Stories you may have missed) -->
           <tr>
-            <td class="one-column">
+            <td class="one-column stories">
               <table width="100%">
                 <tr>
                   <td class="inner contents">
                     <div class="section-stories">
-                      <h3 class="section-stories__title">Stories you may have missed</h3>
-
-                      <hr />
-                      <table>
-                        <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
-                          <td colspan="1" style="padding: 0">
+                      <h3 class="section-stories__title" style="font-weight: 600;">Stories you may have missed</h3>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="two-column"
+              style="border-top: 1px solid #949494; border-bottom: 1px solid #949494;"
+              dir="rtl"
+            >
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              <div class="column" style="max-width: 273px">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table align="left" style="text-align: left">
+                        <tr class="section-stories__img">
+                          <td colspan="1" style="padding: 0;padding-top:16px">
                             <img
-                              src="https://perspectiveteam.com/media/blog/Mask_Group_2__2.webp"
+                              src="https://perspectiveteam.com/media/blog/Mask_Group_2__2.png"
                               alt="article-img"
                               width="104"
                               height="80"
-                              style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                              style="
+                                object-fit: cover;
+                                object-position: 80%;
+                                margin-right: 16px;
+                                width: 104px;
+                                height: 80px;
+                              "
                             />
                           </td>
+                        </tr>
+                        <tr class="section-stories__item">
                           <td colspan="6" style="padding: 0">
                             <div>
                               <p
@@ -753,47 +833,75 @@
                               <a
                                 href="https://perspectiveteam.com/blog/development-of-marketplace-on-vnecoms-modules"
                                 class="text-base section-stories__text"
-                                style="font-weight: 500; color: inherit"
+                                style="font-weight: 600; color: inherit; text-align: left"
                                 >Marketplace Development Based on VnEcoms Extensions
                               </a>
                             </div>
                           </td>
                         </tr>
-
-                        <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
-                          <td colspan="1" style="padding: 0">
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              <div class="column stories-col-2nd" style="max-width: 327px">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table align="left" style="text-align: left">
+                        <tr class="section-stories__img">
+                          <td colspan="1" style="padding: 0;padding-top:16px">
                             <img
-                              src="https://perspectiveteam.com/media/blog/Image_1__1.webp"
+                              src="https://perspectiveteam.com/media/blog/Image_1__1.png"
                               alt="article-img"
                               width="104"
                               height="80"
-                              style="object-fit: cover; object-position: 80%; margin-right: 16px"
+                              style="
+                                object-fit: cover;
+                                object-position: 80%;
+                                margin-right: 16px;
+                                width: 104px;
+                                height: 80px;
+                                padding-right: 0;
+                              "
                             />
                           </td>
-                          <td colspan="6" style="padding: 0">
+                        </tr>
+                        <tr class="section-stories__item" >
+                          <td colspan="6" style="padding: 0" dir="ltr">
                             <div>
                               <p
                                 class="text-xs"
                                 style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
                               >
-                                April 13, 2023
+                                13 April 13, 2023
                               </p>
                               <a
                                 href="https://perspectiveteam.com/blog/9-ways-how-you-can-use-chatgpt-in-ecommerce/"
                                 class="text-base section-stories__text"
-                                style="font-weight: 500; color: inherit"
+                                style="font-weight: 600; color: inherit"
                                 >9 Ways How You Can Use ChatGPT In eCommerce
                               </a>
                             </div>
                           </td>
                         </tr>
                       </table>
-                    </div>
-                  </td>
-                </tr>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
               </table>
+              <![endif]-->
             </td>
           </tr>
+
           <!-- #4 section (Stories you may have missed) -->
           <tr>
             <td class="one-column">
@@ -805,7 +913,7 @@
                         class="section-updates__title"
                         style="
                           text-align: center;
-                          font-weight: 500;
+                          font-weight: 600;
                           font-size: 22px;
                           line-height: 32px;
                           margin-top: 40px;
@@ -820,7 +928,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -870,7 +978,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -920,7 +1028,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -969,7 +1077,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1019,7 +1127,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1069,7 +1177,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1119,7 +1227,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1169,7 +1277,7 @@
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1232,7 +1340,7 @@
                         <h3
                           style="
                             text-align: center;
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 22px;
                             line-height: 32px;
                             margin-top: 40px;
@@ -1321,75 +1429,7 @@
             <td class="one-column">
               <div style="display: inline-block; width: 100%; font-size: 0">
                 <div class="updates-square updates-square-1" style="border: 1px solid #949494">
-                  <table>
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td class="updates-square__number">
-                          <img
-                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/5.png"
-                            alt="4"
-                          />
-                        </td>
-                        <td style="padding-left: 5px !important">
-                          <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/fluent-mdl2_certificate.png?raw=true"
-                            alt="icon"
-                            width="24"
-                            height="24"
-                            class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new Magento certificates added</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="updates-square updates-square-2" style="border: 1px solid #949494">
-                  <table>
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td class="updates-square__number">
-                          <img
-                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/3.png"
-                            alt="3"
-                          />
-                        </td>
-                        <td style="padding-left: 5px !important">
-                          <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/simple-line-icons_user-follow.png?raw=true"
-                            alt="icon"
-                            width="24"
-                            height="24"
-                            class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="updates-square" style="border: 1px solid #949494">
-                  <table>
+                  <table style="margin-bottom: 16px;">
                     <tbody>
                       <tr style="vertical-align: top">
                         <td class="updates-square__number">
@@ -1400,12 +1440,12 @@
                         </td>
                         <td style="padding-left: 5px !important">
                           <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/clarity_contract-line.png?raw=true"
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-time.png?raw=true"
                             alt="icon"
                             width="24"
-                            height="24"
+                            height="39"
                             class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
+                            style="display: inline-block; height: 39px; object-fit: contain; width: 24px"
                           />
                         </td>
                       </tr>
@@ -1415,7 +1455,75 @@
                     <tbody>
                       <tr>
                         <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
+                          <p class="text-base">Average SLA reaction time</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="updates-square updates-square-2" style="border: 1px solid #949494">
+                  <table style="margin-bottom: 16px;">
+                    <tbody>
+                      <tr style="vertical-align: top">
+                        <td class="updates-square__number">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/numbers/6.png?raw=true"
+                            alt="6"
+                          />
+                        </td>
+                        <td style="padding-left: 5px !important">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-gears.png?raw=true"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                            class="updates-square__icon"
+                            style="display: inline-block; height: 24px; object-fit: contain; width: 24px"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td align="left">
+                          <p class="text-base">Magento Core Improvements</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="updates-square updates-square-3" style="border: 1px solid #949494">
+                  <table style="margin-bottom: 16px;">
+                    <tbody>
+                      <tr style="vertical-align: top">
+                        <td class="updates-square__number">
+                          <img
+                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/3.png"
+                            alt="4"
+                          />
+                        </td>
+                        <td style="padding-left: 5px !important">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-park-outline_delivery.png?raw=true"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                            class="updates-square__icon"
+                            style="display: inline-block; height: 24px; object-fit: contain; width: 24px"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td align="left">
+                          <p class="text-base">Migrations to Magento 2</p>
                         </td>
                       </tr>
                     </tbody>
@@ -1431,7 +1539,7 @@
                 <tr>
                   <td class="inner contents">
                     <div class="section-next-step">
-                      <h4 class="section-next-step__title">Ready to make next step?</h4>
+                      <h4 class="section-next-step__title" style="font-weight: 600;">Ready to make next step?</h4>
 
                       <a
                         class="orange-button"
