@@ -269,7 +269,7 @@
         </div>
       </div>
     </section>
-    <section id="section-faq" class="page__section section-faq" x-data="{selected:null}">
+    <section itemscope itemtype="https://schema.org/FAQPage" id="section-faq" class="page__section section-faq" x-data="{selected:null}">
       <div class="section-faq__container _container">
         <h2 class="section-faq__title _section-title h2" style="text-align: center">
           Magento Breeze theme. What it offers
@@ -277,173 +277,186 @@
         <div class="section-faq__content">
           <div class="section-faq__collapsible _collapsible">
             <!-- 1 -->
-            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 1}">
-              <div
-                      data-role="trigger"
-                      class="_collapsible__trigger"
-                      @click="selected !== 1 ? selected = 1 : selected = null"
-              >
-                <div class="_collapsible__header">
-                  <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
-                    <span class="_text-orange font-regular" style="margin-right: 8px">01.</span>
-                    <span class="font-medium" itemprop="name">Can I use Breeze with my Luma-based theme?</span>
-                  </h4>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 1}">
+                <div
+                        data-role="trigger"
+                        class="_collapsible__trigger"
+                        @click="selected !== 1 ? selected = 1 : selected = null"
+                >
+                  <div class="_collapsible__header">
+                    <h4 class="h4 _collapsible__title" >
+                      <span class="_text-orange font-regular" style="margin-right: 8px">01.</span>
+                      <span class="font-medium" itemprop="name">Can I use Breeze with my Luma-based theme?</span>
+                    </h4>
+                  </div>
+                  <span class="_collapsible__plus-sign"></span>
                 </div>
-                <span class="_collapsible__plus-sign"></span>
+              </div>
+              <div
+                      data-role="content"
+                      style=""
+                      x-ref="container1"
+                      x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
+              >
+                <div class="_collapsible__content" style="display: flex" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div class="_collapsible__empty"></div>
+                  <div class="_collapsible__col">
+                    <p class="article__text" itemprop="text">
+                      Yes, you can install the swissup/breeze module separately to use Breeze with your Luma-based
+                      theme.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-                    data-role="content"
-                    style=""
-                    x-ref="container1"
-                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-            >
-              <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                <div class="_collapsible__empty"></div>
-                <div class="_collapsible__col">
-                  <p class="article__text" itemprop="text">
-                    Yes, you can install the swissup/breeze module separately to use Breeze with your Luma-based
-                    theme.
-                  </p>
+            <!-- 2 -->
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 2}">
+                <div
+                        data-role="trigger"
+                        class="_collapsible__trigger"
+                        @click="selected !== 2 ? selected = 2 : selected = null"
+                >
+                  <div class="_collapsible__header">
+                    <h4 class="h4 _collapsible__title" >
+                      <span class="_text-orange font-regular" style="margin-right: 8px">02.</span>
+                      <span class="font-medium" itemprop="name">Will my current modules work with Breeze? </span>
+                    </h4>
+                  </div>
+                  <span class="_collapsible__plus-sign"></span>
+                </div>
+              </div>
+              <div
+                      data-role="content"
+                      style=""
+                      x-ref="container2"
+                      x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+              >
+                <div class="_collapsible__content" style="display: flex" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div class="_collapsible__empty"></div>
+                  <div class="_collapsible__col">
+                    <p class="article__text" itemprop="text">
+                      Modules that don't rely on JS will work with Breeze. However, modules that utilize JS may
+                      require integration efforts to function correctly
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- 2 -->
-            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 2}">
-              <div
-                      data-role="trigger"
-                      class="_collapsible__trigger"
-                      @click="selected !== 2 ? selected = 2 : selected = null"
-              >
-                <div class="_collapsible__header">
-                  <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
-                    <span class="_text-orange font-regular" style="margin-right: 8px">02.</span>
-                    <span class="font-medium" itemprop="name">Will my current modules work with Breeze? </span>
-                  </h4>
-                </div>
-                <span class="_collapsible__plus-sign"></span>
-              </div>
-            </div>
-            <div
-                    data-role="content"
-                    style=""
-                    x-ref="container2"
-                    x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
-            >
-              <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                <div class="_collapsible__empty"></div>
-                <div class="_collapsible__col">
-                  <p class="article__text" itemprop="text">
-                    Modules that don't rely on JS will work with Breeze. However, modules that utilize JS may
-                    require integration efforts to function correctly
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <!-- 3 -->
-            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 3}">
-              <div
-                      data-role="trigger"
-                      class="_collapsible__trigger"
-                      @click="selected !== 3 ? selected = 3 : selected = null"
-              >
-                <div class="_collapsible__header">
-                  <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
-                    <span class="_text-orange font-regular" style="margin-right: 8px">03.</span>
-                    <span class="font-medium" itemprop="name">How do I integrate my modules with Breeze?</span>
-                  </h4>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 3}">
+                <div
+                        data-role="trigger"
+                        class="_collapsible__trigger"
+                        @click="selected !== 3 ? selected = 3 : selected = null"
+                >
+                  <div class="_collapsible__header">
+                    <h4 class="h4 _collapsible__title" >
+                      <span class="_text-orange font-regular" style="margin-right: 8px">03.</span>
+                      <span class="font-medium" itemprop="name">How do I integrate my modules with Breeze?</span>
+                    </h4>
+                  </div>
+                  <span class="_collapsible__plus-sign"></span>
                 </div>
-                <span class="_collapsible__plus-sign"></span>
               </div>
-            </div>
-            <div
-                    data-role="content"
-                    style=""
-                    x-ref="container3"
-                    x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
-            >
-              <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                <div class="_collapsible__empty"></div>
-                <div class="_collapsible__col">
-                  <p class="article__text" itemprop="text">
-                    We recommend hiring a professional developer for this task. You can also refer to our
-                    integration tips available in the documentation.
-                  </p>
+              <div
+                      data-role="content"
+                      style=""
+                      x-ref="container3"
+                      x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
+              >
+                <div class="_collapsible__content" style="display: flex" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div class="_collapsible__empty"></div>
+                  <div class="_collapsible__col">
+                    <p class="article__text" itemprop="text">
+                      We recommend hiring a professional developer for this task. You can also refer to our
+                      integration tips available in the documentation.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
+
             <!-- 4 -->
-            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 4}">
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 4}">
+                <div
+                        data-role="trigger"
+                        class="_collapsible__trigger"
+                        @click="selected !== 4 ? selected = 4 : selected = null"
+                >
+                  <div class="_collapsible__header">
+                    <h4 class="h4 _collapsible__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <span class="_text-orange font-regular" style="margin-right: 8px">04.</span>
+                      <span class="font-medium" itemprop="name">How can Perspective help me with Breeze?</span>
+                    </h4>
+                  </div>
+                  <span class="_collapsible__plus-sign"></span>
+                </div>
+              </div>
               <div
-                      data-role="trigger"
-                      class="_collapsible__trigger"
-                      @click="selected !== 4 ? selected = 4 : selected = null"
+                      data-role="content"
+                      style=""
+                      x-ref="container4"
+                      x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''"
               >
-                <div class="_collapsible__header">
-                  <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
-                    <span class="_text-orange font-regular" style="margin-right: 8px">04.</span>
-                    <span class="font-medium" itemprop="name">How can Perspective help me with Breeze?</span>
-                  </h4>
-                </div>
-                <span class="_collapsible__plus-sign"></span>
-              </div>
-            </div>
-            <div
-                    data-role="content"
-                    style=""
-                    x-ref="container4"
-                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''"
-            >
-              <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                <div class="_collapsible__empty"></div>
-                <div class="_collapsible__col">
-                  <p class="article__text" itemprop="text">
-                    Perspective's certified Magento developers can provide fast installation and support for
-                    Breeze, ensuring a smooth integration with your existing store. Their expertise will help you
-                    take full advantage of Breeze's features and performance improvements.
-                  </p>
+                <div class="_collapsible__content" style="display: flex" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div class="_collapsible__empty"></div>
+                  <div class="_collapsible__col">
+                    <p class="article__text" itemprop="text">
+                      Perspective's certified Magento developers can provide fast installation and support for
+                      Breeze, ensuring a smooth integration with your existing store. Their expertise will help you
+                      take full advantage of Breeze's features and performance improvements.
+                    </p>
+                  </div>
                 </div>
               </div>
+
             </div>
 
             <!-- 5 -->
-            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 5}">
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 5}">
+                <div
+                        data-role="trigger"
+                        class="_collapsible__trigger"
+                        @click="selected !== 5 ? selected = 5 : selected = null"
+                >
+                  <div class="_collapsible__header">
+                    <h4 class="h4 _collapsible__title">
+                      <span class="_text-orange font-regular" style="margin-right: 8px">05.</span>
+                      <span class="font-medium" itemprop="name"
+                      >How does Breeze compare to the Hyva theme for Magento 2?</span
+                      >
+                    </h4>
+                  </div>
+                  <span class="_collapsible__plus-sign"></span>
+                </div>
+              </div>
               <div
-                      data-role="trigger"
-                      class="_collapsible__trigger"
-                      @click="selected !== 5 ? selected = 5 : selected = null"
+                      data-role="content"
+                      style=""
+                      x-ref="container5"
+                      x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''"
               >
-                <div class="_collapsible__header">
-                  <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
-                    <span class="_text-orange font-regular" style="margin-right: 8px">05.</span>
-                    <span class="font-medium" itemprop="name"
-                    >How does Breeze compare to the Hyva theme for Magento 2?</span
-                    >
-                  </h4>
-                </div>
-                <span class="_collapsible__plus-sign"></span>
-              </div>
-            </div>
-            <div
-                    data-role="content"
-                    style=""
-                    x-ref="container5"
-                    x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''"
-            >
-              <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                <div class="_collapsible__empty"></div>
-                <div class="_collapsible__col">
-                  <p class="article__text" itemprop="text">
-                    Breeze focuses on reducing JS stack complexity and script evaluation time, while Hyva
-                    emphasizes a minimalistic and clean frontend approach. If you're unsure which theme is right
-                    for your store, consult Perspective's expert developers to help you make the best decision.
-                  </p>
+                <div class="_collapsible__content" style="display: flex" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div class="_collapsible__empty"></div>
+                  <div class="_collapsible__col">
+                    <p class="article__text" itemprop="text">
+                      Breeze focuses on reducing JS stack complexity and script evaluation time, while Hyva
+                      emphasizes a minimalistic and clean frontend approach. If you're unsure which theme is right
+                      for your store, consult Perspective's expert developers to help you make the best decision.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
