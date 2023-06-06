@@ -2,8 +2,6 @@
         class="service-single service-page"
         x-data
         x-init="localStorage.setItem('isAnyFormTouched', false)"
-        itemscope
-        itemtype="https://schema.org/FAQPage"
 >
   <div class="services-page__container _container">
     <div class="service-page__top _grid-3-col">
@@ -42,7 +40,7 @@
       </div>
       <a
               @click.prevent="document.getElementById('form_hire-grid').scrollIntoView({block:'center',behavior: 'smooth'})"
-              class="_button _button--orange-bg _button--arrow optimization-page-intro__button--mobile"
+              class="_button _button--orange-bg optimization-page-intro__button--mobile"
       >
         <h5 class="h5 _button__text">Let’s do it!</h5>
         <span class="_button__overlay _button__overlay--hover"></span>
@@ -506,7 +504,7 @@
           </div>
         </div>
         <a href="/company">
-          <button class="_button _button--arrow" style="margin-right: auto; margin-left: auto;">
+          <button class="_button _button--arrow" style="margin-right: auto; margin-left: auto; auto;color: #333">
             <span class="_button__text">More about us</span>
             <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"
             >More about us</span
