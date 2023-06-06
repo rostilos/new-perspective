@@ -15,19 +15,19 @@
   </div>
   <!-- Company -->
   <div
-    class="footer-links-content__col has-sublinks"
-    data-role="collapsible"
-    :class="{'active': selected == 'company'}"
+          class="footer-links-content__col has-sublinks"
+          data-role="collapsible"
+          :class="{'active': selected == 'company'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
       <a href="{{store url='company'}}">Company</a>
       <div data-role="trigger" @click="selected !== 'company' ? selected = 'company' : selected = null"></div>
     </div>
     <div
-      class="footer-links-content__sublinks"
-      style=""
-      x-ref="company"
-      x-bind:style="selected == 'company' ? 'max-height: ' + $refs.company.scrollHeight + 'px' : ''"
+            class="footer-links-content__sublinks"
+            style=""
+            x-ref="company"
+            x-bind:style="selected == 'company' ? 'max-height: ' + $refs.company.scrollHeight + 'px' : ''"
     >
       <div class="footer-links-content__sublink">
         <a href="{{store url='company'}}">About the team</a>
@@ -52,44 +52,44 @@
   </div>
   <!-- Services -->
   <div
-    class="footer-links-content__col has-sublinks"
-    data-role="collapsible"
-    :class="{'active': selected == 'services'}"
+          class="footer-links-content__col has-sublinks"
+          data-role="collapsible"
+          :class="{'active': selected == 'services'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
       <a href="{{store url='services'}}">Services</a>
       <div data-role="trigger" @click="selected !== 'services' ? selected = 'services' : selected = null"></div>
     </div>
     <div
-      class="footer-links-content__sublinks"
-      style=""
-      x-ref="services"
-      x-bind:style="selected == 'services' ? 'max-height: ' + $refs.services.scrollHeight + 'px' : ''"
+            class="footer-links-content__sublinks"
+            style=""
+            x-ref="services"
+            x-bind:style="selected == 'services' ? 'max-height: ' + $refs.services.scrollHeight + 'px' : ''"
     >
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-design-section">Web Design</a>
+        <a href="{{store url='services/comprehensive-web-design'}}">Web Design</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-development-section">Magento Development</a>
+        <a href="{{store url='services/magento-development'}}">Magento Development</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-migration-section">Magento 2 Migration</a>
+        <a href="{{store url='services/migration-to-magento-2'}}">Magento 2 Migration</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-pwa-section">Magento PWA</a>
+        <a href="{{store url='services/magento-pwa'}}">Magento PWA</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-security-section">Magento Security Audit</a>
+        <a href="{{store url='services/magento-security-audit'}}">Magento Security Audit</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-support-section">Magento Support</a>
+        <a href="{{store url='services/magento-support'}}">Magento Support</a>
       </div>
       <div class="footer-links-content__sublink">
-        <a href="{{store url='services'}}#services-optimization-section">Server & Magento Optimization</a>
+        <a href="{{store url='services/server-optimization'}}">Server & Magento Optimization</a>
       </div>
       <div class="footer-links-content__sublink">
         <a href="{{store url='services/implementation-google-analytics-4-on-magento-2-with-gtm'}}"
-          >Implementation Google Analytics 4</a
+        >Implementation Google Analytics 4</a
         >
       </div>
     </div>
@@ -97,19 +97,19 @@
 
   <!-- Contacts -->
   <div
-    class="footer-links-content__col has-sublinks"
-    data-role="collapsible"
-    :class="{'active': selected == 'contacts'}"
+          class="footer-links-content__col has-sublinks"
+          data-role="collapsible"
+          :class="{'active': selected == 'contacts'}"
   >
     <div class="h4 footer-links-content__link has-sublinks">
       <a href="{{store url='contacts'}}">Contacts</a>
       <div data-role="trigger" @click="selected !== 'contacts' ? selected = 'contacts' : selected = null"></div>
     </div>
     <div
-      class="footer-links-content__sublinks"
-      style=""
-      x-ref="contacts"
-      x-bind:style="selected == 'contacts' ? 'max-height: ' + $refs.contacts.scrollHeight + 'px' : ''"
+            class="footer-links-content__sublinks"
+            style=""
+            x-ref="contacts"
+            x-bind:style="selected == 'contacts' ? 'max-height: ' + $refs.contacts.scrollHeight + 'px' : ''"
     >
       {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
       block_id="footer_info"}}

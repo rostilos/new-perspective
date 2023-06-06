@@ -157,7 +157,7 @@
                             class="digital-block__squares digital-squares digital-squares--desk"
                     >
                         <div class="digital-squares__row">
-                            <div
+                            <a href="services/comprehensive-web-design"
                                     class="digital-squares__item"
                                     itemprop="itemListElement"
                                     itemscope
@@ -166,7 +166,7 @@
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Web Design</h4>
                                 </div>
-                            </div>
+                            </a>
                             <a href="services/magento-development"
                                class="digital-squares__item"
                                itemprop="itemListElement"
@@ -183,7 +183,7 @@
 
                         <div class="digital-squares__row">
                             <div class="digital-squares__empty"></div>
-                            <div
+                            <a href="services/migration-to-magento-2"
                                     class="digital-squares__item"
                                     itemprop="itemListElement"
                                     itemscope
@@ -192,12 +192,12 @@
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Magento 2 Migration</h4>
                                 </div>
-                            </div>
+                            </a>
                             <a href="/services/magento-pwa"
-                                    class="digital-squares__item"
-                                    itemprop="itemListElement"
-                                    itemscope
-                                    itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -206,7 +206,7 @@
                                     </h4>
                                 </div>
                             </a>
-                            <div
+                            <a href="services/magento-support"
                                     class="digital-squares__item"
                                     itemprop="itemListElement"
                                     itemscope
@@ -218,7 +218,7 @@
                                         Support
                                     </h4>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="digital-squares__row">
@@ -275,22 +275,22 @@
                             </a>
                         </div>
                         <div class="digital-squares__col">
-                            <div class="digital-squares__item">
+                            <a href="services/comprehensive-web-design" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Web Design</h4>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="digital-squares__item">
+                            <a href="services/migration-to-magento-2" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento 2 Migration</h4>
                                 </div>
-                            </div>
-                            <div class="digital-squares__item">
+                            </a>
+                            <a href="services/magento-support" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento Support</h4>
                                 </div>
-                            </div>
+                            </a>
                             <a href="/services/magento-security-audit" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Magento Security Audit</h4>
