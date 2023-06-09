@@ -54,7 +54,15 @@
           <div class="service-table-squares__item">
             <div class="service-square-item__body">
               <div class="service-square-item__image">
-                <img src="{{media url='wysiwyg/Service/web-design/2.svg'}}" alt="" />
+                <picture>
+                  <source
+                    type="image/svg+xml"
+                    media="(min-width:576px)"
+                    srcset="{{media url='wysiwyg/Service/web-design/2.svg'}}"
+                  />
+                  <source type="image/svg+xml" srcset="{{media url='wysiwyg/Service/web-design/2-mob.svg'}}" />
+                  <img src="{{media url='wysiwyg/Service/web-design/2-mob.svg'}}" alt="" />
+                </picture>
               </div>
               <div class="service-square-item__title h4">Phased Redesign</div>
               <p class="service-square-item__text">
@@ -66,7 +74,15 @@
           <div class="service-table-squares__item">
             <div class="service-square-item__body">
               <div class="service-square-item__image">
-                <img src="{{media url='wysiwyg/Service/web-design/3.svg'}}" alt="" />
+                <picture>
+                  <source
+                    type="image/svg+xml"
+                    media="(min-width:576px)"
+                    srcset="{{media url='wysiwyg/Service/web-design/3.svg'}}"
+                  />
+                  <source type="image/svg+xml" srcset="{{media url='wysiwyg/Service/web-design/3-mob.svg'}}" />
+                  <img src="{{media url='wysiwyg/Service/web-design/3-mob.svg'}}" alt="" />
+                </picture>
               </div>
               <div class="service-square-item__title h4">Total Redesign</div>
               <p class="service-square-item__text">
@@ -78,7 +94,15 @@
           <div class="service-table-squares__item">
             <div class="service-square-item__body">
               <div class="service-square-item__image">
-                <img src="{{media url='wysiwyg/Service/web-design/4.svg'}}" alt="" />
+                <picture>
+                  <source
+                    type="image/svg+xml"
+                    media="(min-width:576px)"
+                    srcset="{{media url='wysiwyg/Service/web-design/4.svg'}}"
+                  />
+                  <source type="image/svg+xml" srcset="{{media url='wysiwyg/Service/web-design/4-mob.svg'}}" />
+                  <img src="{{media url='wysiwyg/Service/web-design/4-mob.svg'}}" alt="" />
+                </picture>
               </div>
               <div class="service-square-item__title h4">Start from Scratch</div>
               <p class="service-square-item__text">Design and development of your store as a comprehensive product.</p>
@@ -301,82 +325,9 @@
         </div>
       </div>
     </section>
-    <section class="_common-section service-single__section _grid-2-col">
-      <!-- section label -->
-      <div class="service-single__label _section-label" itemprop="keywords">Why choose us?</div>
-      <div class="service-single__content">
-        <div class="choose-us-header">
-          <h2 class="h3 service-single__title" itemprop="name" style="margin-bottom: 16px">
-            We’re a team that want to be a part of a big story
-          </h2>
-          <p class="preface">
-            We developed projects of various scale and we have broad experience across all regions. Understanding the
-            tendencies of the market and features of our clients’ mentality leads us to create a valuable concept. All
-            of the projects we do are made for people. And that’s our priority.
-          </p>
-        </div>
-        <div class="choose-us-table">
-          <div class="choose-us-table__item">
-            <div class="choose-us-table__image">
-              <img src="{{media url='wysiwyg/Service/magento-development/9.svg'}}" alt="" />
-            </div>
-            <p class="h4 choose-us-table__text">Official Adobe Partner</p>
-          </div>
-          <div class="choose-us-table__item">
-            <div class="choose-us-table__image">
-              <img src="{{media url='wysiwyg/Service/magento-development/10.svg'}}" alt="" />
-            </div>
-            <p class="h4 choose-us-table__text">
-              Compliance with Magento <br />
-              Best Practices
-            </p>
-          </div>
-          <div class="choose-us-table__item">
-            <div class="choose-us-table__image">
-              <img src="{{media url='wysiwyg/Service/magento-development/11.svg'}}" alt="" />
-            </div>
-            <p class="h4 choose-us-table__text">Magento Core Contributor</p>
-          </div>
-          <div class="choose-us-table__item">
-            <div class="choose-us-table__image">
-              <img src="{{media url='wysiwyg/Service/magento-development/12.svg'}}" alt="" />
-            </div>
-            <p class="h4 choose-us-table__text">From design to optimization. End-to-end digital solutions</p>
-          </div>
-        </div>
-        <div class="choose-us-circle">
-          <div class="choose-us-circle__item">
-            <div class="choose-us-circle__num _text-orange">13</div>
-            <div class="choose-us-circle__text">
-              years <br />
-              of experience
-            </div>
-          </div>
-          <div class="choose-us-circle__item">
-            <div class="choose-us-circle__num _text-orange">70+</div>
-            <div class="choose-us-circle__text">
-              highly qualified <br />
-              teammebers
-            </div>
-          </div>
-          <div class="choose-us-circle__item">
-            <div class="choose-us-circle__num _text-orange">100%</div>
-            <div class="choose-us-circle__text">
-              Magento-only <br />
-              focusing
-            </div>
-          </div>
-        </div>
-        <a href="/company">
-          <button class="_button _button--arrow" style="margin-right: auto; margin-left: auto; color: #333">
-            <span class="_button__text">More about us</span>
-            <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)">More about us</span>
-            <span class="_button__overlay _button__overlay--hover"></span>
-            <span class="_button__overlay _button__overlay--active"></span>
-          </button>
-        </a>
-      </div>
-    </section>
+    
+    <!-- Why choose us -->
+    {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="service-page-why-choose"}}
 
     <section
       class="form-wide second"
