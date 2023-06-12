@@ -3,7 +3,7 @@
     <div class="grid-col"></div>
     <div class="grid-col _text-align-right">
       <div class="article__intro">
-        <p class="h4 article__text--intro">
+        <p class="h4 _text-article--intro">
           Magento Contribution Day is an influential gathering within the Magento community that draws together a
           devoted assembly of Magento enthusiasts. Its primary aim is to rally as many developers as possible to
           contribute to the platform's evolution. Surprisingly, nearly 80% of all modifications to the Magento code have
@@ -15,7 +15,7 @@
     <div class="grid-col"></div>
   </section>
 
-  <div class="article__image">
+  <div class="article__image article__image--intro">
     <img
       itemprop="image"
       style="margin-left: 0; margin-bottom: 20px"
@@ -28,7 +28,7 @@
   <section class="article__section _article-page-grid article__section--top-margin">
     <div class="grid-col"></div>
     <div class="grid-col">
-      <p class="h4">
+      <p class="h4 mt-0">
         Our company, Perspective, was eager to participate in this initiative. During our first involvement, nine
         developers devoted an entire day to tackling issues plaguing the previous version of M2. With each participant
         handling two or three tasks, the Perspective team resolved ten significant challenges and assembled 1477 lines
@@ -71,11 +71,11 @@
           </p>
         </li>
       </ul>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         In addition to the benefits I mentioned, participating in events like Magento Contribution Day can significantly
         improve your dev environment.
       </p>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         You'll be able to work with other professionals and learn from their approaches and techniques to help you
         refine your workflow and become more efficient in your development process. It's a win-win situation - you get
         to contribute to an important project while improving your skills and knowledge.
@@ -88,13 +88,13 @@
     <div class="grid-col">
       <h2 class="h4 article__title">How are the tasks chosen?</h2>
 
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         A new column, "good first issue," appears on the GitHub "board" during Contribution Day. Practical tasks are
         snapped up, but you can remove some from the High Priority issue column, just like we did. These high-priority
         issues involved developing features we use almost daily at work. We understood that solving the chosen tasks
         would provide a new perspective on M2 development.
       </p>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         When choosing a task, there may be a situation like this: pull request may be "empty." That is, somewhere, there
         is a clone of the problem with almost the same description, and ANOTHER developer (because it can be added as a
         person working with the company as a solo developer) described his decision to the letter (only "gaps" in
@@ -116,7 +116,7 @@
             src="{{media url='wysiwyg/articles/contribution/2.svg'}}"
             alt="How to check the code?"
           />
-          <p class="article__text article__text--mobile _text-article--sm" style="margin-bottom: 0">
+          <p class="_text-article _text-article--mobile _text-article--sm" style="margin-bottom: 0">
             After completing the task, we encountered high standards of code acceptance. The "quality" of the code is
             checked in the first place by the machine with a set of rules. An interesting nuance is that the developer
             should write an autotest if this area code is new or not covered with tests. It's essential to do code
@@ -125,7 +125,7 @@
             was good.
           </p>
         </div>
-        <p class="article__text article__text article__text--dt _text-article--sm">
+        <p class="_text-article _text-article _text-article--dt _text-article--sm">
           After completing the task, we encountered high standards of code acceptance. The "quality" of the code is
           checked in the first place by the machine with a set of rules. An interesting nuance is that the developer
           should write an autotest if this area code is new or not covered with tests. It's essential to do code reviews
@@ -134,13 +134,13 @@
         </p>
       </div>
 
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         There was a different situation with autotests; we thought we messed things up when we wrote, launched, and ran
         them. That is just because the tests broke in random places; even in those, we did not change anything. As it
         turned out, the collapse of some tests is typical for such an important mechanism as M2.
       </p>
 
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         On the last Contribution day, we tended to take in the tasks on M2 fixation under the hood to avoid writing
         functional tests (i.e., the visual part). By then, we wanted to avoid playing around with the settings and
         WebDriver for Google Chrome. Besides that, we wanted to get away from Luma, the original M2 Theme. We understood
@@ -149,7 +149,7 @@
         Hyva.
       </p>
 
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         Further verification of the task is done by the Magento development team from the Adobe/Magento side, and the QA
         team plays the last, but not the least, role in this stage.
       </p>
@@ -161,7 +161,7 @@
     <div class="grid-col">
       <h2 class="h4 article__title">What tasks were solved during the last Contribution Day?</h2>
 
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         New Relic Module does not match CSP. We have taken a lot of work to allow Magento to communicate with the New
         Relic profiler, which allows us to speed up site loading considerably. The fix has already been accepted.
       </p>
@@ -231,7 +231,7 @@
           'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
         </div>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         The solution of code review: A rule has been added to the browser that allows the loading of 3rd-party scripts.
       </p>
 
@@ -251,7 +251,7 @@
           class="zoom"
         />
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         The pre-validation function is fixed so that some characters are read:
       </p>
 
@@ -340,7 +340,7 @@
           }
         </div>
       </div>
-      <p class="article__text _text-article--sm">The solution of Magento validation:</p>
+      <p class="_text-article _text-article--sm">The solution of Magento validation:</p>
       <div class="article__image article__image--narrow">
         <img
           loading="lazy"
@@ -357,7 +357,7 @@
           <span>The invoice does not display whether an email with an invoice has been sent. </span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         The site administrator can track the history of the order in the office. However, the invoice was incomplete in
         terms of information. Our developer has added a function to the invoice page to correctly display the invoice
         (because the invoice number may not match the order number).
@@ -372,7 +372,7 @@
           <span>The product availability email template should be received according to the store's settings. </span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         Letters were sent incorrectly because the wrong template was chosen. The problem was that when items in the
         store collection were rearranged, the current user's store ID was constantly added to the email object. Our
         developers have fixed this problem. Since the template selection logic is also included in Product Price Alerts,
@@ -388,11 +388,11 @@
           <span>The Excel handler creates invalid files for numbers preceded by gaps. </span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         When exporting data from Excel, Magento wrote invalid characters in a cell with numbers. As a result, the files
         could not be opened. We fixed that, so any additional information is written correctly in an Excel file.
       </p>
-      <p class="article__text _text-article--sm">The Magento code for Excel handler before fixing:</p>
+      <p class="_text-article _text-article--sm">The Magento code for Excel handler before fixing:</p>
       <div style="overflow-wrap: anywhere" class="_code-string flex">
         <div
           class="_code-string_num flex _text-article _text-article--sm"
@@ -420,7 +420,7 @@
           &lt;Data ss:Type="Number"&gt; 123&lt;/Data&gt;
         </div>
       </div>
-      <p class="article__text _text-article--sm">The Magento code for Excel handler after fixing:</p>
+      <p class="_text-article _text-article--sm">The Magento code for Excel handler after fixing:</p>
       <div style="overflow-wrap: anywhere" class="_code-string flex">
         <div
           class="_code-string_num flex _text-article _text-article--sm"
@@ -455,11 +455,11 @@
           <span>Incorrect filtering of GraphQL queries (date ranges).</span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm" style="margin-bottom: 0">
+      <p class="_text-article _text-article--sm" style="margin-bottom: 0">
         At the entrance to the backend part, Magento requests the frontend part, but it did not extract any data between
         the dates. The developer fixed the bug. The fix has already been accepted.
       </p>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         <a href="https://github.com/magento/magento2/pull/36036" class="_text-orange"
           >magento/magento2#31537: Magento2.4 GraphQL CustomerOrders Query Logic by serbyynskyi · pull Request #36036 ·
           magento/magento2</a
@@ -475,7 +475,7 @@
           >
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         When Magento makes PDF invoices for the administrator, it works according to the mechanisms built into the PHP
         programming language. And when this language was created, it did not count on the network data storage device
         name, so it became an obstacle in creating PDF invoices.
@@ -537,7 +537,7 @@
           [vendor\/magento\/module-sales\/Model\/Order\/Pdf\/AbstractPdf.php:282]
         </div>
       </div>
-      <p class="article__text _text-article--sm">Creating PDF invoices in Magento after fixing:</p>
+      <p class="_text-article _text-article--sm">Creating PDF invoices in Magento after fixing:</p>
       <div class="article__image article__image--narrow">
         <img
           loading="lazy"
@@ -554,11 +554,11 @@
           <span>The GraphQL Routes Strip Request has a problem on the Category page.</span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         For some reason, the front part of Magento PWA crashed in search by URL. The code did not work correctly. The
         developer corrected this.
       </p>
-      <p class="article__text _text-article--sm">Magento PWA crash before fixing:</p>
+      <p class="_text-article _text-article--sm">Magento PWA crash before fixing:</p>
       <div style="overflow-wrap: anywhere" class="_code-string flex">
         <div
           class="_code-string_num flex _text-article _text-article--sm"
@@ -590,7 +590,7 @@
           "column": 5 } ], "path": [ "route" ] } ], "data": { "route": null } }
         </div>
       </div>
-      <p class="article__text _text-article--sm">Magento PWA crash after fixing:</p>
+      <p class="_text-article _text-article--sm">Magento PWA crash after fixing:</p>
       <div style="overflow-wrap: anywhere" class="_code-string flex">
         <div
           class="_code-string_num flex _text-article _text-article--sm"
@@ -626,12 +626,12 @@
           <span>Administrator users cannot change the external logo in a single-store configuration</span>
         </h3>
       </div>
-      <p class="article__text _text-article--sm" style="margin-bottom: 0">
+      <p class="_text-article _text-article--sm" style="margin-bottom: 0">
         A Single Store Mode was disabled in default configurations. If you're a multi-brand store and try to adjust
         something, configurations remain the same when you switch from the Multi Store Page to the Single Store Page.
         Our developer successfully made a pull request and fixed that incorrection.
       </p>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         <a href="https://github.com/magento/magento2/pull/36008" class="_text-orange"
           >magento/magento2#35952 Admin Users unable to change frontend Logo in Design Config when in Single Store Mode
           by monteshot · pull Request #36008 · magento/magento2</a
@@ -646,7 +646,7 @@
           >
         </h3>
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         We have listed taxes in the price display on the Recently Viewed widget.
       </p>
       <div class="article__image article__image--narrow">
@@ -658,7 +658,7 @@
           class="zoom"
         />
       </div>
-      <p class="article__text _text-article--sm">
+      <p class="_text-article _text-article--sm">
         <a href="https://github.com/magento/magento2/pull/36041" class="_text-orange"
           >magento/magento2#35881: Final Price for grouped products does not include tax in the Recently Viewed Widget
           by shmVan · Pull Request #36041 · magento/magento2</a
@@ -671,7 +671,7 @@
     <div class="grid-col"></div>
     <div class="grid-col">
       <h2 class="h4 article__title">Expectations</h2>
-      <p class="_text-article--sm article__text">
+      <p class="_text-article--sm _text-article">
         The Magento core community engineering team works diligently, which sometimes means our tasks may linger for a
         few months with green ticks awaiting to be merged into the main branch. Nonetheless, each task resolution is a
         cause for celebration, often marked with a festive pizza party at our office. The process becomes more dynamic
@@ -679,7 +679,7 @@
         more promptly, and our pull requests are merged faster. In recognition of our contributions, we've even earned a
         Partner label on Github, demonstrating our expertise in Magento core and credibility in the industry.
       </p>
-      <p class="_text-article--sm article__text">
+      <p class="_text-article--sm _text-article">
         Participating in Magento Contribution Day allows developers to contribute to the Magento community and serves as
         a measure of success. The dedication of developers who take time out of their busy schedules to make pull
         requests is a testament to their commitment to enhancing the platform. This dedication promises to drive better
