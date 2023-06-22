@@ -1,3 +1,33 @@
+<style>
+  .h5--big-mb {
+    line-height: 24px;
+  }
+  @media screen and (max-width:350px){
+    .text-article-cyber-small{
+      max-width: 280px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .h5--big-mb{
+      font-size: 16px;
+    }
+    ._list-numbered__legend:before{
+      margin-right: 3px;
+      width: 24px;
+    }
+    .blog__post-title {
+      line-height: 1.09375em;
+    }
+    .article__image--intro img{
+      min-height: 179px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .h5--big-mb {
+      line-height: 32px;
+    }
+  }
+</style>
 <div class="article">
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
@@ -11,7 +41,7 @@
           billion, with Europe being a prime target for such cyberattacks. The events of 2022 underscored this risk,
           urging businesses to emphasize their cybersecurity efforts more strongly.
         </h2>
-        <div class="article__author">by <span itemprop="author">Serhii Kushch</span></div>
+        <div class="article__author mt-24">by <span itemprop="author">Serhii Kushch</span></div>
       </div>
     </div>
     <div class="grid-col"></div>
@@ -19,7 +49,7 @@
   <div class="article__image article__image--intro">
     <img
       itemprop="image"
-      src="{{media url='wysiwyg/articles/cyber-security/1.svg'}}"
+      src="{{media url='wysiwyg/articles/cyber-security/1.png'}}"
       alt="E-Commerce Cyber Security Tips"
     />
   </div>
@@ -189,7 +219,7 @@
         Specialists propose a three-fold approach to counter the relentless security threats: prevention, regular
         upkeep, and specific protective measures.
       </p>
-      <div class="article__image article__image--narrow article__image--desktop">
+      <div class="article__image article__image--narrow article__image--desktop mt-0 mb-0">
         <img
           itemprop="image"
           src="{{media url='wysiwyg/articles/cyber-security/2.svg'}}"
@@ -216,15 +246,27 @@
         compliance with the Payment Card Industry Data Security Standards (PCI DSS).
       </p>
 
-      <div class="article__row mb-0" style="align-items: center">
+      <div class="article__row mb-0" style="align-items: center; column-gap: 24px">
         <div class="article__image-container">
-          <img
-            itemprop="image"
-            style="margin-left: 0; width: 177px"
-            loading="lazy"
-            src="{{media url='wysiwyg/articles/cyber-security/3.png}}"
-            alt="Proactive Measures for Cyber Security"
-          />
+          <div class="article__image--desktop">
+            <img
+              itemprop="image"
+              style="margin-left: 0; width: 193px"
+              loading="lazy"
+              src="{{media url='wysiwyg/articles/cyber-security/3.png}}"
+              alt="Proactive Measures for Cyber Security"
+            />
+          </div>
+          <div class="article__image--mobile">
+            <img
+              itemprop="image"
+              style="margin-left: 0; width: 164px;margin-bottom: 10px;"
+              loading="lazy"
+              src="{{media url='wysiwyg/articles/cyber-security/3-mob.png}}"
+              alt="Proactive Measures for Cyber Security"
+            />
+          </div>
+
           <p class="_text-article _text-article--sm _text-article--mobile">
             These protocols serve as an industry standard for data security, offering guidelines for entities that
             process credit card transactions. Adherence to these standards can significantly bolster the security
@@ -248,7 +290,7 @@
       <h3 class="h5 h5--big-mb mb-md-24 mb-16 font-semibold">
         The 12 requirements of the Payment Card Industry Data Security Standards include the following:
       </h3>
-      <ol class="article__list article__list--num _list-numbered mb-24">
+      <ol class="article__list article__list--num _list-numbered mb-16">
         <li class="font-regular mb-8 mb-md-12">
           <p class="mb-0 _list-numbered__legend font-regular _text-article _text-article--sm">
             Establishing and sustaining a firewall configuration to safeguard cardholder data
@@ -268,13 +310,13 @@
         </li>
 
         <li class="font-regular mb-8 mb-md-12">
-          <p class="mb-0 _list-numbered__legend font-regular _text-article _text-article--sm">
+          <p class="mb-0 _list-numbered__legend font-regular _text-article _text-article--sm text-article-cyber-small">
             Encrypting cardholder data transmission across open, public networks
           </p>
         </li>
 
         <li class="font-regular mb-8 mb-md-12">
-          <p class="mb-0 _list-numbered__legend font-regular _text-article _text-article--sm">
+          <p class="mb-0 _list-numbered__legend font-regular _text-article _text-article--sm text-article-cyber-small">
             Ensuring all systems are protected against malware and regularly updating antivirus software or programs
           </p>
         </li>
