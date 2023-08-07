@@ -3,7 +3,7 @@
     <div class="grid-col"></div>
     <div class="grid-col _text-align-right">
       <div class="article__intro">
-        <h2 class="h4 article__text--intro">
+        <h2 class="h4 _text-article--intro">
           Usually headless is understood as the independence between a Frontend and a Backend and their communication
           through the API. But I would like to discuss it in more detail in this article. Let's stay focused on headless
           philosophy as a business approach.
@@ -13,7 +13,7 @@
     </div>
     <div class="grid-col"></div>
   </section>
-  <div class="article__image">
+  <div class="article__image article__image--intro">
     <img
       itemprop="image"
       loading="lazy"
@@ -24,8 +24,8 @@
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
     <div class="grid-col">
-      <h4 class="h4 article__title">How headless architecture emerged</h4>
-      <p class="article__text">
+      <h4 class="h4 article__title mt-0">How headless architecture emerged</h4>
+      <p class="_text-article">
         When I have learned about the headless for the first time, it wasn't applied to CMS. Once in an article, I read
         about an American company that sews jeans for millions of people every day. Of course, this is not the only
         denim giant in the world. Its uniqueness arises from the fact that the company did not sew anything. It employed
@@ -33,18 +33,18 @@
         responsible for the design, another one for production, and the third one for delivery. Moreover, the financial
         department was outsourced.The only function that was lead by the head office was managing these processes.
       </p>
-      <p class="article__text">
+      <p class="_text-article">
         This business logic surprised me.And even back then, there was a feeling that the e-commerce market would be
         developing in the same direction.
       </p>
-      <p class="article__text">
+      <p class="_text-article">
         Over time, services have begun to emerge that allows e-commerce businesses to delegate individual functions to
         outsource.
       </p>
-      <div class="article__text article__text--border-left _text-article--border-left">
+      <div class="_text-article _text-article--border-left _text-article--border-left">
         <p>
           For example,
-          <span class="article__text article__text--orange">Avalara</span>
+          <span class="_text-article _text-article--orange">Avalara</span>
           is one of those. It is a service for global e-commerce. Different countries have different taxes for the same
           products. Avalara determines the tax rate for a product depending on the country where the site user makes a
           purchase. Isn't it convenient? There is no need to save/update data about the taxes of all the countries which
@@ -53,14 +53,14 @@
           the product tax.
         </p>
       </div>
-      <p class="article__text">
+      <p class="_text-article">
         The number of such services increased a lot. This allowed the e-commerce projects don't integrate separated
         functions intothe Backend.
       </p>
-      <div class="article__text article__text--border-left _text-article--border-left">
+      <div class="_text-article _text-article--border-left _text-article--border-left">
         <p>
           For example, we often use
-          <span class="article__text article__text--orange">Algolia</span>
+          <span class="_text-article _text-article--orange">Algolia</span>
           to search the site in our projects. Anything the user types in a search line is not found by Magento, but
           Algolia. How it works. the online store gives all the product data to the cloud service in advance.
         </p>
@@ -70,25 +70,25 @@
           e-commerce projects already use a cloud search rather than a built-in solution.
         </p>
       </div>
-      <div class="article__text article__text--border-left _text-article--border-left">
+      <div class="_text-article _text-article--border-left _text-article--border-left">
         <p>
-          <span class="article__text article__text--orange">Comarch Loyalty</span>
+          <span class="_text-article _text-article--orange">Comarch Loyalty</span>
           is another example. It helps businesses to manage personalized loyalty programs. At the time of purchase
           Comarch product aggregates bonuses and discounts. This service sends the information through the API both to
           an offline point at the checkout, to the online store (mobile application). There could be many channels of
           communication with the user.
         </p>
       </div>
-      <div class="article__text article__text--border-left _text-article--border-left">
+      <div class="_text-article _text-article--border-left _text-article--border-left">
         <p>
           Another cool product is a
-          <span class="article__text article__text--orange">Storyblok</span>. It is a mix of headless CMS and a page
+          <span class="_text-article _text-article--orange">Storyblok</span>. It is a mix of headless CMS and a page
           builder. The most beautiful content can be created via a convenient interface. It works as a cloud-based page
           builder, but at the same time does not have its frontend. So it transfers data to the Frontend of the online
           store through the API.
         </p>
       </div>
-      <p class="article__text">
+      <p class="_text-article">
         As a result, many business tasks can be delegated to independent software products. Often it is the cloud
         service.
       </p>
@@ -111,7 +111,7 @@
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
     <div class="grid-col">
-      <p class="article__text">
+      <p class="_text-article">
         Take a look at this diagram. CMS as a center of the interaction for all elements no longer exists. There is no
         concentration of all instruments or even data in one place. Some basic data is saved on the Backend: prices,
         sales, catalogue. But PIM (Product Information Management) and CRM (Customer Relationship Management) can be
@@ -119,15 +119,15 @@
         use a headless model to automate processes for warehouse management. since warehouse management often uses a
         headless model to automate processes you need special software.
       </p>
-      <p class="article__text">
+      <p class="_text-article">
         The traditional understanding of the Backend is changing. The headless architecture implies that the Backend can
         pass through the API data to other elements of the system. As soon as PWA technology appeared in Magento, the
         CMS became headless. The Frontend can work independently from the Backend.
       </p>
-      <div class="article__text article__text--border-left _text-article--border-left">
+      <div class="_text-article _text-article--border-left _text-article--border-left">
         <p>Let's take a look at this example.</p>
         <p>
-          <span class="article__text article__text--orange">Allo.ua</span>
+          <span class="_text-article _text-article--orange">Allo.ua</span>
           is an online store that needed a migration from Magento 1 to Magento 2. The Frontend was deeply integrated
           into Magento 1. Firstly, the developers implemented PWA by making a headless model. Then we changed the
           Backend to Magento 2. Thus, there was no “abrupt transition” during migration.
@@ -178,7 +178,7 @@
         />
       </div>
       <h4 class="h4 article__title">How have developers' tasks been changed?</h4>
-      <p class="article__text">
+      <p class="_text-article">
         If it seemed to you that the range of tasks for developers has narrowed, you are wrong. Headless architecture
         connects elements with many intersections. It reminds the picture on the right.
         <br />It's good when the APIs are the same. But in practice, you have to use multiple APIs. Our task is to
