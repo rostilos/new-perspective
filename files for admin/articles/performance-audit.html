@@ -1,0 +1,1013 @@
+<style>
+
+    .text-20 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .text-24 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .step-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 32px;
+    }
+
+    .server-settings-table__row {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 190px);
+        padding: 8px 24px;
+    }
+
+    .server-settings-table__item:first-child {
+        padding-right: 40px;
+    }
+
+    .server-settings-table__row--head {
+        background: #F9F9F9;
+        font-weight: 600;
+    }
+
+
+    .server-settings-table__item {
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .server-settings-table__row--head .server-settings-table__item {
+        border-bottom: none;
+    }
+
+    .server-settings-table__item img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 992px) {
+
+        .text-20 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .text-24 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .step-box {
+            column-gap: 16px;
+        }
+
+        .text-24 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .server-settings-table__row {
+            grid-template-columns: 1fr 45px;
+        }
+
+        .server-settings-table__item:first-child {
+            padding-right: 0;
+        }
+
+        .server-settings-table__item:last-child {
+            text-align: right;
+        }
+    }
+
+</style>
+
+<div class="article">
+    <section class="article__section _article-page-grid">
+        <div class="grid-col"></div>
+        <div class="grid-col _text-align-right">
+            <div class="article__intro">
+                <h2 class="h4 _text-article--intro">
+                    Keep your Magento-based website performing at its peak with our comprehensive guide on how to
+                    conduct a Magento Performance Audit. We'll discuss how to detect and rectify common problems such as
+                    broken links, slow loading speeds, and unresponsive tabs, ultimately ensuring that your site remains
+                    a powerful tool for your e-commerce business.
+                </h2>
+                <div class="article__author mt-md-24 mt-16"><span itemprop="author">Yaroslav Zinchuk</span></div>
+            </div>
+        </div>
+        <div class="grid-col"></div>
+    </section>
+    <div class="article__image article__image--intro">
+        <img
+            itemprop="image"
+            src="{{media url='wysiwyg/articles/performance-audit/1.png'}}"
+            alt="Enhancing Your E-commerce Performance"
+            style="min-height: 175px"
+        />
+    </div>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <p class="_text-article _text-article--sm mb-8">
+                The technology landscape is changing rapidly. This means that site owners need to stay ahead of the
+                curve regarding security threats and pinpointing issues, such as security vulnerabilities such as:
+            </p>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Duplicate content
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Broken links</li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Slow loading speed</li>
+                <li class="font-regular _text-article _text-article--sm mb-8">SEO problems</li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Unresponsive tabs</li>
+            </ul>
+
+            <p class="_text-article _text-article--sm mb-8">
+                Running a Magento performance audit is one of the best ways to maintain website health. A
+                poor-performing Magento site audit hurts your bottom line, so it's best to schedule an audit when you
+                see the following:
+            </p>
+            <ul class="article__list mb-8">
+                <li class="font-regular _text-article _text-article--sm mb-8">Google Analytics shows a high bounce
+                    rate
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">The site's loading speed is longer than
+                    five seconds
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Webpages are raking low on search engine
+                    results pages (SERPs)
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Analytics show decreased site traffic from
+                    organic sources
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Your site often displays error messages
+                    and unauthorized warning messages
+                </li>
+
+                <li class="font-regular _text-article _text-article--sm mb-0">Your site crashes frequently</li>
+
+                <li class="font-regular _text-article _text-article--sm mb-0">You're running on an outdated version of
+                    Magento
+                </li>
+
+            </ul>
+            <p class="_text-article _text-article--sm mb-0">
+                In this guide, we'll discuss why Magento sites need regular audits and how to get Magento audits started
+                quickly. Let's dive in!
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <div class="article__row mb-16" style="column-gap: 42px;">
+                <div class="article__flex-content mb-0">
+                    <h2 class="mt-0 mb-16 text-24 font-semibold">
+                        Why Do I Need a Magento Performance Audit?
+                    </h2>
+                    <p class="_text-article _text-article--sm _text-article--dt">
+                        As mentioned, a Magento technical audit can address several issues. First, a comprehensive
+                        Magento code audit can improve your site's ranking on search engines. It also allows you to
+                        improve your website's user experience. This means that customers can stay long enough to browse
+                        and buy.
+                    </p>
+                </div>
+
+                <div class="article__image-container">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--desktop"
+                        src="{{media url='wysiwyg/articles/performance-audit/2.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--mobile mb-8"
+                        src="{{media url='wysiwyg/articles/performance-audit/2-mob.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+
+                    <p class="_text-article _text-article--sm _text-article--mobile" style="margin-bottom: 0">
+                        As mentioned, a Magento technical audit can address several issues. First, a comprehensive
+                        Magento code audit can improve your site's ranking on search engines. It also allows you to
+                        improve your website's user experience. This means that customers can stay long enough to browse
+                        and buy.
+                    </p>
+                </div>
+            </div>
+
+            <p class="_text-article _text-article--sm mb-16">
+                And if you'd rather talk numbers, here's the bottom line. Research shows that site speed affects buying
+                decisions in <a
+                href="https://www.websitebuilderexpert.com/building-websites/website-load-time-statistics/"
+                class="_text-orange">82%</a> of consumers. Conversion rates are also <a
+                href="https://bloggingwizard.com/page-load-time-statistics/"
+                class="_text-orange">three times
+                higher</a> for e-commerce
+                sites that
+                load in less than a second!
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                Of course, site speed is not the only thing that matters. But it's indicative of site health and
+                performance. Generally, smaller websites should have a yearly security audit and more significant sites
+                twice or thrice a year.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                An Overview of the Magento CMS
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                Magento, which has rebranded to Adobe Commerce, holds a global market share of 2.56% of all e-commerce
+                sites. It also represents <a href="https://w3techs.com/technologies/details/cm-magento"
+                                             class="_text-orange">0.8%</a> of all active websites. Most notably, it has
+                the top market position as
+                the content management system (CMS) of high-traffic sites. These include popular sites like <a
+                href="http://asus.com/"
+                class="_text-orange">asus.com</a>,
+                <a href="http://mirror.co.uk/" class="_text-orange">mirror.co.uk</a>, <a href="http://panasonic.com/"
+                                                                                         class="_text-orange">panasonic.com</a>,
+                <a href="http://gulfnews.com/" class="_text-orange">and gulfnews.com</a>.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                Magento runs on codes written in PHP, and the default Magento <a
+                href="https://devdocs.magento.com/guides/v2.3/coding-standards/technical-guidelines.html"
+                class="_text-orange">coding standard</a> requires following several
+                technical rules. What makes it incredibly feature-rich and user-friendly is the fact that relevant
+                back-end codes support front-end functionalities. The Magento store also has customizable extensions
+                that site owners can utilize depending on their store's needs.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                However, this level of customizability also makes the whole system incredibly complex — hence the need
+                for regular code audits too. Bugs can slip through the cracks without regular checks and cause glitches,
+                ultimately harming the user experience.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                And if you've run a website long enough, you already know that staying proactive is far better than
+                hunting for bugs when errors occur. Magento's codebase and extensions are the keys to its rich
+                functionality, but it also requires proper maintenance.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                It's like running a high-performance sports car: You must constantly change tires at a pit stop to
+                ensure superior performance.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                How to Conduct a Magento Performance Audit
+            </h2>
+            <p class="_text-article _text-article--sm mb-16 mb-md-32">
+                You can choose to audit your Magento site yourself or outsource the job. In any case, understanding the
+                critical tasks in a full Magento audit report is essential. Here's a step-by-step guide to conducting a
+                Magento performance audit:
+            </p>
+
+            <!--  1 -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/3.svg'}}"
+                        alt="Step 1"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 1:</div>
+                        <div>Define Your Goals and Areas of Concern</div>
+                    </h3>
+                </div>
+            </div>
+
+            <p class="_text-article _text-article--sm mb-8">
+                Decide on the key areas you want to focus on during the audit process. Do you want to prioritize site
+                speed to support sales goals? Do you want to improve user experience or design?
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Here are some examples of common focus areas you can list down:
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Sales or Marketing Goals</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Is your website supporting your sales and marketing efforts? Is it growing and generating leads?
+                Analytics reports and metrics like conversion rate, site traffic, and bounce rate will help you define
+                specific areas of improvement.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Ease of Managing Content</h3>
+            <p class="_text-article _text-article--sm mb-8">
+                Is your current workflow effective? Some teams hire dedicated site managers, and some find that making a
+                CMS more accessible to non-technical staff (like marketing teams) is the way to go.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Depending on your decision, you may have to tweak some front-end functionalities to cater to internal
+                users.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">User-Friendliness and Accessibility</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Do you want to make your website easily accessible to mobile users? Are there any features that can
+                engage visitors and help them stay longer on the website? You can make UX/UI improvements tailored to
+                your target customers.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Search Engine Optimization</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Do you want to reach a broader audience on SERPs? This involves optimizing title tags, meta
+                descriptions, and content for a targeted audience. You can also revisit keyword research and optimize
+                page load speed to improve your site's rankings further.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Design and Layout</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Is your website layout optimized for user engagement? Are things easy to find on the menu? Do you want
+                to change the color scheme and design of certain pages? Remember that tweaks are best based on user
+                feedback and analytics reports.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Site Security</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Are you using the latest Magento version? Also, what does the security patches your technical support
+                setup look like? It's always a good idea to bolster <a
+                href="https://perspectiveteam.com/services/magento-security-audit" class="_text-orange">site
+                security</a> with authentication, encryption, and
+                malware scanning.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                You can use <a href="https://pagespeed.web.dev/" class="_text-orange">Google's PageSpeed Insights</a>
+                tool to do this. The tool generates desktop and mobile
+                performance reports using lab and field data. Lab data refers to controlled environment testing, and
+                mobile data is accessible for all websites. If your website receives enough visitors, user sessions may
+                also provide field data.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                To improve the speed of your Magento website, you can focus on two things. First, work on optimizing
+                your page load times by optimizing images, caching, and using CDN. Second, consider upgrading to a
+                better hosting provider.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Google metrics</h3>
+            <p class="_text-article _text-article--sm mb-md-32 mb-16">
+                <a href="https://perspectiveteam.com/blog/mastering-core-web-vitals-a-guide-to-enhancing-user-experience-article/"
+                   class="_text-orange">Optimizing Core Web Vitals (CWV)</a> is also essential for e-commerce store
+                owners to ensure that user
+                experience remains optimal and that the site ranks well on SERPs. CWV is a set of metrics that measure
+                interactivity, website load time, and visual stability — all essential for providing a better user
+                experience. By prioritizing CWV, site owners can have a visually appealing, smooth, and responsive
+                website — leading to higher revenue.
+            </p>
+
+            <!--  2 -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/4.svg'}}"
+                        alt="Step 2"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 2:</div>
+                        <div>Configure tools for tracking key metrics</div>
+                    </h3>
+                </div>
+            </div>
+
+            <p class="_text-article _text-article--sm mb-16">
+                To further optimize your site and ensure a thorough performance audit, you can check out the tools
+                below:
+            </p>
+
+
+            <h3 class="h5 mb-8 font-bold">Google Analytics</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Google Analytics is widely used for analyzing website performance, including page loading speed and
+                response time to user actions. Other analytics tools available include Kissmetrics and Woopra. These
+                tools also have particular report tabs that can help you understand the speed and user responsiveness of
+                your website.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">PageSpeed Insights</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                You may already be familiar with PageSpeed Insights powered by Google. It tests website performance and
+                shows the real-world response of your web pages.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">GTmetrix</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                GTmetrix is a tool that tests and enhances the speed of your e-commerce website on different devices. It
+                also allows you to compare your website's speed with others. The tool provides a user-friendly, detailed
+                report with an easy-to-understand letter-grade performance rating, making it accessible even to
+                non-technical team members.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Apache JMeter</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Apache JMeter is a tool commonly used for load and stress testing on Magento 2. It allows you to record
+                web browser actions and simulate traffic from thousands of users to evaluate website performance under
+                increased traffic.
+                Additionally, the tool provides an API for automating the testing process.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Siege</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Siege is similar to Apache JMeter in terms of functionality but is explicitly designed to measure the
+                resource consumption of written code. It provides a realistic emulation of the functional environment
+                and is more straightforward than Apache JMeter.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">LoadRunner</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                LoadRunner is also similar to JMeter but focuses explicitly on replicating the varying actions of
+                multiple virtual users. It can also measure the level of activity of these users on the website.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Profilers</h3>
+            <p class="_text-article _text-article--sm mb-8">
+                Profilers is a testing tool that includes Blackfire and Tideways extensions. These analyze PHP code and
+                collect data on how server resources are utilized..
+            </p>
+            <p class="_text-article _text-article--sm mb-md-32 mb-16">
+                The tool can also monitor the usage of memory and processor time and how I/O operations are performed.
+                It can also present this data in a comprehensive and understandable format.
+            </p>
+
+            <!--  3 -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/5.svg'}}"
+                        alt="Step 3"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 3:</div>
+                        <div>Check User Experience</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-16">
+                Revisiting your website from a customer's perspective is the crucial next step in a Magento 2 audit.
+                User experience is the impression a visitor gets when interacting with your website.
+                It means that users can easily find what they need and use the website. It also helps users develop a
+                positive perception of your Business.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                When testing user experience, consider asking the following aspects:
+            </p>
+            <ul class="article__list mb-md-32 mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Does your website have navigation menus that are simple and easy to use?
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Do you have a responsive design that
+                    allows users to view your website on mobile devices easily?.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Do you have advertising that could disrupt
+                    content viewing?
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Do you embed videos in a non-intrusive
+                    way, without auto-play?
+                </li>
+            </ul>
+
+            <!--  4  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/6.svg'}}"
+                        alt="Step 4"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 4:</div>
+                        <div>Check Site Accessibility</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-16">
+                Ensuring your Magento website is accessible is essential for your Business and practical and legal
+                reasons. To improve website accessibility, you can follow these quick checks:
+            </p>
+            <ul class="article__list mb-md-32 mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check all alt texts for images and non-text content to ensure they are descriptive
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Do you have a responsive design that
+                    Check color contrast with this <a href="https://color.a11y.com/" class="_text-orange">free tool</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check video transcripts and closed captions
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Check if your website can be zoomed in without affecting functionality and content
+                </li>
+            </ul>
+
+            <!--  5  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/7.svg'}}"
+                        alt="Step 5"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 5:</div>
+                        <div>Audit Site Content</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-16">
+                A Magento performance audit would be remiss without checking the code quality of the content. Revisiting
+                your content gives you an idea of what needs SEO and user engagement improvement.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Creating engaging content is vital to broadening your online reach and connecting with customers.
+                Providing valuable information shows you have expertise, experience, authoritativeness, and
+                trustworthiness. These refer to <a
+                href="https://developers.google.com/search/blog/2022/12/google-raters-guidelines-e-e-a-t"
+                class="_text-orange">EEAT</a>, Google's guidelines for quality content.
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                When auditing site content, check for the following:
+            </p>
+            <ul class="article__list mb-md-32 mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Are your landing pages optimized? Is the copy clear and free of extraneous wording?
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Do you have a responsive design that
+                    Is your content high-quality and valuable to your buyer personas?
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Do your content pages provide utility, information, and relevance to your users?
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Is each piece of content designed to move a specific type of user one step forward in their buying
+                    journey?
+                </li>
+            </ul>
+
+            <!--  6  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/8.svg'}}"
+                        alt="Step 6"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 6:</div>
+                        <div>Improve On-Page SEO</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                Improving on-page SEO through a complete Magento security or website audit is easy because you have
+                greater control over it. With a Magento security audit's functionalities, you can enhance on-page SEO in
+                just one day. Here's a comprehensive technical checklist you can use:
+            </p>
+            <ul class="article__list mb-md-32 mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check for keyword-optimized title tags and meta descriptions
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check if your site uses an XML sitemap for improved indexing and crawlability
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check if your URLs are readable and keyword-enriched
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Check if images are optimized for keywords using alt text and filenames
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Check if pages can easily be shared on social media
+                </li>
+            </ul>
+
+            <!--  7  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/9.svg'}}"
+                        alt="Step 7"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 7:</div>
+                        <div>Check Server Configuration Settings</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-24">
+                It is crucial to review particular parameters for optimizing server configuration settings. Check and
+                modify each parameter as required to achieve top server performance. To help you ensure that everything
+                is in order, use this checklist of configuration settings for Magento:
+            </p>
+            <div class="server-settings-table mb-md-32 mb-16">
+                <div class="server-settings-table__row server-settings-table__row--head">
+                    <div class="server-settings-table__item">Task</div>
+                    <div class="server-settings-table__item">Status</div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Turn on production mode</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Enable HTTP/2 or 3</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Check CDN settings</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Review all <a
+                        href="https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html"
+                        class="_text-orange">Magento performance settings</a></div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Enable gzip compression</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Implement lazy loading of images</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Enable asynchronous indexing</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item"><a
+                        href="https://codeinstitute.net/global/blog/how-to-minify-javascript-css/" class="_text-orange">Minify</a>
+                        CSS and JavaScript
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Ensure that static files are signed</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Set all indexers to 'Update on Schedule</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Disable unused extensions</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Install the latest supported <a
+                        href="https://www.php.net/supported-versions.php"
+                        class="_text-orange">PHP</a>
+                        and MySQL versions
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Check if the webserver is running on <a
+                        href="https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish.html"
+                        class="_text-orange">Varnish</a> or <a
+                        href="https://www.nginx.com/resources/wiki/start/topics/examples/phpfcgi/" class="_text-orange">PHP-FPM</a>.
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Ensure that the <a
+                        href="https://pagespeedplus.com/blog/cache-warmer" class="_text-orange">cache warmer</a> is
+                        installed.
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Ensure <a href="https://web.dev/serve-images-webp/"
+                                                                       class="_text-orange">WebP</a> is used instead of
+                        JPG or PNG
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Enable <a
+                        href="https://www.varnish-software.com/developers/tutorials/configuring-varnish-magento/"
+                        class="_text-orange">Varnish Full-Page Cache</a></div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Ensure <a
+                        href="https://www.cloudways.com/blog/integrate-php-opcache/" class="_text-orange">OPcache</a> is
+                        enabled and adequately tuned
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Set <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control"
+                        class="_text-orange">cache-control max-age</a> to at least seven days.
+                    </div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Check all vital PHP settings.</div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+                <div class="server-settings-table__row">
+                    <div class="server-settings-table__item">Ensure all sessions are stored in <a
+                        href="https://redis.com/solutions/use-cases/session-store/"
+                        class="_text-orange">Redis</a></div>
+                    <div class="server-settings-table__item">
+                        <img loading="lazy"
+                             src="{{media url='wysiwyg/articles/performance-audit/check.svg'}}" alt="check-mark">
+                    </div>
+                </div>
+            </div>
+
+            <!--  8  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/10.svg'}}"
+                        alt="Step 8"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 8:</div>
+                        <div>Optimize Your Database</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-md-32 mb-16">
+                Database tuning can also significantly reduce server load. You can check the database setup and
+                configuration by analyzing its size to ensure it's optimized. Then, make sure that indexing does not
+                lock the database tables. You should also check database settings to ensure the cache is enabled and
+                properly configured.
+            </p>
+
+            <!--  9  -->
+            <div class="step-box mb-16">
+                <div class="step-box__image">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        src="{{media url='wysiwyg/articles/performance-audit/11.svg'}}"
+                        alt="Step 9"
+                    />
+                </div>
+                <div class="step-box__content">
+                    <h3 class="h4 font-semibold">
+                        <div class="_text-orange mb-0">Step 9:</div>
+                        <div>Code Review</div>
+                    </h3>
+                </div>
+            </div>
+            <p class="_text-article _text-article--sm mb-16">
+                Code tuning is another way to ensure better system performance and that coding standards and best
+                practices are implemented. By reviewing each element of your existing codebase, you can further identify
+                areas for improvement.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                First, updating to the latest Magento version is essential if you haven't done so yet. Next, check all
+                custom integrations and Magento extensions for corresponding updates.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                Then, come up with a list of chained requests for code refactoring. To reduce the downtime for
+                production on required updates, configure pipeline deployment and inform relevant stakeholders.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                How to Interpret the Results of a Magento Performance Audit
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                After completing the Magento Performance Audit, it is essential to interpret the code audit results
+                correctly. For example, a slow server response time indicates poor site performance. Using tools like
+                Pingdom and GTmetrix, you can identify and resolve poor performance bottlenecks.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                To improve your website's performance, you can enable browser caching, which allows your website to save
+                static resources in the visitor's browser. This reduces the requests made to the server, making your
+                website faster.
+            </p>
+
+            <div class="article__row mb-16" style="column-gap: 42px;">
+
+                <div class="article__image-container">
+                    <p class="_text-article _text-article--sm _text-article--mobile mb-16">
+                        A slow page loading time suggests web pages take too long. The cause can be due to poorly coded
+                        logic, high-resolution images, or complicated scripts used on the page.
+                    </p>
+                    <p class="_text-article _text-article--sm _text-article--mobile">
+                        You can optimize images by compressing them or using a CDN service like Cloudflare for faster
+                        content delivery. Gzip compression can also substantially reduce the sizes of your HTML,
+                        JavaScript, and CSS files, leading to faster loading times.
+                    </p>
+
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--desktop"
+                        src="{{media url='wysiwyg/articles/performance-audit/12.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--mobile mb-8"
+                        src="{{media url='wysiwyg/articles/performance-audit/12-mob.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+
+                </div>
+
+                <div class="article__flex-content">
+                    <p class="_text-article _text-article--sm _text-article--dt mb-16">
+                        A slow page loading time suggests web pages take too long. The cause can be due to poorly coded
+                        logic, high-resolution images, or complicated scripts used on the page.
+                    </p>
+                    <p class="_text-article _text-article--sm _text-article--dt mb-8">
+                        A slow page loading time suggests web pages take too long. The cause can be due to poorly coded
+                        logic, high-resolution images, or complicated scripts used on the page.
+                    </p>
+                </div>
+            </div>
+
+            <p class="_text-article _text-article--sm mb-16">
+                Using too many third-party extensions can slow down your website. Make sure only to install the ones you
+                actually need and check regularly if you still need the ones you've already installed.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                Also, choosing a lightweight <a
+                href="https://perspectiveteam.com/blog/hyva-themes-a-new-hype-or-a-good-perspective-for-ecommerce/"
+                class="_text-orange">website theme</a> can enhance your website's performance. It's best to avoid
+                themes with unnecessary features and instead select a more simplified design.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap mb-32">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 text-24 font-semibold mb-16">Conclusion:</h2>
+            <p class="_text-article _text-article--sm mb-16">
+                Server optimization is often overlooked until a website starts experiencing issues due to a lack of
+                maintenance. Conducting a thorough Magento Performance Audit can quickly identify problems and create an
+                actionable plan to improve your website performance.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                As such, we recommend regularly performing assessments to identify potential improvement areas. As
+                mentioned earlier, you can do this in-house or enlist the help of a professional service provider.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                At Perspective Magento Team, we have over ten years of technical expertise and hands-on experience with
+                the Magento platform. Our team of certified Magento developers and experienced consultants are available
+                to help you optimize your website for improved performance.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                Among our services are:
+            </p>
+
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/magento-development" class="_text-orange">Magento
+                        Development</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/magento-security-audit" class="_text-orange">Magento
+                        Security Audit</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/migration-to-magento-2" class="_text-orange">Magento 2
+                        Migration</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/magento-pwa" class="_text-orange">Magento PWA</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <a href="https://perspectiveteam.com/services/server-optimization" class="_text-orange">Server &
+                        Magento Optimization</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/magento-support" class="_text-orange">Magento
+                        Support</a>
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <a href="https://perspectiveteam.com/services/comprehensive-web-design" class="_text-orange">Web
+                        Design</a>
+                </li>
+            </ul>
+
+            <p class="_text-article _text-article--sm mb-16">
+                <a href="https://perspectiveteam.com/" class="_text-orange">Get in touch with us</a> today to learn
+                more!
+            </p>
+        </div>
+    </section>
+</div>
