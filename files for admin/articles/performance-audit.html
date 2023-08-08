@@ -1,5 +1,9 @@
 <style>
-
+    @media screen and (min-width: 1200px){
+        .h5{
+            line-height: 32px;
+        }
+    }
     .text-20 {
         font-size: 20px;
         line-height: 32px;
@@ -17,10 +21,18 @@
         column-gap: 32px;
     }
 
+    .server-settings-table__row > * {
+        display: inline;
+    }
     .server-settings-table__row {
+        margin-bottom: -1px;
         display: grid;
-        grid-template-columns: 1fr minmax(auto, 190px);
+        grid-template-columns: 1fr minmax(auto, 224px);
         padding: 8px 24px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .server-settings-table__row--head{
+        border-bottom: none;
     }
 
     .server-settings-table__item:first-child {
@@ -34,12 +46,13 @@
 
 
     .server-settings-table__item {
-        border-bottom: 1px solid #E0E0E0;
+        height: fit-content;
+    }
+    .server-settings-table__item:last-child{
+        height: 24px;
     }
 
-    .server-settings-table__row--head .server-settings-table__item {
-        border-bottom: none;
-    }
+
 
     .server-settings-table__item img {
         width: 24px;
@@ -142,14 +155,14 @@
                 <li class="font-regular _text-article _text-article--sm mb-8">Webpages are raking low on search engine
                     results pages (SERPs)
                 </li>
-                <li class="font-regular _text-article _text-article--sm mb-0">Analytics show decreased site traffic from
+                <li class="font-regular _text-article _text-article--sm mb-8">Analytics show decreased site traffic from
                     organic sources
                 </li>
-                <li class="font-regular _text-article _text-article--sm mb-0">Your site often displays error messages
+                <li class="font-regular _text-article _text-article--sm mb-8">Your site often displays error messages
                     and unauthorized warning messages
                 </li>
 
-                <li class="font-regular _text-article _text-article--sm mb-0">Your site crashes frequently</li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Your site crashes frequently</li>
 
                 <li class="font-regular _text-article _text-article--sm mb-0">You're running on an outdated version of
                     Magento
@@ -166,9 +179,9 @@
     <section class="article__section _article-page-grid _common-article-section--gap">
         <div class="grid-col"></div>
         <div class="grid-col">
-            <div class="article__row mb-16" style="column-gap: 42px;">
+            <div class="article__row mb-8" style="column-gap: 56px;">
                 <div class="article__flex-content mb-0">
-                    <h2 class="mt-0 mb-16 text-24 font-semibold">
+                    <h2 class="mt-0 mt-16 mb-16 text-24 font-semibold">
                         Why Do I Need a Magento Performance Audit?
                     </h2>
                     <p class="_text-article _text-article--sm _text-article--dt">
@@ -276,14 +289,14 @@
             <h2 class="mt-0 mb-16 text-24 font-semibold">
                 How to Conduct a Magento Performance Audit
             </h2>
-            <p class="_text-article _text-article--sm mb-16 mb-md-32">
+            <p class="_text-article _text-article--sm mb-16 mb-md-24">
                 You can choose to audit your Magento site yourself or outsource the job. In any case, understanding the
                 critical tasks in a full Magento audit report is essential. Here's a step-by-step guide to conducting a
                 Magento performance audit:
             </p>
 
             <!--  1 -->
-            <div class="step-box mb-16">
+            <div class="step-box mb-8">
                 <div class="step-box__image">
                     <img
                         itemprop="image"
@@ -309,7 +322,7 @@
             </p>
 
             <h3 class="h5 mb-8 font-bold">Sales or Marketing Goals</h3>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-20">
                 Is your website supporting your sales and marketing efforts? Is it growing and generating leads?
                 Analytics reports and metrics like conversion rate, site traffic, and bounce rate will help you define
                 specific areas of improvement.
@@ -347,14 +360,14 @@
             </p>
 
             <h3 class="h5 mb-8 font-bold">Site Security</h3>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-8">
                 Are you using the latest Magento version? Also, what does the security patches your technical support
                 setup look like? It's always a good idea to bolster <a
                 href="https://perspectiveteam.com/services/magento-security-audit" class="_text-orange">site
                 security</a> with authentication, encryption, and
                 malware scanning.
             </p>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-8">
                 You can use <a href="https://pagespeed.web.dev/" class="_text-orange">Google's PageSpeed Insights</a>
                 tool to do this. The tool generates desktop and mobile
                 performance reports using lab and field data. Lab data refers to controlled environment testing, and
@@ -368,7 +381,7 @@
             </p>
 
             <h3 class="h5 mb-8 font-bold">Google metrics</h3>
-            <p class="_text-article _text-article--sm mb-md-32 mb-16">
+            <p class="_text-article _text-article--sm mb-md-24 mb-16">
                 <a href="https://perspectiveteam.com/blog/mastering-core-web-vitals-a-guide-to-enhancing-user-experience-article/"
                    class="_text-orange">Optimizing Core Web Vitals (CWV)</a> is also essential for e-commerce store
                 owners to ensure that user
@@ -425,12 +438,12 @@
             </p>
 
             <h3 class="h5 mb-8 font-bold">Apache JMeter</h3>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-0">
                 Apache JMeter is a tool commonly used for load and stress testing on Magento 2. It allows you to record
                 web browser actions and simulate traffic from thousands of users to evaluate website performance under
                 increased traffic.
-                Additionally, the tool provides an API for automating the testing process.
             </p>
+            <p class="mb-16 mt-0">Additionally, the tool provides an API for automating the testing process.</p>
 
             <h3 class="h5 mb-8 font-bold">Siege</h3>
             <p class="_text-article _text-article--sm mb-16">
@@ -478,10 +491,10 @@
                 It means that users can easily find what they need and use the website. It also helps users develop a
                 positive perception of your Business.
             </p>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-8">
                 When testing user experience, consider asking the following aspects:
             </p>
-            <ul class="article__list mb-md-32 mb-16">
+            <ul class="article__list mb-md-24 mb-16">
                 <li class="font-regular _text-article _text-article--sm mb-8">
                     Does your website have navigation menus that are simple and easy to use?
                 </li>
@@ -513,11 +526,11 @@
                     </h3>
                 </div>
             </div>
-            <p class="_text-article _text-article--sm mb-16">
+            <p class="_text-article _text-article--sm mb-8">
                 Ensuring your Magento website is accessible is essential for your Business and practical and legal
                 reasons. To improve website accessibility, you can follow these quick checks:
             </p>
-            <ul class="article__list mb-md-32 mb-16">
+            <ul class="article__list mb-md-24 mb-16">
                 <li class="font-regular _text-article _text-article--sm mb-8">
                     Check all alt texts for images and non-text content to ensure they are descriptive
                 </li>
@@ -563,11 +576,11 @@
             <p class="_text-article _text-article--sm mb-8">
                 When auditing site content, check for the following:
             </p>
-            <ul class="article__list mb-md-32 mb-16">
+            <ul class="article__list mb-md-24 mb-16">
                 <li class="font-regular _text-article _text-article--sm mb-8">
                     Are your landing pages optimized? Is the copy clear and free of extraneous wording?
                 </li>
-                <li class="font-regular _text-article _text-article--sm mb-8">Do you have a responsive design that
+                <li class="font-regular _text-article _text-article--sm mb-8">
                     Is your content high-quality and valuable to your buyer personas?
                 </li>
                 <li class="font-regular _text-article _text-article--sm mb-8">
@@ -601,7 +614,7 @@
                 greater control over it. With a Magento security audit's functionalities, you can enhance on-page SEO in
                 just one day. Here's a comprehensive technical checklist you can use:
             </p>
-            <ul class="article__list mb-md-32 mb-16">
+            <ul class="article__list mb-md-24 mb-16">
                 <li class="font-regular _text-article _text-article--sm mb-8">
                     Check for keyword-optimized title tags and meta descriptions
                 </li>
@@ -641,10 +654,10 @@
                 modify each parameter as required to achieve top server performance. To help you ensure that everything
                 is in order, use this checklist of configuration settings for Magento:
             </p>
-            <div class="server-settings-table mb-md-32 mb-16">
+            <div class="server-settings-table mb-md-24 mb-16">
                 <div class="server-settings-table__row server-settings-table__row--head">
-                    <div class="server-settings-table__item">Task</div>
-                    <div class="server-settings-table__item">Status</div>
+                    <div class="server-settings-table__item" style="font-size: 18px;line-height: 32px">Task</div>
+                    <div class="server-settings-table__item" style="font-size: 18px;line-height: 32px">Status</div>
                 </div>
                 <div class="server-settings-table__row">
                     <div class="server-settings-table__item">Turn on production mode</div>
@@ -834,7 +847,7 @@
                     </h3>
                 </div>
             </div>
-            <p class="_text-article _text-article--sm mb-md-32 mb-16">
+            <p class="_text-article _text-article--sm mb-md-24 mb-16">
                 Database tuning can also significantly reduce server load. You can check the database setup and
                 configuration by analyzing its size to ensure it's optimized. Then, make sure that indexing does not
                 lock the database tables. You should also check database settings to ensure the cache is enabled and
@@ -990,7 +1003,7 @@
                 <li class="font-regular _text-article _text-article--sm mb-8">
                     <a href="https://perspectiveteam.com/services/magento-pwa" class="_text-orange">Magento PWA</a>
                 </li>
-                <li class="font-regular _text-article _text-article--sm mb-0">
+                <li class="font-regular _text-article _text-article--sm mb-8">
                     <a href="https://perspectiveteam.com/services/server-optimization" class="_text-orange">Server &
                         Magento Optimization</a>
                 </li>
@@ -998,7 +1011,7 @@
                     <a href="https://perspectiveteam.com/services/magento-support" class="_text-orange">Magento
                         Support</a>
                 </li>
-                <li class="font-regular _text-article _text-article--sm mb-8">
+                <li class="font-regular _text-article _text-article--sm mb-0">
                     <a href="https://perspectiveteam.com/services/comprehensive-web-design" class="_text-orange">Web
                         Design</a>
                 </li>
