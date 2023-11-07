@@ -1,0 +1,970 @@
+<style>
+    @media screen and (min-width: 1200px) {
+        .h5 {
+            line-height: 32px;
+        }
+    }
+
+    .text-24 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .server-settings-table__row > * {
+        display: inline;
+    }
+
+    .server-settings-table__item img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 992px) {
+        .text-24 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .server-settings-table__row--head .server-settings-table__item:last-child {
+            margin-left: -3px;
+        }
+
+        ._text-article--intro {
+            margin-left: 4px;
+        }
+
+        ._text-article {
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+        ._common-article-section--gap {
+            margin-bottom: 32px;
+            margin-top: 32px;
+        }
+
+        .step-box {
+            column-gap: 16px;
+        }
+
+        .step-box__content .h4 {
+            line-height: 24px;
+        }
+
+        .step-box__image {
+            flex: 0 0 64px;
+            height: 60px;
+        }
+
+        .text-24 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .server-settings-table__row {
+            grid-template-columns: 1fr 48px;
+        }
+
+        .server-settings-table__item:first-child {
+            padding-right: 0;
+        }
+
+        .server-settings-table__item:last-child {
+            text-align: right;
+        }
+    }
+
+    /* table seo-audit */
+    .seo-audit-table__item {
+        padding: 8px 0;
+    }
+
+    .seo-audit-table__subitem {
+        padding: 8px 0;
+    }
+
+    .seo-audit-table__subitem:not(:last-child) {
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .seo-audit-table__row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 32px;
+        }
+
+        .seo-audit-table__item--span2 {
+            grid-column: span 2;
+        }
+
+        .seo-audit-table__subitem {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 32px;
+        }
+
+        .seo-audit-table__subitem > * {
+            flex: 0 1 50%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .seo-audit-table__row:not(:first-child) {
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .seo-audit-table__row--head {
+            background: #F9F9F9;
+        }
+
+        .seo-audit-table__row--head {
+            padding: 8px 16px;
+        }
+
+        .seo-audit-table__row {
+            padding: 0 16px;
+        }
+
+        .seo-audit-table__item h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .seo-audit-table__subitem > *, .seo-audit-table__item h4 {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .seo-audit-table__row--head {
+            display: none;
+        }
+
+        .seo-audit-table__item {
+            padding: 0 0 10px 0;
+        }
+
+        .seo-audit-table__subitem {
+            padding: 8px 16px;
+        }
+
+        .seo-audit-table__item br {
+            display: none;
+        }
+
+        .seo-audit-table__item:first-child {
+            background: #F9F9F9;
+            padding: 8px 16px;
+            margin-bottom: 8px;
+        }
+
+        .seo-audit-table__item:before, .seo-audit-table__subitem div:before, .seo-audit-table__subitem p:before {
+            display: block;
+            font-weight: 600;
+        }
+
+        .seo-audit-table__row {
+            padding-bottom: 8px;
+        }
+
+        .seo-audit-table__item:first-child:before {
+            content: "Category";
+        }
+
+        .seo-audit-table__subitem div {
+            margin-bottom: 8px;
+        }
+
+        .seo-audit-table__subitem div:before {
+            content: "Tool/Extension";
+        }
+
+        .seo-audit-table__subitem p:before {
+            content: "Description";
+        }
+    }
+
+    /* table seo-extension */
+    .seo-extension-table__row ul li:before {
+        display: none !important;
+    }
+
+    .seo-extension-table__row ul li {
+        list-style-type: disc;
+    }
+
+    .seo-extension-table__row ul {
+        padding-left: 0 !important;
+    }
+
+    @media screen and (min-width: 768px) {
+        .seo-extension-table__row {
+            display: grid;
+            grid-template-columns: 18% 18% 22% 22% minmax(48px, 1fr);
+            column-gap: 24px;
+            font-size: 16px;
+            line-height: 24px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .seo-extension-table__row:not(:first-child) {
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .seo-extension-table__row--head {
+            background: #F9F9F9;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .seo-extension-table__row ul li {
+            font-size: 16px !important;
+            line-height: 24px !important;
+            word-wrap: break-word;
+        }
+
+        .seo-extension-table__item {
+            padding: 16px 0;
+        }
+
+        .seo-extension-table__row--head .seo-extension-table__item {
+            padding: 8px 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .seo-extension-table__row ul {
+            padding-left: 1em !important;
+        }
+
+        ol li ._list-numbered__legend:before {
+            width: 29px;
+        }
+
+        .text-24 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .seo-extension-table__row--head {
+            display: none;
+        }
+
+        .seo-extension-table__item {
+            padding: 0 0 10px 16px;
+        }
+
+        .seo-extension-table__item br {
+            display: none;
+        }
+
+        .seo-extension-table__item:first-child {
+            background: #F9F9F9;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+        }
+
+        .seo-extension-table__item:before {
+            display: block;
+            font-weight: 600;
+        }
+
+        .seo-extension-table__row {
+            padding-bottom: 8px;
+        }
+
+        .seo-extension-table__item:first-child:before {
+            content: "Magento Vendor";
+        }
+
+        .seo-extension-table__item:nth-child(2):before {
+            content: "Name";
+        }
+
+        .seo-extension-table__item:nth-child(3):before {
+            content: "Highlight Features";
+        }
+
+        .seo-extension-table__item:nth-child(4):before {
+            content: "Description";
+        }
+
+        .seo-extension-table__item:nth-child(5):before {
+            content: "Price";
+        }
+    }
+</style>
+
+<div class="article">
+    <section class="article__section _article-page-grid">
+        <div class="grid-col"></div>
+        <div class="grid-col _text-align-right">
+            <div class="article__intro">
+                <h2 class="h4 _text-article--intro">
+                    In the ever-evolving realm of popular ecommerce platforms, staying at the forefront is not just a
+                    goal; it's a necessity. Google's search algorithms are in flux, making regular website analysis
+                    imperative. Neglecting this vital task can cost you precious traffic, potential customers, and
+                    revenue. Your website's optimization level determines its visibility in search results and the
+                    influx of new customers each month. This is precisely where the Magento SEO Audit steps into the
+                    limelight.
+                </h2>
+                <div class="article__author mt-md-24 mt-16"><span itemprop="author">Yaroslav Zinchuk</span></div>
+            </div>
+        </div>
+        <div class="grid-col"></div>
+    </section>
+    <div class="article__image article__image--intro">
+        <img
+            itemprop="image"
+            loading="eager"
+            src="{{media url='wysiwyg/articles/seo-audit/1.svg'}}"
+            alt="A Comprehensive Guide to Magento SEO Audit"
+            style="min-height: 179px"
+        />
+    </div>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <p class="_text-article _text-article--sm mb-8">
+                <a href="https://nealschaffer.com/seo-statistics/" class="_text-orange">For 59% of B2B marketers, the
+                    most significant factor driving lead
+                    generation growth is improved SEO techniques</a>. As an astute online merchant, you understand the
+                importance of continually fine-tuning your website's search engine optimization. Enter Magento 2 SEO
+                services—meticulously tailored for Magento-based online stores, they serve as your compass in navigating
+                the ever-shifting landscape of Google's search algorithms.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                Our article, Magento Core Web Vitals, discussed how Core Web Vitals provide an optimal user experience
+                and rank higher on Google search results. In this article, we will go deeply into SEO Audit for Magento
+                with examples and recommendations to better understand the needs and requirements you must consider
+                while hiring professional SEO Auditors or SEO teams.
+            </p>
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                Why regularity is the basis for SEO audits in Magento
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                We already shared insights about <a
+                href="https://perspectiveteam.com/blog/enhancing-your-e-commerce-performance-a-comprehensive-guide-to-magento-performance-audit/"
+                class="_text-orange">Magento performance audit </a> - one of
+                the best ways to maintain website
+                health. But what exactly is a Magento SEO audit? It's a comprehensive dissection of your website's inner
+                workings. This powerful tool unveils the barriers and blunders thwarting your e-commerce store's ascent
+                to the pinnacle of search results. This audit is your roadmap, illuminating the path to attracting more
+                organic leads, supercharging your sales, and fortifying your revenue stream.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-8">
+                Here's a brief overview of why SEO audits are periodically necessary for Magento websites:
+            </p>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Algorithm Changes:</h4> Search engines like Google frequently update their
+                    algorithms. These updates can
+                    impact how your website ranks in search results. Periodic SEO audits help you adapt to these changes
+                    by identifying and addressing issues affecting your website's search engine visibility.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Technical Maintenance:</h4> Over time,
+                    technical issues can accumulate on your Magento website, affecting its performance. SEO audits help
+                    uncover broken links, slow page loading times, and mobile-friendliness problems, allowing you to
+                    rectify them promptly.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Content Quality:</h4> Content is a cornerstone
+                    of SEO. Regular audits assess your website's content's quality, relevance, and uniqueness. You can
+                    identify opportunities for creating fresh, valuable content and improving existing pages for better
+                    search engine rankings.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Competitive Landscape:</h4> Your competitors
+                    may be optimizing their websites and content regularly. An SEO audit helps you stay competitive by
+                    highlighting areas where you can outperform them or fill content gaps in your industry.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">User Experience:</h4> User experience is
+                    crucial for both SEO and customer satisfaction. SEO audits evaluate your website's structure,
+                    Navigation, and overall user-friendliness. This helps ensure visitors have a positive experience,
+                    which can indirectly impact search rankings.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Link Profile:</h4> The quality and relevance of
+                    backlinks pointing to your website are critical for SEO. Regular audits can help you identify
+                    low-quality or toxic backlinks that could harm your site's rankings and take necessary actions to
+                    disavow them.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Keyword Optimization</h4>: SEO audits assess
+                    your keyword strategy and the optimization of on-page elements like meta titles and descriptions.
+                    This ensures you're targeting the right keywords and optimizing your content effectively.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Security and Trustworthiness:</h4> Security
+                    issues can negatively impact SEO and user trust. Regular audits help you detect vulnerabilities,
+                    malware, or privacy concerns and address them promptly.
+                </li>
+            </ul>
+            <p class="_text-article _text-article--sm mb-0">
+                Magento websites benefit from periodic SEO audits to adapt to search engine algorithm changes, maintain
+                technical excellence, enhance content quality, and ensure a positive user experience. These audits help
+                you stay competitive, improve search rankings, and maintain the health and performance of your
+                e-commerce site in a dynamic digital marketing landscape.
+            </p>
+
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                Leveraging Magento's SEO-Friendly Features
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                Magento offers many SEO capabilities right from the start without needing third-party services. In this
+                section, we'll unravel the many benefits of Magento's inherent SEO features, highlighting why it's a
+                favored choice for enterprises seeking to fortify their SEO endeavors.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Built-in Advanced SEO Features</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Magento sets itself apart by offering a robust suite of built-in advanced SEO features. These features
+                provide a solid foundation for enhancing a website's visibility on search engine results pages (SERPs).
+                With capabilities like custom meta titles and descriptions, URL rewrites, and XML sitemap enhancements,
+                Magento empowers businesses to climb the ranks in SERPs
+            </p>
+
+
+            <h3 class="h5 mb-8 font-bold">SEO-Friendly URLs</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                One of the fundamental aspects of SEO is the structure of website URLs. Magento takes the guesswork out
+                of this equation by automatically creating meta keywords and generating SEO-friendly URLs that are
+                finely tuned to appease search engines. This ensures that your website's URLs are optimized for
+                discoverability and user-friendliness.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Mobile-Friendly Configuration</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                In today's mobile-driven landscape, catering to mobile users is non-negotiable. With 72.6% of internet
+                users expected to access the web solely via smartphones by 2025 (CNBC), Magento acknowledges this trend
+                by developing shopping carts with responsive designs that seamlessly adapt to various devices. This
+                mobile-friendly configuration aligns the ecommerce industry perfectly with the shift towards mobile
+                commerce and positively impacts SEO.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">A Thriving Magento Community</h3>
+            <p class="_text-article _text-article--sm mb-16">
+                Magento boasts a vast and thriving community of developers and SEO specialists who continually innovate
+                and experiment with strategies to enhance the platform's SEO capabilities. This collaborative
+                environment ensures that Magento stays at the forefront of SEO best practices.
+            </p>
+
+            <h3 class="h5 mb-8 font-bold">Scalable Architecture for Enterprise Needs</h3>
+            <p class="_text-article _text-article--sm mb-8">
+                Magento's architecture handles high site traffic levels, making it the preferred choice for large
+                enterprises. Its scalability ensures that as your business grows, your Magento-based website can
+                accommodate increased traffic seamlessly. Importantly, even during scaling, the Magento platform
+                maintains site speed and stability, positively influencing search engine rankings, particularly in
+                Google's eyes. This exceptional performance on large projects helps ensure that your Magento-based site
+                ranks well and delivers a seamless user experience, enhancing its SEO capabilities.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                In conclusion, enterprises gravitate towards Magento for SEO optimization due to its wealth of features,
+                flexibility, mobile responsiveness, and supportive community. With Magento as a foundation, businesses
+                can elevate their online presence and conquer the ever-changing landscape of SEO.
+            </p>
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                Conducting Magento SEO Audit
+            </h2>
+            <p class="_text-article _text-article--sm mb-16 mb-md-32">
+                In a general SEO audit, the evaluation typically involves analyzing several critical parameters to
+                assess and improve the overall performance of a website. These parameters are the foundation for
+                assessing the site's visibility, user experience, and search engine rankings.
+            </p>
+
+            <h3 class="h4 mb-8 mb-md-24 font-bold">Correctness of Site Display in Search Engines</h3>
+
+            <div class="mt-16 article__image article__image--narrow mb-8 mb-md-24">
+                <img
+                    itemprop="image"
+                    loading="lazy"
+                    src="{{media url='wysiwyg/articles/seo-audit/2.svg'}}"
+                    alt="Correctness of Site Display in Search Engines"
+                />
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                Is your website playing hide-and-seek with search engines? This criterion ensures that your website is
+                indexed and correctly indexed by significant search engines like Google, Bing, and others. It involves a
+                meticulous examination of several elements:
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                Here's a brief overview of why SEO audits are periodically necessary for Magento websites:
+            </p>
+            <ul class="article__list mb-16 mb-md-32">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Cached Version Validation:</h4> It is needed to verify if the cached version
+                    of your web pages aligns
+                    with the actual content, ensuring accurate representation to search engines and users.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Mobile Compatibility Assessment:</h4> A mobile-friendly site is non-negotiable
+                    in the mobile-driven era.
+                    We assess the correctness of your website's mobile version, guaranteeing seamless experiences for
+                    smartphone users.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Loading Speed Analysis:</h4> The need for speed in the digital realm is
+                    undeniable. Gauge your site's
+                    loading speed, as faster-loading pages not only please users but also receive favorable treatment
+                    from search engines.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Google Page Indexing Check:</h4> Scrutinize the indexing status of your pages
+                    on Google to ensure they are discoverable by search engine bots.
+                </li>
+            </ul>
+
+            <h3 class="h4 mb-8 mb-md-24 font-bold">Technical SEO Audit</h3>
+            <div class="mt-16 article__image article__image--narrow mb-8 mb-md-24">
+                <img
+                    itemprop="image"
+                    loading="lazy"
+                    src="{{media url='wysiwyg/articles/seo-audit/3.svg'}}"
+                    alt="Technical SEO Audit"
+                />
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                Behind the curtain of your website lie technical intricacies that can significantly impact performance
+                and SEO. Our technical audit leaves no stone unturned:
+            </p>
+            <ul class="article__list mb-16 mb-md-32">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Pages to Block from Google Indexing:</h4> Some pages hold no SEO value and
+                    should be excluded from
+                    indexing. Specialists identify and advise closing these pages using the "robots" meta tag.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Canonical Tags Examination:</h4> Canonical tags are crucial for preventing
+                    duplicate content issues.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Robots.txt Inspection:</h4> Your robots.txt file plays a pivotal role in
+                    instructing search engine bots.
+                    You should review its configuration to guarantee proper guidance.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">XML Sitemap Check:</h4> A well-structured XML sitemap aids in better crawling
+                    and indexing. We assess its
+                    accuracy and completeness.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">SSL Certificate and Security Evaluation:</h4> Security is paramount. Verify
+                    your SSL certificate and
+                    address security concerns.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Main Domain Setup (WWW / non-WWW):</h4> Assess the setup of your main site
+                    domain to ensure consistency
+                    and avoid duplicate content issues.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">404 Error Handling:</h4> Correctly handling '404' errors and providing a
+                    helpful '404 page' is vital for
+                    user experience and SEO.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Structured Data and Rich Snippets:</h4> Leveraging structured data and rich
+                    snippets can enhance your
+                    website's visibility in search results.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Open Graph Tags Implementation:</h4> Proper Open Graph tags can improve how
+                    your content appears on
+                    social media platforms.
+                </li>
+            </ul>
+
+            <h3 class="h4 mb-8 mb-md-24 font-bold">Structure and Navigation on the Website</h3>
+            <div class="mt-16 article__image article__image--narrow mb-8 mb-md-24">
+                <img
+                    itemprop="image"
+                    loading="lazy"
+                    src="{{media url='wysiwyg/articles/seo-audit/4.svg'}}"
+                    alt="Structure and Navigation on the Website"
+                />
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                A well-structured website with intuitive Navigation fosters excellent user experiences and SEO. We
+                explore core elements:
+            </p>
+
+            <ul class="article__list mb-16 mb-md-32">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold"> Content Hubs (SEO Silos):</h4> The concept of content hubs or SEO silos helps
+                    organize your content for users and search engines
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Linking Strategies:</h4> Analyze how your content is linked within your
+                    website to optimize the flow of link equity and user navigation.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Breadcrumbs Implementation:</h4> Breadcrumbs provide clear paths for users to
+                    navigate your site and aid search engines in understanding your site's structure.
+                </li>
+            </ul>
+
+            <h3 class="h4 mb-8 mb-md-24 font-bold">Content Analysis</h3>
+            <div class="mt-16 article__image article__image--narrow mb-8 mb-md-24">
+                <img
+                    itemprop="image"
+                    loading="lazy"
+                    src="{{media url='wysiwyg/articles/seo-audit/5.svg'}}"
+                    alt="Content Analysis"
+                />
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                Content is at the heart of SEO. Dissect your content strategy:
+            </p>
+
+            <ul class="article__list mb-16 mb-md-32">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Title Tag Analysis:</h4> The title tags are the first thing users see in
+                    search results. Please make sure they are compelling, descriptive, and optimized.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Meta Description Assessment:</h4> Meta descriptions briefly preview your
+                    content in search results. Optimize them for click-through rates and relevance.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Heading Tags (H1-H6):</h4> Properly structured heading tags improve content
+                    organization and readability.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Textual Content Review:</h4> Analyze the quality, relevance, and optimization
+                    of your textual content, focusing on keywords and user engagement.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Image Attribute Inspection:</h4> Images are essential elements of your
+                    content. Don't forget to evaluate their attributes for SEO.
+                </li>
+            </ul>
+
+            <h3 class="h4 mb-8 mb-md-24 font-bold">Factors of Trust in the Website</h3>
+            <div class="mt-16 article__image article__image--narrow mb-8 mb-md-24">
+                <img
+                    itemprop="image"
+                    loading="lazy"
+                    src="{{media url='wysiwyg/articles/seo-audit/6.svg'}}"
+                    alt="Factors of Trust in the Website"
+                />
+            </div>
+            <p class="_text-article _text-article--sm mb-8">
+                Building Trust is paramount for SEO success. Let's explore these trust factors:
+            </p>
+            <ul class="article__list mb-0">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">YMYL Compliance:</h4> Your Money or Your Life (YMYL) stands require higher
+                    trust and expertise. We ensure compliance with YMYL standards.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Content Author Reputation:</h4> Assess the reputation of content authors on
+                    your site, particularly for pages requiring expertise.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">About Page Evaluation:</h4> An informative About page builds trust. Analyze
+                    its content and presentation.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Contact Page Review:</h4> Ensure your contact page is accessible and provides
+                    accurate information.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Social Proof - Customers:</h4> Highlighting satisfied customers can enhance
+                    your site's credibility.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Social Proof - Customer Reviews:</h4> Positive reviews can boost trust.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Careers Page Examination:</h4> A well-presented careers page can indicate
+                    business stability.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Legal Pages Inspection:</h4> Privacy Policy, Terms of Service, and Cookie
+                    Policy pages are essential for trust and legal compliance.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    <h4 class="font-bold">Online Reputation:</h4> External trust factors, such as mentions in reputable
+                    sources, contribute to trustworthiness.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    <h4 class="font-bold">Branded Trust Signals:</h4> Building trust through consistent branding and
+                    authority signals is key.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                Tools to employ for a Magento SEO Audit
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                Many third-party tools and extensions have been developed to assist SEO practitioners in managing this
+                workload. These SEO tools come in various forms, including websites, software programs, and
+                applications. They serve the vital role of sharing the substantial workload with SEO experts, aligning a
+                website's performance with the ranking factors of search engines, and providing valuable insights into
+                rank tracking.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Certainly, here's a table listing various third-party tools and extensions that can enhance Magento's
+                SEO capabilities in different categories:
+            </p>
+
+
+            <div class="seo-audit-table mb-0">
+                <div class="seo-audit-table__row seo-audit-table__row--head">
+                    <div class="seo-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Category</p></div>
+                    <div class="seo-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Tool/Extension</p></div>
+                    <div class="seo-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Description</p></div>
+                </div>
+
+                <!--  Website Auditor  -->
+                <div class="seo-audit-table__row">
+                    <div class="seo-audit-table__item">
+                        <h4>Technical SEO Tools</h4>
+                    </div>
+
+                    <div class="seo-audit-table__item seo-audit-table__item--span2">
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.link-assistant.com/website-auditor/download.html"
+                                   class="_text-orange">Website Auditor </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Helps analyze on-page SEO elements and technical
+                                issues.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://analytics.google.com/analytics/web/"
+                                   class="_text-orange">Google Analytics</a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Provides website traffic and user behavior
+                                insights.</p>
+
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://barracuda.digital/panguin-seo-tool/"
+                                   class="_text-orange">Panguin Tool </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Helps identify the impact of Google algorithm
+                                updates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  SEO Keyword Research Tools  -->
+                <div class="seo-audit-table__row">
+                    <div class="seo-audit-table__item">
+                        <h4>SEO Keyword Research Tools</h4>
+                    </div>
+
+                    <div class="seo-audit-table__item seo-audit-table__item--span2">
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://ads.google.com/aw/keywordplanner/home"
+                                   class="_text-orange">Google Keyword Planner </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Provides keyword research and search volume data.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.semrush.com/features/keyword-research/"
+                                   class="_text-orange">SEMrush </a>
+                                <span>(Free & Paid)</span>
+                            </div>
+                            <p>Offers comprehensive keyword research and competitor analysis.</p>
+
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://keywordtool.io/"
+                                   class="_text-orange">keywordtool.io </a>
+                                <span>(Free & Paid)</span>
+                            </div>
+                            <p>Helps discover long-tail keywords and search queries.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://trends.google.com/trends/?geo=US"
+                                   class="_text-orange">Google Trends </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Provides insights into keyword trends and popularity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  SEO Rank Tracking Tools  -->
+                <div class="seo-audit-table__row">
+                    <div class="seo-audit-table__item">
+                        <h4>SEO Rank Tracking Tools</h4>
+                    </div>
+
+                    <div class="seo-audit-table__item seo-audit-table__item--span2">
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.serprobot.com/"
+                                   class="_text-orange">SERProbot </a>
+                                <span>(Free & Paid)</span>
+                            </div>
+                            <p>Offers SERP (Search Engine Results Page) tracking.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://search.google.com/search-console/"
+                                   class="_text-orange">Google Search Console </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Provides search performance data and website insights.</p>
+
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.seomonitor.com/"
+                                   class="_text-orange">SEO Monitor </a>
+                                <span>(Paid)</span>
+                            </div>
+                            <p>Offers advanced rank tracking and SEO performance monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  SEO Content Optimization Tools  -->
+                <div class="seo-audit-table__row">
+                    <div class="seo-audit-table__item">
+                        <h4>SEO Content Optimization Tools</h4>
+                    </div>
+
+                    <div class="seo-audit-table__item seo-audit-table__item--span2">
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.grammarly.com/"
+                                   class="_text-orange">Grammarly </a>
+                                <span>(Free & Paid)</span>
+                            </div>
+                            <p>Helps improve content quality and grammar.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://smartsearchmarketing.com/google-title-tag-serp-preview-tool"
+                                   class="_text-orange">Google SERP Preview Tool </a>
+                                <span>(Free)</span>
+                            </div>
+                            <p>Allows you to preview how your page appears in Google SERPs.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--  SEO Backlink Analysis Tools  -->
+                <div class="seo-audit-table__row">
+                    <div class="seo-audit-table__item">
+                        <h4>SEO Backlink Analysis Tools</h4>
+                    </div>
+
+                    <div class="seo-audit-table__item seo-audit-table__item--span2">
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://ahrefs.com/"
+                                   class="_text-orange">Ahrefs </a>
+                                <span>(Paid)</span>
+                            </div>
+                            <p>Offers in-depth backlink analysis and competitor research.</p>
+                        </div>
+                        <div class="seo-audit-table__subitem">
+                            <div>
+                                <a href="https://www.linkresearchtools.com/"
+                                   class="_text-orange">Link Research Tools </a>
+                                <span>(Paid)</span>
+                            </div>
+                            <p>Provides advanced backlink analysis and auditing capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="seo-extension-table"}}
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">
+                Conclusion
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                To execute a successful Magento SEO audit, use Magento stores various tools and extensions to streamline
+                the process. From technical SEO tools to keyword research, rank tracking, content optimization, and
+                backlink analysis tools, these resources empower you to make data-driven decisions and continually
+                improve your website's SEO performance.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Regularly conducting Magento SEO audits and implementing recommended strategies can elevate your Magento
+                e-commerce presence, attract more organic traffic, and drive growth for your Magento e-commerce online
+                business.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                Consider initiating a Magento SEO audit for your website today. Seize control of your online presence,
+                identify areas for improvement, and witness your rankings soar, bringing in more traffic and potential
+                customers.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                If navigating the intricacies of SEO audits seems overwhelming, professional services are readily
+                available. SEO experts can guide you through the process, ensuring your Magento-based or ecommerce
+                platform, website, or store is optimized for maximum visibility and user satisfaction.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                With over a decade of experience in Magento site development, our team comprises certified Magento site
+                developers and seasoned consultants. While our primary focus is optimizing your Magento website's
+                technical performance, we also offer assistance in various aspects of your Magento extension and digital
+                journey, including SEO audits and enhancements. Our expertise can enhance your online presence and
+                ensure your Magento-based platform excels in all aspects.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-0">
+                Whether you opt for a DIY approach or seek professional assistance, the crucial step is to take action.
+                Your e-commerce success story is within reach, and a Magento SEO audit is the initial stride toward
+                achieving it. Don't hesitate—act now and witness your online business flourish in digital commerce.
+            </p>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,1067 @@
+<style>
+    .bg-orange {
+        padding: 41.5px 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(269.76deg, #E17139 4.09%, #CD4B3A 99.75%);
+    }
+
+    .bg-orange__text {
+        font-size: 24px;
+        line-height: 36px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .text-20 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .text-24 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    ol li ._list-numbered__legend:before {
+        width: 26px;
+        font-weight: 700;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .security-audit-table__row {
+            display: grid;
+            grid-template-columns: 25% 36.1% 20% minmax(148px, 1fr);
+        }
+
+        .security-audit-table__row:not(:first-child) {
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .security-audit-table__row--head {
+            background: #F9F9F9;
+        }
+
+        .security-audit-table__row--head .security-audit-table__item {
+            padding: 8px 12px;
+        }
+
+        .security-audit-table__item {
+            padding: 16px 12px;
+        }
+
+        .security-audit-table__item:first-child {
+            padding-left: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .bg-orange__text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .bg-orange__text br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .bg-orange {
+            padding: 23.5px 20px;
+        }
+
+        .text-20 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .text-24 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        ol li ._list-numbered__legend:before {
+            width: 29px;
+        }
+
+        .text-24 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .security-audit-table__row--head {
+            display: none;
+        }
+
+        .security-audit-table__item {
+            padding: 0 0 10px 18px;
+        }
+
+        .security-audit-table__item br {
+            display: none;
+        }
+
+        .security-audit-table__item:first-child {
+            background: #F9F9F9;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+        }
+
+        .security-audit-table__item:before {
+            display: block;
+            font-weight: 600;
+        }
+
+        .security-audit-table__row {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .security-audit-table__item:first-child:before {
+            content: "Extension/Plugin";
+        }
+
+        .security-audit-table__item:nth-child(2):before {
+            content: "Features";
+        }
+
+        .security-audit-table__item:nth-child(3):before {
+            content: "Coverage";
+        }
+
+        .security-audit-table__item:nth-child(4):before {
+            content: "Price";
+        }
+
+
+    }
+
+
+</style>
+
+<div class="article">
+    <section class="article__section _article-page-grid">
+        <div class="grid-col"></div>
+        <div class="grid-col _text-align-right">
+            <div class="article__intro">
+                <h2 class="h4 _text-article--intro">
+                    While Magento offers a host of features for e-commerce businesses, it's not impervious to hacker
+                    attacks. But worry not, understanding these risks is the first step to fortifying your defenses. In
+                    this article, we'll uncover common Magento security vulnerabilities and discuss how a Magento
+                    Security Audit can help to fortify your business, mitigating risks and safeguarding your bottom
+                    line.
+                </h2>
+                <div class="article__author mt-md-24 mt-16"><span itemprop="author">Artur Potulnyy</span></div>
+            </div>
+        </div>
+        <div class="grid-col"></div>
+    </section>
+    <div class="article__image article__image--intro">
+        <img
+            itemprop="image"
+            src="{{media url='wysiwyg/articles/security-audit/1.png'}}"
+            alt="Magento Security Audit: Ensuring the Safety of Your E-commerce Store"
+            style="min-height: 175px"
+        />
+    </div>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 text-24 font-semibold mb-24 mb-md-16">Common Magento security vulnerabilities and
+                risks</h2>
+            <p class="_text-article _text-article--sm mb-16">
+                According to Security Magazine, there is a hacker attack every 39 seconds. No matter how big or small
+                your organization is, you must ensure that all your data and systems are secure from malicious
+                intrusions. We have already shared the information about How to protect your eCommerce site and business
+                from Cyber Attacks. It's not enough to have firewalls in place; it's also essential to be proactive
+                about implementing the latest security updates to keep your system secure. Additionally, educating all
+                users about cybersecurity best practices is necessary.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                The Magento platform is popular amongst e-commerce businesses due to its abundance of features and
+                community support.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                Compared to other e-commerce website development solutions, Magento faces 0.71% of attacks.
+            </p>
+
+            <div class="article__image article__image--narrow mb-16 mt-16">
+                <img
+                    itemprop="image"
+                    loading="eager"
+                    src="{{media url='wysiwyg/articles/security-audit/2.svg'}}"
+                    alt="Online business: CMS Infections for 2021"
+                />
+            </div>
+
+            <p class="_text-article _text-article--sm mb-16">
+                Despite this popularity, the platform is also highly vulnerable to common hacker attacks and risks. In
+                <a
+                    href="https://www.google.com/url?q=https://www.securityweek.com/magento-vulnerability-increasingly-exploited-hack-online-stores/&sa=D&source=editors&ust=1690144506555540&usg=AOvVaw3ghHlxWsgH6kH8ihk5WmGF"
+                    class="_text-orange"> 2022, a surge of cyber attacks</a>
+                were experienced by Adobe and Magento stores targeting the vulnerability
+                CVE-2022-24086, a critical mail template and security vulnerability.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                This article will explain how undergoing a Magento Security Audit can help mitigate risks and protect
+                your business from losses, ensuring its development and prosperity.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">Common Magento security risks</h2>
+            <p class="_text-article _text-article--sm mb-16">
+                To develop a strong defense, you should first understand the different types of cyberattacks and how
+                they can affect your system.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Cross-Site Scripting (XSS): </b>Injection of malicious scripts into web pages
+                viewed by users, enabling attackers to steal sensitive information or perform unauthorized actions.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Code Execution Attacks: </b>Targeting the server hosting the Magento website to
+                gain control over the system, enabling attackers to steal data, install malware, or manipulate
+                information.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">SQL Injection Attacks: </b>Exploiting vulnerabilities in the website's SQL code to
+                gain unauthorized access to the database, risking exposure of sensitive data or manipulating stored
+                information.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">CSRF Attacks: </b>Cross-Site Request Forgery attacks trick authenticated users into
+                unknowingly performing unwanted actions, such as submitting forms, making transactions, or changing
+                passwords.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Brute Force Attacks: </b>Attempting to gain access to the Magento backend by
+                systematically guessing passwords using automated tools.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Server Attacks: </b>Targeting the server infrastructure of the Magento site can
+                lead to unauthorized access, data breaches, or disruption of services.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Website Defacement: </b>Unauthorized modification of the website's appearance,
+                content, or functionality, often used to spread malicious messages or cause reputational damage.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Credit Card Hijacking: </b>Theft of credit card information entered during
+                checkout, potentially leading to financial losses and compromised customer trust.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Botnetting: </b>Infected systems form a botnet network, allowing attackers to carry
+                out coordinated attacks, spread malware, or engage in distributed denial-of-service (DDoS) attacks.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Remote Code Execution: </b>Exploiting vulnerabilities to execute malicious code on
+                the Magento site, providing attackers with unauthorized access and control over the system.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                A comprehensive Magento security audit should cover three key areas: <b class="font-bold">performance,
+                security,</b> and <b class="font-bold">health</b>.
+                Evaluating the website security itself's performance is essential to ensure that security measures do
+                not compromise user interface and usability.
+            </p>
+
+            <div class="mt-16 article__image article__image--narrow mb-16">
+                <img
+                    itemprop="image"
+                    loading="eager"
+                    src="{{media url='wysiwyg/articles/security-audit/3.svg'}}"
+                    alt="Top Cybersecurity Challenges"
+                />
+            </div>
+
+            <p class="_text-article _text-article--sm mb-16">
+                The security aspect involves assessing
+            </p>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    security patches
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">code modifications</li>
+                <li class="font-regular _text-article _text-article--sm mb-8">payment gateway security</li>
+                <li class="font-regular _text-article _text-article--sm mb-0">and user authentication.</li>
+            </ul>
+            <p class="_text-article _text-article--sm mb-0">
+                Additionally, the health check focuses on core edits, third-party extensions, data integrity, and
+                administrator privileges. A Magento 2 security audit ensures a secure, high-performing, and healthy
+                e-commerce website by addressing these areas. This will lead to efficient business operations with
+                reduced risks. A Magento security audit is essential to protect your website from potential risks.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-16 text-24 font-semibold">Main components of Magento Security Audit</h2>
+
+            <div class="bg-orange mb-16">
+                <p class="bg-orange__text mb-0 font-bold">
+                    79% of business stakeholders see the security team
+                    <br>
+                    as a partner, not an obstacle.
+                </p>
+            </div>
+            <p class="_text-article _text-article--sm mb-16">
+                Conducting a Magento security check involves a systematic approach to scanning for potential threats,
+                identifying vulnerabilities, reviewing security patches and updates, and checking for security risks.
+                Let's discuss the most common and valuable.
+            </p>
+
+            <h3 class="h5 mb-8 font-semibold">Scanning for Potential Threats:</h3>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Identify and prioritize potential risks based on the likelihood of exploitation and the potential
+                    impact on the organization.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Scan your website to identify common
+                    security issues, such as XSS vulnerabilities, SQL injection risks, and outdated software versions.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Conduct network scanning to identify any
+                    exposed ports or services that could be potential entry points for attackers.
+                </li>
+            </ul>
+
+            <h3 class="h5 mb-8 font-semibold">Identifying Vulnerabilities:</h3>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Analyze the results of vulnerability scans and rank the identified vulnerabilities based on their
+                    severity and potential impact.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Verify the identified vulnerabilities by
+                    manually inspecting the affected areas of your Magento website's code, configuration, and
+                    infrastructure.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Use penetration testing techniques to
+                    simulate real-world attacks and uncover any hidden vulnerabilities that may not be detected by
+                    automated scans alone.
+                </li>
+            </ul>
+
+            <h3 class="h5 mb-8 font-semibold">Reviewing Security Patches and Updates:</h3>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Stay up-to-date with the latest Magento security patches and updates released by Magento and the
+                    Magento security team.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Review the release notes and security
+                    bulletins provided by Magento to understand the vulnerabilities addressed by each patch or update.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Ensure that all relevant security patches
+                    and updates are promptly applied to your Magento installation to mitigate known security risks.
+                </li>
+            </ul>
+
+            <h3 class="h5 mb-8 font-semibold">Checking for Security Risks:</h3>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Review your Magento website's configuration settings, including file permissions, server settings,
+                    and admin panel access controls, to ensure they are correctly configured and aligned with security
+                    best practices.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Evaluate the security of third-party
+                    extensions and modules installed on your Magento website, ensuring they come from reputable sources
+                    and have undergone proper security checks.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Assess your web server's security
+                    configuration, including SSL/TLS implementation, secure headers, and protection against common
+                    server-level vulnerabilities.
+                </li>
+            </ul>
+
+            <h3 class="h5 mb-8 font-semibold">Ongoing Monitoring and Maintenance:</h3>
+            <ul class="article__list mb-16">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Implement a robust system for continuously monitoring and maintaining your Magento website's
+                    security.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Regularly monitor server logs, intrusion
+                    detection systems, and security event logs to identify any suspicious activities or signs of a
+                    security breach.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">Stay informed about the latest security
+                    threats and vulnerabilities affecting Magento websites through reliable sources such as Magento
+                    security advisories, forums, and security communities.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Establish a timely response and mitigation
+                    process for any identified security issues, including incident response and recovery plans.
+                </li>
+            </ul>
+
+            <p class="_text-article _text-article--sm mb-0">
+                Despite the overwhelming nature of these tasks, taking specific steps can help ensure your website's
+                protection. In the next chapter, let's discuss specific practices that can ensure the security of your
+                website.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <div class="article__row mb-16" style="column-gap: 16px;">
+                <div class="article__flex-content mb-0">
+                    <h2 class="mt-0 mb-16 text-24 font-semibold">
+                        Best Practices to Safeguard Your <br>
+                        E-commerce Store
+                    </h2>
+                    <p class="_text-article _text-article--dt">
+                        As an e-commerce business owner, ensuring a secure checkout experience on Magento sites is
+                        paramount to gaining customer trust and protecting sensitive payment data. At Perspective, we
+                        understand the significance of Magento store security for ecommerce websites, and we're here to
+                        share the best practices you should know.
+                    </p>
+                </div>
+
+                <div class="article__image-container">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--desktop"
+                        src="{{media url='wysiwyg/articles/security-audit/4.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--mobile mb-8"
+                        src="{{media url='wysiwyg/articles/security-audit/4-mob.svg'}}"
+                        alt="Best Practices to Safeguard Your E-commerce Store"
+                    />
+
+
+                    <p class="_text-article _text-article--sm _text-article--mobile" style="margin-bottom: 0">
+                        As an e-commerce business owner, ensuring a secure checkout experience on Magento sites is
+                        paramount to gaining customer trust and protecting sensitive payment data. At Perspective, we
+                        understand the significance of Magento store security for ecommerce websites, and we're here to
+                        share the best practices you should know.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 1 -->
+            <h3 class="text-20 mb-8 mb-md-12 flex font-semibold">
+                <span class="_text-orange">1.&nbsp;</span>
+                <span style="display: inline-block;margin-left: 8px;">PCI-DSS and Ensuring a Secure Magento Store for E-commerce</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-16">
+                As an e-commerce business owner, providing a secure checkout experience is crucial for gaining customer
+                trust. To safeguard sensitive payment data, the PCI (Payment Card Industry), an association of leading
+                credit card companies, oversees the security of Magento stores and ecommerce platforms.
+            </p>
+
+            <h4 class="h5 mb-8 font-bold">What are PCI Compliance and its Security Requirements?</h4>
+            <p class="_text-article _text-article--sm mb-16">
+                PCI compliance mandates that all Magento websites adhere to standard and secure credit card handling
+                practices. Non-compliance can lead to hefty fines and severe penalties. Here are the security
+                requirements outlined by PCI:
+            </p>
+            <h5 class="_text-article _text-article--sm mb-8">
+                Build and Maintain a Secure Network and Systems:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Install and maintain a firewall configuration to protect cardholder data
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">Avoid using vendor-supplied defaults for
+                    system passwords and security parameters
+                </li>
+            </ul>
+
+            <h5 class="_text-article _text-article--sm mb-8">
+                Protect Cardholder Data:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Implement measures to protect stored cardholder data
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Encrypt transmission of cardholder data across open, public networks
+                </li>
+            </ul>
+
+            <h5 class="_text-article _text-article--sm mb-8">
+                Maintain a Vulnerability Management Program:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Safeguard all systems against malware and regularly update antivirus software
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Develop and maintain secure systems and applications
+                </li>
+            </ul>
+
+            <h5 class="_text-article _text-article--sm mb-8">
+                Implement Strong Access Control Measures:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Restrict access to cardholder data based on business need-to-know
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Restrict physical access to cardholder data
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Identify and authenticate access to system components
+                </li>
+            </ul>
+
+            <h5 class="_text-article _text-article--sm mb-8">
+                Regularly Monitor and Test Networks:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Track and monitor all access to network resources and cardholder data
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Regularly test security systems and processes
+                </li>
+            </ul>
+
+            <h5 class="_text-article _text-article--sm mb-8">
+                Maintain an Information Security Policy:
+            </h5>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Establish and maintain a policy that addresses information security for all personnel
+                </li>
+            </ul>
+
+            <!-- 2 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">2.&nbsp;</span>
+                <span style="display: inline-block;margin-left: 8px;">Regular Backups</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                In an unexpected attack, having a reliable backup becomes crucial. A proper backup can swiftly restore
+                your hacked website and serve as a vital disaster management strategy. Consider the following points
+                when creating backups:
+            </p>
+            <ul class="article__list mb-24">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Determine the necessary files covering your website's configuration, appearance, and functionality.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Choose an appropriate backup frequency (daily, weekly, or monthly) based on your website's content
+                    update frequency.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Decide whether to perform manual backups or automate the process.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Verify the functionality of the backup by thoroughly testing the restoration process.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Consider working with your hosting provider to implement a professional database backup solution for
+                    large websites.
+                </li>
+            </ul>
+
+            <!-- 3 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">3.&nbsp;</span>
+                <span style="display: inline-block;margin-left: 8px;">Enhancing Security with SSL Certificates</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                Additionally, utilizing SSL certificates as part of e-commerce security best practices is essential. SSL
+                certificates authenticate website identity and encrypt information sent to the ecommerce stores' server,
+                protecting customers' and ecommerce sites' sensitive data like credit card information and login
+                credentials.
+            </p>
+            <p class="_text-article _text-article--sm mb-24">
+                By implementing these best practices, including PCI compliance, regular backups, and SSL certificates,
+                you can significantly enhance the security of your Magento store and provide a safe environment for your
+                customers' transactions.
+            </p>
+
+            <!-- 4 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">4.&nbsp;</span>
+                <span
+                    style="display: inline-block;margin-left: 8px;">Penetration Testing, according to OWASP Top-10</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                The process involves simulating real-world attacks to identify vulnerabilities and weaknesses in your
+                Magento store. You can proactively address potential threats by following the OWASP Top-10 guidelines
+                outlining the most critical web application security risks.
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                The OWASP Top-10 vulnerabilities include:
+            </p>
+
+            <ul class="article__list mb-8">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Injection
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Broken Authentication
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Sensitive Data Exposure
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    XML External Entities (XXE)
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Broken Access Control
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Security Misconfiguration
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Cross-Site Scripting (XSS)
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Insecure Deserialization
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Using Components with Known Vulnerabilities
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-0">
+                    Insufficient Logging and Monitoring
+                </li>
+            </ul>
+            <p class="_text-article _text-article--sm mb-24">
+                By conducting Penetration Testing based on these vulnerabilities, you can identify and remediate
+                potential security flaws, ensuring your Magento store is more resilient against attacks. Conducting this
+                type of testing at least once a year is recommended to protect your website against hackers.
+            </p>
+
+            <!-- 5 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">5.&nbsp;</span>
+                <span
+                    style="display: inline-block;margin-left: 8px;">Ensuring Compliance with GDPR</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                When dealing with customer data, complying with regulations such as the General Data Protection
+                Regulation (GDPR) is crucial. GDPR sets guidelines for the processing and protection of personal data
+                within the European Union (EU) and the European Economic Area (EEA).
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                To comply with GDPR, businesses should:
+            </p>
+
+            <ul class="article__list mb-8">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Obtain explicit and informed consent from customers before collecting their data.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Implement appropriate security measures to protect customer data from unauthorized access or
+                    breaches.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Allow customers to access, modify, or delete their data as per their rights granted by GDPR.
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Have proper data breach notification procedures to report any data breaches to the relevant
+                    authorities and affected individuals.
+                </li>
+            </ul>
+            <p class="_text-article _text-article--sm mb-24">
+                Ensuring compliance with GDPR protects your customers' data and demonstrates your commitment to data
+                privacy and trustworthiness.
+            </p>
+
+            <!-- 6 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">6.&nbsp;</span>
+                <span
+                    style="display: inline-block;margin-left: 8px;">Service Level Agreement (SLA) for Prompt Response and Decision-Making</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                Having a Service Level Agreement (SLA) with a technical contractor is crucial for maintaining the
+                quality of service in the event of a malicious attack on your website. The SLA specifies necessary
+                response and decision-making timelines to ensure swift actions are taken.
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                At Perspective, we include the following details in our SLA:
+            </p>
+
+            <ul class="article__list mb-8">
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Fixed time to respond in case of an incident or attack
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Fixed time for quick initial decision-making
+                </li>
+                <li class="font-regular _text-article _text-article--sm mb-8">
+                    Fixed time for permanent resolution.
+                </li>
+
+            </ul>
+            <p class="_text-article _text-article--sm mb-24">
+                For example, the SLA may outline that our contractor will respond within 2 hours and work towards
+                restoring your site's functionality, regardless of whether the incident occurs during or outside of
+                business hours.
+            </p>
+
+            <!-- 7 -->
+            <h3 class="text-20 mb-16 mb-md-20 flex font-semibold">
+                <span class="_text-orange">7.&nbsp;</span>
+                <span
+                    style="display: inline-block;margin-left: 8px;">Educating Employees and Customers</span>
+            </h3>
+            <p class="_text-article _text-article--sm mb-8">
+                To minimize the risk of cyber-attacks and enhance overall security, educating your employees and
+                customers about threats such as suspicious links, phishing attempts, and cyber-attacks is vital. Raising
+                awareness and providing guidance on detecting and reporting such threats creates a more secure
+                environment and mitigates potential risks.
+            </p>
+            <p class="_text-article _text-article--sm mb-8">
+                By combining Penetration Testing, GDPR compliance, having a Service Level Agreement, and promoting
+                security awareness among employees and customers, you can significantly strengthen the security of your
+                Magento store and protect sensitive data.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                You can increase your business's protection level by following our discussed practices. Specifically, we
+                have prepared a list of the best Magento Security Extensions to help ensure website protection.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 text-24 font-semibold mb-16">Right Magento Security Extensions for your online
+                store
+            </h2>
+            <p class="_text-article _text-article--sm mb-16">
+                Magento has a lot of possibilities when it comes to securing your online store. One of the most
+                effective ways is to invest in a security extension. Security extensions are essential to keeping your
+                store safe and secure, providing additional protection against malicious threats.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Identify your security needs: </b>Assess your online store's vulnerability to
+                threats. Consider factors such as security hazards, such as the nature of your business, the volume of
+                transactions, the sensitivity of customer data, and any previous security incidents.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Research trusted security extensions: </b>Look for extensions highly recommended by
+                the Magento community. Read reviews, check ratings, and evaluate the reputation of the extension
+                providers.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Check compatibility: </b>Ensure that the security extensions you're considering are
+                compatible with your current or latest version of Magento. Check for any potential conflicts with other
+                extensions or customizations in your store.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Evaluate features: </b>Compare the features offered by different security
+                extensions and assess how well they align with your security needs. Some essential security features may
+                include malware detection and removal, firewall protection, vulnerability scanning, two-factor
+                authentication, and web application firewall (WAF) capabilities.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Consider scalability: </b>If your online store is expected to grow, consider
+                whether the security extension can scale with your business. Look for extensions that can handle
+                increased traffic and support additional functionalities without compromising security.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Assess ease of use: </b>Choose a security extension that is user-friendly and easy
+                to configure. Look for extensions that provide clear documentation and support if you encounter any
+                issues or need assistance.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Verify reliability and support: </b>Ensure the extension provider has a proven
+                track record of promptly addressing security vulnerabilities and releasing regular updates. Look for
+                extensions that offer timely support and have a history of providing excellent customer service.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Consider the cost: </b>Evaluate the cost of the security extensions against the
+                level of protection they offer. While investing in reliable security is essential, consider your budget
+                and choose extensions that provide the best value for money.
+            </p>
+            <p class="_text-article _text-article--sm mb-16">
+                <b class="font-bold">Seek recommendations and expert advice: </b>Consult with experts in the Magento
+                community or seek advice from experienced developers or security professionals familiar with Magento's
+                security ecosystem. They can help you make an informed decision based on their knowledge and experience.
+            </p>
+            <p class="_text-article _text-article--sm mb-0">
+                Remember that maintaining a secure online store requires ongoing effort and vigilance. Regularly update
+                your security extensions and stay informed about the latest online threats and recommended security
+                practices.
+            </p>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <div class="article__row mb-16 mb-md-32" style="column-gap: 16px;">
+                <div class="article__flex-content mb-0">
+                    <h2 class="mt-0 mb-16 text-24 font-semibold">
+                        Magento Security Extensions and Plugins
+                    </h2>
+                    <p class="_text-article _text-article--dt" style="max-width: 441px;">
+                        To enhance the security of your e-commerce platform, Magento offers a wide range of security
+                        extensions and plugins that can add additional layers of protection and strengthen your
+                        ecommerce platform and overall security posture. We collected all the main features and prices
+                        for popular and trusted top Magento site security extensions for your better navigation through
+                        the options.
+                    </p>
+                </div>
+
+                <div class="article__image-container">
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--desktop"
+                        src="{{media url='wysiwyg/articles/security-audit/5.svg'}}"
+                        alt="Magento Security Extensions and Plugins"
+                    />
+
+                    <img
+                        itemprop="image"
+                        loading="lazy"
+                        class="article__image--mobile mb-8"
+                        src="{{media url='wysiwyg/articles/security-audit/5-mob.svg'}}"
+                        alt="Magento Security Extensions and Plugins"
+                    />
+                    <p class="_text-article _text-article--sm _text-article--mobile" style="margin-bottom: 0">
+                        To enhance the security of your e-commerce platform, Magento offers a wide range of security
+                        extensions and plugins that can add additional layers of protection and strengthen your
+                        ecommerce platform and overall security posture. We collected all the main features and prices
+                        for popular and trusted top Magento site security extensions for your better navigation through
+                        the options.
+                    </p>
+                </div>
+            </div>
+            <div class="security-audit-table">
+                <div class="security-audit-table__row security-audit-table__row--head">
+                    <div class="security-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Extension/Plugin</p></div>
+                    <div class="security-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Features</p></div>
+                    <div class="security-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Coverage</p></div>
+                    <div class="security-audit-table__item "><p
+                        class="_text-article _text-article--sm mb-0 mt-0 font-semibold">Price</p></div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item">
+                        <a href="https://www.google.com/url?q=https://www.extensionsmall.com/magefence-update-new-malware-definitions-added-base/&sa=D&source=editors&ust=1690144506572193&usg=AOvVaw2mE-3LL9hEOIjiM25z0dtI"
+                           style="color: #3D3C3C">MageFence</a>
+                    </div>
+                    <div class="security-audit-table__item">Site scanning, admin user detection, security audits,
+                        malware attack alerts
+                    </div>
+                    <div class="security-audit-table__item">Broad</div>
+                    <div class="security-audit-table__item">$159</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item">
+                        <a href="https://www.google.com/url?q=https://www.g2.com/products/astra-security-suite/pricing&sa=D&source=editors&ust=1690144506573453&usg=AOvVaw3XOypRndo79J2WR9VjeJId"
+                           style="color: #3D3C3C">Astra Security Suite</a>
+
+                    </div>
+                    <div class="security-audit-table__item">Vulnerability detection, XSS attack prevention, malware
+                        injection prevention, bad bot blocking
+                    </div>
+                    <div class="security-audit-table__item">Comprehensive</div>
+                    <div class="security-audit-table__item">$25 - 199$
+                        <br> \ month
+                    </div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://www.aitoc.com/magento-2-advanced-permissions.html&sa=D&source=editors&ust=1690144506574714&usg=AOvVaw2DIdjQeqIQ1cbn432S0aXP"
+                        style="color: #3D3C3C">Advanced Permissions by Aitoc</a></div>
+                    <div class="security-audit-table__item">Date visibility, product deletion restrictions, flexible
+                        user role management
+                    </div>
+                    <div class="security-audit-table__item">User access control</div>
+                    <div class="security-audit-table__item">$185.00</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://www.weltpixel.com/magento2-maxmind-fraud-prevention-minfraud.html&sa=D&source=editors&ust=1690144506575895&usg=AOvVaw0iH5OHa6Zcx27rlpQglyzA"
+                        style="color: #3D3C3C">Maxmind - Magento 2 Fraud Prevention Extension</a></div>
+                    <div class="security-audit-table__item">Fraud prevention, automated order placing on hold,
+                        chargeback cost reduction, device tracking, customizable fraud score limit
+                    </div>
+                    <div class="security-audit-table__item">Fraud prevention</div>
+                    <div class="security-audit-table__item">$249.00</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://www.mageplaza.com/magento-2-security/&sa=D&source=editors&ust=1690144506577105&usg=AOvVaw0upGmDk5w6LfD_j-OYIbxX"
+                        style="color: #3D3C3C">MagePlaza Security
+                        Suite</a>
+                    </div>
+                    <div class="security-audit-table__item">Google reCAPTCHA, two-factor authentication, IP
+                        blacklist/ whitelist, admin session control, security notifications, and logs
+                    </div>
+                    <div class="security-audit-table__item">Monitoring and tracking</div>
+                    <div class="security-audit-table__item">$89.1</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://plugins.miniorange.com/magento-2-security-suite-extension&sa=D&source=editors&ust=1690144506578346&usg=AOvVaw0fnmLvIqunGQCNxo9hD113"
+                        style="color: #3D3C3C">MageAnts Magento 2
+                        Security Suite</a>
+                    </div>
+                    <div class="security-audit-table__item">IP restriction, two-factor authentication, Google reCAPTCHA,
+                        email notifications for failed login attempts
+                    </div>
+                    <div class="security-audit-table__item">Protection against hacking</div>
+                    <div class="security-audit-table__item">$99</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://commercemarketplace.adobe.com/wyomind-watchlogpro-meta.html&sa=D&source=editors&ust=1690144506579513&usg=AOvVaw05zZDoSFEdbYnVmwS86MMp"
+                        style="color: #3D3C3C">Wyomind Watchlog Pro</a>
+                    </div>
+                    <div class="security-audit-table__item">Login attempt monitoring, detailed information on successful
+                        and failed attempts
+                    </div>
+                    <div class="security-audit-table__item">Identification of
+                        security threats
+                    </div>
+                    <div class="security-audit-table__item">$151.00</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://www.magepsycho.com/&sa=D&source=editors&ust=1690144506580694&usg=AOvVaw2hSzoDVk91lYE0PpIKbV_3"
+                        style="color: #3D3C3C">MagePsycho Firewall</a>
+                    </div>
+                    <div class="security-audit-table__item">Firewall protection against common attacks (SQL injection,
+                        XSS, remote code execution)
+                    </div>
+                    <div class="security-audit-table__item">Data security</div>
+                    <div class="security-audit-table__item">$55 - $75</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://www.xtento.com/magento-extensions/two-factor-authentication-enhanced-admin-security.html&sa=D&source=editors&ust=1690144506581893&usg=AOvVaw05MZ9DQUDVkrb9Zfbp2YHE"
+                        style="color: #3D3C3C">XTENTO Two-Factor
+                        Authentication</a>
+                    </div>
+                    <div class="security-audit-table__item">Two-factor authentication for admin panel, additional
+                        security layer
+                    </div>
+                    <div class="security-audit-table__item">Admin panel security</div>
+                    <div class="security-audit-table__item">$149</div>
+                </div>
+                <div class="security-audit-table__row">
+                    <div class="security-audit-table__item"><a
+                        href="https://www.google.com/url?q=https://magecomp.com/magento-2-disable-right-click.html&sa=D&source=editors&ust=1690144506584111&usg=AOvVaw2XtANAQPmD7IAixWon97RI"
+                        style="color: #3D3C3C">Magento 2 Disable
+                        Right Click</a>
+                    </div>
+                    <div class="security-audit-table__item">Disables right-click functionality, prevents unauthorized
+                        copying and downloading
+                    </div>
+                    <div class="security-audit-table__item">Content protection</div>
+                    <div class="security-audit-table__item">$49.00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="article__section _article-page-grid _common-article-section--gap mb-32">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 text-24 font-semibold mb-16">Conclusion:</h2>
+            <p class="_text-article _text-article--sm mb-16">
+                To ensure the safety of your customer data and protect your business, conducting a thorough Magento
+                Security Audit for your store's security is essential. Although you can take some initial steps on your
+                own, seeking the assistance of security experts like Perspective can yield numerous benefits.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                To conduct an audit efficiently and ensure thoroughness, it is recommended to consult with a specialist.
+                Security experts will conduct a thorough security scan, audit, and penetration testing for your business
+                while you focus on your daily operations. As a plus, experts will be your lifeline in extreme situations
+                in the future.
+            </p>
+
+            <p class="_text-article _text-article--sm mb-16">
+                By partnering with Perspective for Magento Security Audit services, you can:
+            </p>
+            <ol class="article__list article__list--num _list-numbered mb-16">
+                <li class="mb-0">
+                    <div class="_list-numbered__legend mb-0">
+                        <p class="_text-article _text-article--sm mb-8">
+                            <b class="font-bold">Gain Expertise: </b>Our team of security professionals specializes in
+                            Magento security and has
+                            in-depth knowledge of the latest threats and vulnerabilities. We bring a wealth of
+                            experience to the table and can provide you with expert insights and recommendations
+                            tailored to your specific business needs.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="mb-0">
+                    <div class="_list-numbered__legend mb-0">
+                        <p class="_text-article _text-article--sm mb-8">
+                            <b class="font-bold">Thorough Assessment: </b>We will conduct a
+                            comprehensive security audit, evaluating all aspects of your Magento store, including
+                            network infrastructure, applications, and data handling practices. We leave no stone
+                            unturned to identify any vulnerabilities or weaknesses in your security measures.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-0">
+                    <div class="_list-numbered__legend mb-0">
+                        <p class="_text-article _text-article--sm mb-8">
+                            <b class="font-bold">Penetration Testing: </b>As one of the parts of a
+                            complex audit, our team can perform penetration testing based on industry-standard
+                            methodologies, such as OWASP Top-10, to simulate real-world attacks and identify potential
+                            risks. This proactive approach helps you proactively address vulnerabilities before
+                            malicious actors can exploit them.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-0">
+                    <div class="_list-numbered__legend mb-0">
+                        <p class="_text-article _text-article--sm mb-8">
+                            <b class="font-bold">Peace of Mind: </b>You can focus on your core business
+                            operations while we care for your security concerns. Our professionals act as your lifeline
+                            in extreme situations, providing prompt response and resolution to any security incidents,
+                            ensuring the continuity of your business.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-0">
+                    <div class="_list-numbered__legend mb-0">
+                        <p class="_text-article _text-article--sm mb-8">
+                            <b class="font-bold">Customized Solutions: </b>We understand that every
+                            business has unique security requirements. Our team will work closely with you to develop
+                            tailored security solutions that align with your specific needs and budget, ensuring optimal
+                            protection for your Magento store.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+            <p class="_text-article _text-article--sm mb-32">
+                Take the proactive step towards securing your Magento ecommerce store and protecting your valuable
+                customer data. Contact us today for our Magento Security Audit services. Our friendly and knowledgeable
+                team is ready to provide you with the specialized expertise and support you need to fortify your
+                e-commerce platform. Perspective is a trustable partner in Magento security audit, and it gains the
+                peace of mind that every business owner deserves.
+            </p>
+        </div>
+    </section>
+</div>

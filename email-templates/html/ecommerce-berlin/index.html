@@ -54,6 +54,9 @@
       a:hover {
         color: #d85026 !important;
       }
+      .news-item:hover {
+        color: #d85026 !important;
+      }
       a.read-more {
         font-weight: 500;
         font-size: 12px;
@@ -170,7 +173,7 @@
       .section-stories__item {
         display: block;
         width: 100%;
-        padding: 32px 0;
+        padding: 14px 0;
       }
       body {
         margin: 0;
@@ -404,10 +407,10 @@
         }
       }
       @media screen and (max-width: 599px) {
-        .section-stories__item td:first-child {
+        .section-stories__item td > div {
           display: block;
           width: 100%;
-          margin-bottom: 16px;
+          padding-bottom: 16px;
         }
       }
       @media screen and (max-width: 599px) {
@@ -485,6 +488,83 @@
       @media screen and (max-width: 599px) {
         .section-corporate-upd__image {
           padding-bottom: 34px !important;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .stories-col-2nd > table {
+          border-top: 1px solid #949494;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .section-stories__item {
+          padding-bottom: 0 !important;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square .img {
+          margin-bottom: 0 !important;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square {
+          padding: 20px 8px 20px 18px !important;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .updates-square-1,
+        .updates-square-2,
+        .updates-square-3 {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .updates-square-1 p {
+          max-width: 100px;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .updates-square-2 p {
+          max-width: 200px;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        .updates-square-3 p {
+          max-width: 150px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-1,
+        .updates-square-2,
+        .updates-square-3 {
+          width: 100%;
+          display: flex;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-1 .text-base,
+        .updates-square-2 .text-base,
+        .updates-square-3 .text-base {
+          margin-left: 24px !important;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-1 p {
+          max-width: 150px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-2 p {
+          max-width: 200px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .updates-square-3 p {
+          max-width: 150px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .two-column .inner > table {
+          width: 100%;
         }
       }
     </style>
@@ -607,13 +687,13 @@
                       <table class="contents">
                         <tr>
                           <td class="text">
-                            <h1 class="section-intro__title">e-Commerce Insights: April 2023</h1>
+                            <h1 class="section-intro__title" style="font-weight: 600">e-Commerce Insights: May 2023</h1>
                             <p
                               class="text-lg"
                               style="font-weight: 400; padding-bottom: 10px; font-size: 16px; line-height: 24px"
                             >
                               <span>
-                                Keep up with the latest in e-commerce with our newsletter. Boost sales with Magento,
+                                Stay updated on e-commerce trends with our newsletter. Boost sales using Magento,
                                 optimize SEO, and discover the impact of AI chatbots in retail.
                                 <br />
                                 <br />
@@ -670,11 +750,12 @@
                       <table class="contents">
                         <tr>
                           <td class="text">
-                            <h2 style="font-weight: 500; font-size: 22px; line-height: 32px; text-transform: uppercase">
+                            <h2 style="font-weight: 600; font-size: 22px; line-height: 32px; text-transform: uppercase">
                               E-Commerce Expo 2023 Stockholm
                             </h2>
                             <p class="text-base" style="padding-bottom: 35px">
-                              Join us to explore the latest innovations and trends in the dynamic world of online retail
+                              After Stockholm E-Commerce Expo 2023, we're inspired and grateful! Thanks to all visitors
+                              to our stand who chatted with us
                             </p>
                           </td>
                         </tr>
@@ -694,17 +775,17 @@
                         <tr>
                           <td>
                             <img
-                              src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/IMAGE-2-2.png"
+                              src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/Image2.png?raw=true"
                               alt="test"
-                              style="margin-top: 20px"
+                              style="margin-top: 20px; max-width: 290px; margin-left: auto; margin-right: auto"
                             />
                           </td>
                         </tr>
                         <tr>
                           <td>
                             <p class="text-base" style="display: none">
-                              We're feeling inspired after an incredible time at the E-Commerce Berlin Expo 2023! Thank
-                              you to all of the attendees who visited our stand and talked to our experts
+                              After Stockholm E-Commerce Expo 2023, we're inspired and grateful! Thanks to all visitors
+                              to our stand who chatted with us
                             </p>
                           </td>
                         </tr>
@@ -721,79 +802,145 @@
               <![endif]-->
             </td>
           </tr>
+
           <!-- #3 section (Stories you may have missed) -->
           <tr>
-            <td class="one-column">
+            <td class="one-column stories">
               <table width="100%">
                 <tr>
                   <td class="inner contents">
                     <div class="section-stories">
-                      <h3 class="section-stories__title">Stories you may have missed</h3>
-
-                      <hr />
-                      <table>
-                        <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
-                          <td colspan="1" style="padding: 0">
-                            <img
-                              src="https://perspectiveteam.com/media/blog/Mask_Group_2__2.webp"
-                              alt="article-img"
-                              width="104"
-                              height="80"
-                              style="object-fit: cover; object-position: 80%; margin-right: 16px"
-                            />
-                          </td>
-                          <td colspan="6" style="padding: 0">
-                            <div>
-                              <p
-                                class="text-xs"
-                                style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
-                              >
-                                October 19, 2022
-                              </p>
-                              <a
-                                href="https://perspectiveteam.com/blog/development-of-marketplace-on-vnecoms-modules"
-                                class="text-base section-stories__text"
-                                style="font-weight: 500; color: inherit"
-                                >Marketplace Development Based on VnEcoms Extensions
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-
-                        <tr class="section-stories__item" style="border-bottom: 1px solid #949494">
-                          <td colspan="1" style="padding: 0">
-                            <img
-                              src="https://perspectiveteam.com/media/blog/Image_1__1.webp"
-                              alt="article-img"
-                              width="104"
-                              height="80"
-                              style="object-fit: cover; object-position: 80%; margin-right: 16px"
-                            />
-                          </td>
-                          <td colspan="6" style="padding: 0">
-                            <div>
-                              <p
-                                class="text-xs"
-                                style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
-                              >
-                                April 13, 2023
-                              </p>
-                              <a
-                                href="https://perspectiveteam.com/blog/9-ways-how-you-can-use-chatgpt-in-ecommerce/"
-                                class="text-base section-stories__text"
-                                style="font-weight: 500; color: inherit"
-                                >9 Ways How You Can Use ChatGPT In eCommerce
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
+                      <h3 class="section-stories__title" style="font-weight: 600">Stories you may have missed</h3>
                     </div>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
+          <tr>
+            <td style="width: 100%">
+              <div style="padding-right: 16px; padding-left: 16px">
+                <div style="border-top: 1px solid #949494"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="two-column" dir="rtl">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              <div class="column" style="max-width: 300px">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table align="left" style="text-align: left">
+                        <tr class="section-stories__img">
+                          <td colspan="1" style="padding: 0; padding-top: 16px">
+                            <img
+                              src="https://perspectiveteam.com/media/blog/Image_2.png"
+                              alt="article-img"
+                              width="104"
+                              height="80"
+                              style="
+                                object-fit: cover;
+                                object-position: 80%;
+                                height: 120px;
+                                width: 100%;
+                                max-width: 450px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr class="section-stories__item" dir="ltr">
+                          <td colspan="6" style="padding: 0" >
+                            <div>
+                              <p
+                                class="text-xs"
+                                style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
+                              >
+                                April 28, 2023
+                              </p>
+                              <a
+                                href="https://perspectiveteam.com/blog/magento-contribution-day/"
+                                class="text-base section-stories__text"
+                                style="font-weight: 600; color: inherit; text-align: left"
+                                >Experiencing our first Magento Contribution Day
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              <div class="column stories-col-2nd" style="max-width: 300px">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table align="left" style="text-align: left">
+                        <tr class="section-stories__img">
+                          <td colspan="1" style="padding: 0; padding-top: 16px">
+                            <img
+                              src="https://perspectiveteam.com/media/blog/headless-ecommerce-solution.jpg"
+                              alt="article-img"
+                              width="104"
+                              height="80"
+                              style="
+                                object-fit: cover;
+                                object-position: 80%;
+                                height: 120px;
+                                max-width: 450px;
+                                padding-right: 0;
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr class="section-stories__item">
+                          <td colspan="6" style="padding: 0" dir="ltr">
+                            <div>
+                              <p
+                                class="text-xs"
+                                style="text-align: left; font-weight: 500; color: #949494; margin-bottom: 12px"
+                              >
+                                May 31, 2023
+                              </p>
+                              <a
+                                href="https://perspectiveteam.com/blog/headless-ecommerce-solution-for-magento-2-how-to-make-the-right-choice/"
+                                class="text-base section-stories__text"
+                                style="font-weight: 600; color: inherit"
+                              >
+                                Headless E-Commerce Solution for Magento 2 - How to Make the Right Choice?
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 100%">
+              <div style="padding-right: 16px; padding-left: 16px">
+                <div style="border-bottom: 1px solid #949494"></div>
+              </div>
+            </td>
+          </tr>
+
           <!-- #4 section (Stories you may have missed) -->
           <tr>
             <td class="one-column">
@@ -805,7 +952,7 @@
                         class="section-updates__title"
                         style="
                           text-align: center;
-                          font-weight: 500;
+                          font-weight: 600;
                           font-size: 22px;
                           line-height: 32px;
                           margin-top: 40px;
@@ -816,11 +963,13 @@
                       </h3>
 
                       <hr />
-                      <!-- Adobe Commerce — built for scale and performance -->
+
+                      <!-- Committing to curbside pickup — or breaking up with it
+ -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -830,24 +979,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://business.adobe.com/blog/the-latest/activate-personalization-with-adobe-commerce-and-adobe-real-time-cdp"
+                            href="https://www.digitalcommerce360.com/2023/05/08/committing-to-curbside-pickup-or-breaking-up-with-it/"
                           >
-                            Adobe Commerce — built for scale and performance
+                            Committing to curbside pickup — or breaking up with it
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://business.adobe.com/blog/the-latest/activate-personalization-with-adobe-commerce-and-adobe-real-time-cdp"
+                            href="https://www.digitalcommerce360.com/2023/05/08/committing-to-curbside-pickup-or-breaking-up-with-it/"
                           >
-                            Learn how Adobe Commerce, built on a cloud-native, extensible architecture, offers
-                            enterprise-grade scalability to power your commerce experiences.
+                            Now that many consumers resumed in-store shopping, retailers like Daniel's must determine if
+                            offering curbside pickup is still worth it.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://business.adobe.com/blog/the-latest/activate-personalization-with-adobe-commerce-and-adobe-real-time-cdp"
+                          href="https://www.digitalcommerce360.com/2023/05/08/committing-to-curbside-pickup-or-breaking-up-with-it/"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -866,11 +1015,12 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- Top digital trends in retail for 2023 -->
+
+                      <!-- Reimagining Retail -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -880,24 +1030,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://business.adobe.com/blog/the-latest/digital-trends-in-retail-2023"
+                            href="https://www.insiderintelligence.com/content/podcast-reimagining-retail-examples-of-how-retail-using-generative-ai-most-promising-use-case-2025"
                           >
-                            Top digital trends in retail for 2023
+                            Reimagining Retail
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://business.adobe.com/blog/the-latest/digital-trends-in-retail-2023"
+                            href="https://www.insiderintelligence.com/content/podcast-reimagining-retail-examples-of-how-retail-using-generative-ai-most-promising-use-case-2025"
                           >
-                            This blog post will highlight key stats and themes from the 2023 Digital Trends — Retail in
-                            Focus report from Adobe in partnership with eConsultancy.
+                            Why retailers should be paying attention to generative AI and how brands and retailers can
+                            prepare for it. Top four examples of how retail is using generative AI.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://business.adobe.com/blog/the-latest/digital-trends-in-retail-2023"
+                          href="https://www.insiderintelligence.com/content/podcast-reimagining-retail-examples-of-how-retail-using-generative-ai-most-promising-use-case-2025"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -916,11 +1066,12 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- How to Optimize Full-funnel Product Pages - Practical Ecommerce -->
+                      <!-- How and where CPG customers start their shopping journey
+ -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -930,23 +1081,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.practicalecommerce.com/how-to-optimize-full-funnel-product-pages"
+                            href="https://www.insiderintelligence.com/content/how-where-cpg-customers-start-their-shopping-journey"
                           >
-                            How to Optimize Full-funnel Product Pages - Practical Ecommerce
+                            How and where CPG customers start their shopping journey
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.practicalecommerce.com/how-to-optimize-full-funnel-product-pages"
+                            href="https://www.insiderintelligence.com/content/how-where-cpg-customers-start-their-shopping-journey"
                           >
-                            Today's product detail pages engage and convert all shoppers — new or returning. Here's how.
+                            From Amazon and social platforms to in-store media, there’s no shortage of ways for
+                            consumers to find and learn more about consumer packaged goods (CPG) products.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.practicalecommerce.com/how-to-optimize-full-funnel-product-pages"
+                          href="https://www.insiderintelligence.com/content/how-where-cpg-customers-start-their-shopping-journey"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -965,11 +1117,11 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- 4 Ways Retailers Can Maximize Brand Success In The Digital Era -->
+                      <!-- ChatGPT Prompts for Customer Support -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -979,24 +1131,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.forbes.com/sites/tiffanylung/2023/04/21/4-ways-retailers-can-maximize-brand-success-in-the-digital-era/?sh=196516b45e75"
+                            href="https://www.practicalecommerce.com/chatgpt-prompts-for-customer-support"
                           >
-                            4 Ways Retailers Can Maximize Brand Success In The Digital Era
+                            ChatGPT Prompts for Customer Support
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.forbes.com/sites/tiffanylung/2023/04/21/4-ways-retailers-can-maximize-brand-success-in-the-digital-era/?sh=196516b45e75"
+                            href="https://www.practicalecommerce.com/chatgpt-prompts-for-customer-support"
                           >
-                            Staying relevant and consistent as a brand requires innovative approaches in the catalytic
-                            digital landscape. Here are four ways retailers can maximise brand success.
+                            AI chatbots for customer support are not new. ChatGPT can do better, addressing common
+                            support scenarios and specific use cases.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.forbes.com/sites/tiffanylung/2023/04/21/4-ways-retailers-can-maximize-brand-success-in-the-digital-era/?sh=196516b45e75"
+                          href="https://www.practicalecommerce.com/chatgpt-prompts-for-customer-support"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -1015,11 +1167,11 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- Major retail players are walking back their metaverse strategies -->
+                      <!-- Why Retail Therapy Is So Therapeutic -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1029,24 +1181,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.modernretail.co/technology/major-retail-players-are-walking-back-their-metaverse-strategies/"
+                            href="https://www.forbes.com/sites/pamdanziger/2023/05/15/why-retail-therapy-is-so-therapeutic/?sh=17d46d4b6911"
                           >
-                            Major retail players are walking back their metaverse strategies
+                            Why Retail Therapy Is So Therapeutic
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.modernretail.co/technology/major-retail-players-are-walking-back-their-metaverse-strategies/"
+                            href="https://www.forbes.com/sites/pamdanziger/2023/05/15/why-retail-therapy-is-so-therapeutic/?sh=17d46d4b6911"
                           >
-                            Retail companies and brands have mainly been using the metaverse to build brand experiences
-                            and marketing, but many have yet to report on its conversion rate.
+                            Deloitte just released new research that found the urge to splurge is universal, cutting
+                            across income, age and gender.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.modernretail.co/technology/major-retail-players-are-walking-back-their-metaverse-strategies/"
+                          href="https://www.forbes.com/sites/pamdanziger/2023/05/15/why-retail-therapy-is-so-therapeutic/?sh=17d46d4b6911"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -1065,11 +1217,11 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- Leverage the Power of Data to Boost Your Sales — and Your Customer Connections -->
+                      <!-- World 50 Study: Why ‘The New Customer’ Doesn’t Want Your Stuff -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1079,24 +1231,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.entrepreneur.com/growing-a-business/how-to-leverage-data-and-analytics-to-connect-with-customers/448933"
+                            href="https://www.forbes.com/sites/dianebrady/2023/05/16/world-50-study-why-the-new-customer-doesnt-want-your-stuff/?sh=13c4481b710c"
                           >
-                            Leverage the Power of Data to Boost Your Sales — and Your Customer Connections
+                            World 50 Study: Why ‘The New Customer’ Doesn’t Want Your Stuff
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.entrepreneur.com/growing-a-business/how-to-leverage-data-and-analytics-to-connect-with-customers/448933"
+                            href="https://www.forbes.com/sites/dianebrady/2023/05/16/world-50-study-why-the-new-customer-doesnt-want-your-stuff/?sh=13c4481b710c"
                           >
-                            Personalization is the key to marketing's future. Here are some tips, techniques, examples
-                            and more to improve your sales and customer engagement today.
+                            A new study suggests customers have indeed changed since the pandemic — but not in the ways
+                            you think.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.entrepreneur.com/growing-a-business/how-to-leverage-data-and-analytics-to-connect-with-customers/448933"
+                          href="https://www.forbes.com/sites/dianebrady/2023/05/16/world-50-study-why-the-new-customer-doesnt-want-your-stuff/?sh=13c4481b710c"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -1115,11 +1267,11 @@
                         </a>
                       </div>
                       <hr />
-                      <!--  How to Start an eCommerce Business Step By Step  -->
+                      <!-- Why Gen Z Is Ghosting The Fashion Industry For Cosmetics And Toys -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1129,24 +1281,24 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.entrepreneur.com/starting-a-business/want-to-build-an-ecommerce-business-start-here/437595"
+                            href="https://www.forbes.com/sites/kristenclassi-zummo/2023/05/15/why-gen-z-is-ghosting-the-fashion-industry-for-cosmetics-and-toys/?sh=7fe481b333fe"
                           >
-                            How to Start an eCommerce Business Step By Step
+                            Why Gen Z Is Ghosting The Fashion Industry For Cosmetics And Toys
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.entrepreneur.com/starting-a-business/want-to-build-an-ecommerce-business-start-here/437595"
+                            href="https://www.forbes.com/sites/kristenclassi-zummo/2023/05/15/why-gen-z-is-ghosting-the-fashion-industry-for-cosmetics-and-toys/?sh=7fe481b333fe"
                           >
-                            Learn how to start an ecommerce business with this guide. From finding your niche to launch
-                            day, here are key steps to getting your ecommerce business started.
+                            Brands and retailers proudly tout Gen Z successes during earnings calls – a generation
+                            boiled down to a buzzword to signal relevancy and impact.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.entrepreneur.com/starting-a-business/want-to-build-an-ecommerce-business-start-here/437595"
+                          href="https://www.forbes.com/sites/kristenclassi-zummo/2023/05/15/why-gen-z-is-ghosting-the-fashion-industry-for-cosmetics-and-toys/?sh=7fe481b333fe"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -1165,11 +1317,11 @@
                         </a>
                       </div>
                       <hr />
-                      <!-- 6 quick tips to manage ecommerce fraud -->
+                      <!-- Ecommerce legal issues growing in 2023 -->
                       <div style="margin: 16px 0; text-align: left" class="news-item">
                         <h4
                           style="
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 22px;
                             margin-top: 16px;
@@ -1179,24 +1331,277 @@
                         >
                           <a
                             style="color: inherit"
-                            href="https://www.digitalcommerce360.com/2023/04/20/6-quick-tips-to-manage-ecommerce-fraud/"
+                            href="https://www.digitalcommerce360.com/2023/05/01/legal-issues-ecommerce-business/"
                           >
-                            6 quick tips to manage ecommerce fraud
+                            Ecommerce legal issues growing in 2023
                           </a>
                         </h4>
                         <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
                           <a
                             style="color: inherit"
-                            href="https://www.digitalcommerce360.com/2023/04/20/6-quick-tips-to-manage-ecommerce-fraud/"
+                            href="https://www.digitalcommerce360.com/2023/05/01/legal-issues-ecommerce-business/"
                           >
-                            Ecommerce fraud analysts share tips online retailers can implement to help verify legitimate
-                            transactions and block fraudulent ones.
+                            Ecommerce lawyer Robert Freund described three legal areas retailers should pay attention to
+                            in 2023: subscriptions, chatbots, and prices.
                           </a>
                         </p>
                         <a
                           class="read-more"
                           style="color: inherit"
-                          href="https://www.digitalcommerce360.com/2023/04/20/6-quick-tips-to-manage-ecommerce-fraud/"
+                          href="https://www.digitalcommerce360.com/2023/05/01/legal-issues-ecommerce-business/"
+                          ><span>Read more</span>
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
+                            alt="icon-arrow"
+                            style="
+                              margin-left: 5px;
+                              display: inline-block;
+                              height: 14px;
+                              line-height: 14px;
+                              padding-top: 7px;
+                              color: inherit;
+                            "
+                            width="12"
+                            height="12"
+                          />
+                        </a>
+                      </div>
+                      <hr />
+                      <!-- How Ecommerce Businesses Can Beat Rising Ad Costs and Build Resiliency in Times of Economic Uncertainty -->
+                      <div style="margin: 16px 0; text-align: left" class="news-item">
+                        <h4
+                          style="
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-top: 16px;
+                            margin-bottom: 0;
+                          "
+                          class="news-item__title"
+                        >
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-beat-rising-ad-costs/450217"
+                          >
+                            How Ecommerce Businesses Can Beat Rising Ad Costs and Build Resiliency in Times of Economic
+                            Uncertainty
+                          </a>
+                        </h4>
+                        <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-beat-rising-ad-costs/450217"
+                          >
+                            Find the ideal offer model for your eCommerce business to be resilient in the face of
+                            economic and industry shocks.
+                          </a>
+                        </p>
+                        <a
+                          class="read-more"
+                          style="color: inherit"
+                          href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-beat-rising-ad-costs/450217"
+                          ><span>Read more</span>
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
+                            alt="icon-arrow"
+                            style="
+                              margin-left: 5px;
+                              display: inline-block;
+                              height: 14px;
+                              line-height: 14px;
+                              padding-top: 7px;
+                              color: inherit;
+                            "
+                            width="12"
+                            height="12"
+                          />
+                        </a>
+                      </div>
+                      <hr />
+                      <!-- How Ecommerce And Tech Companies Can Learn From Each Other
+ -->
+                      <div style="margin: 16px 0; text-align: left" class="news-item">
+                        <h4
+                          style="
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-top: 16px;
+                            margin-bottom: 0;
+                          "
+                          class="news-item__title"
+                        >
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/leadership/ecommerce-and-tech-companies-have-much-to-learn-from-each/451907"
+                          >
+                            How Ecommerce And Tech Companies Can Learn From Each Other
+                          </a>
+                        </h4>
+                        <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/leadership/ecommerce-and-tech-companies-have-much-to-learn-from-each/451907"
+                          >
+                            Direct-to-consumer brands and Saas companies have more to learn from each other than you
+                            might think.
+                          </a>
+                        </p>
+                        <a
+                          class="read-more"
+                          style="color: inherit"
+                          href="https://www.entrepreneur.com/leadership/ecommerce-and-tech-companies-have-much-to-learn-from-each/451907"
+                          ><span>Read more</span>
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
+                            alt="icon-arrow"
+                            style="
+                              margin-left: 5px;
+                              display: inline-block;
+                              height: 14px;
+                              line-height: 14px;
+                              padding-top: 7px;
+                              color: inherit;
+                            "
+                            width="12"
+                            height="12"
+                          />
+                        </a>
+                      </div>
+                      <hr />
+                      <!-- Why Ecommerce Businesses Can't Afford to Stand Still During a Downturn (and What They Must Do Instead) -->
+                      <div style="margin: 16px 0; text-align: left" class="news-item">
+                        <h4
+                          style="
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-top: 16px;
+                            margin-bottom: 0;
+                          "
+                          class="news-item__title"
+                        >
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-succeed-during-a-downturn/451124"
+                          >
+                            Why Ecommerce Businesses Can't Afford to Stand Still During a Downturn (and What They Must
+                            Do Instead)
+                          </a>
+                        </h4>
+                        <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                          <a
+                            style="color: inherit"
+                            href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-succeed-during-a-downturn/451124"
+                          >
+                            Here's what ecommerce businesses must do to survive an economic downturn and stay ahead of
+                            the competition.
+                          </a>
+                        </p>
+                        <a
+                          class="read-more"
+                          style="color: inherit"
+                          href="https://www.entrepreneur.com/growing-a-business/how-ecommerce-businesses-can-succeed-during-a-downturn/451124"
+                          ><span>Read more</span>
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
+                            alt="icon-arrow"
+                            style="
+                              margin-left: 5px;
+                              display: inline-block;
+                              height: 14px;
+                              line-height: 14px;
+                              padding-top: 7px;
+                              color: inherit;
+                            "
+                            width="12"
+                            height="12"
+                          />
+                        </a>
+                      </div>
+                      <hr />
+                      <!-- Amazon vendors see an opportunity in AI-generated listing tools -->
+                      <div style="margin: 16px 0; text-align: left" class="news-item">
+                        <h4
+                          style="
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-top: 16px;
+                            margin-bottom: 0;
+                          "
+                          class="news-item__title"
+                        >
+                          <a
+                            style="color: inherit"
+                            href="https://www.modernretail.co/technology/amazon-briefing-vendors-see-an-opportunity-in-ai-generated-listing-tools/"
+                          >
+                            Amazon vendors see an opportunity in AI-generated listing tools
+                          </a>
+                        </h4>
+                        <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                          <a
+                            style="color: inherit"
+                            href="https://www.modernretail.co/technology/amazon-briefing-vendors-see-an-opportunity-in-ai-generated-listing-tools/"
+                          >
+                            A bevy of Amazon vendors are building tools to make AI-generated listings. But it could lead
+                            to more problems down the line.
+                          </a>
+                        </p>
+                        <a
+                          class="read-more"
+                          style="color: inherit"
+                          href="https://www.modernretail.co/technology/amazon-briefing-vendors-see-an-opportunity-in-ai-generated-listing-tools/"
+                          ><span>Read more</span>
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
+                            alt="icon-arrow"
+                            style="
+                              margin-left: 5px;
+                              display: inline-block;
+                              height: 14px;
+                              line-height: 14px;
+                              padding-top: 7px;
+                              color: inherit;
+                            "
+                            width="12"
+                            height="12"
+                          />
+                        </a>
+                      </div>
+                      <hr />
+                      <!-- Meta & Google announce new AI-powered ad products -->
+                      <div style="margin: 16px 0; text-align: left" class="news-item">
+                        <h4
+                          style="
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-top: 16px;
+                            margin-bottom: 0;
+                          "
+                          class="news-item__title"
+                        >
+                          <a
+                            style="color: inherit"
+                            href="https://www.modernretail.co/technology/as-retail-media-continues-to-grow-meta-google-announce-new-ai-powered-ad-products/"
+                          >
+                            Meta & Google announce new AI-powered ad products
+                          </a>
+                        </h4>
+                        <p class="text-sm" style="margin-top: 8px; margin-bottom: 10px; min-height: 40px">
+                          <a
+                            style="color: inherit"
+                            href="https://www.modernretail.co/technology/as-retail-media-continues-to-grow-meta-google-announce-new-ai-powered-ad-products/"
+                          >
+                            Meta and Google both unveiled new ad tools powered by AI. This comes as retail media
+                            platforms like Amazon continue to gain steam.
+                          </a>
+                        </p>
+                        <a
+                          class="read-more"
+                          style="color: inherit"
+                          href="https://www.modernretail.co/technology/as-retail-media-continues-to-grow-meta-google-announce-new-ai-powered-ad-products/"
                           ><span>Read more</span>
                           <img
                             src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/Icon-arrow.png?raw=true"
@@ -1232,7 +1637,7 @@
                         <h3
                           style="
                             text-align: center;
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 22px;
                             line-height: 32px;
                             margin-top: 40px;
@@ -1321,75 +1726,7 @@
             <td class="one-column">
               <div style="display: inline-block; width: 100%; font-size: 0">
                 <div class="updates-square updates-square-1" style="border: 1px solid #949494">
-                  <table>
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td class="updates-square__number">
-                          <img
-                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/5.png"
-                            alt="4"
-                          />
-                        </td>
-                        <td style="padding-left: 5px !important">
-                          <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/fluent-mdl2_certificate.png?raw=true"
-                            alt="icon"
-                            width="24"
-                            height="24"
-                            class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new Magento certificates added</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="updates-square updates-square-2" style="border: 1px solid #949494">
-                  <table>
-                    <tbody>
-                      <tr style="vertical-align: top">
-                        <td class="updates-square__number">
-                          <img
-                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/3.png"
-                            alt="3"
-                          />
-                        </td>
-                        <td style="padding-left: 5px !important">
-                          <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/simple-line-icons_user-follow.png?raw=true"
-                            alt="icon"
-                            width="24"
-                            height="24"
-                            class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new developers joined the team</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="updates-square" style="border: 1px solid #949494">
-                  <table>
+                  <table class="img" style="margin-bottom: 16px">
                     <tbody>
                       <tr style="vertical-align: top">
                         <td class="updates-square__number">
@@ -1400,12 +1737,12 @@
                         </td>
                         <td style="padding-left: 5px !important">
                           <img
-                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/clarity_contract-line.png?raw=true"
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-time.png?raw=true"
                             alt="icon"
                             width="24"
-                            height="24"
+                            height="39"
                             class="updates-square__icon"
-                            style="display: inline-block; height: 24pxpx; object-fit: contain; width: 24px"
+                            style="display: inline-block; height: 39px; object-fit: contain; width: 24px"
                           />
                         </td>
                       </tr>
@@ -1415,7 +1752,75 @@
                     <tbody>
                       <tr>
                         <td align="left">
-                          <p class="text-base" style="margin-top: 16px">new clients signed the contract</p>
+                          <p class="text-base">Average SLA reaction time</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="updates-square updates-square-2" style="border: 1px solid #949494">
+                  <table class="img" style="margin-bottom: 16px">
+                    <tbody>
+                      <tr style="vertical-align: top">
+                        <td class="updates-square__number">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/numbers/6.png?raw=true"
+                            alt="6"
+                          />
+                        </td>
+                        <td style="padding-left: 5px !important">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-gears.png?raw=true"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                            class="updates-square__icon"
+                            style="display: inline-block; height: 24px; object-fit: contain; width: 24px"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td align="left">
+                          <p class="text-base">Magento Core Improvements</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="updates-square updates-square-3" style="border: 1px solid #949494">
+                  <table class="img" style="margin-bottom: 16px">
+                    <tbody>
+                      <tr style="vertical-align: top">
+                        <td class="updates-square__number">
+                          <img
+                            src="https://raw.githubusercontent.com/rostilos/new-perspective/master/email-templates/images/ecommerce-berlin/numbers/3.png"
+                            alt="4"
+                          />
+                        </td>
+                        <td style="padding-left: 5px !important">
+                          <img
+                            src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/ecommerce-berlin/icons/icon-park-outline_delivery.png?raw=true"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                            class="updates-square__icon"
+                            style="display: inline-block; height: 24px; object-fit: contain; width: 24px"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td align="left">
+                          <p class="text-base">Migrations to Magento 2</p>
                         </td>
                       </tr>
                     </tbody>
@@ -1431,7 +1836,7 @@
                 <tr>
                   <td class="inner contents">
                     <div class="section-next-step">
-                      <h4 class="section-next-step__title">Ready to make next step?</h4>
+                      <h4 class="section-next-step__title" style="font-weight: 600">Ready to make next step?</h4>
 
                       <a
                         class="orange-button"
