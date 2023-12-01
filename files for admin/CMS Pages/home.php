@@ -29,7 +29,7 @@
             </div>
             <div class="main-intro__digits digits-intro">
                 <div class="digits-intro__item">
-                    <div class="digits-intro__number">13</div>
+                    <div class="digits-intro__number">14</div>
                     <div class="digits-intro__text">years <br />of experience</div>
                 </div>
                 <div class="digits-intro__item">
@@ -107,7 +107,7 @@
                                 alt="line"
                         />
                         <div class="success__describe--item">
-                            <span class="text">05. Validate </span><span class="text">&amp; beta test</span>
+                            <span class="text">05. Validate </span><span class="text">&amp; beta testing</span>
                         </div>
                     </div>
                     <div class="images-card-element">
@@ -158,10 +158,10 @@
                     >
                         <div class="digital-squares__row">
                             <a href="services/comprehensive-web-design"
-                                    class="digital-squares__item"
-                                    itemprop="itemListElement"
-                                    itemscope
-                                    itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Web Design</h4>
@@ -184,10 +184,10 @@
                         <div class="digital-squares__row">
                             <div class="digital-squares__empty"></div>
                             <a href="services/migration-to-magento-2"
-                                    class="digital-squares__item"
-                                    itemprop="itemListElement"
-                                    itemscope
-                                    itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">Magento 2 Migration</h4>
@@ -207,10 +207,10 @@
                                 </div>
                             </a>
                             <a href="services/magento-support"
-                                    class="digital-squares__item"
-                                    itemprop="itemListElement"
-                                    itemscope
-                                    itemtype="https://schema.org/OfferCatalog"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
                             >
                                 <div class="digital-squares__content">
                                     <h4 class="h4" itemprop="name">
@@ -1327,13 +1327,13 @@
             <div class="main-certification__col">
                 <div class="main-certification__text--open-sans">
                     <p class="_text-align-right">
-                        Also, we already have 8 Magento certified developers and solution specialists with 13 Magento 1 and Magento
+                        Also, we already have 21 Magento certified developers and solution specialists with 26 Magento 1 and Magento
                         2 certificates.
                     </p>
                 </div>
                 <div class="main-certification__magento-achievments magento-achievments">
                     <div class="magento-achievments__all">
-                        <img loading="lazy" src="{{media url='wysiwyg/Group-525.png'}}" alt="all" />
+                        <img loading="lazy" src="{{media url='wysiwyg/certificates.svg'}}" alt="all" />
                     </div>
                 </div>
             </div>
