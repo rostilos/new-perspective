@@ -1,9 +1,9 @@
 <div
-  class="article article-gtm"
-  x-data
-  x-init="localStorage.setItem('isAnyFormTouched', false)"
-  itemscope
-  itemtype="https://schema.org/FAQPage"
+        class="article article-gtm"
+        x-data
+        x-init="localStorage.setItem('isAnyFormTouched', false)"
+        itemscope
+        itemtype="https://schema.org/FAQPage"
 >
   <section class="article__section _article-page-grid">
     <div class="grid-col"></div>
@@ -32,9 +32,9 @@
   </section>
   <div class="article__image">
     <img
-      loading="eager"
-      src="{{view url='Mirasvit_Blog::images/article/gtm/banner.jpg'}}"
-      alt="IMPLEMENTATION GOOGLE ANALYTICS 4 ON MAGENTO 2 WITH GTM service - main image"
+            loading="eager"
+            src="{{view url='Mirasvit_Blog::images/article/gtm/banner.jpg'}}"
+            alt="IMPLEMENTATION GOOGLE ANALYTICS 4 ON MAGENTO 2 WITH GTM service - main image"
     />
   </div>
   <section class="article__section _article-page-grid">
@@ -43,7 +43,7 @@
       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <h2 class="h4 article__title">
           <span style="text-transform: uppercase" itemprop="name"
-            >Why Should You Make the Switch to Google Analytics 4?</span
+          >Why Should You Make the Switch to Google Analytics 4?</span
           >
         </h2>
         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -89,16 +89,16 @@
 
           <div class="article__image-container">
             <img
-              src="{{view url='Mirasvit_Blog::images/article/gtm/trafic.png'}}"
-              alt="Why should You upgrade to Google Analytics 4, illustration,seo,traffic"
+                    src="{{view url='Mirasvit_Blog::images/article/gtm/trafic.png'}}"
+                    alt="Why should You upgrade to Google Analytics 4, illustration,seo,traffic"
             />
           </div>
         </div>
         <div class="article__row">
           <div class="article__image-container">
             <img
-              src="{{view url='Mirasvit_Blog::images/article/gtm/statistic.png'}}"
-              alt="Google Analytics 4 is based on events and parameters and designed to track users interactions with your product, illustration"
+                    src="{{view url='Mirasvit_Blog::images/article/gtm/statistic.png'}}"
+                    alt="Google Analytics 4 is based on events and parameters and designed to track users interactions with your product, illustration"
             />
           </div>
           <div class="article__flex-content">
@@ -172,9 +172,9 @@
 
   <!-- Form contact-us_ga4 (1) -->
   <div
-    class="article-form-wide"
-    x-data="{...initForm({'formUniqueId' : 'contact-us_ga4',
-                          'url' : '/perspective_forms/index/gasubmit', 
+          class="article-form-wide"
+          x-data="{...initForm({'formUniqueId' : 'contact-us_ga4',
+                          'url' : '/perspective_forms/index/gasubmit',
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
              ...formValidation.global(document.getElementById('form_contact-us_ga4')),
@@ -189,9 +189,9 @@
           analysis
         </h6>
         <button
-          class="form-contact__submit footer__button _button _button--white ga-open-form"
-          @click="openForm=true; localStorage.setItem('isAnyFormTouched', true)"
-          x-show="!openForm"
+                class="form-contact__submit footer__button _button _button--white ga-open-form"
+                @click="openForm=true; localStorage.setItem('isAnyFormTouched', true)"
+                x-show="!openForm"
         >
           <span class="_button__text">Contact us</span>
           <span class="_button__text-overlay">Contact us</span>
@@ -199,45 +199,61 @@
           <span class="_button__overlay _button__overlay--active"></span>
         </button>
         <form
-          id="form_contact-us_ga4"
-          class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
-          :class="{'show' : openForm}"
-          @submit="submitForm($event)"
+                id="form_contact-us_ga4"
+                class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
+                :class="{'show' : openForm}"
+                @submit="submitForm($event)"
         >
           <div class="form-contact__body">
             <input
-              type="text"
-              name="first_name"
-              class="form-contact__input"
-              placeholder="Name"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="first_name"
+                    class="form-contact__input"
+                    placeholder="Name"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="email"
-              name="email"
-              class="form-contact__input validate-email"
-              placeholder="Email"
-              required
-              x-on:input="validate($el, false)"
+                    type="email"
+                    name="email"
+                    class="form-contact__input validate-email"
+                    placeholder="Email"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="text"
-              name="url"
-              class="form-contact__input"
-              placeholder="Website URL"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="url"
+                    class="form-contact__input"
+                    placeholder="Website URL"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="text"
-              name="help"
-              class="form-contact__input"
-              placeholder="How can we help you?"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="message"
+                    class="form-contact__input"
+                    placeholder="How can we help you?"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_source"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_medium"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_campaign"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_term"
+                   type="text"
+            />
           </div>
           <div class="form-actions">
             <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
@@ -256,15 +272,15 @@
     </div>
     <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
       <img
-        loading="lazy"
-        src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
-        alt="Gif with a flying rocket indicating the successful process of sending the form"
+              loading="lazy"
+              src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
+              alt="Gif with a flying rocket indicating the successful process of sending the form"
       />
       <h5 class="h5">Thank you!</h5>
       <h6 class="h6">We will contact you shortly.</h6>
       <button
-        class="form-contact__submit footer__button _button _button--white ga-success-form"
-        @click="toggleSuccessMessage()"
+              class="form-contact__submit footer__button _button _button--white ga-success-form"
+              @click="toggleSuccessMessage()"
       >
         <span class="_button__text">Send another message</span>
         <span class="_button__text-overlay">Send another message</span>
@@ -307,9 +323,9 @@
       </ul>
       <!-- form_order-service_ga4 (2) -->
       <div
-        class="article__grey-form"
-        x-data="{...initForm({'formUniqueId' : 'order-service_ga4',
-                          'url' : '/perspective_forms/index/gasubmit', 
+              class="article__grey-form"
+              x-data="{...initForm({'formUniqueId' : 'order-service_ga4',
+                          'url' : '/perspective_forms/index/gasubmit',
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
                     ...formValidation.global(document.getElementById('form_order-service_ga4')),
@@ -320,9 +336,9 @@
           <div class="article__grey-form-container">
             <h4 class="h4">Upgrade to Google Analytics 4 now and discover its benefits to Magento webstores</h4>
             <button
-              class="_button form-contact__submit ga-open-form"
-              @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-              x-show="!openForm"
+                    class="_button form-contact__submit ga-open-form"
+                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+                    x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
               <span class="_button__text-overlay">I want to order a service</span>
@@ -330,45 +346,61 @@
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
             <form
-              id="form_order-service_ga4"
-              class="footer__form form-contact ga-contact-form"
-              :class="{'show' : openForm}"
-              @submit="submitForm($event)"
+                    id="form_order-service_ga4"
+                    class="footer__form form-contact ga-contact-form"
+                    :class="{'show' : openForm}"
+                    @submit="submitForm($event)"
             >
               <div class="form-contact__body">
                 <input
-                  type="text"
-                  name="first_name"
-                  class="form-contact__input"
-                  placeholder="Name"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="first_name"
+                        class="form-contact__input"
+                        placeholder="Name"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="email"
-                  name="email"
-                  class="form-contact__input validate-email"
-                  placeholder="Email"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="email"
+                        name="email"
+                        class="form-contact__input validate-email"
+                        placeholder="Email"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="text"
-                  name="url"
-                  class="form-contact__input"
-                  placeholder="Website URL"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="url"
+                        class="form-contact__input"
+                        placeholder="Website URL"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="text"
-                  name="help"
-                  class="form-contact__input"
-                  placeholder="How can we help you?"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="message"
+                        class="form-contact__input"
+                        placeholder="How can we help you?"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_source"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_medium"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_campaign"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_term"
+                       type="text"
+                />
               </div>
               <div class="form-actions">
                 <button type="submit" class="_button form-contact__submit ga-contact-submit">
@@ -378,9 +410,9 @@
                   <span class="_button__overlay _button__overlay--active"></span>
                 </button>
                 <button
-                  class="form-contact__submit footer__button _button ga-close-form"
-                  @click="openForm=false"
-                  type="button"
+                        class="form-contact__submit footer__button _button ga-close-form"
+                        @click="openForm=false"
+                        type="button"
                 >
                   Cancel
                 </button>
@@ -390,9 +422,9 @@
         </div>
         <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
           <img
-            loading="lazy"
-            src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
-            alt="Gif with a flying rocket indicating the successful process of sending the form"
+                  loading="lazy"
+                  src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
+                  alt="Gif with a flying rocket indicating the successful process of sending the form"
           />
           <h5 class="h5">Thank you!</h5>
           <h6 class="h6">We will contact you shortly.</h6>
@@ -434,10 +466,10 @@
 
       <div class="article__dropdowns-block" x-data="initTabs()" @resize.window.debounce="calcTabsHeight()">
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 1 }"
-          @click="selected !== 1 ? selected = 1 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 1 }"
+                @click="selected !== 1 ? selected = 1 : selected = null"
         >
           <p class="font-medium">Utilize Magento 2 and GA4 for smart insights to improve your marketing strategy</p>
         </div>
@@ -458,10 +490,10 @@
           </p>
         </div>
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 2 }"
-          @click="selected !== 2 ? selected = 2 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 2 }"
+                @click="selected !== 2 ? selected = 2 : selected = null"
         >
           <p class="font-medium">Track your customer's journey and behavior with GA4 integration on Magento 2</p>
         </div>
@@ -482,10 +514,10 @@
           </p>
         </div>
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 3 }"
-          @click="selected !== 3 ? selected = 3 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 3 }"
+                @click="selected !== 3 ? selected = 3 : selected = null"
         >
           <p class="font-medium">
             Understand user behavior more deeply through time-based event tracking with GA4 integration on Magento 2
@@ -510,10 +542,10 @@
           </p>
         </div>
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 4 }"
-          @click="selected !== 4 ? selected = 4 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 4 }"
+                @click="selected !== 4 ? selected = 4 : selected = null"
         >
           <p class="font-medium">Take retargeting to the next level with GA4's advanced capabilities on Magento 2</p>
         </div>
@@ -536,10 +568,10 @@
           </p>
         </div>
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 5 }"
-          @click="selected !== 5 ? selected = 5 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 5 }"
+                @click="selected !== 5 ? selected = 5 : selected = null"
         >
           <p class="font-medium">Monitor and analyze user acquisition with GA4 reports on Magento 2</p>
         </div>
@@ -562,10 +594,10 @@
         </div>
 
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 6 }"
-          @click="selected !== 6 ? selected = 6 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 6 }"
+                @click="selected !== 6 ? selected = 6 : selected = null"
         >
           <p class="font-medium">Seamlessly integrate GA4 with Magento 2 for enhanced e-commerce tracking</p>
         </div>
@@ -588,10 +620,10 @@
         </div>
 
         <div
-          class="article__dropdowns-block__item"
-          :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
-          :class="{'_active' : selected == 7 }"
-          @click="selected !== 7 ? selected = 7 : selected = null"
+                class="article__dropdowns-block__item"
+                :style="maxHeight ? `min-height: ${maxHeight}px` : ''"
+                :class="{'_active' : selected == 7 }"
+                @click="selected !== 7 ? selected = 7 : selected = null"
         >
           <p class="font-medium">
             Gain a deeper understanding of customer behavior and e-commerce performance with GA4 on Magento 2
@@ -623,9 +655,9 @@
 
   <!-- contact-us_ga4-2 (3) -->
   <div
-    class="article-form-wide second"
-    x-data="{...initForm({'formUniqueId' : 'contact-us_ga4-2',
-                             'url' : '/perspective_forms/index/gasubmit', 
+          class="article-form-wide second"
+          x-data="{...initForm({'formUniqueId' : 'contact-us_ga4-2',
+                             'url' : '/perspective_forms/index/gasubmit',
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
                 ...formValidation.global(document.getElementById('form_contact-us_ga4-2')),
@@ -649,9 +681,9 @@
         </h6>
         <h4 class="h4">We know how to do it right</h4>
         <button
-          class="form-contact__submit footer__button _button _button--white ga-open-form"
-          @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-          x-show="!openForm"
+                class="form-contact__submit footer__button _button _button--white ga-open-form"
+                @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+                x-show="!openForm"
         >
           <span class="_button__text">I want to order a service</span>
           <span class="_button__text-overlay">I want to order a service</span>
@@ -659,45 +691,61 @@
           <span class="_button__overlay _button__overlay--active"></span>
         </button>
         <form
-          id="form_contact-us_ga4-2"
-          class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
-          :class="{'show' : openForm}"
-          @submit="submitForm($event)"
+                id="form_contact-us_ga4-2"
+                class="footer__form form-contact ga-contact-form ga-contact-form--orange-bg"
+                :class="{'show' : openForm}"
+                @submit="submitForm($event)"
         >
           <div class="form-contact__body">
             <input
-              type="text"
-              name="first_name"
-              class="form-contact__input"
-              placeholder="Name"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="first_name"
+                    class="form-contact__input"
+                    placeholder="Name"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="email"
-              name="email"
-              class="form-contact__input validate-email"
-              placeholder="Email"
-              required
-              x-on:input="validate($el, false)"
+                    type="email"
+                    name="email"
+                    class="form-contact__input validate-email"
+                    placeholder="Email"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="text"
-              name="url"
-              class="form-contact__input"
-              placeholder="Website URL"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="url"
+                    class="form-contact__input"
+                    placeholder="Website URL"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input
-              type="text"
-              name="help"
-              class="form-contact__input"
-              placeholder="How can we help you?"
-              required
-              x-on:input="validate($el, false)"
+                    type="text"
+                    name="message"
+                    class="form-contact__input"
+                    placeholder="How can we help you?"
+                    required
+                    x-on:input="validate($el, false)"
             />
             <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_source"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_medium"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_campaign"
+                   type="text"
+            />
+            <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                   name="utm_term"
+                   type="text"
+            />
           </div>
           <div class="form-actions">
             <button type="submit" class="form-contact__submit footer__button _button _button--white ga-contact-submit">
@@ -713,15 +761,15 @@
     </div>
     <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
       <img
-        loading="lazy"
-        src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
-        alt="Gif with a flying rocket indicating the successful process of sending the form"
+              loading="lazy"
+              src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
+              alt="Gif with a flying rocket indicating the successful process of sending the form"
       />
       <h5 class="h5">Thank you!</h5>
       <h6 class="h6">We will contact you shortly.</h6>
       <button
-        class="form-contact__submit footer__button _button _button--white ga-success-form"
-        @click="toggleSuccessMessage()"
+              class="form-contact__submit footer__button _button _button--white ga-success-form"
+              @click="toggleSuccessMessage()"
       >
         <span class="_button__text">Send another message</span>
         <span class="_button__text-overlay">Send another message</span>
@@ -741,8 +789,8 @@
         <div class="article-advantages__item">
           <div class="article-advantages__image">
             <img
-              src="{{view url='Mirasvit_Blog::images/article/gtm/star.svg'}}"
-              alt="Star illustration, High Quality"
+                    src="{{view url='Mirasvit_Blog::images/article/gtm/star.svg'}}"
+                    alt="Star illustration, High Quality"
             />
           </div>
           <div class="article-advantages__content">
@@ -753,8 +801,8 @@
         <div class="article-advantages__item">
           <div class="article-advantages__image">
             <img
-              src="{{view url='Mirasvit_Blog::images/article/gtm/chat.svg'}}"
-              alt="Messages illustration, Good Support"
+                    src="{{view url='Mirasvit_Blog::images/article/gtm/chat.svg'}}"
+                    alt="Messages illustration, Good Support"
             />
           </div>
           <div class="article-advantages__content">
@@ -765,9 +813,9 @@
       </div>
       <!-- form_order-service_ga4-2 (4) -->
       <div
-        class="article__grey-form"
-        x-data="{...initForm({'formUniqueId' : 'order-service_ga4-2',
-                          'url' : '/perspective_forms/index/gasubmit', 
+              class="article__grey-form"
+              x-data="{...initForm({'formUniqueId' : 'order-service_ga4-2',
+                          'url' : '/perspective_forms/index/gasubmit',
                           'gtmEventName' : 'sent_hire_us_form'
                         }),
                     ...formValidation.global(document.getElementById('form_order-service_ga4-2')),
@@ -779,9 +827,9 @@
             <h4 class="h4">Take advantage of the next generation of Google Analytics tracking today</h4>
             <p>UA will stop processing new hits on July one 2023. Be prepared!</p>
             <button
-              class="_button form-contact__submit ga-open-form"
-              @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-              x-show="!openForm"
+                    class="_button form-contact__submit ga-open-form"
+                    @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+                    x-show="!openForm"
             >
               <span class="_button__text">I want to order a service</span>
               <span class="_button__text-overlay">I want to order a service</span>
@@ -789,45 +837,61 @@
               <span class="_button__overlay _button__overlay--active"></span>
             </button>
             <form
-              id="form_order-service_ga4-2"
-              class="footer__form form-contact ga-contact-form"
-              :class="{'show' : openForm}"
-              @submit="submitForm($event)"
+                    id="form_order-service_ga4-2"
+                    class="footer__form form-contact ga-contact-form"
+                    :class="{'show' : openForm}"
+                    @submit="submitForm($event)"
             >
               <div class="form-contact__body">
                 <input
-                  type="text"
-                  name="first_name"
-                  class="form-contact__input"
-                  placeholder="Name"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="first_name"
+                        class="form-contact__input"
+                        placeholder="Name"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="email"
-                  name="email"
-                  class="form-contact__input validate-email"
-                  placeholder="Email"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="email"
+                        name="email"
+                        class="form-contact__input validate-email"
+                        placeholder="Email"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="text"
-                  name="url"
-                  class="form-contact__input"
-                  placeholder="Website URL"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="url"
+                        class="form-contact__input"
+                        placeholder="Website URL"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input
-                  type="text"
-                  name="help"
-                  class="form-contact__input"
-                  placeholder="How can we help you?"
-                  required
-                  x-on:input="validate($el, false)"
+                        type="text"
+                        name="message"
+                        class="form-contact__input"
+                        placeholder="How can we help you?"
+                        required
+                        x-on:input="validate($el, false)"
                 />
                 <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_source"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_medium"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_campaign"
+                       type="text"
+                />
+                <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                       name="utm_term"
+                       type="text"
+                />
               </div>
               <div class="form-actions">
                 <button type="submit" class="_button form-contact__submit ga-contact-submit">
@@ -837,9 +901,9 @@
                   <span class="_button__overlay _button__overlay--active"></span>
                 </button>
                 <button
-                  class="form-contact__submit footer__button _button ga-close-form"
-                  @click="openForm=false"
-                  type="button"
+                        class="form-contact__submit footer__button _button ga-close-form"
+                        @click="openForm=false"
+                        type="button"
                 >
                   Cancel
                 </button>
@@ -849,9 +913,9 @@
         </div>
         <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
           <img
-            loading="lazy"
-            src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
-            alt="Gif with a flying rocket indicating the successful process of sending the form"
+                  loading="lazy"
+                  src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
+                  alt="Gif with a flying rocket indicating the successful process of sending the form"
           />
           <h5 class="h5">Thank you!</h5>
           <h6 class="h6">We will contact you shortly.</h6>
@@ -869,15 +933,15 @@
 
   <!-- Popup -->
   <div
-    x-data="{showPopup : false,
+          x-data="{showPopup : false,
                 ...initForm({'formUniqueId' : 'contact-us_ga4-popup',
-                             'url' : '/perspective_forms/index/gasubmit', 
+                             'url' : '/perspective_forms/index/gasubmit',
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
                 ...formValidation.global(document.getElementById('form_contact-us_ga4-popup')),
                 openForm : false,
               }"
-    x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
+          x-intersect.once.margin.-20%="showPopup = (localStorage.getItem('isAnyFormTouched') === 'false');"
   >
     <div class="popup" x-show="showPopup" x-transition style="display: none">
       <div class="popup__body" @click.away="showPopup = false; ">
@@ -898,22 +962,38 @@
 
               <label for="popup-ga4-form-email" class="_text-caption">Email</label>
               <input
-                class="_input popup__input"
-                id="popup-ga4-form-email"
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
+                      class="_input popup__input"
+                      id="popup-ga4-form-email"
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                      required
               />
 
               <label for="popup-ga4-form-website" class="_text-caption">Website URL</label>
               <input
-                class="_input popup__input"
-                id="popup-ga4-form-website"
-                name="url"
-                type="text"
-                placeholder="Website URL"
-                required
+                      class="_input popup__input"
+                      id="popup-ga4-form-website"
+                      name="url"
+                      type="text"
+                      placeholder="Website URL"
+                      required
+              />
+              <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                     name="utm_source"
+                     type="text"
+              />
+              <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                     name="utm_medium"
+                     type="text"
+              />
+              <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                     name="utm_campaign"
+                     type="text"
+              />
+              <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                     name="utm_term"
+                     type="text"
               />
               <button type="submit" class="_button _button--orange-bg popup__submit">
                 <span class="_button__text">Send</span>
@@ -926,9 +1006,9 @@
 
           <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
             <img
-              loading="lazy"
-              src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
-              alt="Gif with a flying rocket indicating the successful process of sending the form"
+                    loading="lazy"
+                    src="{{view url='Mirasvit_Blog::images/article/gtm/rocket-black.gif'}}"
+                    alt="Gif with a flying rocket indicating the successful process of sending the form"
             />
             <h5 class="h5">Thank you!</h5>
             <h6 class="h6">We will contact you shortly.</h6>
@@ -944,8 +1024,8 @@
         <button @click="showPopup = false;" type="button" class="popup__close">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M19.1796 3.51471L11.9999 10.6944L4.82023 3.51471C4.64713 3.3416 4.41234 3.24435 4.16753 3.24435C3.92272 3.24435 3.68794 3.3416 3.51483 3.51471C3.34173 3.68781 3.24448 3.9226 3.24448 4.16741C3.24448 4.41222 3.34173 4.647 3.51483 4.82011L10.6945 11.9998L3.51483 19.1795C3.34173 19.3526 3.24448 19.5874 3.24448 19.8322C3.24448 20.077 3.34173 20.3118 3.51483 20.4849C3.59644 20.573 3.69597 20.6425 3.80672 20.6888C3.91748 20.7352 4.03687 20.7572 4.15687 20.7535C4.27686 20.7498 4.39466 20.7204 4.50234 20.6673C4.61002 20.6142 4.70506 20.5387 4.78107 20.4458L11.9608 13.2661L19.1796 20.4849C19.3528 20.658 19.5875 20.7553 19.8323 20.7553C20.0772 20.7553 20.3119 20.658 20.4851 20.4849C20.6582 20.3118 20.7554 20.077 20.7554 19.8322C20.7554 19.5874 20.6582 19.3526 20.4851 19.1795L13.3053 11.9998L20.4851 4.82011C20.6582 4.647 20.7554 4.41222 20.7554 4.16741C20.7554 3.9226 20.6582 3.68781 20.4851 3.51471C20.3119 3.3416 20.0772 3.24435 19.8324 3.24435C19.5875 3.24435 19.3528 3.3416 19.1796 3.51471Z"
-              fill="#949494"
+                    d="M19.1796 3.51471L11.9999 10.6944L4.82023 3.51471C4.64713 3.3416 4.41234 3.24435 4.16753 3.24435C3.92272 3.24435 3.68794 3.3416 3.51483 3.51471C3.34173 3.68781 3.24448 3.9226 3.24448 4.16741C3.24448 4.41222 3.34173 4.647 3.51483 4.82011L10.6945 11.9998L3.51483 19.1795C3.34173 19.3526 3.24448 19.5874 3.24448 19.8322C3.24448 20.077 3.34173 20.3118 3.51483 20.4849C3.59644 20.573 3.69597 20.6425 3.80672 20.6888C3.91748 20.7352 4.03687 20.7572 4.15687 20.7535C4.27686 20.7498 4.39466 20.7204 4.50234 20.6673C4.61002 20.6142 4.70506 20.5387 4.78107 20.4458L11.9608 13.2661L19.1796 20.4849C19.3528 20.658 19.5875 20.7553 19.8323 20.7553C20.0772 20.7553 20.3119 20.658 20.4851 20.4849C20.6582 20.3118 20.7554 20.077 20.7554 19.8322C20.7554 19.5874 20.6582 19.3526 20.4851 19.1795L13.3053 11.9998L20.4851 4.82011C20.6582 4.647 20.7554 4.41222 20.7554 4.16741C20.7554 3.9226 20.6582 3.68781 20.4851 3.51471C20.3119 3.3416 20.0772 3.24435 19.8324 3.24435C19.5875 3.24435 19.3528 3.3416 19.1796 3.51471Z"
+                    fill="#949494"
             />
           </svg>
         </button>

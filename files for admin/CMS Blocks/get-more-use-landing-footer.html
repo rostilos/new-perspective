@@ -228,24 +228,23 @@
             }),
             ...formValidation.global(document.getElementById('form_one_of_us')),
 getPathName () {
-	if(window.location.pathname=='/hyva-magento-theme') {
-		return  'Ask about Magento Hyvä Theme' }
-	else if (window.location.pathname=='/breeze-magento-theme') {
-		return 'Ask about Magento Breeze theme'
-	} else {
-		return ''
-	}
+  if(window.location.pathname=='/hyva-magento-theme') {
+    return  'Ask about Magento Hyvä Theme' }
+  else if (window.location.pathname=='/breeze-magento-theme') {
+    return 'Ask about Magento Breeze theme'
+  } else {
+    return ''
+  }
 }
           }"
             >
-                <h2 class="h2 footer-alt__title">Looking to boost sales from unregistered visitors?</h2>
-                <p>We have the tools and expertise to help you identify, segment, and engage anonymous users, turning them into regular customers. Contact us to learn more! <span x-text="getPathName"></span></p>
+                <h2 class="h2 footer-alt__title">Ready to take your business to the next level?</h2>
+                <p>We are here to help you. <span x-text="getPathName"></span></p>
                 <form
                         id="form_one_of_us"
                         class="get-started__form form-contact"
-                        @submit="submitForm($event)"
+                        x-on:submit="submitForm($event)"
                         novalidate="true"
-                        data-hs-cf-bound="true"
                 >
                     <div class="form-contact__body" x-show="showForm">
                         <input
@@ -275,13 +274,29 @@ getPathName () {
                         />
                         <input
                                 type="text"
-                                name="details"
+                                name="message"
                                 class="form-contact__input form-contact__input--white"
                                 placeholder="About you"
                                 required=""
                                 x-on:input="validate($el, false)"
                         />
                         <input type="hidden" name="type" value="aGlyZV91cw==" />
+                        <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                               name="utm_source"
+                               type="text"
+                        />
+                        <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                               name="utm_medium"
+                               type="text"
+                        />
+                        <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                               name="utm_campaign"
+                               type="text"
+                        />
+                        <input style="width:0px;height:0px;border:none;font-size:0px;display:flex;padding:0px;line-height:0;margin:0"
+                               name="utm_term"
+                               type="text"
+                        />
 
                         <div class="form-contact__attache form-contact__attache--white contact-attache">
                             <label for="attache-one_of_us"> Attach </label>
