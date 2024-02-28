@@ -1,32 +1,38 @@
 <p x-data="{}">
   <a
-    class="header__links--item"
-    href="{{store url='company'}}"
-    :class="window.location.pathname.indexOf('company') >= 0 ? '_text-orange' : ''"
-    >Company</a
+          class="header__links--item"
+          href="{{store url='company'}}"
+          :class="window.location.pathname.indexOf('company') >= 0 ? '_text-orange' : ''"
+  >Company</a
   >
   <a
-    class="header__links--item"
-    href="{{store url='work'}}"
-    :class="window.location.pathname.indexOf('work') >= 0 ? '_text-orange' : ''"
-    >Work</a
+          class="header__links--item"
+          href="{{store url='work'}}"
+          :class="window.location.pathname.indexOf('work') >= 0 ? '_text-orange' : ''"
+  >Work</a
   >
   <a
-    class="header__links--item"
-    href="{{store url='services'}}"
-    :class="window.location.pathname.indexOf('services') >= 0 ? '_text-orange' : ''"
-    >Services</a
+          class="header__links--item"
+          href="{{store url='services'}}"
+          :class="window.location.pathname.indexOf('services') >= 0 ? '_text-orange' : ''"
+  >Services</a
+  >
+  <!--  <a
+      class="header__links--item"
+      href="{{store url='extensions'}}"
+      :class="window.location.pathname.indexOf('extensions') >= 0 ? '_text-orange' : ''"
+      >Extensions</a
+    > -->
+  <a
+          class="header__links--item"
+          href="{{store url='blog'}}"
+          :class="window.location.pathname.indexOf('blog') >= 0 ? '_text-orange' : ''"
+  >Blog</a
   >
   <a
-    class="header__links--item"
-    href="{{store url='blog'}}"
-    :class="window.location.pathname.indexOf('blog') >= 0 ? '_text-orange' : ''"
-    >Blog</a
-  >
-  <a
-    class="header__links--item"
-    href="{{store url='contacts'}}"
-    :class="window.location.pathname.indexOf('contacts') >= 0 ? '_text-orange' : ''"
-    >Contacts</a
+          class="header__links--item"
+          href="{{store url='contacts'}}"
+          :class="window.location.pathname.indexOf('contacts') >= 0 ? '_text-orange' : ''"
+  >Contacts</a
   >
 </p>
