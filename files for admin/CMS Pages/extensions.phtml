@@ -14,9 +14,9 @@
         </div>
 
         <div
-            class="extensions-page__squares extensions-squares"
-            itemscope
-            itemtype="https://schema.org/BreadcrumbList"
+                class="extensions-page__squares extensions-squares"
+                itemscope
+                itemtype="https://schema.org/BreadcrumbList"
         >
             <div class="extensions-squares__square" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <img src="{{media url='wysiwyg/extensions/icon-payment.svg'}}" alt="LiqPAY, PrivatBank Parts Payment and PrivatBank Instant Installment." />
@@ -139,8 +139,8 @@
 
                 <a href="https://commercemarketplace.adobe.com/carbonclick-climate-friendly-cart.html">
                     <button type="button" class="service-section__button _button _button--arrow">
-                        <span class="_button__text"> View on Github </span>
-                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Github </span>
+                        <span class="_button__text"> View on Marketplace </span>
+                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Marketplace </span>
                         <span class="_button__overlay _button__overlay--hover"></span>
                         <span class="_button__overlay _button__overlay--active"></span>
                     </button>
@@ -161,8 +161,8 @@
 
                 <a href="https://commercemarketplace.adobe.com/pressloft-affiliate.html">
                     <button type="button" class="service-section__button _button _button--arrow">
-                        <span class="_button__text"> View on Github </span>
-                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Github </span>
+                        <span class="_button__text"> View on Marketplace </span>
+                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Marketplace </span>
                         <span class="_button__overlay _button__overlay--hover"></span>
                         <span class="_button__overlay _button__overlay--active"></span>
                     </button>
@@ -183,8 +183,8 @@
 
                 <a href="https://commercemarketplace.adobe.com/partner/ian_weyenberg/">
                     <button type="button" class="service-section__button _button _button--arrow">
-                        <span class="_button__text"> View on Github </span>
-                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Github </span>
+                        <span class="_button__text"> View on Marketplace </span>
+                        <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> View on Marketplace </span>
                         <span class="_button__overlay _button__overlay--hover"></span>
                         <span class="_button__overlay _button__overlay--active"></span>
                     </button>
@@ -193,8 +193,8 @@
             </div>
         </div>
         <section
-            class="form-wide second"
-            x-data="{...initForm({'formUniqueId' : 'extensions',
+                class="form-wide second"
+                x-data="{...initForm({'formUniqueId' : 'extensions',
                              'url' : '/perspective_forms/index/gasubmit',
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
@@ -207,17 +207,15 @@
                     <img src="{{view url='Mirasvit_Blog::images/article/gtm/gears.png'}}" alt="Gears illustration" />
                 </div>
                 <div class="form-wide__content">
-                    <h4 class="h4">We know how to do it right</h4>
+                    <h4 class="h4">CUSTOM EXTENSIONS, EXCEPTIONAL PERFORMANCE</h4>
 
                     <h6 class="h5">
-                        Implementing a Magento PWA can be a complex process with potential pitfalls. But with our expertise in
-                        Magento development and PWA integration, we ensure a seamless, error-free experience, enhancing your
-                        eCommerce capabilities. Trust us to do it right.
+                        Maximize your eCommerce potential with bespoke Magento extensions from Perspective. Our team provides cutting-edge solutions that streamline operations, enhance customer experiences, and boost sales. With Perspective, expect precision, innovation, and excellence in every extension we develop, setting your business apart in the digital landscape.
                     </h6>
                     <button
-                        class="form-contact__submit footer__button _button _button--white open-form"
-                        @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-                        x-show="!openForm"
+                            class="form-contact__submit footer__button _button _button--white open-form"
+                            @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+                            x-show="!openForm"
                     >
                         <span class="_button__text">I want to order a service</span>
                         <span class="_button__text-overlay">I want to order a service</span>
@@ -225,43 +223,43 @@
                         <span class="_button__overlay _button__overlay--active"></span>
                     </button>
                     <form
-                        id="form_extensions"
-                        class="footer__form form-contact contact-form contact-form--orange-bg"
-                        :class="{'show' : openForm}"
-                        @submit="submitForm($event)"
+                            id="form_extensions"
+                            class="footer__form form-contact contact-form contact-form--orange-bg"
+                            :class="{'show' : openForm}"
+                            @submit="submitForm($event)"
                     >
                         <div class="form-contact__body">
                             <input
-                                type="text"
-                                name="first_name"
-                                class="form-contact__input"
-                                placeholder="Name"
-                                required
-                                x-on:input="validate($el, false)"
+                                    type="text"
+                                    name="first_name"
+                                    class="form-contact__input"
+                                    placeholder="Name"
+                                    required
+                                    x-on:input="validate($el, false)"
                             />
                             <input
-                                type="email"
-                                name="email"
-                                class="form-contact__input validate-email"
-                                placeholder="Email"
-                                required
-                                x-on:input="validate($el, false)"
+                                    type="email"
+                                    name="email"
+                                    class="form-contact__input validate-email"
+                                    placeholder="Email"
+                                    required
+                                    x-on:input="validate($el, false)"
                             />
                             <input
-                                type="text"
-                                name="url"
-                                class="form-contact__input"
-                                placeholder="Website URL"
-                                required
-                                x-on:input="validate($el, false)"
+                                    type="text"
+                                    name="url"
+                                    class="form-contact__input"
+                                    placeholder="Website URL"
+                                    required
+                                    x-on:input="validate($el, false)"
                             />
                             <input
-                                type="text"
-                                name="message"
-                                class="form-contact__input"
-                                placeholder="How can we help you?"
-                                required
-                                x-on:input="validate($el, false)"
+                                    type="text"
+                                    name="message"
+                                    class="form-contact__input"
+                                    placeholder="How can we help you?"
+                                    required
+                                    x-on:input="validate($el, false)"
                             />
                             <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
                         </div>
@@ -278,16 +276,16 @@
                 </div>
             </div>
             <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
-                <img/home/vita/projects/rostilos/files for admin/CMS Pages
-                loading="lazy"
-                src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
-                alt="Gif with a flying rocket indicating the successful process of sending the form"
+                <img
+                        loading="lazy"
+                        src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
+                        alt="Gif with a flying rocket indicating the successful process of sending the form"
                 />
                 <h5 class="h5">Thank you!</h5>
                 <h6 class="h6">We will contact you shortly.</h6>
                 <button
-                    class="form-contact__submit footer__button _button _button--white success-form"
-                    @click="toggleSuccessMessage()"
+                        class="form-contact__submit footer__button _button _button--white success-form"
+                        @click="toggleSuccessMessage()"
                 >
                     <span class="_button__text">Send another message</span>
                     <span class="_button__text-overlay">Send another message</span>
