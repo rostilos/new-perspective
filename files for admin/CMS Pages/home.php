@@ -1059,8 +1059,8 @@
             </div>
         </div>
     </div>
-
-    <div class="comments" data-mage-init='{"slickComments": {}}'>
+    <div class="comments" style="background-color: #fafafa;">
+        <div class="comments__list" style="height:0;padding:0;"><div class="comments__arrow--prev"></div><div class="comments__arrow--next"></div></div>
         <div class="comments__container _container _grid-2-col">
             <div class="comments__section-label _section-label">Testimonials</div>
             <div class="comments__body">
@@ -1073,191 +1073,19 @@
                         We make Magento work for our clients with perfect codes, engaging interactions, thoughtful integrations, and a commitment to ongoing support.
                     </h5>
                 </div>
+            </div>
+        </div>
+        <div>
+            <div class="comments__container _container">
+                <div class="comments__body">
+                    <div class="comments__content">
+                        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="12" data-height="375" data-nofollow="true" data-expandifr="true" data-scale="100" data-scale="100" data-primary-color="#d85026" data-secondary-color="#d85026" data-reviews="2069921,1981027,1916913,1905597,1843315,1641500,1511246,1486028,1480995" data-clutchcompany-id="1306745"></div>
 
-                <div class="comments__content">
-                    <ul class="comments__list">
-                        <!-- Vodafone -->
-                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                            <div class="comment__header">
-                                <div class="comment__icon">
-                                    <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
-                                </div>
-                                <div class="comment__rate">
-                                    <div
-                                            class="comment__rate-number"
-                                            itemprop="reviewRating"
-                                            itemtype="https://schema.org/Rating"
-                                            itemscope
-                                    >
-                                        <span itemprop="ratingValue">5.0</span>
-                                    </div>
-                                    <div class="comment__stars">
-                    <span class="stars-icons">
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                    </span>
-                                        <span class="stars-bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment__body">
-                                <div class="comment__author comment-author" itemprop="author">
-                                    <div class="comment-author__name">Vitaly Zadorin</div>
-                                    <div class="comment-author__post">Product Owner, Vodafone Ukraine</div>
-                                </div>
-
-                                <div class="comment__text" itemprop="reviewBody">
-                                    <p>
-                                        The project launched just in time for a big shopping event and the company saw firsthand how well it
-                                        worked under high traffic. The team used a variety of tools for development and communication with
-                                        the company.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- E-Shop -->
-                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                            <div class="comment__header">
-                                <div class="comment__icon">
-                                    <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
-                                </div>
-                                <div class="comment__rate">
-                                    <div
-                                            class="comment__rate-number"
-                                            itemprop="reviewRating"
-                                            itemtype="https://schema.org/Rating"
-                                            itemscope
-                                    >
-                                        <span itemprop="ratingValue">5.0</span>
-                                    </div>
-                                    <div class="comment__stars">
-                    <span class="stars-icons">
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                    </span>
-                                        <span class="stars-bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment__body">
-                                <div class="comment__author comment-author" itemprop="author">
-                                    <div class="comment-author__name">Kluka Anna</div>
-                                    <div class="comment-author__post">E-Shop Manager, Groupe SEB Ukraine</div>
-                                </div>
-
-                                <div class="comment__text" itemprop="reviewBody">
-                                    <p>
-                                        Perspective delivered the final output exactly how the client requested, which eventually led to the
-                                        achievement of the company's goals. The team also thoroughly followed the given timeline.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Aphid -->
-                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                            <div class="comment__header">
-                                <div class="comment__icon">
-                                    <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
-                                </div>
-                                <div class="comment__rate">
-                                    <div
-                                            class="comment__rate-number"
-                                            itemprop="reviewRating"
-                                            itemtype="https://schema.org/Rating"
-                                            itemscope
-                                    >
-                                        <span itemprop="ratingValue">5.0</span>
-                                    </div>
-                                    <div class="comment__stars">
-                    <span class="stars-icons">
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                    </span>
-                                        <span class="stars-bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment__body">
-                                <div class="comment__author comment-author" itemprop="author">
-                                    <div class="comment-author__name">Shane Doerksen</div>
-                                    <div class="comment-author__post">Solution Architect, Aphid Consulting</div>
-                                </div>
-
-                                <div class="comment__text" itemprop="reviewBody">
-                                    <p>
-                                        Perspective Studio has delivered an exceptional project on time and within the budget. The team is
-                                        reliable, responsive, friendly, professional, and fluent in English
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Book -->
-                        <div class="comments__item comment" itemprop="review" itemscope itemtype="https://schema.org/Review">
-                            <div class="comment__header">
-                                <div class="comment__icon">
-                                    <img loading="lazy" src="{{media url='wysiwyg/Main/message/Group.png'}}" alt="C " />
-                                </div>
-                                <div class="comment__rate">
-                                    <div
-                                            class="comment__rate-number"
-                                            itemprop="reviewRating"
-                                            itemtype="https://schema.org/Rating"
-                                            itemscope
-                                    >
-                                        <span itemprop="ratingValue">5.0</span>
-                                    </div>
-                                    <div class="comment__stars">
-                    <span class="stars-icons">
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                      <span class="stars-icon"></span>
-                    </span>
-                                        <span class="stars-bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment__body">
-                                <div class="comment__author comment-author" itemprop="author">
-                                    <div class="comment-author__name">Stuart Hutchinson</div>
-                                    <div class="comment-author__post">Basement Books</div>
-                                </div>
-
-                                <div class="comment__text" itemprop="reviewBody">
-                                    <p>
-                                        Perspective successfully finished the client's platform, and they were able to accomplish all of
-                                        their tasks. They had exceptional Magento skills, and they were able to solve all of the project's
-                                        issues. The team was also commended for their organized and meticulous approach.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-
-                    <div class="comments__controls">
-                        <div class="comments__arrow comments__arrow--prev"></div>
-                        <div class="comments__arrow comments__arrow--next"></div>
-                    </div>
-                    <div class="comments__reviews">
-                        <span></span>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="main-certification">
@@ -1398,3 +1226,4 @@
         </div>
     </div>
 </div>
+
