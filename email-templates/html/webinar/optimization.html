@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Prev styles -->
+
+    <!-- New styles (flyid-hybrid method) -->
+
+    <!-- Media queries (For email clients that support this)  -->
+
+
+    <style type="text/css">
+        @font-face {font-family: "Gilroy";        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Light.woff2")          format("woff2");        font-weight: 300;        font-style: normal;        font-display: block;}
+        @font-face {font-family: "Gilroy";        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Regular.woff2")          format("woff2");        font-weight: 400;        font-style: normal;        font-display: block;}
+        @font-face {font-family: "Gilroy";        src: url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-Medium.woff2")          format("woff2");        font-weight: 500;        font-style: normal;        font-display: block;}
+        @font-face {font-family: "Gilroy";        src: local('Gilroy'), url("https://perspectiveteam.com/static/frontend/Perspective/default/en_US/fonts/Gilroy/Gilroy-SemiBold.woff2")          format("woff2");        font-weight: 600;        font-style: normal;        font-display: block;}
+        a{
+            text-decoration:none;
+            transition:0.4s all ease-in-out;
+            color:inherit;
+        }
+        a:hover{
+            color:#d85026 !important;
+        }
+        p{
+            margin:0;
+            padding:0;
+        }
+        hr{
+            margin:0;
+            padding:0;
+            background-color:#949494;
+            color:#949494;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            background-color:#fff;
+            font-family:"Gilroy", Arial, Helvetica, sans-serif;
+            font-style:normal;
+            color:#303030;
+            margin:0 auto;
+            font-size:16px;
+            font-weight:400;
+            line-height:24px;
+        }
+        .text-base{
+            font-size:16px;
+            line-height:24px;
+        }
+        .text-lg{
+            font-size:18px;
+            line-height:26px;
+        }
+        .orange-button{
+            display:inline-block;
+            text-align:center;
+            background-color:#e17139;
+            color:#fff !important;
+            border:1px solid #fff;
+            padding:7px 24px;
+            border-radius:30px;
+            text-decoration:none;
+            position:relative;
+            transition:0.3s all linear;
+            overflow:hidden;
+            min-width:143px;
+        }
+        .orange-button-alt span.text-base{
+            margin-right:5px;
+        }
+        .orange-button-alt:hover .hover{
+            display:inline !important;
+        }
+        .orange-button-alt:hover .default{
+            display:none !important;
+        }
+        .orange-button.hover-white:hover .text-base{
+            color:#e17139 !important;
+        }
+        .orange-button.hover-white:hover{
+            background:#ffffff !important;
+        }
+        .orange-button:hover{
+            color:#fff !important;
+            background:#3d3c3c;
+        }
+        body{
+            margin:0;
+            padding:0;
+            min-width:100%;
+            background-color:#ffffff;
+        }
+        table{
+            border-spacing:0;
+            color:#333333;
+        }
+        td{
+            padding:0;
+        }
+        img{
+            border:0;
+        }
+        .wrapper{
+            width:100%;
+            table-layout:fixed;
+            -webkit-text-size-adjust:100%;
+            -ms-text-size-adjust:100%;
+        }
+        .webkit{
+            max-width:600px;
+        }
+        .two-column .column{
+            width:100%;
+            padding-right:16px;
+            padding-left:16px;
+            display:inline-block;
+            vertical-align:top;
+        }
+        .contents{
+            width:100%;
+        }
+        .two-column .contents{
+            font-size:14px;
+            text-align:left;
+        }
+        .two-column .text{
+            padding-top:10px;
+        }
+        .full-width-image img{
+            width:100%;
+            height:auto;
+        }
+        .one-column{
+            width:100%;
+            max-width:300px;
+            padding-left:16px;
+            padding-right:16px;
+        }
+        .one-column .contents{
+            text-align:left;
+        }
+        .two-column{
+            text-align:center;
+        }
+        .two-column .column{
+            width:100%;
+            max-width:300px;
+            display:inline-block;
+            vertical-align:top;
+        }
+        .two-column-wide-right .column{
+            width:100%;
+            display:inline-block;
+            vertical-align:middle;
+        }
+        .two-column-wide-right .left img{
+            width:100%;
+        }
+        .three-column .column{
+            width:100%;
+            max-width:200px;
+            display:inline-block;
+            vertical-align:top;
+        }
+        .three-column .contents{
+            font-size:14px;
+            text-align:center;
+        }
+        .three-column img{
+            width:100%;
+            height:auto;
+        }
+        .section-intro__title{
+            width:100%;
+            text-transform:uppercase;
+            font-weight:500;
+            font-size:20px;
+            line-height:30px;
+            max-width:350px;
+            margin-bottom:12px;
+            margin-top: 12px;
+        }
+        .copyright{
+            padding-top:8px;
+            padding-bottom:8px;
+        }
+        .copyright span{
+            font-size:12px;
+        }
+        .footer{
+            padding-right:16px;
+            padding-left:16px;
+        }
+        .footer a:hover{
+            color:rgb(192, 192, 192);
+        }
+        .footer_body{
+            padding:32px 0 !important;
+        }
+        .footer a,.footer .follow-us-text{
+            color:#fff;
+            transition:all 0.4s ease-in-out;
+            margin-right:14px;
+            font-size:12px;
+            line-height:18px;
+        }
+        /*
+        @media screen and (min-width: 600px){
+        */
+        .news-item .news-item__title+p{
+            /*@media screen and (min-width: 600px){*/margin-top:8px!important;
+            margin-bottom:10px!important;
+        }
+        .section-first .column{
+            margin-bottom:37px;
+        }
+        .mark-calendar strong{
+            display:block;
+        }
+        .section-speakers .column{
+            box-sizing:border-box!important;
+        }
+        .section-speakers .two-column{
+            justify-content:flex-end;
+        }
+        .section-second .two-column .column:first-child{
+            padding-top:21px;
+        }
+        @media screen and (max-width: 599px){
+            .text-full-w-mobile{
+                max-width:100% !important;
+            }
+
+        }   @media screen and (max-width: 599px){
+            .info-time div{
+                margin-top:30px !important;
+            }
+
+        }</style></head>
+<body>
+<center class="wrapper">
+    <div class="webkit">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center">
+            <tr>
+                <td>
+        <![endif]-->
+        <table class="outer" align="center">
+            <!-- Meta -->
+            <tr>
+                <td>
+                    <div itemscope="" itemtype="http://schema.org/EmailMessage">
+                        <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="*|LIST:COMPANY|*"><link itemprop="url" content="*|LIST:URL|*">
+                        </div>
+                        <div itemprop="about" itemscope="" itemtype="http://schema.org/Offer">
+                            <link itemprop="image" href="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/logo.png?raw=true">
+                        </div>
+                    </div>
+                    <div itemscope="" itemtype="http://schema.org/EmailMessage">
+                        <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="*|LIST:COMPANY|*"><link itemprop="url" content="*|LIST:URL|*">
+                        </div>
+                        <div itemprop="about" itemscope="" itemtype="http://schema.org/Offer">
+                            <link itemprop="image" href="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/logo.png?raw=true">
+                        </div>
+                    </div>
+                    <div itemscope="" itemtype="http://schema.org/EmailMessage">
+                        <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="*|LIST:COMPANY|*"><link itemprop="url" content="*|LIST:URL|*">
+                        </div>
+                        <div itemprop="about" itemscope="" itemtype="http://schema.org/Offer">
+                            <link itemprop="image" href="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/logo.png?raw=true">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- #1 section -->
+            <tr class="section-first">
+                <td class="two-column" style="text-align: left;padding-top: 32px;">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%">
+                        <tr>
+                            <td width="100%" valign="top">
+                    <![endif]-->
+                    <div class="column" style="max-width:316px; margin-bottom: 16px;text-align: left;padding-right: 0px">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <table style="padding-bottom: 28px">
+                                        <tr>
+                                            <td>
+                                                <div class="header__logo">
+                                                    <a href="https://perspectiveteam.com" style="display: block; width: 100%; height: 100%">
+                                                        <img src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/logo.png?raw=true" alt="logotype" width="145" height="64" style="width: 145px; height: auto">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <img style="vertical-align: middle;" src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/vebinar/optimization-magento/icon-webinar.png?raw=true" alt="icon webinar">
+                                                        </td>
+                                                        <td style="color: #E17139; text-transform: uppercase;  font-size: 14px; font-weight: 500; line-height: 16px;"><div style="padding-left: 8px;">Webinar</div></td>
+                                                    </tr>
+                                                </table>
+
+
+                                            </td>
+
+                                        </tr>
+                                    </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="inner">
+                    <table class="contents">
+                        <tr>
+                            <td">
+                            <div style="">
+                                <h1 class="section-intro__title" style="font-weight: 600; max-width: 100%;">Optimizing Magento<br> Maintenance Costs:<br> A Blueprint for Efficiency</h1>
+                            </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width: 100%; max-width: 158px">
+                        <tr class="info-time">
+                            <td>
+                                <div class="text-lg" style="padding: 8px 16px; font-size: 14px; line-height: 24px; background-color: #F9F9F9; margin-bottom: 2px;">
+                                    <b style="line-height: 16px; text-transform: uppercase; width: 42px; display: inline-block">Date </b><span style="line-height: 16px;">July 13, 2024</span>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="padding: 8px 16px; font-size: 14px; background-color: #F9F9F9; line-height: 16px;">
+                                    <b style="line-height: 16px;text-transform: uppercase; width: 42px; display: inline-block">Time</b>
+                                    <span style="line-height: 16px;">16:00 (CET)</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+        <tr>
+            <td width="100%" valign="top">
+    <![endif]-->
+    <div class="column" style="max-width: 260px; margin-bottom: 40px;padding: 0px;">
+        <table width="100%">
+            <tr>
+                <td class="inner">
+                    <img style="width: 100%; height: auto;" src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/vebinar/optimization-magento/1.png?raw=true" alt="Optimizing Magento Maintenance Costs: A Blueprint for Efficiency">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </td>
+    </tr>
+    <tr class="section-second">
+        <td class="one-column" style="text-align: center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+                <tr>
+                    <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column text-full-w-mobile" style="margin-bottom: 40px;">
+                <table width="100%">
+                    <tr>
+                        <td class="inner">
+                            <table class="contents">
+                                <tr>
+                                    <td>
+                                        <div class="text-lg" style="font-weight: 400; font-size: 16px; line-height: 24px; padding-bottom: 16px;">
+                                                <span>With extensive expertise in Magento development, we've crafted effective strategies to assist clients in reducing maintenance costs. Now, we're excited to impart these insights to you.
+
+                                                </span>
+                                            </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Join our upcoming webinar to gain the knowledge to make
+                                        cost-efficient decisions and streamline your Magento store in 2024.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="orange-button" style="margin-top: 24px;" href="https://go.salesmanago.com/perspective_salesmanago" text="Register now">
+                                            <span class="text-base">Register now</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr class="section-speakers">
+        <td class="two-column" style="text-align: left;" align="left">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+                <tr>
+                    <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column" style="max-width: 298px;padding-left: 16px!important; padding-right: 16px!important;padding-bottom:32px;">
+                <table width="100%">
+                    <tr>
+                        <td>                    <table style="width: 100%;">
+                            <tr>
+                                <td class="inner contents">
+                                    <div class="section-stories">
+                                        <h3 style="
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 24px;
+                          text-transform: uppercase;
+                          margin-top: 0px;
+                          margin-bottom: 16px;
+                        ">
+                                            At the webinar, you will learn:</h3>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <hr style="margin-bottom: 16px!important;">
+                                </td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td class="inner">
+                            <table align="left" dir="ltr" style="width:100%;text-align: left;padding-bottom: 40px;">
+                                <tr>
+                                    <td style="width: 8px; vertical-align:top;">
+                                        <div style="widht: 8px; height: 8px; border-radius: 50%; background-color: #CD4B3A;margin-top:5px"></div>
+                                    </td>
+                                    <td>
+                                        <div style="padding-left: 16px; padding-bottom: 8px;">The importance of cost-effective maintenance for Magento stores</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 8px; vertical-align:top;"><div style="widht: 8px; height: 8px; border-radius: 50%; background-color: #CD4B3A;margin-top:5px"></div> </td>
+                                    <td>
+                                        <div style="padding-left: 16px; padding-bottom: 8px;">How to boost effectiveness using third-party solutions</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 8px; vertical-align:top;"> <div style="widht: 8px; height: 8px; border-radius: 50%; background-color: #CD4B3A;margin-top:5px"></div> </td>
+                                    <td>
+                                        <div style="padding-left: 16px; padding-bottom: 8px;">Cost-effective development tactics to improve overall maintenance</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 8px; vertical-align:top;"><div style="widht: 8px; height: 8px; border-radius: 50%; background-color: #CD4B3A;margin-top:5px"></div> </td>
+                                    <td>
+                                        <div style="padding-left: 16px;">Development team management best practices</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents">
+                                        <div class="section-stories">
+                                            <h3 style="
+                                          font-weight: 600;
+                                          font-size: 14px;
+                                          line-height: 24px;
+                                          text-transform: uppercase;
+                                          margin-top: 0px;
+                                          margin-bottom: 16px;
+                                        ">
+                                                Information Partners:</h3>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr style="margin-bottom: 16px!important;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">
+                            <table>
+                                <tr>
+                                    <td >
+                                        <div style="padding-right: 24px">
+                                            <img style="width: 100%; height: auto;" src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/vebinar/optimization-magento/mirasvit.png?raw=true" alt="mirasvit" width="111" height="31">
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div><img style="width: 100%; height: auto;" src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/vebinar/optimization-magento/akoova.png?raw=true" alt="akoova" width="105" height="25"></div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td><td width="50%" valign="top">
+            <![endif]-->
+            <div class="column stories-col-2nd" style="max-width: 298px; padding-left: 16px!important;padding-right:16px!important;padding-bottom: 32px;">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner contents">
+                                        <div class="section-stories">
+                                            <h3 style="
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 24px;
+                          text-transform: uppercase;
+                          margin-top: 0px;
+                          margin-bottom: 16px;
+                        ">
+                                                Speaker</h3>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr style="margin-bottom: 16px!important;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="inner">
+                            <table align="left" dir="ltr" style="width:100%;text-align: left">
+                                <tr class="section-stories__img">
+                                    <td colspan="1" style="padding: 0;">
+                                        <img style="max-width: 100%; height: auto;" src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/vebinar/optimization-magento/speaker.png?raw=true" alt="speaker-img" width="206" height="200">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-base" style="font-size: 16px !important;font-weight: 600;">
+                                        <div style="padding-top: 16px;">George Gutsal</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 500; color: #8B8B8B; margin-bottom: 8px!important;font-size: 14px; line-height: 20px;">
+                                        Leading Adobe Business Practitioner at Perspective
+                                        with 30+ completed Magento (Adobe Commerce) projects
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <!-- #4 section (Stories you may have missed) -->
+    <!-- #7 section (Get in touch now) -->
+    <tr>
+        <td class="one-column">
+            <table width="100%">
+                <tr>
+                    <td class="inner contents">
+                        <div class="section-next-step" style="text-align: center;">
+                            <a class="orange-button" href="https://go.salesmanago.com/perspective_salesmanago" text="Register now" style="margin: 0 auto 54px">
+                                <span class="text-base">Register now</span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- #8 section (footer) -->
+    <tr style="background: #3d3c3c" align="center">
+        <td class="footer">
+            <div class="footer_body">
+                <div>
+                    <a style="margin-top: 10px; display: inline-block; padding-bottom: 10px" href="https://perspectiveteam.com/company">About us </a><a style="margin-top: 10px; display: inline-block; padding-bottom: 10px" href="https://perspectiveteam.com/work">Work </a><a style="margin-top: 10px; display: inline-block; padding-bottom: 10px" href="https://perspectiveteam.com/services">Services </a><a style="margin-top: 10px; display: inline-block; padding-bottom: 10px" href="https://perspectiveteam.com/blog/">Blog </a><a style="margin-top: 10px; display: inline-block; padding-bottom: 10px" href="https://perspectiveteam.com/contacts">Contacts
+                </a>
+                </div>
+                <div style="margin-top: 30px; height: 24px">
+                    <div class="follow-us-text" style="
+                      margin-right: 12px;
+                      color: #fff;
+                      line-height: 24px;
+                      display: inline-table;
+                      vertical-align: top;
+                    ">
+                        Follow us:
+                    </div>
+                    <a href="https://www.linkedin.com/company/perspective-magento-team" style="margin-right: 10px; display: inline-block; height: 24px">
+                        <img src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/linkedin-white.png?raw=true" alt="linkerIn-icon" width="24" height="24">
+                    </a>
+                    <a href="https://www.facebook.com/perspective.magento.team/" style="display: inline-block; height: 24px">
+                        <img src="https://github.com/rostilos/new-perspective/blob/master/email-templates/images/common/fb-white.png?raw=true" alt="facebook-icon" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr style="background: #303030" align="center">
+        <td class="copyright">
+            <span style="color: #8d8d8d"> © All rights reserved </span>
+        </td>
+    </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </div>
+</center>
+</body>
+</html>

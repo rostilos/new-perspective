@@ -1,7 +1,7 @@
 <div
-  class="service-single service-page magento-development"
-  x-data
-  x-init="localStorage.setItem('isAnyFormTouched', false)"
+        class="service-single service-page magento-development"
+        x-data
+        x-init="localStorage.setItem('isAnyFormTouched', false)"
 >
   <div class="services-page__container _container">
     <div class="service-page__top _grid-3-col">
@@ -22,9 +22,9 @@
           We guarantee a top-notch service, fast time-to-market, and the best price to performance ratio.
         </p>
         <a
-          href="#footer"
-          class="_button _button--orange-bg _scrollTo optimization-page-intro__button--dt"
-          style="max-width: 230px"
+                href="#footer"
+                class="_button _button--orange-bg _scrollTo optimization-page-intro__button--dt"
+                style="max-width: 230px"
         >
           <h5 class="h5 _button__text">Let’s do it!</h5>
           <span class="_button__overlay _button__overlay--hover"></span>
@@ -54,7 +54,7 @@
           <div class="service-table-squares__item">
             <div class="service-square-item__body">
               <div class="service-square-item__image">
-                <img src="{{media url='wysiwyg/Service/magento-development/2.svg'}}" alt="" />
+                <img src="{{media url='wysiwyg/Icon-1_1.svg'}}" alt="" />
               </div>
               <div class="service-square-item__title h4">300k+ developers</div>
               <p class="service-square-item__text">biggest community on the world</p>
@@ -242,8 +242,8 @@
     block_id="service-page-why-choose"}}
 
     <section
-      class="form-wide second"
-      x-data="{...initForm({'formUniqueId' : 'server-optimize',
+            class="form-wide second"
+            x-data="{...initForm({'formUniqueId' : 'server-optimize',
                              'url' : '/perspective_forms/index/gasubmit',
                              'gtmEventName' : 'sent_hire_us_form'
                             }),
@@ -264,9 +264,9 @@
             ideas into reality.
           </h6>
           <button
-            class="form-contact__submit footer__button _button _button--white open-form"
-            @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
-            x-show="!openForm"
+                  class="form-contact__submit footer__button _button _button--white open-form"
+                  @click="openForm=true;localStorage.setItem('isAnyFormTouched', true)"
+                  x-show="!openForm"
           >
             <span class="_button__text">I want to order a service</span>
             <span class="_button__text-overlay">I want to order a service</span>
@@ -274,43 +274,43 @@
             <span class="_button__overlay _button__overlay--active"></span>
           </button>
           <form
-            id="form_server-optimize"
-            class="footer__form form-contact contact-form contact-form--orange-bg"
-            :class="{'show' : openForm}"
-            @submit="submitForm($event)"
+                  id="form_server-optimize"
+                  class="footer__form form-contact contact-form contact-form--orange-bg"
+                  :class="{'show' : openForm}"
+                  @submit="submitForm($event)"
           >
             <div class="form-contact__body">
               <input
-                type="text"
-                name="first_name"
-                class="form-contact__input"
-                placeholder="Name"
-                required
-                x-on:input="validate($el, false)"
+                      type="text"
+                      name="first_name"
+                      class="form-contact__input"
+                      placeholder="Name"
+                      required
+                      x-on:input="validate($el, false)"
               />
               <input
-                type="email"
-                name="email"
-                class="form-contact__input validate-email"
-                placeholder="Email"
-                required
-                x-on:input="validate($el, false)"
+                      type="email"
+                      name="email"
+                      class="form-contact__input validate-email"
+                      placeholder="Email"
+                      required
+                      x-on:input="validate($el, false)"
               />
               <input
-                type="text"
-                name="url"
-                class="form-contact__input"
-                placeholder="Website URL"
-                required
-                x-on:input="validate($el, false)"
+                      type="text"
+                      name="url"
+                      class="form-contact__input"
+                      placeholder="Website URL"
+                      required
+                      x-on:input="validate($el, false)"
               />
               <input
-                type="text"
-                name="help"
-                class="form-contact__input"
-                placeholder="How can we help you?"
-                required
-                x-on:input="validate($el, false)"
+                      type="text"
+                      name="help"
+                      class="form-contact__input"
+                      placeholder="How can we help you?"
+                      required
+                      x-on:input="validate($el, false)"
               />
               <input type="hidden" name="type" value="Z2FfcmVxdWVzdA==" />
             </div>
@@ -328,15 +328,15 @@
       </div>
       <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
         <img
-          loading="lazy"
-          src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
-          alt="Gif with a flying rocket indicating the successful process of sending the form"
+                loading="lazy"
+                src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
+                alt="Gif with a flying rocket indicating the successful process of sending the form"
         />
         <h5 class="h5">Thank you!</h5>
         <h6 class="h6">We will contact you shortly.</h6>
         <button
-          class="form-contact__submit footer__button _button _button--white success-form"
-          @click="toggleSuccessMessage()"
+                class="form-contact__submit footer__button _button _button--white success-form"
+                @click="toggleSuccessMessage()"
         >
           <span class="_button__text">Send another message</span>
           <span class="_button__text-overlay">Send another message</span>
