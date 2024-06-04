@@ -408,5 +408,115 @@
                 </button>
             </div>
         </section>
+        <section id="section-faq" class="_common-section page__section section-faq mb-0"
+                 x-data="{selected:null,items: [
+                    {id:1, title: 'How much will Magento integration cost?', description: 'The total cost of Magento integration services is defined by the price of the extension you want to integrate and the rates of the Magento integration company. You should also take into account such factors as integration complexity, extensions and plugins, performance optimization, data migration, and the experience of your technology partner. ' },
+                    {id:2, title: 'Which systems can be integrated with Magento?', description: 'Magento store can be easily integrated with a wide array of tools to streamline your e-commerce operations. To be more specific, you can connect your storefront with payment gateways, ERP and CRM systems, shipping services, and inventory management and marketing automation tools.' },
+                    {id:3, title: 'How much time will Magento integration take?', description: 'The timeframes for the Magento integration project vary depending on its scope and complexity, the volume of migrated data, customization requirements, and the number of third-party integrations. Thus, if your store requires some simple integration, for example, with a payment gateway, the integration process may take a few days. However, the Magento integration team will need several weeks or even months to integrate a CRM, ERP, or other complex system' },
+                    {id:4, title: 'How does Magento integration influence the website performance?', description: 'Magento integration can greatly affect website performance, influencing various aspects such as speed, reliability, scalability, and user experience. For example, poorly implemented integrations or incompatible extensions can lead to website instability, causing crashes, errors, or downtime.' },
+                    {id:5, title: 'How to choose a Magento integration service provider?', description: 'First, evaluate their technical proficiency, ability to handle complex integrations, and familiarity with your industry. Second, ensure that your potential provider delivers support and maintenance services. Third, assess their communication skills. Lastly, compare pricing and service packages to find a provider that fits your budget and business needs.' },
+                    {id:6, title: 'Is data migration included in Magento integration services?', description: 'Data migration is a part of the Magento integration process, especially when you connect your Magento store to a CRM or ERP system. This procedure implies transferring customer details, product catalogs, order history, and other crucial information.' },
+                    {id:7, title: 'Is it possible to integrate multiple systems with Magento?', description: 'Yes, Magento\'s flexible and open-source architecture allows for multiple integrations. Moreover, by connecting your Magento store to different third-party services such as an ERP system, CRM solution, or marketing automation tools, you get a fully customized shorefront tailored to meet your specific business needs.' },
+                    {id:8, title: 'How does Magento integration benefit my e-commerce business?', description: 'Magento integrations enhance efficiency with automated processes, elevate customer experience with seamless checkout and fulfillment, centralize data management across systems, scale for business growth, and save costs by streamlining tasks.' },
+                    ],
+                  randomNumbers: [],
+                  getUniques: function (min, max, n) {
+                    n = n || 1;
+                    if(n > max-min+1 || n < 0) return [];
+                    var t = [];
+                    for(var i = 0; i < n; ++i){
+                        var a = Math.round(Math.random() * (max-min)) + min;
+                        if(t[a]) --i;
+                        t[a] = 1;
+                    }
+                    for(i in t) this.randomNumbers[this.randomNumbers.length] = ~~i;
+
+                    return this.randomNumbers;
+
+                  },
+                  init: function () {
+                    this.getUniques(0, 7, 5);
+                  },
+                  }">
+            <div class="section-faq__container">
+                <h2 class="section-faq__title _section-title h3 mb-16" style="text-align: center">
+                    FAQs
+                </h2>
+                <div class="section-faq__content">
+                    <div class="section-faq__collapsible _collapsible">
+                        <template x-for="(item, index) in randomNumbers" :key="items[item].id">
+                            <div>
+                                <!-- 1 -->
+                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}">
+                                    <div
+                                            data-role="trigger"
+                                            class="_collapsible__trigger"
+                                            @click="selected !== items[item].id ? selected = items[item].id : selected = null"
+                                    >
+                                        <div class="_collapsible__header">
+                                            <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                                <span class="_text-orange font-regular" style="margin-right: 8px" x-text="index+1+'.'"></span>
+                                                <span class="font-medium" itemprop="name" x-text="items[item].title"></span>
+                                            </h4>
+                                        </div>
+                                        <span class="_collapsible__plus-sign"></span>
+                                    </div>
+                                </div>
+                                <div
+                                        data-role="content"
+                                        style=""
+                                        x-ref="container1"
+                                        x-bind:style="selected == items[item].id ? 'max-height: ' + $el.scrollHeight + 'px' : ''"
+                                >
+                                    <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
+                                        <div class="_collapsible__empty"></div>
+                                        <div class="_collapsible__col">
+                                            <p class="_text-article" itemprop="text"  x-text="items[item].description">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li x-text="color.label"></li>
+                        </template>
+
+
+                        <!-- 12 -->
+                        <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}">
+                            <div
+                                    data-role="trigger"
+                                    class="_collapsible__trigger"
+                                    @click="selected !== 12 ? selected = 12 : selected = null"
+                            >
+                                <div class="_collapsible__header">
+                                    <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                        <span class="_text-orange font-regular" style="margin-right: 8px">6.</span>
+                                        <span class="font-medium" itemprop="name"
+                                        >What countries do you operate in?</span
+                                        >
+                                    </h4>
+                                </div>
+                                <span class="_collapsible__plus-sign"></span>
+                            </div>
+                        </div>
+                        <div
+                                data-role="content"
+                                style=""
+                                x-ref="container12"
+                                x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''"
+                        >
+                            <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
+                                <div class="_collapsible__empty"></div>
+                                <div class="_collapsible__col">
+                                    <p class="_text-article" itemprop="text">
+                                        Perspective operates on a global scale, serving clients from the United States, the United Kingdom, the Netherlands, and numerous European countries. With this extensive international reach, we tailor our services to suit different market conditions and cultural nuances, benefiting clients worldwide.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
