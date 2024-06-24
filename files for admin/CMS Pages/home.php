@@ -29,11 +29,11 @@
             </div>
             <div class="main-intro__digits digits-intro">
                 <div class="digits-intro__item">
-                    <div class="digits-intro__number">14</div>
+                    <div class="digits-intro__number">15</div>
                     <div class="digits-intro__text">years <br />of experience</div>
                 </div>
                 <div class="digits-intro__item">
-                    <div class="digits-intro__number" itemprop="numberOfEmployees">67</div>
+                    <div class="digits-intro__number" itemprop="numberOfEmployees">71</div>
                     <div class="digits-intro__text">employees <br />in the team</div>
                 </div>
                 <div class="digits-intro__item">
@@ -96,7 +96,7 @@
                                 alt="line"
                         />
                         <div class="success__describe--item">
-                            <span class="text">04. Development </span><span class="text">&amp; Coding</span>
+                            <span class="text">04. Development </span><span class="text">&amp; coding</span>
                         </div>
                     </div>
                     <div class="images-card-element">
@@ -118,7 +118,7 @@
                                 alt="line"
                         />
                         <div class="success__describe--item">
-                            <span class="text">06. Deployment </span><span class="text">&amp; Maintenance</span>
+                            <span class="text">06. Deployment </span><span class="text">&amp; maintenance</span>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,19 @@
                                     </h4>
                                 </div>
                             </a>
-                            <div class="digital-squares__empty"></div>
+                            <a href="/services/magento-integration"
+                               class="digital-squares__item"
+                               itemprop="itemListElement"
+                               itemscope
+                               itemtype="https://schema.org/OfferCatalog"
+                            >
+                                <div class="digital-squares__content">
+                                    <h4 class="h4" itemprop="name">
+                                        Magento <br />
+                                        Integration
+                                    </h4>
+                                </div>
+                            </a>
                             <a href="/services/magento-security-audit"
                                class="digital-squares__item"
                                itemprop="itemListElement"
@@ -271,6 +283,11 @@
                             <a href="/services/server-optimization" class="digital-squares__item">
                                 <div class="digital-squares__content">
                                     <h4 class="h4">Server & Magento Optimization</h4>
+                                </div>
+                            </a>
+                            <a href="/services/magento-integration" class="digital-squares__item">
+                                <div class="digital-squares__content">
+                                    <h4 class="h4">Magento Integration</h4>
                                 </div>
                             </a>
                         </div>
@@ -327,6 +344,14 @@
                             work processes and execute your business strategy more efficiently. Trust us to provide you with a
                             solution that will enhance the effectiveness of your online presence.
                         </h5>
+                        <a href="/services/magento-integration">
+                            <button type="button" class="integration__button integration__button--mobile  _button _button--arrow">
+                                <span class="_button__text"> Discover more </span>
+                                <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> Discover more </span>
+                                <span class="_button__overlay _button__overlay--hover"></span>
+                                <span class="_button__overlay _button__overlay--active"></span>
+                            </button>
+                        </a>
                     </div>
                     <div class="integration__content">
                         <h3 class="h3 integration__title _sliding-text">
@@ -338,6 +363,14 @@
                         <h5 class="h5 integration__text _text-align-right">
                             Integrate your Magento website with any backend system or external software to automate your work processes and execute your business strategy more efficiently.
                         </h5>
+                        <a href="/services/magento-integration">
+                            <button type="button" class="integration__button _button _button--arrow">
+                                <span class="_button__text"> Discover more </span>
+                                <span class="_button__text-overlay" style="clip: rect(0px, 0px, 24px, 0px)"> Discover more </span>
+                                <span class="_button__overlay _button__overlay--hover"></span>
+                                <span class="_button__overlay _button__overlay--active"></span>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="integration__bot">
@@ -805,7 +838,7 @@
                     </h3>
                     <h5 class="h5 company__text _text-align-right">
                         With more than a decade of experience, Perspective <br> has become a leader in digital experiences. <br>
-                        Clients  worldwide entrust us with the design, <br> development and management of their websites.
+                        Clients worldwide entrust us with the design, <br> development and management of their websites.
                     </h5>
 
                     <div class="company__squares squares-company squares-company--mobile">
@@ -830,7 +863,7 @@
                         </div>
                     </div>
                     <h5 class="h5 company__text _text-align-right">
-                        We are the Magento focused web-development company named Perspective Studio with HQ located in Kyiv, Ukraine with more than 67 employees. <br>
+                        We are a Magento-focused web development company named Perspective Studio with HQ located in Kyiv, Ukraine with more than 71 employees. <br>
                         Most of them are strong middle and senior developers with 5+ years of experience in Magento.
                     </h5>
                     <div class="company__image">
@@ -892,7 +925,7 @@
                             <div class="gallery__content">
                                 <div class="gallery__col">
                                     <div class="gallery__text _text-align-right">
-                                        We develop, design and delivers websites that drive results. Our work never brags, but it sure loves to speak for itself.
+                                        We develop, design and deliver websites that drive results. Our work never brags, but it sure loves to speak for itself.
                                     </div>
                                     <div
                                             class="gallery__slide gallery-slide"
@@ -906,7 +939,7 @@
                                         <div class="gallery-slide__content">
                                             <span class="gallery-slide__title" itemprop="name"> Tefal </span>
                                             <p class="gallery-slide__text" itemprop="potentialAction">
-                                                Design, development, integrations,support
+                                                Design, development, integrations, support
                                             </p>
                                         </div>
                                     </div>
@@ -917,10 +950,10 @@
                                             itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
-                                            <img loading="lazy" src="{{media url='wysiwyg/Main/berg.png'}}" alt="berg " />
+                                            <img loading="lazy" src="{{media url='wysiwyg/rowenta_banner_1.png'}}" alt="rowenta" />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title" itemprop="name"> Dr.Berg </span>
+                                            <span class="gallery-slide__title" itemprop="name"> Rowenta </span>
                                             <p class="gallery-slide__text" itemprop="potentialAction">Development, integrations, support</p>
                                         </div>
                                     </div>
@@ -934,10 +967,10 @@
                                             itemtype="https://schema.org/Brand"
                                     >
                                         <div class="gallery-slide__image">
-                                            <img loading="lazy" src="{{media url='wysiwyg/Main/ortlieb.png'}}" alt="ortrieb " />
+                                            <img loading="lazy" src="{{media url='wysiwyg/home-page_2.png'}}" alt="goodwine" />
                                         </div>
                                         <div class="gallery-slide__content">
-                                            <span class="gallery-slide__title" itemprop="name"> Ortrieb </span>
+                                            <span class="gallery-slide__title" itemprop="name"> Good Wine </span>
                                             <p class="gallery-slide__text" itemprop="potentialAction">Development, integrations, support</p>
                                         </div>
                                     </div>
@@ -1155,7 +1188,7 @@
             <div class="main-certification__col">
                 <div class="main-certification__text--open-sans">
                     <p class="_text-align-right">
-                        Also, we already have 21 Magento certified developers and solution specialists with 26 Magento 1 and Magento
+                        Also, we already have 21 Magento-certified developers and solution specialists with 26 Magento 1 and Magento
                         2 certificates.
                     </p>
                 </div>
