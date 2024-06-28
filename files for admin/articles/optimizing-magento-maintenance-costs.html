@@ -1,0 +1,311 @@
+<style>
+    .text-30 {
+        font-size: 30px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    .speaker {
+        display: grid;
+        grid-template-columns: 210px 440px;
+        gap: 48px;
+    }
+    .speaker-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .support {
+        background-color: #F9F9F9;
+        padding: 40px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    @media (max-width: 1500px) {
+        .support {
+            justify-content: center;
+        }
+        .support-logos {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 1368px) {
+        .grid-col-half {
+            grid-template-columns: 1fr;
+        }
+        .speaker {
+            grid-template-columns: 210px 1fr;
+        }
+    }
+    .support-logos {
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+    }
+    .registration-title {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        margin-bottom: 28px;
+    }
+    .blog__post-title {
+        margin-bottom: 0px!important;
+    }
+    ._common-article-section--gap:first-child {
+        margin-top: 32px;
+    }
+    @media (min-width: 1368px) {
+        ._article-page-grid {
+            grid-template-columns: 192px 1fr;
+            margin-bottom: 72px;
+            margin-top: 72px;
+        }
+    }
+    @media (max-width: 480px) {
+        .speaker {
+            grid-template-columns: 1fr;
+            column-gap: 24px;
+        }
+        .support-title {
+            text-align: center;
+        }
+    }
+    ._text-article {
+        font-size: 16px!important;
+        line-height: 24px!important;
+    }
+    .form-contact__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    #form-webinar-registration  .form-contact__submit {
+        margin-top: 40px;
+    }
+    #form-webinar-registration  .form-contact__input {
+        margin-bottom: 24px!important;
+    }
+    #form-webinar-registration .form-contact__input, form-webinar-registration.form-contact__input:focus {
+        color: #303030!important;
+        border-color: #303030!important;
+        border-radius: 0px!important;
+    }
+    #form-webinar-registration .form-contact__input::placeholder {
+        color: #303030!important;
+    }
+    ._button--black {
+        border-color: #303030;
+        color: #303030;
+    }
+    @media (any-hover: hover) {
+        ._button--black:hover {
+            border-color: #3d3c3c!important;
+        }
+        ._button--black:hover:before {
+            background: #3d3c3c!important;
+        }
+    }
+    /*@media (any-hover: hover) {
+            ._button--black:active {
+                color: #3D3C3C;
+                border-color: #cdcdcd !important;
+            }
+            ._button--black:active:before {
+                    background: #cdcdcd;
+                    transform: translateX(0);
+                }
+        }
+        @media (any-hover: none) {
+            ._button--black:active {
+                color:  #3D3C3C;
+                border-color: #cdcdcd !important;
+                background: #cdcdcd;
+            }
+        }*/
+
+</style>
+
+
+<div class="article">
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <div class="registration">
+                <div class="registration-title text-30 font-medium"> <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/icon-webinar.svg" alt="webinar">On-demand webinar</div>
+                <a href="#footer" class="_button _button--orange-bg _scrollTo optimization-page-intro__button--dt" style="max-width: 230px">
+                    <h5 class="h5 _button__text">Registration</h5>
+                    <span class="_button__overlay _button__overlay--hover"></span>
+                    <span class="_button__overlay _button__overlay--active"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col grid-col-half">
+            <div>
+                <p class="_text-article _text-article--sm mb-32">
+                    Discover practical techniques to reduce the long-term maintenance costs of your Magento store in our upcoming webinar.
+                    From smart vendor selection to leveraging cloud services, we'll cover essential strategies to help you save.
+                </p>
+
+                <p class="_text-article _text-article--sm mb-24">
+                    At the webinar, you will learn:
+                </p>
+                <ul class="article__list mb-16 mb-md-24">
+                    <li class="font-regular _text-article _text-article--sm mb-16">
+                        Key considerations when building a Magento project from scratch to minimize future maintenance costs
+                    </li>
+                    <li class="font-regular _text-article _text-article--sm mb-16">
+                        How leveraging a headless architecture can strategically reduce maintenance and support expenditures
+                    </li>
+                    <li class="font-regular _text-article _text-article--sm mb-16">
+                        The impact of business requirements on maintenance complexity and how to navigate it effectively
+                    </li>
+                    <li class="font-regular _text-article _text-article--sm mb-16">
+                        The importance of transparent communication with your development team for project success
+                    </li>
+                    <li class="font-regular _text-article _text-article--sm mb-0">
+                        Best practices and insights directly from Magento's playbook to optimize your projects
+                    </li>
+                </ul>
+                <p class="_text-article _text-article--sm mb-24">
+                    The webinar is available on-demand. Fill out the registration form to get immediate access to the video.
+                </p>
+            </div>
+            <div       x-data="{...initForm({'formUniqueId' : 'webinar-registration',
+                             'url' : '/perspective_forms/index/gasubmit',
+                             'gtmEventName' : 'sent_hire_us_form'
+                            }),
+                ...formValidation.global(document.getElementById('form_webinar-registration')),
+                openForm : false
+                }">
+                <form
+                        id="form_webinar-registration"
+                        action=""
+                        method="post"
+                        class="get-started__form form-contact"
+                        x-on:submit="submitForm($event)"
+                >
+                    <div class="form-contact__body">
+                        <div class="form-contact__title">Registration</div>
+                        <input
+                                type="text"
+                                name="first_name"
+                                class="form-contact__input footer__input"
+                                placeholder="First Name"
+                                x-on:input="validate($el, false)"
+                        />
+                        <input
+                                type="email"
+                                name="email"
+                                class="form-contact__input footer__input validate-email"
+                                placeholder="E-mail address"
+                                x-on:input="validate($el, false)"
+                        />
+                        <input
+                                type="text"
+                                name="company"
+                                class="form-contact__input footer__input"
+                                placeholder="Company"
+                                data-pristine-phone-custom="1,2"
+                                x-on:input="validate($el, false)"
+                        />
+                        <input
+                                type="tel"
+                                name="phone"
+                                class="form-contact__input footer__input"
+                                placeholder="Phone number"
+                                required=""
+                                data-pristine-phone-custom="1,2"
+                                x-on:input="validate($el, false)"
+                        />
+
+                        <input
+                                type="text"
+                                name="position"
+                                class="form-contact__input footer__input"
+                                placeholder="Position"
+                                required=""
+                                x-on:input="validate($el, false)"
+                        />
+                        <input
+                                type="hidden"
+                                name="type"
+                                value="<?= $block->getType() ?>"
+                        />
+
+                        <button
+                                type="submit"
+                                class="form-contact__submit footer__button _button _button--black"
+                                :disabled="isLoading"
+                                :style="isLoading &amp;&amp; { pointerEvents:'none' }"
+                                style="false"
+                        >
+                            <div
+                                    x-show="isLoading"
+                                    class="_button__loader"
+                                    style="display: none"
+                            >
+                                <div class="lds-roller" style="transform: scale(0.5)">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <span class="_button__text"> Send </span>
+                            <span
+                                    class="_button__text-overlay _button__text-overlay--black"
+                            >
+                        Send
+                    </span>
+                            <span
+                                    class="_button__overlay _button__overlay--hover"
+                            ></span>
+                            <span
+                                    class="_button__overlay _button__overlay--active"
+                            ></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <h2 class="mt-0 mb-32 text-30 font-medium">
+                Speaker
+            </h2>
+            <div class="speaker">
+                <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/speaker.png" alt="speaker">
+                <div>
+                    <div class="speaker-title font-semibold mb-24">George Gutsal</div>
+                    <div class="speaker-description">Leading Adobe Business Practitioner at Perspective
+                        with over 30 projects completed using Magento (Adobe Commerce) products.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="article__section _article-page-grid _common-article-section--gap">
+        <div class="grid-col"></div>
+        <div class="grid-col">
+            <div class="support">
+                <div class="support-title text-30 font-medium">Supported by</div>
+                <div class="support-logos">
+                    <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/logo-hyva.svg" alt="hyva">
+                    <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/logo-mirasvit.svg" alt="mirasvit">
+                    <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/logo-akoova.svg" alt="akoova"></div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
