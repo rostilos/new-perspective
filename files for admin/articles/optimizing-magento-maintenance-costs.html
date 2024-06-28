@@ -1,4 +1,14 @@
 <style>
+    .form_wrapper {
+        background-color: #F9F9F9;
+        padding: 40px;
+    }
+
+    .grid-col-half {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 88px;
+    }
     .text-30 {
         font-size: 30px;
         line-height: 40px;
@@ -62,6 +72,11 @@
             margin-top: 72px;
         }
     }
+    @media (max-width: 767px) {
+        .registration-title {
+            font-size: 22px;
+        }
+    }
     @media (max-width: 480px) {
         .speaker {
             grid-template-columns: 1fr;
@@ -81,18 +96,21 @@
         line-height: 24px;
         margin-bottom: 12px;
     }
-    #form-webinar-registration  .form-contact__submit {
+    #form_webinar-registration  .form-contact__submit {
         margin-top: 40px;
     }
-    #form-webinar-registration  .form-contact__input {
-        margin-bottom: 24px!important;
+    #form_webinar-registration  .form-contact__input {
+        margin-bottom: 16px!important;
     }
-    #form-webinar-registration .form-contact__input, form-webinar-registration.form-contact__input:focus {
+    #form_webinar-registration  .form-contact__input:not(:first-child) {
+        padding-top: 30px;
+    }
+    #form_webinar-registration .form-contact__input, #form_webinar-registration.form-contact__input:focus {
         color: #303030!important;
         border-color: #303030!important;
         border-radius: 0px!important;
     }
-    #form-webinar-registration .form-contact__input::placeholder {
+    #form_webinar-registration .form-contact__input::placeholder {
         color: #303030!important;
     }
     ._button--black {
@@ -107,26 +125,26 @@
             background: #3d3c3c!important;
         }
     }
-    /*@media (any-hover: hover) {
-            ._button--black:active {
-                color: #3D3C3C;
-                border-color: #cdcdcd !important;
-            }
-            ._button--black:active:before {
-                    background: #cdcdcd;
-                    transform: translateX(0);
-                }
-        }
-        @media (any-hover: none) {
-            ._button--black:active {
-                color:  #3D3C3C;
-                border-color: #cdcdcd !important;
-                background: #cdcdcd;
-            }
-        }*/
-
+    .article .field-error {
+        font-size: 12px!important;
+    }
+    .article .field-error:before {
+        display: none;
+    }
+    .article .form_wrapper .success-message img {
+        max-height: 100px;
+    }
+    .article .form_wrapper .success-message h6 {
+        padding-bottom: 28px;
+    }
+    .article .form_wrapper .success-message {
+        text-align: center;
+    }
+    .article .form_wrapper .success-message button {
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
-
 
 <div class="article">
     <section class="article__section _article-page-grid _common-article-section--gap">
@@ -134,7 +152,7 @@
         <div class="grid-col">
             <div class="registration">
                 <div class="registration-title text-30 font-medium"> <img src="https://m2perspective.test/media/wysiwyg/articles/optimizing_magento_maintenance/icon-webinar.svg" alt="webinar">On-demand webinar</div>
-                <a href="#footer" class="_button _button--orange-bg _scrollTo optimization-page-intro__button--dt" style="max-width: 230px">
+                <a href="#form_webinar-registration" class="_button _button--orange-bg _scrollTo optimization-page-intro__button--dt" style="max-width: 230px">
                     <h5 class="h5 _button__text">Registration</h5>
                     <span class="_button__overlay _button__overlay--hover"></span>
                     <span class="_button__overlay _button__overlay--active"></span>
@@ -175,9 +193,10 @@
                     The webinar is available on-demand. Fill out the registration form to get immediate access to the video.
                 </p>
             </div>
-            <div       x-data="{...initForm({'formUniqueId' : 'webinar-registration',
+            <div class="form_wrapper"
+                 x-data="{...initForm({'formUniqueId' : 'webinar-registration',
                              'url' : '/perspective_forms/index/gasubmit',
-                             'gtmEventName' : 'sent_hire_us_form'
+                             'gtmEventName' : 'sent_webinar_registration'
                             }),
                 ...formValidation.global(document.getElementById('form_webinar-registration')),
                 openForm : false
@@ -188,6 +207,7 @@
                         method="post"
                         class="get-started__form form-contact"
                         x-on:submit="submitForm($event)"
+                        x-show="showForm"
                 >
                     <div class="form-contact__body">
                         <div class="form-contact__title">Registration</div>
@@ -196,6 +216,7 @@
                                 name="first_name"
                                 class="form-contact__input footer__input"
                                 placeholder="First Name"
+                                required=""
                                 x-on:input="validate($el, false)"
                         />
                         <input
@@ -203,6 +224,7 @@
                                 name="email"
                                 class="form-contact__input footer__input validate-email"
                                 placeholder="E-mail address"
+                                required=""
                                 x-on:input="validate($el, false)"
                         />
                         <input
@@ -210,16 +232,14 @@
                                 name="company"
                                 class="form-contact__input footer__input"
                                 placeholder="Company"
-                                data-pristine-phone-custom="1,2"
+                                required=""
                                 x-on:input="validate($el, false)"
                         />
                         <input
                                 type="tel"
                                 name="phone"
                                 class="form-contact__input footer__input"
-                                placeholder="Phone number"
-                                required=""
-                                data-pristine-phone-custom="1,2"
+                                placeholder="Phone number (optional)"
                                 x-on:input="validate($el, false)"
                         />
 
@@ -227,14 +247,13 @@
                                 type="text"
                                 name="position"
                                 class="form-contact__input footer__input"
-                                placeholder="Position"
-                                required=""
+                                placeholder="Position (optional)"
                                 x-on:input="validate($el, false)"
                         />
                         <input
                                 type="hidden"
                                 name="type"
-                                value="<?= $block->getType() ?>"
+                                value=""
                         />
 
                         <button
@@ -271,6 +290,25 @@
                         </button>
                     </div>
                 </form>
+                <div class="success-message" x-show="showSuccess" :class="{'show' : showSuccess}">
+                    <img
+                            loading="lazy"
+                            data-src="{{view url='Mirasvit_Blog::images/article/gtm/rocket.gif'}}"
+                            src="<?= $block->getViewFileUrl('Mirasvit_Blog::images/article/gtm/rocket.gif'); ?>"
+                            alt="Gif with a flying rocket indicating the successful process of sending the form"
+                    />
+                    <h5 class="h5">Thank you!</h5>
+                    <h6 class="h6">We will contact you shortly.</h6>
+                    <button
+                            class="form-contact__submit footer__button _button _button--black success-form"
+                            x-on:click="toggleSuccessMessage()"
+                    >
+                        <span class="_button__text">Send another message</span>
+                        <span class="_button__text-overlay">Send another message</span>
+                        <span class="_button__overlay _button__overlay--hover"></span>
+                        <span class="_button__overlay _button__overlay--active"></span>
+                    </button>
+                </div>
             </div>
 
 
