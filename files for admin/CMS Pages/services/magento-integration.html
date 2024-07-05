@@ -408,7 +408,7 @@
                 </button>
             </div>
         </section>
-        <section id="section-faq" class="_common-section page__section section-faq mb-0"
+        <section id="section-faq" itemscope="" itemtype="https://schema.org/FAQPage" class="_common-section page__section section-faq mb-0"
                  x-data="{selected:null,items: [
                     {id:1, title: 'How much will Magento integration cost?', description: 'The total cost of Magento integration services is defined by the price of the extension you want to integrate and the rates of the Magento integration company. You should also take into account such factors as integration complexity, extensions and plugins, performance optimization, data migration, and the experience of your technology partner. ' },
                     {id:2, title: 'Which systems can be integrated with Magento?', description: 'Magento store can be easily integrated with a wide array of tools to streamline your e-commerce operations. To be more specific, you can connect your storefront with payment gateways, ERP and CRM systems, shipping services, and inventory management and marketing automation tools.' },
@@ -445,16 +445,16 @@
                 <div class="section-faq__content">
                     <div class="section-faq__collapsible _collapsible">
                         <template x-for="(item, index) in randomNumbers" :key="items[item].id">
-                            <div>
+                            <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <!-- 1 -->
-                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}">
+                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}" >
                                     <div
                                             data-role="trigger"
                                             class="_collapsible__trigger"
                                             @click="selected !== items[item].id ? selected = items[item].id : selected = null"
                                     >
                                         <div class="_collapsible__header">
-                                            <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                            <h4 class="h4 _collapsible__title">
                                                 <span class="_text-orange font-regular" style="margin-right: 8px" x-text="index+1+'.'"></span>
                                                 <span class="font-medium" itemprop="name" x-text="items[item].title"></span>
                                             </h4>
@@ -466,9 +466,10 @@
                                         data-role="content"
                                         style=""
                                         x-ref="container1"
+                                        itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                         x-bind:style="selected == items[item].id ? 'max-height: ' + $el.scrollHeight + 'px' : ''"
                                 >
-                                    <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
+                                    <div class="_collapsible__content" style="display: flex">
                                         <div class="_collapsible__empty"></div>
                                         <div class="_collapsible__col">
                                             <p class="_text-article" itemprop="text"  x-text="items[item].description">
@@ -482,14 +483,15 @@
 
 
                         <!-- 12 -->
-                        <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}">
+                        <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}">
                             <div
                                     data-role="trigger"
                                     class="_collapsible__trigger"
                                     @click="selected !== 12 ? selected = 12 : selected = null"
                             >
                                 <div class="_collapsible__header">
-                                    <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                    <h4 class="h4 _collapsible__title">
                                         <span class="_text-orange font-regular" style="margin-right: 8px">6.</span>
                                         <span class="font-medium" itemprop="name"
                                         >What countries do you operate in?</span
@@ -499,21 +501,23 @@
                                 <span class="_collapsible__plus-sign"></span>
                             </div>
                         </div>
-                        <div
-                                data-role="content"
-                                style=""
-                                x-ref="container12"
-                                x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''"
-                        >
-                            <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
-                                <div class="_collapsible__empty"></div>
-                                <div class="_collapsible__col">
-                                    <p class="_text-article" itemprop="text">
-                                        Perspective operates on a global scale, serving clients from the United States, the United Kingdom, the Netherlands, and numerous European countries. With this extensive international reach, we tailor our services to suit different market conditions and cultural nuances, benefiting clients worldwide.
-                                    </p>
+                            <div
+                                    data-role="content"
+                                    style=""
+                                    x-ref="container12"
+                                    x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
+                            >
+                                <div class="_collapsible__content" style="display: flex">
+                                    <div class="_collapsible__empty"></div>
+                                    <div class="_collapsible__col">
+                                        <p class="_text-article" itemprop="text">
+                                            Perspective operates on a global scale, serving clients from the United States, the United Kingdom, the Netherlands, and numerous European countries. With this extensive international reach, we tailor our services to suit different market conditions and cultural nuances, benefiting clients worldwide.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

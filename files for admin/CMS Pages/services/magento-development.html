@@ -384,9 +384,9 @@
                 <div class="section-faq__content">
                     <div class="section-faq__collapsible _collapsible">
                         <template x-for="(item, index) in randomNumbers" :key="items[item].id">
-                            <div>
+                            <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                 <!-- 1 -->
-                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}">
                                     <div
                                             data-role="trigger"
                                             class="_collapsible__trigger"
@@ -422,41 +422,44 @@
 
 
                         <!-- 12 -->
-                        <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}">
+                                <div
+                                        data-role="trigger"
+                                        class="_collapsible__trigger"
+                                        @click="selected !== 12 ? selected = 12 : selected = null"
+                                >
+                                    <div class="_collapsible__header">
+                                        <h4 class="h4 _collapsible__title">
+                                            <span class="_text-orange font-regular" style="margin-right: 8px">6.</span>
+                                            <span class="font-medium" itemprop="name"
+                                            >Which countries do you work in?</span
+                                            >
+                                        </h4>
+                                    </div>
+                                    <span class="_collapsible__plus-sign"></span>
+                                </div>
+                            </div>
                             <div
-                                    data-role="trigger"
-                                    class="_collapsible__trigger"
-                                    @click="selected !== 12 ? selected = 12 : selected = null"
+                                    data-role="content"
+                                    style=""
+                                    x-ref="container12"
+                                    x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''"
+                                    itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             >
-                                <div class="_collapsible__header">
-                                    <h4 class="h4 _collapsible__title">
-                                        <span class="_text-orange font-regular" style="margin-right: 8px">6.</span>
-                                        <span class="font-medium" itemprop="name"
-                                        >Which countries do you work in?</span
-                                        >
-                                    </h4>
-                                </div>
-                                <span class="_collapsible__plus-sign"></span>
-                            </div>
-                        </div>
-                        <div
-                                data-role="content"
-                                style=""
-                                x-ref="container12"
-                                x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''"
-                                itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                        >
-                            <div class="_collapsible__content" style="display: flex">
-                                <div class="_collapsible__empty"></div>
-                                <div class="_collapsible__col">
-                                    <p class="_text-article" itemprop="text">
-                                        Perspective operates without boundaries, serving clients from every region and country. Notably, we have clients from the United States,
-                                        the United Kingdom, the Netherlands, and many European countries. Our extensive international presence allows us to adapt to various market
-                                        conditions and cultural backgrounds and deliver value to clients worldwide.
-                                    </p>
+                                <div class="_collapsible__content" style="display: flex">
+                                    <div class="_collapsible__empty"></div>
+                                    <div class="_collapsible__col">
+                                        <p class="_text-article" itemprop="text">
+                                            Perspective operates without boundaries, serving clients from every region and country. Notably, we have clients from the United States,
+                                            the United Kingdom, the Netherlands, and many European countries. Our extensive international presence allows us to adapt to various market
+                                            conditions and cultural backgrounds and deliver value to clients worldwide.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
