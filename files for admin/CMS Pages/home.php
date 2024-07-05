@@ -1186,7 +1186,7 @@
                 </div>
             </div>
             <div class="main-certification__col">
-                <div class="main-certification__text--open-sans">
+                <div class="main-certification__text--gilroy">
                     <p class="_text-align-right">
                         Also, we already have 21 Magento-certified developers and solution specialists with 26 Magento 1 and Magento
                         2 certificates.
