@@ -345,7 +345,7 @@
                 </button>
             </div>
         </section>
-        <section id="section-faq" class="_common-section page__section section-faq mb-0"
+        <section id="section-faq" itemscope="" itemtype="https://schema.org/FAQPage"  class="_common-section page__section section-faq mb-0"
                  x-data="{selected:null,items: [
                     {id:1, title: 'Why choose Magento for my online store?', description: 'First, Magento\'s scalable architecture can scale easily to meet the needs of a growing business. Second, this e-commerce platform offers unparalleled flexibility for customization to suit your unique requirements. Third, thanks to the extensive ecosystem of extensions and plugins, you can enhance functionality and drive growth effortlessly. ' },
                     {id:2, title: 'What time does it take to build a Magento store?', description: 'Building a Magento store involves various stages, including planning, design, development, testing, and deployment. The timeline for each stage may vary based on the specific needs of your project and the resources available. Generally, custom Magento store development may take anywhere from a few weeks to several months, depending on factors such as customization requirements, integrations, and design complexity.' },
@@ -386,14 +386,14 @@
                         <template x-for="(item, index) in randomNumbers" :key="items[item].id">
                             <div>
                                 <!-- 1 -->
-                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}">
+                                <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == items[item].id}" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div
                                             data-role="trigger"
                                             class="_collapsible__trigger"
                                             @click="selected !== items[item].id ? selected = items[item].id : selected = null"
                                     >
                                         <div class="_collapsible__header">
-                                            <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                            <h4 class="h4 _collapsible__title">
                                                 <span class="_text-orange font-regular" style="margin-right: 8px" x-text="index+1+'.'"></span>
                                                 <span class="font-medium" itemprop="name" x-text="items[item].title"></span>
                                             </h4>
@@ -406,8 +406,9 @@
                                         style=""
                                         x-ref="container1"
                                         x-bind:style="selected == items[item].id ? 'max-height: ' + $el.scrollHeight + 'px' : ''"
+                                        itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                                 >
-                                    <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
+                                    <div class="_collapsible__content" style="display: flex">
                                         <div class="_collapsible__empty"></div>
                                         <div class="_collapsible__col">
                                             <p class="_text-article" itemprop="text"  x-text="items[item].description">
@@ -421,14 +422,14 @@
 
 
                         <!-- 12 -->
-                        <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}">
+                        <div data-role="collapsible" class="_collapsible__item" :class="{'active': selected == 12}" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div
                                     data-role="trigger"
                                     class="_collapsible__trigger"
                                     @click="selected !== 12 ? selected = 12 : selected = null"
                             >
                                 <div class="_collapsible__header">
-                                    <h4 class="h4 _collapsible__title" itemtype="https://schema.org/Question">
+                                    <h4 class="h4 _collapsible__title">
                                         <span class="_text-orange font-regular" style="margin-right: 8px">6.</span>
                                         <span class="font-medium" itemprop="name"
                                         >Which countries do you work in?</span
@@ -443,8 +444,9 @@
                                 style=""
                                 x-ref="container12"
                                 x-bind:style="selected == 12 ? 'max-height: ' + $refs.container12.scrollHeight + 'px' : ''"
+                                itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                         >
-                            <div class="_collapsible__content" style="display: flex" itemtype="https://schema.org/Answer">
+                            <div class="_collapsible__content" style="display: flex">
                                 <div class="_collapsible__empty"></div>
                                 <div class="_collapsible__col">
                                     <p class="_text-article" itemprop="text">
